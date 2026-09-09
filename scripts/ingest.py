@@ -4,6 +4,7 @@ import json
 import time
 import fitz  # PyMuPDF
 from PIL import Image
+import PIL.PngImagePlugin
 import google.generativeai as genai
 from pyzbar.pyzbar import decode
 import cv2
@@ -172,10 +173,10 @@ def main():
         print(f"Failed to open PDF: {e}")
         sys.exit(1)
         
-    pages_processed_this_run = 0
+    pages_attempted_this_run = 0
     
     for page_num in range(len(doc)):
-        if max_pages and pages_processed_this_run >= max_pages:
+        if max_pages and pages_attempted_this_run >= max_pages:
             print(f"Reached max_pages limit ({max_pages}). Stopping.")
             break
             
@@ -183,6 +184,7 @@ def main():
             print(f"Skipping page {page_num} (already processed).")
             continue
             
+        pages_attempted_this_run += 1
         print(f"Processing page {page_num}...")
         
         # 1. Rasterize at 200 DPI (good balance of quality and speed)
@@ -230,7 +232,6 @@ def main():
             
             # Save checkpoint
             state["processed_pages"].append(page_num)
-            pages_processed_this_run += 1
             
             with open(data_file, 'w') as f:
                 json.dump(all_data, f, indent=2)
