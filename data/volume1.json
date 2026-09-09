@@ -3,6 +3,54 @@
     {
       "chapter": "Chapter 1: Logic",
       "content": "Key Concepts:\n- Propositional Logic\n- Predicate Logic\n- $A \\wedge B$"
+    },
+    {
+      "chapter": "1 Discrete Mathematics: Combinatory",
+      "content": "This chapter covers key concepts in combinatorics, including Balls In Bins, general Combinatory methods, Counting, Generating Functions, Modular Arithmetic, Pigeonhole Principle, Recurrence Relations, and Summation techniques."
+    },
+    {
+      "chapter": "2 Discrete Mathematics: Graph Theory",
+      "content": "This chapter covers Graph Theory fundamentals, including Counting, Degrees of Graphs, Graph Algorithms, Graph Coloring, and Graph Connectivity."
+    },
+    {
+      "chapter": "Graph Theory",
+      "content": "List of subtopics including Graph Isomorphism, Matching, Planarity, Jaccard Coefficient, and various algorithms."
+    },
+    {
+      "chapter": "3 Discrete Mathematics: Mathematical Logic",
+      "content": "Covers Propositional Logic, First Order Logic (Predicate Logic), and Logical Reasoning (Inference) along with rules of inference and equivalences."
+    },
+    {
+      "chapter": "4 Discrete Mathematics: Set Theory & Algebra",
+      "content": "Covers Set Theory, Relations, Functions, Binary Operation, and Group Theory with definitions, properties, and problem-solving techniques."
+    },
+    {
+      "chapter": "Engineering Mathematics: Calculus",
+      "content": "Quick Formula Reference includes sections on Limits, Continuity, Differentiation, Maxima Minima, Integration (Indefinite), Definite Integral, Polynomials, and Summation."
+    },
+    {
+      "chapter": "Engineering Mathematics: Linear Algebra",
+      "content": "Comprehensive review topics including Cartesian Coordinates, Determinant, Eigen Value, Gaussian Elimination, LU Decomposition, Matrix, Multiplicity, Orthonormality, Rank of Matrix, Singular Value Decomposition (SVD), Statistics, Subspace, System of Equations, and Vector Space."
+    },
+    {
+      "chapter": "Engineering Mathematics: Probability",
+      "content": "Key concepts covered: Bayes Theorem, Bayesian Network, Bernoulli Distribution, Binomial Distribution, Chi Square Distribution, and Conditional Probability."
+    },
+    {
+      "chapter": "Table of Contents",
+      "content": "This page lists the subsections of Chapter 8 (Logical Reasoning) and the beginning of Chapter 9 (Quantitative Aptitude) along with their corresponding page numbers."
+    },
+    {
+      "chapter": "General Aptitude: Spatial Aptitude",
+      "content": "Topic-wise Key Concepts: 1. 3D Structure, 2. Assembling, 3. Assembling Pieces, 4. Counting Figure, 5. Grouping, 6. Image Rotation, 7. Mirror Image, 8. Paper Folding, 9. Patterns In Three Dimensions, 10. Patterns In Two Dimensions"
+    },
+    {
+      "chapter": "General Aptitude: Verbal Aptitude",
+      "content": "Topic-wise Key Concepts: Antonyms, Articles, Comparative Forms, English Grammar, Grammatical Error, Incorrect Sentence Part, Most Appropriate Word, Narrative Sequencing, Noun Verb Adjective, Passage Reading, Phrasal Verb"
+    },
+    {
+      "chapter": "Contributors",
+      "content": "This page lists the top contributors to the platform, categorized by the number of answers provided and tasks completed."
     }
   ],
   "questions": [
@@ -14,7 +62,12 @@
       "type": "MCQ",
       "marks": "1",
       "question_text": "Which of the following is true? $\\forall x P(x)$",
-      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
       "difficulty_tag": "normal",
       "explanation_url": "https://gateoverflow.in/1234"
     },
