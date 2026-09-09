@@ -4,6 +4,14 @@ import QuestionCard from "@/components/QuestionCard";
 import Latex from "react-latex-next";
 import 'katex/dist/katex.min.css';
 
+export function generateStaticParams() {
+  const chapters = Array.from(new Set(volume1.questions.map((q: any) => q.chapter)));
+  return chapters.map((chapter) => ({
+    volume: 'volume1',
+    chapter: chapter,
+  }));
+}
+
 export default function PracticePage({
   params
 }: {
