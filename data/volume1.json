@@ -1,0 +1,44 @@
+{
+  "notes": [
+    {
+      "chapter": "Chapter 1: Logic",
+      "content": "Key Concepts:\n- Propositional Logic\n- Predicate Logic\n- $A \\wedge B$"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1.1.1",
+      "chapter": "Chapter 1: Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2022",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following is true? $\\forall x P(x)$",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1234"
+    },
+    {
+      "id": "1.1.2",
+      "chapter": "Chapter 1: Logic",
+      "subtopic": "Predicate Logic",
+      "exam_tag": "gatecse-2021",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Calculate the value of $2 + 2$.",
+      "options": [],
+      "difficulty_tag": "hard",
+      "explanation_url": ""
+    }
+  ],
+  "answer_keys": [
+    {
+      "question_id": "1.1.1",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "1.1.2",
+      "correct_answer": "4"
+    }
+  ]
+}
