@@ -119,20 +119,29 @@ def process_page(pil_img, page_num, qr_urls, volume_name, model):
     - Rate your transcription_confidence (1-100) based on how well you transcribed dense or complex math. If there is heavy math and you struggled, give a low score.
     """
     
-    try:
-        response = model.generate_content([prompt, pil_img])
-        text = response.text.strip()
-        # Clean up markdown if model outputs it despite instructions
-        if text.startswith("```json"):
-            text = text[7:]
-        if text.endswith("```"):
-            text = text[:-3]
-        
-        data = json.loads(text.strip())
-        return data
-    except Exception as e:
-        print(f"Error processing page {page_num} with model {model.model_name}: {e}")
-        return None
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = model.generate_content([prompt, pil_img])
+            text = response.text.strip()
+            # Clean up markdown if model outputs it despite instructions
+            if text.startswith("```json"):
+                text = text[7:]
+            if text.endswith("```"):
+                text = text[:-3]
+            
+            data = json.loads(text.strip())
+            return data
+        except Exception as e:
+            error_msg = str(e)
+            if "429" in error_msg or "Quota" in error_msg or "Deadline Exceeded" in error_msg or "504" in error_msg:
+                if attempt < max_retries - 1:
+                    print(f"  [Attempt {attempt+1}/{max_retries}] API busy or rate limited (429/504). Sleeping 35s...")
+                    time.sleep(35)
+                    continue
+            
+            print(f"Error processing page {page_num} with model {model.model_name}: {e}")
+            return None
 
 def main():
     if len(sys.argv) < 2:

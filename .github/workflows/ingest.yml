@@ -10,7 +10,7 @@ on:
       max_pages:
         description: 'Maximum pages to process (leave empty for all)'
         required: false
-        default: '10'
+        default: ''
 
 jobs:
   ingest:
@@ -40,6 +40,7 @@ jobs:
       - name: Run Ingestion Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONUNBUFFERED: 1
         run: |
           python scripts/ingest.py filter1_${{ github.event.inputs.volume }}.pdf ${{ github.event.inputs.max_pages }}
 

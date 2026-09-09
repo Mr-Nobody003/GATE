@@ -8,6 +8,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Automatically deploy after the ingestion script finishes
+  workflow_run:
+    workflows: ["PDF Ingestion"]
+    types:
+      - completed
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
