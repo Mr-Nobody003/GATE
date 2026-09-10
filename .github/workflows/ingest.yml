@@ -1,14 +1,21 @@
 name: PDF Ingestion
 
 on:
+  schedule:
+    # Run every 6 hours to stay within limits
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       volume:
         description: 'Volume to process (e.g. volume1, volume2)'
         required: true
         default: 'volume1'
-      max_pages:
-        description: 'Maximum pages to process (leave empty for all)'
+      start_page:
+        description: 'Start page index (leave empty to resume from state)'
+        required: false
+        default: ''
+      end_page:
+        description: 'End page index (leave empty to process 50 pages)'
         required: false
         default: ''
 
@@ -42,7 +49,15 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PYTHONUNBUFFERED: 1
         run: |
-          python scripts/ingest.py filter1_${{ github.event.inputs.volume }}.pdf ${{ github.event.inputs.max_pages }}
+          VOLUME="${{ github.event.inputs.volume }}"
+          START_PAGE="${{ github.event.inputs.start_page }}"
+          END_PAGE="${{ github.event.inputs.end_page }}"
+          
+          if [ -z "$VOLUME" ]; then
+            VOLUME="volume1"
+          fi
+          
+          python scripts/ingest.py filter1_${VOLUME}.pdf "$START_PAGE" "$END_PAGE"
 
       - name: Commit and Push Changes
         run: |
@@ -54,6 +69,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore(data): Update extracted data for ${{ github.event.inputs.volume }}"
+            git commit -m "chore(data): Update extracted data for volume"
             git push
           fi
+

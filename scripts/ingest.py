@@ -3,7 +3,8 @@ import os
 import json
 import time
 import fitz  # PyMuPDF
-from PIL import Image
+import pdfplumber
+from PIL import Image, ImageDraw, ImageFont
 import PIL.PngImagePlugin
 import google.generativeai as genai
 from pyzbar.pyzbar import decode
@@ -37,34 +38,15 @@ def decode_qrs(pil_img):
             pass
     return urls
 
-def crop_and_save_diagram(pil_img, bbox_1000, save_path):
-    """
-    bbox_1000 is [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates.
-    Crops the image and saves it.
-    """
-    width, height = pil_img.size
-    ymin, xmin, ymax, xmax = bbox_1000
-    
-    # Convert from 0-1000 to pixel coordinates
-    left = (xmin / 1000.0) * width
-    upper = (ymin / 1000.0) * height
-    right = (xmax / 1000.0) * width
-    lower = (ymax / 1000.0) * height
-    
-    # Ensure valid coordinates
-    left, right = sorted([left, right])
-    upper, lower = sorted([upper, lower])
-    
-    cropped = pil_img.crop((left, upper, right, lower))
-    
-    # Ensure directory exists
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    cropped.save(save_path)
-
-def process_page(pil_img, page_num, qr_urls, volume_name, model):
+def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name, model):
     prompt = f"""
     You are an expert OCR and data extraction system for engineering exam preparation (GATE).
-    I am providing you with a high-resolution image of a page from a book.
+    I am providing you with the plain text extracted from a page of a book, along with cropped images of the math formulas, diagrams, and raster glyphs from that same page.
+    
+    Extracted Text:
+    ```
+    {extracted_text}
+    ```
     
     This page may contain:
     1. Chapter Notes (Key Concepts / Formulas / Tips / Pitfalls)
@@ -73,6 +55,9 @@ def process_page(pil_img, page_num, qr_urls, volume_name, model):
     
     I have also detected the following QR code URLs on this page: {qr_urls}. 
     Match these URLs to the corresponding questions (usually physically next to them).
+    
+    The cropped images provided after this text are ordered sequentially (Image 0, Image 1, etc.). 
+    Use them to reconstruct the LaTeX for any math formulas missing or garbled in the text, and to identify diagrams.
     
     Extract the content into a structured JSON format matching this schema EXACTLY:
     {{
@@ -106,7 +91,7 @@ def process_page(pil_img, page_num, qr_urls, volume_name, model):
         "diagrams": [
             {{
                 "id": "e.g. 1.1.1_diagram",
-                "bbox": [ymin, xmin, ymax, xmax] 
+                "image_index": 2 
             }}
         ]
     }}
@@ -114,15 +99,20 @@ def process_page(pil_img, page_num, qr_urls, volume_name, model):
     Guidelines:
     - Use KaTeX compatible LaTeX for all math. Wrap inline math in $...$ and block math in $$...$$.
     - 'type' is read directly from the tag line (e.g. 'numerical-answers' -> NAT, 'multiple-selects' -> MSQ, etc).
-    - If there is a diagram, provide its bounding box in 'diagrams' using normalized coordinates (0 to 1000), where [0,0,1000,1000] is the whole image. The order must be [ymin, xmin, ymax, xmax].
+    - If there is a diagram, provide its index from the provided images in the 'diagrams' array under 'image_index'.
     - Return ONLY valid JSON, no markdown blocks around it.
-    - Rate your transcription_confidence (1-100) based on how well you transcribed dense or complex math. If there is heavy math and you struggled, give a low score.
+    - Rate your transcription_confidence (1-100) based on how well you transcribed dense or complex math.
     """
+    
+    content_parts = [prompt]
+    for idx, crop in enumerate(cropped_images):
+        content_parts.append(f"Image {idx}:")
+        content_parts.append(crop)
     
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            response = model.generate_content([prompt, pil_img])
+            response = model.generate_content(content_parts)
             text = response.text.strip()
             # Clean up markdown if model outputs it despite instructions
             if text.startswith("```json"):
@@ -145,11 +135,15 @@ def process_page(pil_img, page_num, qr_urls, volume_name, model):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python ingest.py <pdf_path> [max_pages]")
+        print("Usage: python ingest.py <pdf_path> [start_page] [end_page]")
         sys.exit(1)
         
     pdf_path = sys.argv[1]
-    max_pages = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2] else None
+    start_page_str = sys.argv[2] if len(sys.argv) > 2 else ""
+    end_page_str = sys.argv[3] if len(sys.argv) > 3 else ""
+    
+    start_page = int(start_page_str) if start_page_str else None
+    end_page = int(end_page_str) if end_page_str else None
     
     volume_name = get_volume_name(pdf_path)
     
@@ -167,6 +161,12 @@ def main():
     else:
         state = {"processed_pages": []}
         
+    if start_page is None:
+        start_page = max(state["processed_pages"]) + 1 if state["processed_pages"] else 0
+        
+    if end_page is None:
+        end_page = start_page + 50 # Process 50 pages per chunk by default
+        
     # Load data
     if os.path.exists(data_file):
         with open(data_file, 'r') as f:
@@ -174,49 +174,75 @@ def main():
     else:
         all_data = {"notes": [], "questions": [], "answer_keys": []}
         
-    print(f"Starting ingestion for {volume_name} (max_pages={max_pages})")
+    print(f"Starting ingestion for {volume_name} (pages {start_page} to {end_page})")
     
     try:
         doc = fitz.open(pdf_path)
+        pdf_plumber = pdfplumber.open(pdf_path)
     except Exception as e:
         print(f"Failed to open PDF: {e}")
         sys.exit(1)
         
-    pages_attempted_this_run = 0
+    total_pages = len(doc)
+    end_page = end_page if end_page is not None else total_pages
     
-    for page_num in range(len(doc)):
-        if max_pages and pages_attempted_this_run >= max_pages:
-            print(f"Reached max_pages limit ({max_pages}). Stopping.")
+    for page_num in range(start_page, end_page):
+        if page_num >= total_pages:
             break
             
         if page_num in state["processed_pages"]:
             print(f"Skipping page {page_num} (already processed).")
             continue
             
-        pages_attempted_this_run += 1
         print(f"Processing page {page_num}...")
         
-        # 1. Rasterize at 200 DPI (good balance of quality and speed)
+        # 1. Rasterize at 200 DPI for QR code decoding
         page = doc.load_page(page_num)
         pix = page.get_pixmap(dpi=200)
-        
-        # Convert fitz pixmap to PIL Image
         img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
         
-        # 2. Decode QR codes
+        # Decode QR codes
         qr_urls = decode_qrs(img)
         if qr_urls:
             print(f"  Found {len(qr_urls)} QR codes: {qr_urls}")
             
+        # 2. Extract Text and Crop Math/Diagram Regions via pdfplumber
+        plumber_page = pdf_plumber.pages[page_num]
+        extracted_text = plumber_page.extract_text() or ""
+        
+        cropped_images = []
+        for i, img_dict in enumerate(plumber_page.images):
+            # pdfplumber bbox coordinates
+            x0, top, x1, bottom = img_dict['x0'], img_dict['top'], img_dict['x1'], img_dict['bottom']
+            
+            # fitz pixmap dpi is 200, pdfplumber uses 72 dpi points
+            scale = 200 / 72.0
+            left_px = x0 * scale
+            top_px = top * scale
+            right_px = x1 * scale
+            bottom_px = bottom * scale
+            
+            # Add a small padding (5 pixels)
+            pad = 5
+            left_px = max(0, left_px - pad)
+            top_px = max(0, top_px - pad)
+            right_px = min(img.width, right_px + pad)
+            bottom_px = min(img.height, bottom_px + pad)
+            
+            crop = img.crop((left_px, top_px, right_px, bottom_px))
+            cropped_images.append(crop)
+            
+        print(f"  Extracted {len(extracted_text)} chars and {len(cropped_images)} crop regions.")
+            
         # 3. Vision Extraction (Mixed Strategy)
-        extracted = process_page(img, page_num, qr_urls, volume_name, lite_model)
+        extracted = process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name, lite_model)
         
         # Fall back to Pro model if Lite fails or has low confidence
         confidence = extracted.get("transcription_confidence", 0) if extracted else 0
         if not extracted or confidence < 85:
             print(f"  Flash-Lite confidence low ({confidence}/100) or failed. Escalating to Pro...")
             time.sleep(2)
-            extracted_pro = process_page(img, page_num, qr_urls, volume_name, pro_model)
+            extracted_pro = process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name, pro_model)
             if extracted_pro:
                 extracted = extracted_pro
                 print(f"  Pro model confidence: {extracted.get('transcription_confidence', 'unknown')}/100")
@@ -233,11 +259,12 @@ def main():
             diagrams = extracted.get("diagrams", [])
             for diag in diagrams:
                 d_id = diag.get("id")
-                bbox = diag.get("bbox")
-                if d_id and bbox and len(bbox) == 4:
+                img_idx = diag.get("image_index")
+                if d_id and img_idx is not None and 0 <= img_idx < len(cropped_images):
                     save_path = f"public/images/{d_id}.png"
-                    print(f"  Extracting diagram {d_id} to {save_path}")
-                    crop_and_save_diagram(img, bbox, save_path)
+                    print(f"  Extracting diagram {d_id} (Image {img_idx}) to {save_path}")
+                    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+                    cropped_images[img_idx].save(save_path)
             
             # Save checkpoint
             state["processed_pages"].append(page_num)
