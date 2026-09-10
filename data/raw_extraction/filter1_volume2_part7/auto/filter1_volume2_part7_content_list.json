@@ -1,0 +1,3635 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/9955cda30a93a7773066cff493d57f7223be35800b28fd5afdf3044659c18b44.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. outputs the sum of the present and the previous bits of the input B. outputs whenever the input sequence contains C. outputs whenever the input sequence contains D. none of the above ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We require a four state automaton to recognize the regular expression $( a \\mid b ) ^ { * } a b b$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Give an NFA for this purpose B. Give a DFA for this purpose gatecse-2002 theory-of-computation finite-automata normal descriptive ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following deterministic finite state automaton $M$ . ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $\\boldsymbol { S }$ denote the set of seven bit binary strings in which the first, the fourth, and the last bits are . The number of strings in $\\boldsymbol { S }$ that are accepted by $M$ is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. B. 5 C. D. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 theory-of-computation finite-automata normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the NFA $M$ shown below. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/26c49751060335ae0f9943eba4af27d0b6371701814c7fc6c4246e9fad277769.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let the language accepted by $M$ be $L$ . Let $L _ { 1 }$ be the language accepted by the NFA $M _ { 1 }$ obtained by changing the accepting state of $M$ to a non-accepting state and by changing the non-accepting states of $M$ to accepting states. Which of the following statements is true? ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r } { \\mathrm { ~  ~ \\sigma ~ } _ { 1 } = \\{ 0 , 1 \\} ^ { * } - L ~ \\mathrm { ~  ~ \\mathsf ~ { ~ B ~ } ~ } . ~ L _ { 1 } = \\{ 0 , 1 \\} ^ { * } ~ \\qquad \\mathsf { C } . ~ L _ { 1 } \\subseteq L ~ \\mathrm { ~  ~ \\mathsf ~ { ~ D ~ } ~ } . ~ L _ { 1 } = L } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 theory-of-computation finite-automata normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The following finite state machine accepts all those binary strings in which the number of ’s and ’s are respectively: ",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9de5cfff08ef977d7ad49c878b331094778ae9a641b209ea66fa30ad1cccb4c1.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. divisible by and B. odd and even C. even and odd D. divisible by and ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the machine $M$ : ",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/7687d2388ceb833da19e1fff63d89fa33d01adb2a0c3652cf8a831ed6c497616.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The language recognized by $M$ is: ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ w \\in \\{ a , b \\} ^ { * }$ every a in $w$ is followed by exactly two b's} B. $\\{ w \\in \\{ a , b \\} ^ { * }$ every a in $w$ is followed by at least two b's} C. $\\{ w \\in \\{ a , b \\} ^ { * }$ $w$ contains the substring ‘abb'} D. $\\{ w \\in \\{ a , b \\} ^ { * } \\mid w$ does not contain $^ { \\ell } a a ^ { \\prime }$ as a substring} ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 theory-of-computation finite-automata normal ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. It computes ’s complement of the input number C. It increments the input number D. it decrements the input number ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following Finite State Automaton: ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/170ebffcc5a24a4db605f70c3e7e63d72b15e7ce495374dbb0752891af9b29ac.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The language accepted by this automaton is given by the regular expression ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. b\\*ab\\*ab\\* ab\\* B. $( a + b ) ^ { * }$ $\\complement . \\ b ^ { * } a ( a + b ) ^ { * }$ D. b\\*ab\\*ab\\* ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 theory-of-computation finite-automata normal ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given below are two finite state automata ( $$ indicates the start state and $F$ indicates a final state) ",
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/c19b0f9c3af7888a4d4eeb4ac0b54e0de7a3841b4e2edbdab505fd456d139228.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following represents the product automaton $Z \\times Y ?$ ",
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/e95ebd5326f32cf9f45976dd5a2edb04da13b930404b3d888e51cfbbed25fc9c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/b9823d0234e6a30d1898619a650e3b891e5bde275fcd6cf9e6e42ffea98437c5.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1. $\\epsilon + 0 ( 0 1 ^ { * } 1 + 0 0 ) ^ { * } 0 1 ^ { * }$   \n2 $\\dots \\epsilon + 0 ( 1 0 ^ { * } 1 + 0 0 ) ^ { * } 0$   \n3. $\\epsilon + 0 ( 1 0 ^ { * } 1 + 1 0 ) ^ { * } 1$   \n4. $\\epsilon + 0 ( 1 0 ^ { * } 1 + 1 0 ) ^ { * } 1 0 ^ { * }$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $P - 2 , Q - 1 , R - 3 , S - 4$ B. $P - 1 , Q - 3 , R - 2 , S - 4$   \nC. $P - 1 , Q - 2 , R - 3 , S - 4$ D. $P - 3 , Q - 2 , R - 1 , S - 4$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 theory-of-computation finite-automata normal ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The above DFA accepts the set of all strings over $\\{ 0 , 1 \\}$ that ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. begin either with or . B. end with .   \nC. end with . D. contain the substring . ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 theory-of-computation finite-automata easy ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What is the complement of the language accepted by the NFA shown below? Assume ${ \\boldsymbol { \\Sigma } } = \\{ { \\boldsymbol { a } } \\}$ and $\\epsilon$ is the empty string. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "OlO ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\phi$ B. C. a\\* D. $\\{ a , \\epsilon \\}$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/79a3784b6b284c52e435a9604b1742afaaa4ad3acdd70a24cd9d47ed7c8910d3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The missing arcs in the DFA are: ",
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/35bd315fc8170e6b02acd4576e90bc12588eab68b52812df375b2f0072fbdbfe.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/008181241ba2fdb28077c7d1b72f4562fb476f65d7f9ab79d4e70de4329598f6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the DFA $A$ given below. ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e9bdc266eb0251225db2095f01849197754ccac919df5ab98a5b613f02bb312.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following are FALSE? ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. Complement of $L ( A )$ is context-free.   \n2. $L ( A ) = L ( ( 1 1 ^ { * } 0 + 0 ) ( 0 + 1 ) ^ { * } 0 ^ { * } 1 ^ { * } )$   \n3. For the language accepted by $A , A$ is the minimal DFA.   \n4. $A$ accepts all strings over $\\{ 0 , 1 \\}$ of length at least . ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 1 and 3 only B. 2 and 4 only C. 2 and 3 only D. 3 and 4 only ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 theory-of-computation finite-automata normal ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/701b5d2c787cc614761fcdb0a6bb8a3329cd1312a2f294df944c1a5d4b21bfc1.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What is the set of reachable states for the input string ? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ q _ { 0 } , q _ { 1 } , q _ { 2 } \\}$ B. {q0,q1} C. {q0,q1,q2,q3} D. {q3}",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 theory-of-computation finite-automata easy ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "I. If all states of an NFA are accepting states then the language accepted by the NFA is $\\Sigma ^ { * }$ .   \nII. There exists a regular language $A$ such that for all languages $B$ , $A \\cap B$ is regular. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is CORRECT? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. Only I is true B. Only II is true C. Both and II are true D. Both and II are false gatecse-2016-set2 theory-of-computation finite-automata normal ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $\\delta$ denote the transition function and $\\hat { \\delta }$ denote the extended transition function of the $\\epsilon$ -NFA whose transition table is given below: ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/3804a485bc974c127c8145b7329de31800a4f9e08f56ada4d91e69db785205e1.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Then $\\hat { \\delta } ( q _ { 2 } , a b a )$ is ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. B. {q0,q1,q3} C. $\\{ q _ { 0 } , q _ { 1 } , q _ { 2 } \\}$ D. {q0,q2,q3} gatecse-2017-set2 theory-of-computation finite-automata ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/25acc7d7c509449e1ee9f10010ffce90c5a64214a29a3505fcc35f3a71c02848.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea8baab560bd2631caf60f89a4ad8ff4360ef41a4a1e0e88e7f0abaacf3f5766.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following deterministic finite automaton (DFA) ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/612b3b921cb7a196ccc1c57deb56c9222574dba3e7a17d824e2ffd39dafe18c9.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The number of strings of length accepted by the above automaton is gatecse-2021-set2 numerical-answers theory-of-computation finite-automata one-mark ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose we want to design a synchronous circuit that processes a string of ’s and ’s. Given a string, it produces another string by replacing the first in any subsequence of consecutive ’s by a . Consider the following example. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Input sequence: 00100011000011100   \nOutput sequence: 00000001000001100 ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A Mealy Machine is a state machine where both the next state and the output are functions of the present state and the current input. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The above mentioned circuit can be designed as a two-state Mealy machine. The states in the Mealy machine can be represented using Boolean values 0 and . We denote the current state, the next state, the next incoming bit, and the output bit of the Mealy machine by the variables $s , t , b$ and $y$ respectively. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Assume the initial state of the Mealy machine is . ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "What are the Boolean expressions corresponding to $t$ and $y$ in terms of $s$ and $b$ ? ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A $\\begin{array} { l } { t = s + b } \\\\ { \\ . \\begin{array} { l } { y = s b } \\\\ { t = b } \\\\ { y = s \\bar { b } } \\end{array} } \\end{array}$ $\\begin{array} { c } { { \\tan } } \\\\ { { \\ B . \\begin{array} { l } { { t = b } } \\\\ { { y = s b } } \\\\ { { t = s + b } } \\end{array} } } \\\\ { { \\begin{array} { l } { { \\begin{array} { r l } { { \\scriptstyle 0 . } } & { { t = b } } \\\\ { { \\scriptstyle y = s \\bar { b } } } & { { } } \\end{array} } } \\end{array} } } \\end{array}$   \nC   \ngatecse-2021-set2 theory-of-computation finite-automata two-marks ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/688b539920670e540bdee5a339c852bec8fe8595993ce7c9b8169ab0da8e00ba.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are FALSE? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. States and are distinguishable in $M$ B. States and  are distinguishable in $M$ C. States and are distinguishable in $M$ D. Any string $w$ with ${ n } _ { 0 } ( w ) = n _ { 1 } ( w )$ is in $L ( M )$ ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions is equivalent to the language accepted by the  given below? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $0 ^ { * } 1 ( 0 + 1 0 ^ { * } 1 ) ^ { * }$ B. $0 ^ { * } ( 1 0 ^ { * } 1 1 ) ^ { * } 0 ^ { * }$   \nC. $0 ^ { * } 1 ( 0 1 0 ^ { * } 1 ) ^ { * } 0 ^ { * }$ D. $0 ( 1 + 0 ^ { * } 1 0 ^ { * } 1 ) ^ { * } 0 ^ { * }$ ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 theory-of-computation finite-automata one-mark ​Let be the -state with $\\epsilon$ -transitions shown in the diagram below. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b8391303a11daa6beb4bb541ec7e8bcc1ce94a132fb7a765d6870738a6c878b.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions represents the language accepted by ? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $( 0 0 ) ^ { * } + 1 ( 1 1 ) ^ { * }$ B. $0 ^ { * } + \\left( 1 + 0 ( 0 0 ) ^ { * } \\right) ( 1 1 ) ^ { * }$   \nC. $( 0 0 ) ^ { * } + ( \\mathrm { i } + ( 0 0 ) ^ { * } ) ( \\mathbf { 1 1 } ) ^ { * }$ D. $0 ^ { + } + 1 ( 1 1 ) ^ { * } + 0 ( 1 1 ) ^ { * }$ ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following deterministic finite automaton (DFA) defined over the alphabet, $\\Sigma = \\{ a , b \\}$ . Identify which of the following language(s) is/are accepted by the given DFA. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "-6-0-6g $b$ ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. The set of all strings containing an even number of $b$ 's.   \nB. The set of all strings containing the pattern $b a b .$ .   \nC. The set of all strings ending with the pattern .   \nD. The set of all strings not containing the pattern . ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two finite automata $D _ { 1 }$ and $D _ { 2 }$ . ",
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/04fcae0af2ff7604e75a70dd5130dc93bef4411042492f5ddffc91447b5e55fe.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are true? ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $L \\left( D _ { 1 } \\right) = L \\left( D _ { 2 } \\right)$   \nB. $L \\left( D _ { 1 } \\right)$ is a proper subset of $L \\left( D _ { 2 } \\right)$   \nC. $L \\left( D _ { 1 } \\right) \\cap L \\left( D _ { 2 } \\right) = \\{ \\epsilon \\}$   \nD. $\\left( L \\left( D _ { 1 } \\right) \\cup L \\left( D _ { 2 } \\right) \\right) ^ { * }$ consists of all strings in $\\{ 0 , 1 \\} ^ { * }$ whose length is divisible by ",
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { c } { { \\{ A  a A , A  b B , B  a B , B  b A , B  \\epsilon \\} } } \\\\ { { \\{ A  b B , A  a B , B  a A , B  b A , B  \\epsilon \\} } } \\\\ { { \\{ A  a A , A  b A , B  a B , B  b A , A  \\epsilon \\} } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the non-deterministic finite automaton (NFA) shown in the figure. ",
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c6e599ce7685f184758e4099b6286cba9ee1727d5cfe625d2bdeb1834a2a2759.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "State $X$ is the starting state of the automaton. Let the language accepted by the NFA with $Y$ as the only accepting state be $L 1$ . Similarly, let the language accepted by the NFA with $Z$ as the only accepting state be $L 2$ . Which of the following statements about $L 1$ and $L 2$ is TRUE? ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $L 1 = L 2$ B. $L 1 \\subset L 2$ C. $L 2 \\subset L 1$ D. None of the above ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 theory-of-computation finite-automata normal ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular grammar: ",
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { \\cdot S  X a \\mid Y a } \\\\ { \\cdot X  Z a } \\\\ { \\cdot Z  S a \\mid \\epsilon } \\\\ { \\cdot Y  W a } \\\\ { \\cdot W  S a } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where $\\boldsymbol { S }$ is the starting symbol, the set of terminals is $\\{ a \\}$ and the set of non-terminals is $\\{ S , W , X , Y , Z \\}$ . We wish to construct a deterministic finite automaton (DFA) to recognize the same language. What is the minimum number of states required for the DFA? ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 theory-of-computation finite-automata normal ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$a$ $b$ $S$ $t$ $b$ $a$ $a$ ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the strings abbaba, $\\scriptstyle v = b a b$ ， $\\mathbf { a n d } w = a a b b$ . Which of the following statements is true? ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. The automaton accepts $u$ and $v$ B. The automaton accepts each of but not $w$ $_ { u , v }$ and $w$ C. The automaton rejects each of D. The automaton accepts $u$ but $u , v$ and $w$ rejects $v$ and $w$ ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 theory-of-computation finite-automata easy ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For a state machine with the following state diagram the expression for the next state $S ^ { + }$ in terms of the current state $\\boldsymbol { S }$ and the input variables $x$ and $y$ is ",
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\underset { \\left( S = 1 \\right) \\underset { \\mathbf { y } = 0 } { \\overset { \\mathrm { x } = 1 } { \\left( \\Delta \\right) } } } { \\overset { \\mathrm { x } = 1 } { \\underset { \\mathbf { x } = 0 } { \\overset { \\mathrm { y } = 1 } { \\left( \\Delta \\right) } } } } \\underset { \\mathbf { \\zeta } = 0 } { \\overset { \\mathrm { y } = 1 } { \\left( \\Delta \\right) } }\n$$",
+        "text_format": "latex",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $S ^ { + } = S ^ { \\prime } . y ^ { \\prime } + S . x$ B. $S ^ { + } = S . x . y ^ { \\prime } + S ^ { \\prime } . y . x ^ { \\prime }$   \nC. $S ^ { + } = x . y ^ { \\prime }$ D. $S ^ { + } = S ^ { \\prime } . y + S . x ^ { \\prime }$ ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 theory-of-computation finite-automata normal ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following DFA in which $S _ { 0 }$ is the start state and $S _ { 1 } , S _ { 3 }$ are the final states. ",
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/445b5bbc320b3701ed8968b4c57b87c2b33dab6fb426fb543526ee7fd21f9f4c.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "What language does this recognize? ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. All strings of $x$ and $y$   \nB. All strings of $x$ and $y$ which have either even number of $x$ and even number of $y$ or odd number of $x$ and odd number of $y$   \nC. All strings of $x$ and $y$ which have equal number of $x$ and $y$   \nD. All strings of $x$ and $y$ with either even number of $x$ and odd number of $y$ or odd number of $x$ and even number of $y$ ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following finite automata $P$ and $Q$ over the alphabet $\\{ a , b , c \\}$ . The start states are indicated by a double arrow and final states are indicated by a double circle. Let the lang uages recognized by them be denoted by $L ( P )$ and $L ( Q )$ respectively. ",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f080c78705af76256f110ca3948f30f1e1cff66d9457aadb26b8188707fb081.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The automation which recognizes the language $L ( P ) \\cap L ( Q )$ is : ",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d49b00283b38d2b15b713689dae96b7ed578441fefa73e6648d816d6df7886a3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular expression $R = ( a + b ) ^ { * } ( a a + b b ) ( a + b ) ^ { * }$ ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following non-deterministic finite automata recognizes the language defined by the regular expression $R ?$ Edges labeled $\\lambda$ denote transitions on the empty string. ",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b817a9911728d59210447f782a616e5bdbfdf36e301353ca587ff3eae508240.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular expression $R = ( a + b ) ^ { * } ( a a + b b ) ( a + b ) ^ { * }$ ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Which deterministic finite automaton accepts the language represented by the regular expression ? ",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/32606a39db97fa5477404da2e7df0789126e23dc8326bbfde8d3901a2c9785c3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "If the final states and non-final states in the DFA below are interchanged, then which of the following languages over the alphabet $\\{ a , b \\}$ will be accepted by the new DFA? ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A. Set of all strings that do not end with B. Set of all strings that begin with either an $\\mathbf { \\Delta } _ { a }$ or a b C. Set of all strings that do not contain the substring $a b$ , D. The set described by the regular expression $b ^ { * } a a ^ { * } ( b a ) ^ { * } b ^ { * }$ ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "M2 ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE? ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 } = L _ { 2 }$ B. $L _ { 1 } \\subset L _ { 2 }$   \nC. $L _ { 1 } \\cap L _ { 2 } ^ { C } = \\emptyset$ D. $L _ { 1 } \\cup L _ { 2 } \\neq L _ { 1 }$ ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 theor y-of-computation finite-automata normal ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Consider a finite state machine (FSM) with one input $X$ and one output $f$ , represented by the given state transition table. The minimum number of states required to realize this FSM is (Answer in integer). ",
+        "page_idx": 13
+    },
+    {
+        "type": "table",
+        "img_path": "images/726796b33074c39737e5d1bdafe715241f7970573295386965fde9d7d574b02a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "FORTRAN is a: ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A. Regular language. B. Context-free language.   \nC. Context-senstive language. D. None of the above. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "gate1987 theory-of-computation identify-class-language ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Show that the Turing machines, which have a read only input tape and constant size work tape, recognize precisely the class of regular languages. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1991 theory-of-computation descriptive identify-class-language proof ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. Given a set: ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "$S = \\{ x \\vert$ there is an x-block of 5's in the decimal expansion ofπ} (Note: $x$ - is a maximal block of $x$ successive 's) Which of the following statements is true with respect to $S ?$ No reason to be given for the answer. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "i. $\\boldsymbol { S }$ is regular   \nii. $\\boldsymbol { S }$ is recursively enumerable   \niii. $\\boldsymbol { S }$ is not recursively enumerable   \niv. $\\boldsymbol { S }$ is recursive   \nB. Given that a language $L _ { 1 }$ is regular and that the language $L _ { 1 } \\cup L _ { 2 }$ is regular, is the language $L _ { 2 }$ always regular? Prove your answer. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1994 theory-of-computation identify-class-language normal descriptive ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "If $L 1$ is context free language and $L 2$ is a regular language which of the following is/are false? ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $L 1 - L 2$ is not context free B. $L 1 \\cap L 2$ is context free C. $\\sim L 1$ is context free D. $\\sim L 2$ is regular ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1999 theory-of-computation identify-class-language normal multiple-selects ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Let $L$ denote the languages generated by the grammar $S \\to 0 S 0 \\mid 0 0$ . Which of the following is TRUE? ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $L = 0 ^ { + }$ B. $L$ is regular but not $0 ^ { + }$ C. $L$ is context free but not regular D. $L$ is not context free gatecse-2000 theory-of-computation easy identify-class-language ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "6.9.7 Identify Class Language: GATE CSE 2002 Question: 1.7 ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The language accepted by a Pushdown Automaton in which the stack is limited to items is best described as ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. Context free B. Regular C. Deterministic Context free D. Recursive ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The language $\\{ a ^ { m } b ^ { n } c ^ { m + n } \\mid m , n \\geq 1 \\}$ is ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. regular B. context-free but not regular C. context-sensitive but not context free D. type-0 but not context sensitive ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 theory-of-computation normal identify-class-language ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Consider the languages: ${ \\cal L } _ { 1 } = \\{ a ^ { n } b ^ { n } c ^ { m } \\mid n , m > 0 \\}$ and $L _ { 2 } = \\{ a ^ { n } b ^ { m } c ^ { m } \\mid n , m > 0 \\}$ Which one of the following statements is FALSE? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 } \\cap L _ { 2 }$ is a context-free language B. $L _ { 1 } \\cup L _ { 2 }$ is a context-free language C. $L _ { 1 }$ and $L _ { 2 }$ are context-free languages D. $L _ { 1 } \\cap L _ { 2 }$ is a context sensitive language ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "For $\\pmb { s } \\in ( 0 + 1 ) ^ { * }$ let $d ( s )$ denote the decimal value of $s ( \\Theta . \\ 9 . \\ d ( 1 0 1 ) = 5 )$ Let ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL = \\{ s \\in ( 0 + 1 ) ^ { * } \\mid d ( s ) { \\bmod { 5 } } = 2 { \\mathrm { ~ a n d } } d ( s ) { \\bmod { 7 } } \\neq 4 \\}\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is true? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ is recursively enumerable, but B. $L$ is recursive, but not context-free not recursive C. $L$ is context-free, but not regular D. $L$ is regular ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 theory-of-computation normal identify-class-language ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "L e t $L _ { 1 }$ be a regular language, $L _ { 2 }$ be a deterministic context-free language and $L _ { 3 }$ a recursivel enumerable, but not recursive, language. Which one of the following statements is false? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 } \\cap L _ { 2 }$ is a deterministic CFL   \nB. $L _ { 3 } \\cap L _ { 1 }$ is recursive   \nC. $L _ { 1 } \\cup L _ { 2 }$ is context free   \nD. $L _ { 1 } \\cap L _ { 2 } \\cap L _ { 3 }$ is recursively enumerable ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 theory-of-computation normal identify-class-language ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Match the following: ",
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "images/06eea606662883ec730ebe8f2e6569cec6c76da8794b57cbf147f84cc7762bac.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "A. E-P, F-R,G-Q,H-S B. E-R,F-P,G-S, H-Q C. E-R,F-P,G-Q,H-S D. E-P,F-R, G-S,H-Q ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is true for the language ",
+        "page_idx": 16
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\{ a ^ { p } \\mid p { \\mathrm { i s } } { \\mathrm { a p r i m e } } \\} ?\n$$",
+        "text_format": "latex",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "A. It is not accepted by a Turing Machine   \nB. It is regular but not context-free   \nC. It is context-free but not regular   \nD. It is neither regular nor context-free, but accepted by a Turing machine ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 theory-of-computation easy identify-class-language ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Let $L = L _ { 1 } \\cap L _ { 2 }$ , where $L _ { 1 }$ and $L _ { 2 }$ are languages as defined below:   \n$\\begin{array} { l } { { L _ { 1 } = \\{ a ^ { m } b ^ { m } c a ^ { n } b ^ { n } \\mid m , n \\geq 0 \\} } } \\\\ { { L _ { 2 } = \\{ a ^ { i } b ^ { j } c ^ { k } \\mid i , j , k \\geq 0 \\} } } \\end{array}$   \nThen $L$ is ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "A. Not recursive B. Regular C. Context free but not regular D. Recursively enumerable but not context free. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 theory-of-computation easy identify-class-language ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Consider the languages $L 1$ ， $L 2$ and $L 3$ as given below. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$L 1 = \\{ 0 ^ { p } 1 ^ { q } \\mid p , q \\in N \\} .$ ，$L 2 = \\{ 0 ^ { p } 1 ^ { q } \\mid p , q \\in N a n d p = q \\} a n d ,$ $L 3 = \\{ 0 ^ { p } 1 ^ { q } 0 ^ { r } \\mid p , q , r \\in N a n d p = q = r \\} .$ ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is NOT TRUE? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A. Push Down Automata (PDA) can be used to recognize $L 1$ and $L 2$   \nB. $L 1$ is a regular language   \nC. All the three languages are context free   \nD. Turing machines can be used to recognize all the languages ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$L _ { 1 } = \\{ 0 ^ { p } 1 ^ { q } 0 ^ { r } \\mid p , q , r \\geq 0 \\}$ $\\begin{array} { l } { L 1 = \\{ \\mathbf { U } ^ { r } \\mathbf { 1 } ^ { z } \\mathbf { U } ~ | ~ p , q , r \\geq \\mathbf { U } \\} } \\\\ { L _ { 2 } = \\{ 0 ^ { p } \\mathbf { 1 } ^ { q } 0 ^ { r } ~ | ~ p , q , r \\geq 0 , p \\neq r \\} } \\end{array}$ ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is FALSE? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A. L2 is context-free. B. $L _ { 1 } \\cap L _ { 2 }$ is context-free. C. Complement of $L _ { 2 }$ is recursive. D. Complement of $L _ { 1 }$ is context-free but not regular. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 theory-of-computation identify-class-language normal ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "6.9.19 Identify Class Language: GATE CSE 2014 Set 3 Question: 36 ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages over the alphabet $\\Sigma = \\{ 0 , 1 , c \\}$ ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array} { r l } & { L _ { 1 } = \\{ 0 ^ { n } 1 ^ { n } \\mid n \\geq 0 \\} } \\\\ & { L _ { 2 } = \\{ w c w ^ { r } \\mid w \\in \\{ 0 , 1 \\} ^ { * } \\} } \\\\ & { L _ { 3 } = \\{ w w ^ { r } \\mid w \\in \\{ 0 , 1 \\} ^ { * } \\} } \\end{array}$ Here, $\\boldsymbol { w } ^ { r }$ is the reverse of the string $w$ . Which of these languages are deterministic Context-free languages? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A. None of the languages B. Only $L _ { 1 }$ C. Only $L _ { 1 }$ and $L _ { 2 }$ D. All the three languages ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 theory-of-computation identify-class-language context-free-language normal ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages. ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { { L _ { 1 } = \\{ a ^ { r } \\mid p \\mathrm { { s a p r u m e n u m o e r } \\} } } } \\\\ { { L _ { 2 } = \\{ a ^ { n } b ^ { m } c ^ { 2 m } \\mid n \\geq 0 , m \\geq 0 \\} } } \\\\ { { L _ { 3 } = \\{ a ^ { n } b ^ { n } c ^ { 2 n } \\mid n \\geq 0 \\} } } \\\\ { { L _ { 4 } = \\{ a ^ { n } b ^ { n } \\mid n \\geq 1 \\} } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Which of the following are CORRECT? ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "I. $L _ { 1 }$ is context free but not regular II. $L _ { 2 }$ is not context free III. $L _ { 3 }$ is not context free but recursive IV. $L _ { 4 }$ is deterministic context free ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. I, II and IV only B. II and III only C. and IV only D. III and IV only ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 theory-of-computation identify-class-language ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages: ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { \\left\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } \\mid m + p = n + q , \\mathrm { ~ w h e r e } m , n , p , q \\geq 0 \\right\\} } \\\\ & { \\left\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } \\mid m = n \\mathrm { a n d } p = q , \\mathrm { ~ w h e r e } m , n , p , q \\geq 0 \\right\\} } \\\\ & { \\left\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } \\mid m = n = p \\mathrm { a n d } p \\neq q , \\mathrm { ~ w h e r e } m , n , p , q \\geq 0 \\right\\} } \\\\ & { \\left\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } \\mid m n = p + q , \\mathrm { ~ w h e r e } m , n , p , q \\geq 0 \\right\\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Which of the above languages are context-free? ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. and IV only B. and II only C. II and III only D. II and IV only gatecse-2018 theory-of-computation identify-class-language context-free-language normal two-marks ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "6.9.23 Identify Class Language: GATE CSE 2020 Question: 10 ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Consider the language $L = \\{ a ^ { n } \\mid n \\geq 0 \\} \\cup \\{ a ^ { n } b ^ { n } \\mid n \\geq 0 \\}$ and the following statements. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "I. $L$ is deterministic context-free.   \nII. $L$ is context-free but not deterministic context-free.   \nIII. $L$ is not $L L ( k )$ for any $k$ . ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are TRUE? ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. only B. only C. and Ⅲ only D. Ⅲ only ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "C. Neither $L _ { 1 }$ nor is context- free.   \nD. $L _ { 1 }$ context- free but $L _ { 2 }$ is not context-free. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Let $L _ { 1 }$ be a regular language and $L _ { 2 }$ be a context-free language. Which of the following languages is/are context-free? ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 } \\cap \\overline { { L _ { 2 } } }$ $\\begin{array} { r l } & { \\mathsf { B } . \\overline { { \\overline { { L _ { 1 } } } } } \\cup \\overline { { { L _ { 2 } } } } } \\\\ & { \\mathsf { D } . \\left( { L _ { 1 } } \\cap { L _ { 2 } } \\right) \\cup \\left( \\overline { { { L _ { 1 } } } } \\cap { L _ { 2 } } \\right) } \\end{array}$   \nC. $L _ { 1 } \\cup ( L _ { 2 } \\cup \\overline { { L _ { 2 } } } )$ ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 multiple-selects theory-of-computation identify-class-language one-mark ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE? ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. Every subset of a recursively enumerable language is recursive.   \nB. If a language $L$ and its complement $\\overline { { L } }$ are both recursively enumerable, then $L$ must be recursive.   \nC. Complement of a context-free language must be recursive.   \nD. If $L _ { 1 }$ and $L _ { 2 }$ are regular, then $L _ { 1 } \\cap L _ { 2 }$ must be deterministic context-free. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "$L _ { 1 } = \\{ a ^ { n } w a ^ { n } | w \\in \\{ a , b \\} ^ { * } \\}$   \n$L _ { 2 } = \\{ w x w ^ { R } | w , x \\in \\{ a , b \\} ^ { * } , | w | , | x | > 0 \\}$   \nNote tha t is the reversal of the string $w$ · Which of the following is/are ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 }$ and $L _ { 2 }$ are regular. B. $L _ { 1 }$ and $L _ { 2 }$ are context-free. C. $L _ { 1 }$ is regular and $L _ { 2 }$ is context- D. $L _ { 1 }$ and $L _ { 2 }$ are context-free but not free. regular. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 theory-of-computation identify-class-language context-free-language multiple-selects two-marks ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are CORRECT? ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. The intersection of two regular languages is regular.   \nB. The intersection of two context-free languages is context-free.   \nC. The intersection of two recursive languages is recursive.   \nD. The intersection of two recursively enumerable languages is recursively enumerable. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 theory-of-computation identify-class-language multiple-selects one-mark ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. It is necessarily regular but not B. It is necessarily context-free. necessarily context-free. C. It is necessarily non-regular. D. None of the above ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 theory-of-computation normal identify-class-language ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The language $\\{ 0 ^ { n } 1 ^ { n } 2 ^ { n } | 1 \\leq n \\leq 1 0 ^ { 6 } \\}$ is ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A. regular B. context-free but not regular C. context-free but its complement is D. not context-free not context-free ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 theory-of-computation easy identify-class-language ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages. ",
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { { \\pmb { \\cdot L _ { 1 } } = \\{ a ^ { i } b ^ { j } c ^ { k } \\mid i = j , k \\geq 1 \\} } } \\\\ { { \\pmb { \\cdot L _ { 2 } } = \\{ a ^ { i } b ^ { j } \\mid j = 2 i , i \\geq 0 \\} } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is true? ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 }$ is not a CFL but $L _ { 2 }$ is   \nB. $L _ { 1 } \\cap L _ { 2 } = \\emptyset$ and $L _ { 1 }$ is non-regular   \nC. $L _ { 1 } \\cup L _ { 2 }$ is not a CFL but $L _ { 2 }$ is   \nD. There is a -state PDA that accepts $L _ { 1 }$ , but there is no DPDA that accepts $L _ { 2 }$ ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 theory-of-computation normal identify-class-language ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "If $s$ is a string over $( 0 + 1 ) ^ { * }$ then let $n _ { 0 } ( s )$ denote the number of ’s in $s$ and $n _ { 1 } ( s )$ the number of ’s in $s$ Which one of the following languages is not regular? ",
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { L = \\{ s \\in ( 0 + 1 ) ^ { * } \\mid n _ { 0 } ( s ) \\mathrm { ~ i s ~ a 3 \\mathrm { - } d i g j t ~ p r i m e } \\} } \\\\ & { L = \\{ s \\in ( 0 + 1 ) ^ { * } \\mid \\mathrm { ~ f o r ~ e v e r y ~ p r e f i x ~ s ' ~ o f ~ s , } \\mid n _ { 0 } ( s ^ { \\prime } ) - n _ { 1 } ( s ^ { \\prime } ) \\mid \\le 2 \\} } \\\\ & { L = \\{ s \\in ( 0 + 1 ) ^ { * } \\mid n _ { 0 } ( s ) - n _ { 1 } ( s ) \\mid \\le 4 \\} } \\\\ & { L = \\{ s \\in ( 0 + 1 ) ^ { * } \\mid n _ { 0 } ( s ) \\mod 7 = n _ { 1 } ( s ) \\mod 5 = 0 \\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 theory-of-computation medium regular-language ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Construct a finite state machine with minimum number of states, accepting all strings over $( a , b )$ such that the number of 's is divisible by two and the number of 's is divisible by three. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gate1997 theory-of-computation finite-automata normal minimal-state-automata descriptive ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Following is a state table for time finite state machine. ",
+        "page_idx": 21
+    },
+    {
+        "type": "table",
+        "img_path": "images/4c6d882696de2a3de2fc488a0ca2144069fea50cd7b0550dc9d9d3245526e85e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. Find the equivalence partition on the states of the machine. B. Give the state table for the minimal machine. (Use appropriate names for the equivalent states. For example if states $X$ and $Y$ are equivalent then use $X Y$ as the name for the equivalent state in the minimal machine). ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Let $L$ be the set of all binary strings whose last two symbols are the same. The number of states in the minimal state deterministic finite state automaton accepting $L$ is ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Design a deterministic finite state automaton (using minimum number of states) that recognizes the following language: ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "$L = \\{ w \\in \\{ 0 , 1 \\} ^ { * } \\mid w$ interpreted as binary number (ignoring the leading zeros) is divisible by five ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation finite-automata normal minimal-state-automata descriptive ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "6.11.6 Minimal State Automata: GATE CSE 1999 Question: 1.4 ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular expression $( 0 + 1 ) ( 0 + 1 ) \\dots N$ times. The minimum state finite automaton that recognizes the language represented by this regular expression contains ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. states B. $^ { n + 1 }$ states C. $_ { n + 2 }$ states D. None of the above ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Given an arbitrary non-deterministic finite automaton (NFA) with $N$ states, the maximum number of states in an equivalent minimized DFA at least ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. $N ^ { 2 }$ B. C. 2N D. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 finite-automata theory-of-computation easy minimal-state-automata ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "6.11.8 Minimal State Automata: GATE CSE 2001 Question: 2.5 ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Consider a DFA over $\\Sigma = \\{ a , b \\}$ accepting all strings which have number of a's divisible by  and number of 's divisible by . What i s the minimum number of states that the DFA will have? ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 theory-of-computation finite-automata minimal-state-automata ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "6.11.9 Minimal State Automata: GATE CSE 2002 Question: 2.13 ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The smallest finite automaton which accepts the language $\\{ x \\vert$ length of $x$ is divisible by $\\boldsymbol { 3 } \\}$ has ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. states B. states C. 4 states D. states ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 theory-of-computation normal finite-automata minimal-state-automata ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "6.11.10 Minimal State Automata: GATE CSE 2006 Question: 34 ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular language $L = ( 1 1 1 + 1 1 1 1 ) ^ { * }$ The minimum number of states in any DFA accepting this languages is: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. 3 B. 5 C. 8 D. 9 gatecse-2006 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A minimum state deterministic finite automaton accepting the language $L = \\{ w \\mid w \\in \\{ 0 , 1 \\} ^ { * }$ number of s and s in $w$ are divisible by and , respectively has ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. states B. 11 states C. 10 states D. 9 states gatecse-2007 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Let $w$ be any string of length $n$ in $\\{ 0 , 1 \\} ^ { * }$ . Let $L$ be the set of all substrings of $w$ . What is the minimum number of states in non-deterministic finite automation that accepts $L$ ? ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A. B. n ${ \\mathsf { C } } . \\ n { + 1 }$ D. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Definition of a language $L$ with alphabet $\\{ a \\}$ is given as following. ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL = \\left\\{ a ^ { n k } \\mid k > 0 , \\ a n d \\ n { \\mathrm { i s } } \\ a { \\mathrm { p o s i t i v e } } { \\mathrm { i n t e g e r ~ c o n s t a n t } } \\right\\}\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "What is the minimum number of states needed in a DFA to recognize ? ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A. $k + 1$ $\\mathsf { B } . \\ n + 1 \\qquad \\mathsf { C } . \\ 2 ^ { n + 1 }$ D. $2 ^ { k + 1 }$ ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A deterministic finite automaton ( ) $D$ with alphabet $\\Sigma = \\{ a , b \\}$ is given below. ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5fba59d9c7ebe011520648da1d87f284d69b51772d5445d558ccd2a6e56bc66.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Which of the following finite state machines is a valid minimal  which accepts the same languages as ? ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/42874a77189c5a043ee8c37ebc2833a0d7560f7a85cd6b2d96d6b40fe9c63638.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "M: 88 N: 68 ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Consider the DFAs $M$ and $N$ given above. The number of states in a minimal DFA that accept the language $L ( M ) \\cap L ( N )$ is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 theory-of-computation finite-automata easy numerical-answers minimal-state-automata ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The number of states in the minimal deterministic finite automaton corresponding to the regular expression $( 0 + 1 ) ^ { * } ( 1 0 )$ is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 theory-of-computation finite-automata normal numerical-answers minimal-state-automata ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "6.11.18 Minimal State Automata: GATE CSE 2015 Set 3 Question: 18 ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Let $L$ be the language represented by the regular expression $\\Sigma ^ { * } 0 0 1 1 \\Sigma ^ { * }$ where $\\Sigma = \\{ 0 , 1 \\}$ . What is the minimum number of states in a DFA that recognizes $\\bar { L }$ (complement of $L$ )? ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "6.11.19 Minimal State Automata: GATE CSE 2016 Set 2 Question: 16 ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The number of states in the minimum sized DFA that accepts the language defined by the regular expression. ",
+        "page_idx": 24
+    },
+    {
+        "type": "equation",
+        "text": "$$\n( 0 + 1 ) ^ { * } ( 0 + 1 ) ( 0 + 1 ) ^ { * }\n$$",
+        "text_format": "latex",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 theory-of-computation finite-automata normal numerical-answers minimal-state-autom ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Let $N$ be an NFA with $\\scriptstyle n$ states. Let $k$ be the number of states of a minimal DFA which is equivalent to $N$ Which one of the following is necessarily true? ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. $k \\geq 2 ^ { n }$ $\\mathtt { B } . \\mathtt { \\nabla } k \\geq n$ $\\mathsf { C } . \\ k \\le n ^ { 2 }$ D. gatecse-2018 theory-of-computation minimal-state-automata normal one-mark ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let $\\Sigma$ be the set of all bijections from $\\{ 1 , \\ldots , 5 \\}$ to $\\{ 1 , \\ldots , 5 \\}$ , where  denotes the identity function, i.e. $i d ( j ) = j , \\forall j$ . Let denote composition on functions. For a string $x = x _ { 1 } x _ { 2 } \\ldots x _ { n } \\in \\Sigma ^ { n } , n \\geq 0$ , let $\\pi ( x ) = x _ { 1 } \\circ x _ { 2 } \\circ \\cdot \\cdot \\cdot \\circ x _ { n }$ . Consider the language $L = \\{ x \\in \\Sigma ^ { * } \\mid \\pi ( x ) = i d \\}$ . The minimum number of states in any DFA accepting $L$ is ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers theory-of-computation finite-automata minimal-state-automata difficult two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Consider the language $L$ over the alphabet $\\{ 0 , 1 \\}$ , given below: ",
+        "page_idx": 25
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL = \\left\\{ w \\in \\{ 0 , 1 \\} ^ { * } \\mid w \\mathrm { { d o e s \\ n o t \\ c o n t a i n t h r e e \\ o r m o r e \\ c o n s e c u t i v e 1 \\ s } } \\right\\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of states in a Deterministic Finite-State Automaton for $L$ is ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 theory-of-computation minimal-state-automata numerical-answers two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "6.11.25 Minimal State Automata: GATE IT 2008 Question: 6 ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let $N$ be an NFA with $\\scriptstyle n$ states and let $M$ be the minimized DFA with m states recognizing the same language. Which of the following in NECESSARILY true? ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. $m \\leq 2 ^ { n }$ $\\begin{array} { l } { { \\mathsf { B . } n \\leq m } } \\\\ { { \\mathsf { D . } m = 2 ^ { n } } } \\end{array}$ C. $M$ has one accept state gateit-2008 theory-of-computation finite-automata normal minimal-state-automata ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "6.12 Non Determinism (6) ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (6Q) ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "In which of the cases stated below is the following statement true?   \n\"For every non-deterministic machine $M _ { 1 }$ there exists an equivalent deterministic machine $M _ { 2 }$ recognizing the same language\". A. $M _ { 1 }$ is non-deterministic finite automaton.   \nB. $M _ { 1 }$ is non-deterministic PDA.   \nC. $M _ { 1 }$ is a non-deterministic Turing machine.   \nD. For no machines $M _ { 1 }$ and $M _ { 2 }$ , the above statement true. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Which of the following conversions is not possible (algorithmically)? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. Regular grammar to context free grammar   \nB. Non-deterministic FSA to deterministic FSA   \nC. Non-deterministic PDA to deterministic PDA   \nD. Non-deterministic Turing machine to deterministic Turing machine ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gate1994 theory-of-computation easy non-determinism ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "6.12.3 Non Determinism: GATE CSE 1998 Question: 1.11 ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Regarding the power of recognition of languages, which of the following statements is false? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. The non-deterministic finite-state automata are equivalent to deterministic finite-state automata.   \nB. Non-deterministic Push-down automata are equivalent to deterministic Push-down automata.   \nC. Non-deterministic Turing machines are equivalent to deterministic Turing machines.   \nD. Multi-tape Turing machines are available are equivalent to Single-tape Turing machines. ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation easy non-determinism ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Let $N _ { f }$ and denote the classes of languages accepted by non-deterministic finite automata and nondeterministic push-down automata, respectively. Let and denote the classes of languages accepted by deterministic finite automata and deterministic push-down automata respectively. Which one of the following is TRUE? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. $D _ { f } \\subset N _ { f }$ and $D _ { p } \\subset N _ { p }$ $\\begin{array} { r } { \\mathsf { B . ~ } D _ { f } \\subset N _ { f } \\mathrm { ~ a n d ~ } D _ { p } = N _ { p } } \\\\ { \\mathsf { D . ~ } D _ { f } = N _ { f } \\mathrm { ~ a n d ~ } D _ { p } \\subset N _ { p } } \\end{array}$ C. $D _ { f } = N _ { f }$ and $D _ { p } = N _ { p }$ ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 theory-of-computation easy non-determinism ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Which of the following pairs have DIFFERENT expressive power? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. Deterministic finite automata (DFA) and Non-deterministic finite automata (NFA) B. Deterministic push down automata (DPDA) and Non-deterministic push down automata (NPDA) C. Deterministic single tape Turing machine and Non-deterministic single tape Turing machine D. Single tape Turing machine and multi-tape Turing machine ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 theory-of-computation easy non-determinism ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Let $\\Sigma = \\{ 1 , 2 , 3 , 4 \\}$ . For $\\ b { x } \\in \\Sigma ^ { * }$ , l $\\operatorname { e t } \\operatorname { p r o d } ( x )$ be the product of symbols in $x$ modulo 7. We take $\\mathbf { p r o d } ( \\epsilon ) \\stackrel { - } { = } 1$ , where $\\epsilon$ is the null string. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "For example, $\\operatorname { p r o d } ( 1 2 4 ) = ( 1 \\times 2 \\times 4 ) \\bmod { 7 } = 1 .$ ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "The number of states in a minimum state DFA for $L$ is (Answer in integer) ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 theory-of-computation finite-automata number-of-states numerical-answers two-marks ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Let $M$ be a nondeterministic finite automaton (NFA) with  states over a finite alphabet. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options CANNOT be the number of states in the minimal deterministic finite automaton (DFA) that is equivalent to ? ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. B. 65 C. 1 D. 128 gatecse-2026-set1 theory-of-computation finite-automata number-of-states multiple-selects one-mark ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "For $\\Sigma = \\{ a , b \\}$ , let us consider the regular language $L = \\{ x \\mid x = a ^ { 2 + 3 k } \\mathrm { o r } x = b ^ { 1 0 + 1 2 k } , k \\geq 0 \\} .$ Which one of the following can be a pumping length (the constant guaranteed by the pumping lemma) for $\\bar { L }$ ? ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 theory-of-computation pumping-lemma one-mark ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A language $L$ satisfies the Pumping Lemma for regular languages, and also the Pumping Lemma for context-free languages. Which of the following statements about $L$ is TRUE? ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ is necessarily a regular language.   \nB. $L$ is necessarily a context-free language, but not necessarily a regular language. C. $L$ is necessarily a non-regular language.   \nD. None of the above ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "specification of the transitions $\\delta$ . Complete the specification. The top of the stack is assumed to be at the right end of the string representing stack contents. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "1. $\\delta ( q _ { 1 } , a , \\perp ) = \\{ ( q _ { 1 } , \\perp a ) \\}$   \n2. $\\delta ( q _ { 1 } , b , \\bot ) = \\bar { \\{ ( q _ { 1 } , \\bot b ) \\} }$   \n3. $\\delta ( q _ { 1 } , a , a ) = \\{ ( q _ { 1 } , a a ) \\}$   \n4. $\\delta ( q _ { 1 } , b , a ) = \\{ ( q _ { 1 } , a b ) \\}$   \n5. $\\delta ( q _ { 1 } , a , b ) = \\{ ( q _ { 1 } , b a ) \\}$   \n6. $\\delta ( q _ { 1 } , b , b ) = \\{ ( q _ { 1 } , b b ) \\}$   \n7. $\\delta ( q _ { 1 } , a , a ) = \\{ ( \\dots , \\dots ) \\}$   \n8. $\\delta ( q _ { 1 } , b , b ) = \\{ ( \\dots , \\dots ) \\}$   \n9. $\\delta ( q _ { 2 } , a , a ) = \\{ ( q _ { 2 } , \\epsilon ) \\}$   \n10. $\\delta ( q _ { 2 } , b , b ) = \\{ ( q _ { 2 } , \\epsilon ) \\}$   \n11. $\\delta ( q _ { 2 } , \\epsilon , \\perp ) = \\bar { \\{ ( q _ { 2 } , \\epsilon ) \\} }$ ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Which of the following languages over $\\{ a , b , c \\}$ is accepted by a deterministic pushdown automata? ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ w c w ^ { R } \\mid w \\in \\{ a , b \\} ^ { * } \\}$ B. $\\{ w w ^ { R } | w \\in \\{ a , b , c \\} ^ { * } \\}$ C. $\\{ a ^ { n } b ^ { n } c ^ { n } | n \\geq 0 \\}$ D. $\\{ w \\mid w$ is a palindrome over $\\{ a , b , c \\} \\}$ Note : is the string obtained by reversing $^ { \\prime } w ^ { \\prime }$ . ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Let ${ \\cal M } = ( \\{ q _ { 0 } , q _ { 1 } \\} , \\{ 0 , 1 \\} , \\{ z _ { 0 } , X \\} , \\delta , q _ { 0 } , z _ { 0 } , \\phi )$ be a Pushdown automation where $\\delta$ is given by $\\begin{array} { r l } & { \\delta ( q _ { 0 } , 1 , z _ { 0 } ) = \\{ ( q _ { 0 } , X z _ { 0 } ) \\} } \\\\ & { \\delta ( q _ { 0 } , \\epsilon , z _ { 0 } ) = \\{ ( q _ { 0 } , \\epsilon ) \\} } \\\\ & { \\delta ( q _ { 0 } , 1 , X ) = \\{ ( q _ { 0 } , X X ) \\} } \\\\ & { \\delta ( q _ { 1 } , 1 , X ) = \\{ ( q _ { 1 } , \\epsilon ) \\} } \\\\ & { \\delta ( q _ { 0 } , 0 , X ) = \\{ ( q _ { 1 } , X ) \\} } \\\\ & { \\delta ( q _ { 0 } , 0 , z _ { 0 } ) = \\{ ( q _ { 0 } , z _ { 0 } ) \\} } \\end{array}$ ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "a. What is the language accepted by this PDA by empty stack? b. Describe informally the working of the PDA ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "A push down automation (pda) is given in the following extended notation of finite state diagram: ",
+        "page_idx": 29
+    },
+    {
+        "type": "image",
+        "img_path": "images/099497117a8216f1097d94dff1026b4b9e0ff3397063ba885bbb8f1b57201057.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "The nodes denote the states while the edges denote the moves of the pda. The edge labels are of the form $d$ , $\\mathbf { \\boldsymbol { s } } / s ^ { \\prime }$ where d is the input symbol read and $s , s ^ { \\prime }$ are the stack contents before and after the move. For example the edge labeled $1 , s / 1 . s$ denotes the move from state $q _ { 0 }$ to $q _ { 0 }$ in which the input symbol is read and pushed to the stack. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A. Introduce two edges with appropriate labels in the above diagram so that the resulting pda accepts the language $\\{ x 2 x ^ { R } \\mid x \\in \\{ 0 , 1 \\} ^ { * }$ ， $x ^ { R }$ denotes reverse of $\\mathbf { x } \\}$ , by empty stack.   \nB. Describe a non-deterministic pda with three states in the above notation that accept the language $\\{ 0 ^ { n } 1 ^ { m } \\mid n \\leq m \\leq 2 n \\}$ by empty stack ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Give a deterministic PDA for the language $L = \\{ a ^ { n } c b ^ { 2 n } \\mid n \\geq 1 \\}$ over the alphabet $\\Sigma = \\{ a , b , c \\}$ . Specify the acceptance state. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 theory-of-computation normal pushdown-automata descriptive ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "6.15.7 Pushdown Automata: GATE CSE 2009 Question: 16, ISRO2017-12 ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is FALSE? ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A. There is a unique minimal DFA for every regular language   \nB. Every NFA can be converted to an equivalent PDA.   \nC. Complement of every context-free language is recursive.   \nD. Every nondeterministic PDA can be converted to an equivalent deterministic PDA. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 theory-of-computation easy isro2017 pushdown-automata ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Consider the NPDA ",
+        "page_idx": 29
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\langle Q = \\left\\{ q _ { 0 } , q _ { 1 } , q _ { 2 } \\right\\} , \\Sigma = \\left\\{ 0 , 1 \\right\\} , \\Gamma = \\left\\{ 0 , 1 , \\bot \\right\\} , \\delta , q _ { 0 } , \\bot , F = \\left\\{ q _ { 2 } \\right\\} \\rangle\n$$",
+        "text_format": "latex",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "where (as per usual convention) $Q$ is the set of states, $\\Sigma$ is the input alphabet, $\\Gamma$ is the stack alphabet, $\\delta$ is the state transition function $q _ { 0 }$ is the initial state, $\\perp$ is the initial stack symbol, and $F$ is the set of accepting states. The state transition is as follows: ",
+        "page_idx": 29
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f5f5831d326bac70cc39ef57ecb87b289225e71f62232b71e47af5671812600.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following sequences must follow the string so that the overall string is accepted by the ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "automaton? ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A. 10110 B. 10010 C. 01010 D. 01001 ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 theory-of-computation pushdown-automata normal ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Consider the transition diagram of a PDA given below with input alphabet $\\Sigma = \\{ a , b \\}$ and stack alphabe $\\Gamma = \\{ X , Z \\}$ . $Z$ is the initial stack symbol. Let $L$ denote the language accepted by the PDA ",
+        "page_idx": 30
+    },
+    {
+        "type": "image",
+        "img_path": "images/47be919cc3ae85e4d4f09889987cf1a40ae4d2b6af24db34a5e79e0006880dea.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE? ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A. $L = \\{ a ^ { n } b ^ { n } \\mid n \\geq 0 \\}$ and is not accepted by any finite automata B. $L = \\{ a ^ { n } | n \\geq 0 \\} \\cup \\{ a ^ { n } b ^ { n } | n \\geq 0 \\}$ and is not accepted by any deterministic PDA C. $L$ is not accepted by any Turing machine that halts on every input D. $L = \\{ a ^ { n } \\mid n \\geq 0 \\} \\cup \\{ a ^ { n } b ^ { n } \\mid n \\geq 0 \\}$ and is deterministic context-free ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "In a pushdown automaton $P = ( Q , \\Sigma , \\Gamma , \\delta , q _ { 0 } , F )$ , a transition of the form, ",
+        "page_idx": 30
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\textcircled { p } \\xrightarrow { a , X  Y } \\textcircled { q }\n$$",
+        "text_format": "latex",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "where $p , q \\in Q , a \\in \\Sigma \\cup \\{ \\epsilon \\}$ , and $X , Y \\in \\Gamma \\cup \\{ \\epsilon \\}$ , represents ",
+        "page_idx": 30
+    },
+    {
+        "type": "equation",
+        "text": "$$\n( q , Y ) \\in \\delta ( p , a , X ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Consider the following pushdown automaton over the input alphabet $\\Sigma = \\{ a , b \\}$ and stack alphabet $\\Gamma = \\{ \\# , A \\}$ . ",
+        "page_idx": 30
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { c c } { { a , \\varepsilon  A } } & { { b , A  \\varepsilon } } \\\\ { { \\mathrm { s t a r t }  \\displaystyle \\binom { q _ { 0 } } { q _ { 0 } } ^ { \\varepsilon , \\varepsilon  \\# } \\displaystyle \\binom { \\bigwedge } { q _ { 1 } } ^ { \\varepsilon , \\varepsilon  \\varepsilon } \\displaystyle \\binom { \\bigwedge } { q _ { 2 } } ^ { \\varepsilon , A  A } \\displaystyle \\binom { q _ { 3 } } { \\binom { q _ { 3 } } { q _ { 0 } } } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "The number of strings of length accepted by the above pushdown automaton is ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 theory-of-computation pushdown-automata numerical-answers two-marks ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "image",
+        "img_path": "images/b7860e3f070d41adf1391e675114be5bdcad6df4c3e5d432d095619a951c77eb.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options correctly describes the language accepted by ",
+        "page_idx": 31
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { \\{ a ^ { m } b ^ { n } \\mid 1 \\leq m \\mathrm { a n d } n < m \\} } \\\\ { \\{ a ^ { m } b ^ { n } \\mid 0 \\leq n \\leq m \\} } \\\\ { \\{ a ^ { m } b ^ { n } \\mid 0 \\leq m \\mathrm { a n d } 0 \\leq n \\} } \\\\ { \\{ a ^ { m } \\mid 0 \\leq m \\} \\cup \\{ b ^ { n } \\mid \\overline { { 0 } } \\leq n \\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Let $M = ( K , \\Sigma , \\Gamma , \\Delta , s , F )$ be a pushdown automaton, where   \n$K = ( s , f ) , F = \\{ f \\} , \\Sigma = \\{ a , b \\} , \\Gamma = \\{ a \\}$ and $- \\tilde  \\{ ( ( \\boldsymbol { s } , \\boldsymbol { a } , \\boldsymbol { \\epsilon } ) , ( \\boldsymbol { s } , \\boldsymbol { a } ) \\} , ( ( \\boldsymbol { s } , \\boldsymbol { \\dot { b } } , \\boldsymbol { \\epsilon } ) , \\tilde  \\{ ( \\boldsymbol { s } , \\boldsymbol { a } ) \\} , ( \\boldsymbol { s } , \\boldsymbol { a } ) \\} , ( ( \\boldsymbol { \\dot { s } } , \\boldsymbol { a } , \\boldsymbol { a } ) , ( \\boldsymbol { f } , \\boldsymbol { \\epsilon } ) ) , ( ( \\boldsymbol { f } , \\boldsymbol { a } , \\boldsymbol { a } ) , ( \\boldsymbol { f } , \\boldsymbol { \\epsilon } ) ) , ( ( \\boldsymbol { f } , \\boldsymbol { b } , \\boldsymbol { a } ) , ( \\boldsymbol { f } , \\boldsymbol { \\epsilon } ) ) \\} .$   \nWhich one of the following strings is not a member of $L ( M ) ?$ ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "A. aaa B. aabab C. baaba D. bab ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 theory-of-computation pushdown-automata normal ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Let $P$ be a non-deterministic push-down automaton (NPDA) with exactly one state, $q$ , and exactly symbol, $Z$ , in its stack alphabet. State $q$ is both the starting as well as the accepting state of the PDA. The stack is initialized with one $Z$ before the start of the operation of the PDA. Let the input alphabet of the PDA be $\\Sigma$ . Let $L ( P )$ be the language accepted by the PDA by reading a string and reaching its accepting state. Let $N ( P )$ be the language accepted by the PDA by reading a string and emptying its stack. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is TRUE? ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "A. $L ( P )$ is necessarily $\\Sigma ^ { * }$ but $N ( P )$ is not necessarily $\\Sigma ^ { * }$ . B. $N ( P )$ is necessarily $\\Sigma ^ { * }$ but $L ( P )$ is not necessarily $\\Sigma ^ { * }$ . C. Both $\\dot { L } ( P )$ and $N ( P )$ are necessarily $\\Sigma ^ { * }$ . D. Neither $\\dot { \\boldsymbol { L } } ( \\boldsymbol { P } )$ nor $N ( P )$ are necessarily $\\Sigma ^ { * }$ ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Consider the pushdown automaton (PDA) below which runs over the input alphabet $( a , b , c )$ . It has stack alphabet $\\{ Z _ { 0 } , X \\}$ where $Z _ { 0 }$ is the bottom-of-stack marker. The set of states of the PDA is $( s , t , u , f \\}$ where $\\pmb { s }$ is the start state and $f$ is the final state. The PDA accepts by final state. The transitions of the PDA given below are depicted in a standard manner. For example, the transition $( s , b , X ) \\to ( t , X Z _ { 0 } )$ means that if the PDA is in state $\\pmb { s }$ and the symbol on the top of the stack is $X$ , then it can read b from the input and move to state $t$ after popping the top of stack and pushing the symbols $Z _ { 0 }$ and $X$ (in that order) on the stack. ",
+        "page_idx": 32
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { { ( s , a , Z _ { 0 } ) \\to ( s , X X Z _ { 0 } ) } } \\\\ { { ( s , \\epsilon , Z _ { 0 } ) \\to ( f , \\epsilon ) } } \\\\ { { ( s , a , X ) \\to ( s , X X X ) } } \\\\ { { ( s , b , X ) \\to ( t , \\epsilon ) } } \\\\ { { ( t , b , X ) \\to ( t , \\epsilon ) } } \\\\ { { ( t , c , X ) \\to ( u , \\epsilon ) } } \\\\ { { ( u , c , X ) \\to ( u , \\epsilon ) } } \\\\ { { ( u , \\epsilon , Z _ { 0 } ) \\to ( f , \\epsilon ) } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "The language accepted by the PDA is ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "A. $\\begin{array} { l } { \\{ a ^ { l } b ^ { m } c ^ { n } | l = m = n \\} } \\\\ { \\{ a ^ { l } b ^ { m } c ^ { n } | 2 l = m + n \\} } \\end{array}$ B. $\\begin{array} { l } { { \\{ a ^ { l } b ^ { m } c ^ { n } | l = m \\} } } \\\\ { { \\{ a ^ { l } b ^ { m } c ^ { n } | m = n \\} } } \\end{array}$   \nC. D. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 theo ry-of-computation pushdown-automata normal ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "6.16 ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Recursive and Recursively Enumerable Languages (16) ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (11Q) ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "6.16.1 Recursive and Recursively Enumerable Languages: GATE CSE 1990 Question: 3-vi ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Recursive languages are: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "A. A proper superset of context free B. Always recognizable by pushdown languages. automata. C. Also called type languages. D. Recognizable by Turing machines. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "gate1990 normal theory-of-computation turing-machine recursive-and-recursively-enumerable-languages multiple-selects ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "6.16.2 Recursive and Recursively Enumerable Languages: GATE CSE 2003 Question: 13 ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Nobody knows yet if $P = N P$ . Consider the language $L$ defined as follows. ",
+        "page_idx": 32
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL = { \\left\\{ \\begin{array} { l l } { ( 0 + 1 ) ^ { * } } & { { \\mathrm { ~ i f ~ } } P = N P } \\\\ { \\phi } & { o t h e r w i s e } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is true? ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ is recursive   \nB. $L$ is recursively enumerable but not recursive   \nC. $L$ is not recursively enumerable   \nD. Whether $L$ is recursively enumerable or not will be known after we find out if $P = N P$ ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "If the strings of a language $L$ can be effectively enumerated in lexicographic (i.e., alphabetic) order, which o the following statements is true? ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ is necessarily finite B. $L$ is regular but not necessarily finite C. $L$ is context free but not necessarily regular D. $L$ is recursive but not necessarily context-free theory-of-computation gatecse-2003 normal recursive-and-recursively-enumerable-languages ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "6.16.4 Recursive and Recursively Enumerable Languages: GATE CSE 2003 Question: 54 ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Define languages $L _ { 0 }$ and $L _ { 1 }$ as follows ",
+        "page_idx": 33
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { \\cdot \\ L _ { 0 } = \\{ \\langle M , w , 0 \\rangle \\mid M \\mathrm { h a l t s ~ o n } w \\} } \\\\ & { \\cdot \\ L _ { 1 } = \\{ \\langle M , w , 1 \\rangle \\mid M \\mathrm { d o e s ~ n o t h a l t s ~ o n } w \\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Here $\\langle M , w , i \\rangle$ is a triplet, whose first component $M$ is an encoding of a Turing Machine, second component $w$ is a string, and third component $_ i$ is a bit. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Let $L = L _ { 0 } \\cup L _ { 1 }$ . Which of the following is true? ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ is recursively enumerable, but $L ^ { \\prime }$ is not B. $L ^ { \\prime }$ is recursively enumerable, but $L$ is not C. Both $L$ and $L ^ { \\prime }$ are recursive D. Neither $L$ nor $L ^ { \\prime }$ is recursively enumerable ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "$L _ { 1 }$ is a recursively enumerable language over $\\Sigma$ . An algorithm $A$ effectively enumerates its words as $\\omega _ { 1 } , \\omega _ { 2 } , \\omega _ { 3 }$ ） ： Define another language $L _ { 2 }$ over $\\Sigma \\cup \\{ \\# \\}$ as $\\{ w _ { i } \\# w _ { j } \\mid w _ { i } , w _ { j } \\in L _ { 1 } , i < j \\}$ . Here # is new symbol. Consider the following assertions. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "· $S _ { 1 } : L _ { 1 }$ is recursive implies $L _ { 2 }$ is recursive $S _ { 2 } : L _ { 2 }$ is recursive implies $L _ { 1 }$ is recursive ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is true? ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A. Both $S _ { 1 }$ and $S _ { 2 }$ are true B. $S _ { 1 }$ is true but $S _ { 2 }$ is not necessarily true C. $S _ { 2 }$ is true but $S _ { 1 }$ is not necessarily true D. Neither is necessarily true ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 theory-of-computation recursive-and-recursively-enumerable-languages difficul ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "6.16.6 Recursive and Recursively Enumerable Languages: GATE CSE 2005 Question: 56 ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Let $L _ { 1 }$ be a recursive language, and let $L _ { 2 }$ be a recursively enumerable but not a recursive language. Which one of the following is TRUE? ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A. ${ L } _ { 1 } ^ { \\prime }$ is recursive and $L _ { 2 } ^ { \\mathbf { \\sigma } }$ ' is recursively enumerable B. $L _ { 1 } { ' }$ is recursive and $L _ { 2 } ^ { \\prime }$ is not recursively enumerable C. $L _ { 1 } \\mathbf { \\cdot }$ and $L _ { 2 } ^ { \\phantom { \\dagger } }$ are recursively enumerable D. $L _ { 1 } { ' }$ is recursively enumerable and $L _ { 2 } ^ { \\mathbf { \\sigma } }$ is recursive ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "If $L$ and $\\overline { { L } }$ are recursively enumerable then $L$ is ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. regular B. context-free C. context-sensitive D. recursive ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "atecse-2008 theory-of-computation easy isro2016 recursive-and-recursively-enumerable-language ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "6.16.8 Recursive and Recursively Enumerable Languages: GATE CSE 2008 Question: 48 ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is false? ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. Every NFA can be converted to an equivalent DFA   \nB. Every non-deterministic Turing machine can be converted to an equivalent deterministic Turing machine   \nC. Every regular language is also a context-free language   \nD. Every subset of a recursively enumerable set is recursive ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 theory-of-computation easy recursive-and-recursively-enumerable-languages ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "6.16.9 Recursive and Recursively Enumerable Languages: GATE CSE 2010 Question: 17 ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Let $L _ { 1 }$ be the recursive language. Let $L _ { 2 }$ and $L _ { 3 }$ be languages that are recursively enumerable but no recursive. Which of the following statements is not necessarily true? ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 2 } - L _ { 1 }$ is recursively enumerable.   \nB. $L _ { 1 } - L _ { 3 }$ is recursively enumerable.   \nC. $L _ { 2 } \\cap L _ { 3 }$ is recursively enumerable.   \nD. $L _ { 2 } \\cup L _ { 3 }$ is recursively enumerable. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 theory-of-computation recursive-and-recursively-enumerable-languages decidability normal ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "6.16.10 Recursive and Recursively Enumerable Languages: GATE CSE 2014 Set 1 Question: 35 ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Let $L$ be a language and $\\bar { L }$ be its complement. Which one of the following is NOT a viable possibility? ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. Neither $L$ nor $\\bar { L }$ is recursively enumerable $( r . e . )$ .   \nB. One of $L$ and $\\bar { L }$ is r.e. but not recursive; the other is not r.e.   \nC. Both $L$ and $\\bar { L }$ are r.e. but not recursive.   \nD. Both $L$ and $\\bar { L }$ are recursive. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 theory-of-computation easy recursive-and-recursively-enumerable-languages ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "6.16.11 Recursive and Recursively Enumerable Languages: GATE CSE 2014 Set 2 Question: 16 ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Let $A \\leq _ { m } B$ denotes that language $A$ is mapping reducible (also known as many-to-one reducible) to language $B$ . Which one of the following is FALSE? ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. If $A \\leq _ { m } B$ and $B$ is recursive then $A$ is recursive.   \nB. If $A \\leq _ { m } B$ and $A$ is undecidable then $B$ is undecidable.   \nC. If $A \\leq _ { m } B$ and $B$ is recursively enumerable then $A$ is recursively enumerable.   \nD. If $A \\leq _ { m } B$ and $B$ is not recursively enumerable then $A$ is not recursively enumerable. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Let $\\langle M \\rangle$ be the encoding of a Turing machine as a string over $\\Sigma = \\{ 0 , 1 \\}$ . Let ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "$L = \\{ \\langle M \\rangle \\mid M$ isa Turing machine that accepts a string of length 2014} . ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Then $L$ is: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. decidable and recursively B. undecidable but recursively enumerable enumerable   \nC. undecidable and not recursively D. decidable but not recursively enumerable enumerable ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 theory-of-computation recursive-and-recursively-enumerable-languages normal ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "6.16.13 Recursive and Recursively Enumerable Languages: GATE CSE 2015 Set 1 Question: 3 ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "For any two languages $L _ { 1 }$ and $L _ { 2 }$ such that $L _ { 1 }$ is context-free and $L _ { 2 }$ is recursively enumerable but no recursive, which of the following is/are necessarily true? ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "I. ${ { \\bar { L } } _ { 1 } }$ Complement o $L _ { 1 }$ ) is recursive II. $\\bar { L } _ { 2 }$ Complement of $L _ { 2 }$ ) is recursive III. $\\bar { L } _ { 1 }$ is context-free IV. $\\bar { L } _ { 1 } \\cup L _ { 2 }$ is recursively enumerable ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. I only B. III only C. III and IV only D. and IV only gatecse-2015-set1 theory-of-computation recursive-and-recursively-enumerable-languages normal ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "6.16.14 Recursive and Recursively Enumerable Languages: GATE CSE 2016 Set 2 Question: 44 ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "· $L _ { 1 } = \\{ \\langle M \\rangle$ $M$ takes at least 2016 steps on some input}, · ${ L _ { 2 } = \\{ \\langle M \\rangle } $ $M$ takes at least 2016 steps on all inputs} and · $L _ { 3 } = \\{ \\langle M \\rangle \\mid M \\mathrm { a c c e p t s } \\epsilon \\} _ { }$ , ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "where for each Turing machine $M$ ， $\\langle M \\rangle$ denotes a specific encoding of $M$ . Which one of the following is TRUE? ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 }$ is recursive and $\\scriptstyle L _ { 2 } , L _ { 3 }$ are not recursive B. $L _ { 2 }$ is recursive and $\\scriptstyle L _ { 1 } , L _ { 3 }$ are not recursive C. $\\scriptstyle { L _ { 1 } , L _ { 2 } }$ are recursive and $L _ { 3 }$ is not recursive D. $ { L _ { 1 } } ,  { L _ { 2 } } ,  { L _ { 3 } }$ are recursive ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 theory-of-computation recursive-and-recursively-enumerable-languages ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "6.16.15 Recursive and Recursively Enumerable Languages: GATE CSE 2021 Set 1 Question: 12 ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Let $\\langle M \\rangle$ denote an encoding of an automaton $M$ . Suppose that $\\Sigma = \\{ 0 , 1 \\}$ . Which of the following languages is/are  recursive? ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. $L = \\{ \\langle M \\rangle$ $M$ is a  such that $L ( M ) = \\emptyset \\}$ B. $L = \\{ \\langle M \\rangle$ $M$ is a such that ${ \\cal L } ( M ) = \\Sigma ^ { * } \\}$ C. $L = \\{ \\langle M \\rangle$ $M$ is a such that $L ( M ) = \\emptyset \\}$ D. $L = \\left\\{ \\langle M \\rangle \\mid M \\right.$ is a such that ${ \\cal L } ( M ) = \\Sigma ^ { * } \\}$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "For a Turing machine $M$ , $\\langle M \\rangle$ denotes an encoding of $M$ . Consider the following two languages. ",
+        "page_idx": 36
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { L _ { 1 } = \\left\\{ \\langle M \\rangle \\mid M \\mathrm { ~ t a k e s ~ m o r e ~ t h a n ~ 2 0 2 1 ~ s t e p s ~ o n ~ a l l ~ i n p u t s } \\right\\} } \\\\ & { L _ { 2 } = \\left\\{ \\langle M \\rangle \\mid M \\mathrm { ~ t a k e s ~ m o r e ~ t h a n ~ 2 0 2 1 ~ s t e p s ~ o n ~ s o m e ~ i n p u t } \\right\\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. Both $L _ { 1 }$ and $L _ { 2 }$ are decidable B. $L _ { 1 }$ is decidable and L2 is undecidable C. $L _ { 1 }$ is undecidable and $L _ { 2 }$ is D. Both $L _ { 1 }$ and $L _ { 2 }$ are undecidable decidable ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 theory-of-computation recursive-and-recursively-enumerable-languages decidability easy two-marks ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Consider three decision problems $P _ { 1 }$ , $P _ { 2 }$ and $P _ { 3 }$ . It is known that $P _ { 1 }$ is decidable and $P _ { 2 }$ is undecidable. Which one of the following is TRUE? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. $P _ { 3 }$ is decidable if $P _ { 1 }$ is reducible to $P _ { 3 }$ B. $P _ { 3 }$ is undecidable if $P _ { 3 }$ is reducible to $P _ { 2 }$ C. $P _ { 3 }$ is undecidable if $P _ { 2 }$ is reducible to $P _ { 3 }$ D. $P _ { 3 }$ is decidable if $P _ { 3 }$ is reducible to $P _ { 2 }$ 's complement gatecse-2005 theory-of-computation decidability normal reduction ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a recursive language and $Y$ be a recursively enumerable but not recursive language. Let and $Z$ be two languages such that $\\bar { Y }$ reduces to $W$ , and $Z$ reduces to $\\overline { { \\boldsymbol X } }$ (reduction means the standard manyone reduction). Which one of the following statements is TRUE? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. $W$ can be recursively enumerable and $Z$ is recursive.   \nB. can be recursive and $Z$ is recursively enumerable.   \nC. is not recursively enumerable and $Z$ is recursive.   \nD. is not recursively enumerable and $Z$ is not recursive. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 theory-of-computation easy recursive-and-recursively-enumerable-languages reduction ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Let $r = 1 ( 1 + 0 ) ^ { * }$ ， $s = 1 1 ^ { * } 0$ and $t = 1 ^ { * } 0$ be three regular expressions. Which one of the following is true? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. $L ( s ) \\subseteq L ( r )$ and $L ( s ) \\subseteq L ( t )$ B. $L ( r ) \\subseteq L ( s )$ and $L ( s ) \\subseteq L ( t )$ C. $L ( s ) \\subseteq L ( t )$ and $L ( s ) \\subseteq L ( r )$ D. $L ( t ) \\subseteq L ( s )$ and $L ( s ) \\subseteq L ( r )$ E. None of the above ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gate1991 theory-of-computation regular-expression normal multiple-selects ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Which of the following regular expression identities is/are TRUE? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. $r ^ { ( ^ { * } ) } = r ^ { * }$ B. $( r ^ { * } s ^ { * } ) = ( r + s ) ^ { * }$   \nC. $( r + s ) ^ { * } = r ^ { * } + s ^ { * }$ D. $r ^ { * } s ^ { * } = r ^ { * } + s ^ { * }$ ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The regular expression for the language recognized by the finite state automaton of figure is ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gate1994 theory-of-computation finite-automata regular-expression easy fill-in-the-blanks ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "In some programming language, an identifier is permitted to be a letter followed by any number of letters or digits. If $L$ and $D$ denote the sets of letters and digits respectively, which of the following expressions defines an identifier? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. $( L + D ) ^ { + }$ ${ \\sf B } . \\ ( L . D ) ^ { * }$ $\\mathsf { C } . \\ L ( L + D ) ^ { * }$ D. L(L.D)\\* ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gate1995 theory-of-computation regular-expression easy isro2017 ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Which two of the following four regular expressions are equivalent? $ { \\varepsilon }$ is the empty string). ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "i. $( 0 0 ) ^ { * } ( \\varepsilon + 0 )$ ii. (00)\\*   \niii. ${ \\dot { 0 } } ^ { * }$   \niv. $0 ( 0 0 ) ^ { * }$ ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. (i) and (ii) B. (ii) and (iii) C. (i) and (iii) D. (iii) and (iv) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gate1996 theory-of-computation regular-expression easy ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The string 1101 does not belong to the set represented by ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. $1 1 0 ^ { * } ( 0 + 1 )$ $\\begin{array} { c } { { \\mathsf { B . ~ 1 } ( 0 + 1 ) ^ { \\ast } \\mathsf { 1 0 1 } } } \\\\ { { \\mathsf { D . ~ ( 0 0 + ( 1 1 ) ^ { \\ast } 0 ) ^ { \\ast } } } } \\end{array}$ C. $( 1 0 ) ^ { * } ( 0 1 ) ^ { * } ( 0 0 + 1 1 ) ^ { * }$   \ngate1998 theory-of-computation regular-expression easy multiple-selects ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "If the regular set $A$ is represented by $A = ( 0 1 + 1 ) ^ { * }$ and the regular set $B$ is represented b $B = \\left( ( 0 1 ) ^ { * } \\mathbf { 1 } ^ { * } \\right) ^ { * }$ , which of the following is true? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. $A \\subset B$ $\\begin{array} { c } { { \\mathsf { B . } B \\subset A } } \\\\ { { \\mathsf { D . } A = B } } \\end{array}$ C. $A$ and $B$ are incomparable ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation regular-expression normal ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Give a regular expression for the set of binary strings where every  is immediately followed by exactly $k$ 's and preceded by at least $k$ ’s ( $k$ is a fixed integer) ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation regular-expression easy descriptive ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Let $\\boldsymbol { S }$ and $T$ be languages over $\\Sigma = \\{ a , b \\}$ represented by the regular expressions $( a + b ^ { * } ) ^ { * }$ and $( a + b ) ^ { * }$ , respectively. Which of the following is true? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. $S \\subset T$ $\\mathsf { B } . \\mathsf { \\Delta } T \\subset S \\qquad \\mathsf { C } . \\mathsf { \\Delta } S = T$ [ $) . \\ S \\cap T = \\phi$ ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 theory-of-computation regular-expression easy ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The regular expression $0 ^ { * } ( 1 0 ^ { * } ) ^ { * }$ denotes the same set as ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. $( 1 ^ { * } 0 ) ^ { * } 1 ^ { * }$ B. $0 + ( 0 + 1 0 ) ^ { * }$ C. $( 0 + 1 ) ^ { * } 1 0 ( 0 + 1 ) ^ { * }$ D. None of the above ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 theory-of-computation regular-expression easy ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Let $L = \\{ w \\in ( 0 + 1 ) ^ { * } \\mid w$ has even number of $| 1 s \\}$ . i.e., $L$ is the set of all the bit strings with even numbers of s. Which one of the regular expressions below represents $L$ ? ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. $( 0 ^ { * } 1 0 ^ { * } 1 ) ^ { * }$ B. $0 ^ { * } ( 1 0 ^ { * } 1 0 ^ { * } ) ^ { * }$   \nC. $\\dot { 0 } ^ { * } ( 1 0 ^ { * } 1 \\dot { ) } { ^ * 0 ^ { * } }$ D. $0 ^ { * } \\mathrm { { 1 } ( 1 0 ^ { * } 1 ) ^ { * } 1 0 ^ { * } }$ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 theory-of-computation regular-expression normal ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "6.18.15 Regular Expression: GATE CSE 2014 Set 1 Question: 36 ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Which of the regular expressions given below represent the following DFA? ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "I. $0 ^ { * } 1 ( 1 + 0 0 ^ { * } 1 ) ^ { * }$   \nII. $0 ^ { * } 1 ^ { * } 1 + 1 1 ^ { * } 0 ^ { * } 1$   \nIII. $( 0 + 1 ) ^ { * } 1$ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. and II only B. and III only C. II and III only D. I, II and III ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 theory-of-computation regular-expression finite-automata easy ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "The length of the shortest string NOT in the language (over $\\Sigma = \\{ a , b \\} )$ of the following regular expression is ",
+        "page_idx": 39
+    },
+    {
+        "type": "equation",
+        "text": "$$\na ^ { * } b ^ { * } ( b a ) ^ { * } a ^ { * }\n$$",
+        "text_format": "latex",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 theory-of-computation regular-expression numerical-answers easy ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions represents the language: the set of all binary strings having two consecutive 's and two consecutive 's? ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. $( 0 + 1 ) ^ { * } 0 0 1 1 ( 0 + 1 ) ^ { * } + ( 0 + 1 ) ^ { * } 1 1 0 0 ( 0 + 1 ) ^ { * }$ B. $( 0 + 1 ) ^ { * } ( 0 0 ( 0 + 1 ) ^ { * } 1 1 + 1 1 ( 0 + 1 ) ^ { * } 0 0 ) ( 0 + 1 ) ^ { * }$   \nC. $( 0 + 1 ) ^ { * } 0 0 ( 0 + 1 ) ^ { * } + ( 0 + 1 ) ^ { * } 1 1 ( 0 + 1 ) ^ { * }$ D. $0 0 ( 0 + 1 ) ^ { * } 1 1 + 1 1 ( 0 + 1 ) ^ { * } 0 0$ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 theory-of-computation regular-expression normal ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "6.18.18 Regular Expression: GATE CSE 2020 Question: 7 ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions represents the set of all binary strings with an odd number o $\\boldsymbol { 1 ^ { \\prime } { \\mathsf { s } } ? }$ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. $( ( 0 + 1 ) ^ { * } 1 ( 0 + 1 ) ^ { * } 1 ) ^ { * } 1 0 ^ { * }$ $\\begin{array} { c } { { \\mathsf { B . } \\ ( 0 ^ { \\ast } 1 0 ^ { \\ast } 1 0 ^ { \\ast } ) ^ { \\ast } 0 ^ { \\ast } 1 } } \\\\ { { \\mathsf { D . } \\ ( 0 ^ { \\ast } 1 0 ^ { \\ast } 1 0 ^ { \\ast } ) ^ { \\ast } 1 0 ^ { \\ast } } } \\end{array}$   \nC. ${ \\mathrm { i } } 0 ^ { * } ( 0 ^ { * } { \\mathrm { i } } 0 ^ { * } { \\mathrm { i } } 0 ^ { * } ) ^ { * }$ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 regular-expression normal theory-of-computation one-mark ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "three? Assume that the string $\\epsilon$ is divisible by three. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. $( 0 + 1 ( 0 1 ^ { * } 0 ) ^ { * } 1 ) ^ { * }$ B. $( 0 + 1 1 + 1 0 ( 1 + 0 0 ) ^ { * } 0 1 ) ^ { * }$   \nC. $( 0 ^ { * } ( { \\bf 1 } ( \\dot { 0 } { \\bf 1 ^ { * } } 0 ) ^ { * } { \\bf 1 } ) ^ { * } ) ^ { * }$ D. $( 0 + 1 1 + 1 1 ( 1 + 0 0 ) ^ { * } 0 0 ) ^ { * }$ ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 multiple-selects theory-of-computation regular-expression two-marks ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions correctly represents the language of the finite automaton given below? ",
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/e487217be4df13db2f0993dea6a68e4f7290af93e7ab25b1061e4a83476f8406.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. $a b ^ { * } b a b ^ { * } + b a ^ { * } a b a ^ { * }$   \nB. $( a b ^ { * } b ) ^ { * } a b ^ { * } + ( b a ^ { * } a ) ^ { * } b a ^ { * }$   \nC. $( a b ^ { * } b + b a ^ { * } a ) ^ { * } ( a ^ { * } + b ^ { * } )$   \nD. $( b a ^ { * } a + a b ^ { * } b ) ^ { * } ( a b ^ { * } + b a ^ { * } )$ ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Consider the Deterministic Finite-state Automaton ( ) $A$ shown below. The runs on the alphabet $\\{ 0 , 1 \\}$ , and has the set of states $\\{ s , p , q , r \\}$ , with $s$ being the start state and $p$ being the only final state. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions correctly describes the language accepted by $\\mathcal { A } ?$ ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. ${ \\bf 1 } ( 0 ^ { * } 1 1 ) ^ { * }$ ${ \\mathsf { B } } . \\ 0 ( 0 + 1 ) ^ { * }$ $\\mathsf { C } . \\ 1 ( 0 + 1 1 ) ^ { * }$ D. 1(110\\*)\\* ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 theory-of-computation regular-expression one-mark gatecse-2023 theory-of-computation regular-expression one-mark ",
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/741627307eb21fc9b11dd1fa9d4682217e21cd4af77e2899298dc531058de6d5.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two regular expressions over the alphabet $\\{ 0 , 1 \\}$ : ",
+        "page_idx": 41
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { r = 0 ^ { * } + 1 ^ { * } } \\\\ { s = 0 1 ^ { * } + 1 0 ^ { * } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "The total number of strings of length less than or equal to , which are neither in $r$ nor in $\\pmb { s }$ , is gatecse-2024-set1 numerical-answers theory-of-computation regular-expression two-marks $\\textsf { L e t } L _ { 1 }$ be the language represented by the regular expression $b ^ { * } a b ^ { * } ( a b ^ { * } a b ^ { * } ) ^ { * }$ and $L _ { 2 } = \\{ w \\in ( a + b ) ^ { * } | | w | \\leq 4 \\}$ , where $| w |$ denotes the length of string $w$ . The number of strings in which are also in $L _ { 1 }$ is ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 numerical-answers theory-of-computation regular-expression two-marks ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following regular expressions is NOT equivalent to the regular expression $( a + b + c ) ^ { * } ?$ ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. $( a ^ { * } + b ^ { * } + c ^ { * } ) ^ { * }$ $\\begin{array} { l } { { { \\sf B } . \\ ( a ^ { * } b ^ { * } c ^ { * } ) ^ { * } } } \\\\ { { { \\sf D } . \\ ( a ^ { * } b ^ { * } + c ^ { * } ) ^ { * } } } \\end{array}$   \nC. $( ( a b ) ^ { * } + c ^ { * } ) ^ { * }$ ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 theory-of-computation regular-expression normal ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is TRUE about the regular expression $0 1 ^ { * } 0 ?$ ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. It represents a finite set of finite strings.   \nB. It represents an infinite set of finite strings.   \nC. It represents a finite set of infinite strings.   \nD. It represents an infinite set of infinite strings. ",
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8d5d7e871c65678e5c7cc16fdff863f30d6369a5251db422dac91f6d63fb3a1.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "$( a + b ) ^ { * } a ( a + b ) b$ B. (abb)\\* $( a + b ) ^ { * } a ( a + b ) ^ { * } b ( a + b ) ^ { * }$ D. (a+b)\\* gateit-2006 theory-of-computation regular-expression normal ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular expression $R = ( a + b ) ^ { * } ( a a + b b ) ( a + b ) ^ { * }$ ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Which one of the regular expressions given below defines the same language as defined by the regular expression $R$ ? ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. $( a ( b a ) ^ { * } + b ( a b ) ^ { * } ) ( a + b ) ^ { + }$   \nB. $( a ( b a ) ^ { * } + b ( a b ) ^ { * } ) ^ { * } ( a + b ) ^ { * }$   \nC. $( a ( b a ) ^ { * } ( a + b b ) + b ( a b ) ^ { * } ( b + a a ) ) ( a + b ) ^ { * }$   \nD. $( a ( b a ) ^ { * } ( a + b b ) + b ( a b ) ^ { * } ( b + a a ) ) ( a + b ) ^ { + }$ ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 theory-of-computation regular-expression normal ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Which of the following regular expressions describes the language over $\\{ 0 , 1 \\}$ consisting of strings that contain exactly two 's? ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. $( 0 + 1 ) ^ { * } 1 1 ( 0 + 1 ) ^ { * }$ B. 0\\* 110\\* C. $0 ^ { * } 1 0 ^ { * } \\mathrm { { 1 0 ^ { * } } }$ D $( 0 + 1 ) ^ { * } 1 ( 0 + 1 ) ^ { * } 1 ( 0 + 1 ) ^ { * }$ ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 theory-of-computation regular-expression easy ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Is the language generated by the grammar regular? If so, give a regular expression for it, else prove otherwise ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "G: $\\begin{array} { l } { \\circ S  a B } \\\\ { \\circ B  b C } \\\\ { \\circ C  x B } \\\\ { \\circ C  c } \\end{array}$ ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gate1990 descriptive theory-of-computation regular-language regular-grammar ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices precisely represents the strings in $X _ { 0 } ?$ ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. $1 0 ( 0 ^ { * } + ( 1 0 ) ^ { * } ) 1$ B. $1 0 ( 0 ^ { * } + ( 1 0 ) ^ { * } ) ^ { * } 1$   \nC. ${ \\bf 1 } ( 0 + { \\bf 1 0 } ) ^ { * } { \\bf 1 }$ D. $1 0 ( 0 + 1 0 ) ^ { * } 1 + 1 1 0 ( 0 + 1 0 ) ^ { * } 1$ ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 theory-of-computation regular-grammar normal ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Consider the regular grammar below ",
+        "page_idx": 43
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { { S  b S \\mid a A \\mid \\epsilon } } \\\\ { { A  a S \\mid b A } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "The Myhill-Nerode equivalence classes for the language generated by the grammar are ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ w \\in ( a + b ) ^ { * }$ $\\# a ( w )$ is even) and{w ∈ (a+b)\\* #a(w) is odd} B. $\\{ w \\in ( a + b ) ^ { * }$ $\\# a ( w )$ is even) and $\\{ w \\in ( a + b ) ^ { * }$ #b(w) is odd} C. $\\{ w \\in ( a + b ) ^ { * }$ $\\# a ( w ) = \\# b ( w ) \\mathrm { a n d }$ {w e (a+6)\\* #a(w) ? #6(w)} D. {},{wa wE (a +b)\\*and{wb $w \\in ( a + b ) ^ { * } \\}$ ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (15Q) Test 4 (7Q) ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are TRUE or FALSE: Regularity is preserved under the operation of string reversal. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gate1987 theory-of-computation regular-language true-false ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are TRUE or FALSE: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "All subsets of regular sets are regular. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gate1987 theory-of-computation regular-language true-false ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Let $R _ { 1 }$ and $R _ { 2 }$ be regular sets defined over the alphabet $\\Sigma$ Then: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. $R _ { 1 } \\cap R _ { 2 }$ is not regular. B. $R _ { 1 } \\cup R _ { 2 }$ is regular.   \nC. $\\Sigma ^ { * } - R _ { 1 }$ is regular. D. $R _ { 1 } ^ { * }$ is not regular. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gate1990 normal theory- of -computation regular-language multiple-selects ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Let $\\Sigma = \\{ 0 , 1 \\} , L = \\Sigma ^ { * }$ and $R = \\{ 0 ^ { n } 1 ^ { n } \\mid n > 0 \\}$ then the languages $L \\cup R$ and $R$ are respectively ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. regular, regular B. not regular, regular C. regular, not regular D. not regular, not regular ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate1995 theory-of-computation easy regular-language ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "6.20.6 Regular Language: GATE CSE 1996 Question: 1.10 ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Let $L \\subseteq \\Sigma ^ { * }$ where $\\Sigma = \\{ a , b \\}$ . Which of the following is true? ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "a. $L = \\{ x \\mid x$ has an equal number of $a$ 's and $b \\mathbf { \\bar { s } } \\mathbf  \\}$ is regular b. $L = \\{ a ^ { n } b ^ { n } \\mid n \\geq 1 \\}$ is regular c. $L = \\hat  \\{ x \\mid x \\$ has more number of a's than $\\displaystyle b _ { \\mathbf { \\nu } } \\mathbf { s } \\mathbf  \\}$ is regular d. $L = \\{ a ^ { m } b ^ { n } \\mid m \\geq 1 , n \\geq 1 \\}$ is regular ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate1996 theory-of-computation normal regular-language ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is false? ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "a. Every finite subset of a non-regular set is regular b. Every subset of a regular set is regular c. Every finite subset of a regular set is regular d. The intersection of two regular sets is regular ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate1998 theory-of-computation easy regular-language ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. Given that $A$ is regular and $( A \\cup B )$ is regular, does it follow that $B$ is necessarily regular? Justify your answer. B. Given two finite automata $M 1 , M 2$ , outline an algorithm to decide if $L ( M 1 ) \\subset L ( M 2 )$ . (note: strict subset) ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate1999 theory-of-computation normal regular-language descriptive ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements: ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "$S _ { 1 } : \\{ 0 ^ { 2 n } \\mid n \\geq 1 \\}$ is a regular language $S _ { 2 } : \\{ 0 ^ { m } 1 ^ { n } 0 ^ { m + n } | m \\geq 1 { \\mathrm { ~ a n d } } n \\geq 1 \\}$ is a regular language ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statement is correct? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. Only $S _ { 1 }$ is correct B. Only $S _ { 2 }$ is correct C. Both $S _ { 1 }$ and $S _ { 2 }$ are correct D. None of $S _ { 1 }$ and $S _ { 2 }$ is correct ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 theory-of-computation easy regular-language ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Consider the following languages: ",
+        "page_idx": 45
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { L 1 = \\{ w w \\mid w \\in \\{ a , b \\} ^ { * } \\} } \\\\ & { L 2 = \\{ w w ^ { R } \\mid w \\in \\{ a , b \\} ^ { * } , w ^ { R } \\mathrm { i s t h e r e v e r s e o f w } \\} } \\\\ & { L 3 = \\{ 0 ^ { 2 i } \\mid \\mathrm { i i s a n i n t e g e r } \\} } \\\\ & { L 4 = \\left\\{ 0 ^ { i ^ { 2 } } \\mid \\mathrm { i i s a n i n t e g e r } \\right\\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which of the languages are regular? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. Only $L 1$ and $L 2$ B. Only $\\scriptstyle { L 2 , L 3 }$ and $L 4$ C. Only $L 3$ and L4 D. Only ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 theory-of-computation normal regular-language ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which of the following languages is regular? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ w w ^ { R } | w \\in \\{ 0 , 1 \\} ^ { + } \\}$ B. $\\{ w w ^ { R } x \\ : | \\ : x , w \\in \\{ 0 , 1 \\} ^ { + } \\}$   \nC. $\\{ w x w ^ { R } \\mid x , w \\in \\{ 0 , 1 \\} ^ { + } \\}$ D. $\\{ x w w ^ { R } \\mid x , w \\in \\{ 0 , 1 \\} ^ { + } \\}$ ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 theory-of-computation normal regular-language ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. Every subset of a regular set is regular B. Every finite subset of a non-regular set is regular C. The union of two non-regular sets is not regular D. Infinite union of finite sets is regular ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 theor y-of-computation easy regular-language ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "IV. $\\{ x c y \\mid x , y , \\in \\{ a , b \\} ^ { * } \\}$ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. I and IV only B. and III only C. only D. IV only ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 theory-of-computation normal regular-language ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Let $P$ be a regular language and $Q$ be a context-free language such that $Q \\subseteq P$ . (For example, let $P$ be the language represented by the regular expression $p ^ { * } q ^ { * }$ and $Q$ be $\\{ p ^ { n } q ^ { n } | n \\in N \\}$ . Then which of the following is ALWAYS regular? ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. $P \\cap Q$ ${ \\mathsf { B } } . \\ P - Q$ $\\complement . \\ \\Sigma ^ { * } - P$ D. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 theory-of-computation easy regular-language ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Given the language $L = \\{ a b , a a , b a a \\}$ , which of the following strings are in $L ^ { * } ?$ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "1. abaabaaabaa   \n2. aaaabaaaa   \n3. baaaaabaaaab   \n4. baaaaabaa ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. 2, 3 and 4 C. 1,2 and 4 D. 1, 3 and 4 ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 theory-of-computation easy regular-language ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Consider the languages $\\scriptstyle L _ { 1 } = \\phi$ and ${ \\cal L } _ { 2 } = \\{ a \\}$ . Which one of the following represents $L _ { 1 } L _ { 2 } { ^ * \\cup L _ { 1 } }  ^ *$ ? ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. $\\phi$ C. $a ^ { * }$ D. {e,a} ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 theory-of-computation normal regular-language ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "6.20.18 Regular Language: GATE CSE 2014 Set 1 Question: 15 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE? ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. The language $L = \\{ a ^ { n } b ^ { n } \\mid n \\geq 0 \\}$ is regular.   \nB. The language $L = \\{ a ^ { n } \\mid n$ is prime $\\}$ is regular.   \nC. The language ${ \\cal L } = \\{ w \\vert w$ has $3 k + 1 b \\prime s$ for some $k \\in N$ with $\\Sigma = \\{ a , b \\} \\}$ is regular.   \nD. The language $L = \\{ w w \\mid w \\in \\Sigma ^ { * }$ with $\\Sigma = \\{ 0 , 1 \\} \\}$ is regular. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 theory-of-computation regular-language normal ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "L e $\\mathfrak { t } L _ { 1 } = \\{ w \\in \\{ 0 , 1 \\} ^ { * } \\mid w$ has at least as many occurrences of $( \\mathbf { 1 1 0 } ) ^ { \\prime } \\mathbf { s }$ as $( 0 1 1 ) ^ { \\prime } { \\bf s } \\}$ . Let $L _ { 2 } = \\{ w \\in \\{ 0 , 1 \\} ^ { * } \\mid w$ has at least as many occurrences of $( 0 0 0 ) ^ { \\prime } { \\bf s }$ as $( \\mathrm { { i } 1 1 ) ^ { \\prime } { s } } \\}$ . Which one of the following is TRUE? ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 }$ is regular but not $L _ { 2 }$ B. $L _ { 2 }$ is regular but not $L _ { 1 }$ C. Both $L _ { 1 }$ and $L _ { 2 }$ are regular D. Neither $L _ { 1 }$ nor $L _ { 2 }$ are regular ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 theory-of-computation normal regular-language ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "6.20.21 Regular Language: GATE CSE 2015 Set 2 Question: 51 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are regular languages? ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array} { r l } & { L _ { 1 } : \\left\\{ w x w ^ { R } \\mid w , x \\in \\{ a , b \\} ^ { * } \\mathrm { ~ a n d ~ } | u \\right. } \\\\ & { L _ { 2 } : \\left\\{ a ^ { n } b ^ { m } \\mid m \\neq n \\mathrm { a n d } m , n \\geq 0 \\right\\} } \\\\ & { L _ { 3 } : \\left\\{ a ^ { p } b ^ { q } c ^ { r } \\mid p , q , r \\geq 0 \\right\\} } \\end{array}$ $| w | , | x | > 0 \\}$ ， $w ^ { R }$ is the reverse of string w",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 }$ and $L _ { 3 }$ only B. $L _ { 2 }$ only C. $L _ { 2 }$ and $L _ { 3 }$ only D. $L _ { 3 }$ only ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 theory-of-computation normal regular-language ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "6.20.22 Regular Language: GATE CSE 2016 Set 2 Question: 17 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Language $L _ { 1 }$ is defined by the grammar: $S _ { 1 } \\to a S _ { 1 } b \\mid \\varepsilon$ Language $L _ { 2 }$ is defined by the grammar: $S _ { 2 }  a b S _ { 2 } \\mid \\varepsilon$ Consider the following statements: ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "P: $L _ { 1 }$ is regular $\\mathsf { Q } \\colon \\pmb { { L } } _ { 2 }$ is regular ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE? ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. Both $P$ and $Q$ are true. B. $P$ is true and $Q$ is false.   \nC. $P$ is false and $Q$ is true. D. Both $P$ and $Q$ are false. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 theory-of-computation easy regular-language ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Given a language $L$ , define $L ^ { i }$ as follows: ",
+        "page_idx": 47
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL ^ { 0 } = \\{ \\varepsilon \\}\n$$",
+        "text_format": "latex",
+        "page_idx": 47
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL ^ { i } = L ^ { i - 1 } \\bullet L { \\mathrm { f o r ~ a l l ~ } } I > 0\n$$",
+        "text_format": "latex",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "The order of a language $L$ is defined as the smallest $k$ such that $L ^ { k } = L ^ { k + 1 }$ . Consider the language $L _ { 1 }$ over alphabet accepted by the following automaton. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "The order of $L _ { 1 }$ is ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "If $L$ is a regular language over $\\Sigma = \\{ a , b \\}$ , which one of the following languages is NOT regular? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. L $L ^ { R } = \\{ x y \\mid x \\in L , y ^ { R } \\in L \\}$ B. $\\{ w w ^ { R } \\mid w \\in L \\}$ C. Prefix $\\langle L \\rangle = \\{ { \\overline { { x } } } \\in \\Sigma ^ { * } \\mid \\exists y \\in \\Sigma ^ { * } { \\mathrm { s u c h ~ t h a t } } x y \\in L \\}$ D. Suffix $( L ) = \\left\\{ y \\in \\Sigma ^ { * } \\mid \\exists x \\in \\Sigma ^ { * } \\right.$ such that $x y \\in L \\}$ gatecse-2019 theory-of-computation regular-language one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Consider the following language. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "$L = \\{ x \\in \\{ a , b \\} ^ { * } \\vert$ number of $\\mathbf { \\Delta } a _ { \\mathbf { \\alpha } } ^ { \\mathrm { { : } } }$ s in $x$ divisible by but not divisible by The minimum number of states in DFA that accepts $L$ is ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers theory-of-computation regular-language two-marks ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "I. If $L _ { 1 } \\cup L _ { 2 }$ is regular, then both $L _ { 1 }$ and $L _ { 2 }$ must be regular.   \nII. The class of regular languages is closed under infinite union. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are TRUE? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. Ⅰ only B. Ⅱ only C. Both and Ⅱ D. Neither nor Ⅱ gatecse-2020 theory-of-computation regular-language one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "6.20.27 Regular Language: GATE CSE 2021 Set 2 Question: 9 ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Let $L \\subseteq \\{ 0 , 1 \\} ^ { * }$ be an arbitrary regular language accepted by a minimal with $k$ states. Which one of the following languages must necessarily be accepted by a minimal with $k$ states? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. $L - \\{ 0 1 \\}$ ${ \\mathsf { B } } . ~ L \\cup \\{ 0 1 \\}$ $\\mathsf { C } . \\ \\{ 0 , 1 \\} ^ { * } { - \\cal L }$ D. L·L ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 theory-of-computation finite-automata regular-language one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "6.20.28 Regular Language: GATE CSE 2024 Set 1 Question: 13 ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "​Let $\\scriptstyle L _ { 1 } , L _ { 2 }$ be two regular languages and a language which is not regular. Which of the following statements is/are always TRUE? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. $L _ { 1 } = L _ { 2 }$ if and only if B. $L _ { 1 } \\cup L _ { 3 }$ is not regula ${ \\cal L } _ { 1 } \\cap \\overline { { { \\cal L } _ { 2 } } } = \\phi$ C. is not regular D. $\\overline { { L _ { 1 } } } \\cup \\overline { { L _ { 2 } } }$ is regular gatecse-2024-set1 multiple-selects theory-of-computation regular-language one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A regular language $L$ is accepted by a non-deterministic finite automaton (NFA) with $n$ states. Which of the following statement(s) is/are FALSE? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. $L$ may have an accepting NFA with $< n$ states.   \nB. $L$ may have an accepting DFA with $< n$ states.   \nC. There exists a DFA with $\\leq 2 ^ { n }$ states that accepts $L$ .   \nD. Every DFA that accepts $L$ has $> 2 ^ { n }$ states. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 theory-of-computation finite-automata regular-language multiple-selects one-mark ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two languages over the alphabet $\\{ a , b \\}$ : ",
+        "page_idx": 49
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { L _ { 1 } = \\{ \\alpha \\beta \\alpha \\mid \\alpha \\in \\{ a , b \\} ^ { + } \\mathrm { A N D } \\beta \\in \\{ a , b \\} ^ { + } \\} } \\\\ & { L _ { 2 } = \\{ \\alpha \\beta \\alpha \\mid \\alpha \\in \\{ a \\} ^ { + } \\mathrm { A N D } \\beta \\in \\{ a , b \\} ^ { + } \\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following statements is CORRECT? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. Both $L _ { 1 }$ and $L _ { 2 }$ are regular languages.   \nB. $L _ { 1 }$ is a regular language but $L _ { 2 }$ is not a regular language.   \nC. $L _ { 1 }$ is not a regular language but $L _ { 2 }$ is a regular language.   \nD. Neither $L _ { 1 }$ nor $L _ { 2 }$ is a regular language. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 theory-of-computation regular-language two-marks ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Let $\\Sigma = \\{ a , b , c \\}$ . For $\\boldsymbol { x } \\in \\Sigma ^ { * }$ , and $\\alpha \\in \\Sigma$ , let $\\# _ { \\alpha } ( x )$ denote the number of occurrences of $\\alpha$ in $x$ . Which one or more of the following option(s) define(s) regular language(s)? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{ a ^ { m } b ^ { n } \\mid m , n \\geq 0 \\}$   \nB. $\\{ a , b \\} ^ { * } \\cap \\{ a ^ { m } b ^ { n } c ^ { m - n } \\mid m \\geq n \\geq 0 \\}$   \nC. $\\{ w \\mid \\stackrel { \\textstyle } { w } \\in \\{ a , b \\} ^ { * } , \\# _ { a } ( w ) \\equiv 2 ( \\mathrm { m o d } 7 )$ , and $\\# _ { b } ( w ) \\equiv 3 ( \\bmod { 9 } ) \\}$ D. $\\{ w \\mid w \\in \\{ a , b \\} ^ { * }$ $\\# a ( w ) \\equiv 2 ( \\bmod { 7 } )$ , and $\\# _ { a } ( w ) = \\# b ( w ) \\}$ ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 theory-of-computation regular-language multiple-selects two-marks ",
+        "page_idx": 49
+    }
+]
