@@ -183,6 +183,106 @@
     {
       "chapter": "Logical Reasoning",
       "content": "Order of Mixed Quantifiers: Assuming $\\forall x \\exists y P(x, y)$ is the same as $\\exists y \\forall x P(x, y)$ is incorrect.\n\nStandard Problem-Solving Techniques or Shortcuts:\n- Step-by-step Translation: Break down complex natural language sentences into smaller parts, translate each, and then combine them. Identify predicates, variables, and connectives first.\n- Applying Quantifier Equivalences: Use negation rules to simplify expressions or move negations inwards.\n- Domain Awareness: Always consider the domain of discourse when evaluating truth values or translating.\n- Counterexamples: To show a statement is false or not equivalent, try to find a specific example in a small domain that makes it false.\n\nLogical Reasoning (Inference)\nLogical Reasoning, or Inference, is the process of deriving conclusions from a set of premises using valid rules. It focuses on the structure of arguments to determine whether a conclusion necessarily follows from the premises, regardless of the actual truth of the premises.\n\nDefinition and Core Idea: An argument is a sequence of propositions, where the first propositions are premises and the final proposition is the conclusion. An argument is valid if, whenever all its premises are true, the conclusion must also be true. The goal is to determine if an argument's structure guarantees the truth of its conclusion given true premises.\n\nImportant Formulas, Theorems, and Results:\n1. Argument Validity: An argument with premises $P_1, P_2, \\dots, P_n$ and conclusion $C$ is valid if the proposition $(P_1 \\wedge P_2 \\wedge \\dots \\wedge P_n) \\rightarrow C$ is a tautology.\n2. Rules of Inference (for Propositional Logic): These are fundamental valid argument forms.\n- Modus Ponens (Law of Detachment): $((p \\rightarrow q) \\wedge p) \\rightarrow q$ is a tautology.\n- Modus Tollens: $((p \\rightarrow q) \\wedge \\neg q) \\rightarrow \\neg p$ is a tautology.\n- Hypothetical Syllogism: $((p \\rightarrow q) \\wedge (q \\rightarrow r)) \\rightarrow (p \\rightarrow r)$ is a tautology.\n- Disjunctive Syllogism: $((p \\vee q) \\wedge \\neg p) \\rightarrow q$ is a tautology.\n- Addition: $p \\rightarrow (p \\vee q)$ is a tautology.\n- Simplification: $(p \\wedge q) \\rightarrow p$ is a tautology."
+    },
+    {
+      "chapter": "First Order Logic",
+      "content": "3. Rules of Inference (for First Order Logic):\nUniversal Instantiation (UI): If $\\forall x P(x)$ is true, then $P(c)$ is true for any arbitrary individual $c$ in the domain.\nUniversal Generalization (UG): If $P(c)$ is true for an arbitrary individual $c$ in the domain, then $\\forall x P(x)$ is true.\nExistential Instantiation (EI): If $\\exists x P(x)$ is true, then $P(c)$ is true for some specific individual $c$ in the domain. This must be a new constant not previously used in the proof.\nExistential Generalization (EG): If $P(c)$ is true for some specific individual $c$ in the domain, then $\\exists x P(x)$ is true."
+    },
+    {
+      "chapter": "Proof Methods",
+      "content": "4. Proof Methods:\nDirect Proof: Assume premises are true, and use inference rules and logical equivalences to derive the conclusion."
+    },
+    {
+      "chapter": "Propositional Logic",
+      "content": "Indirect Proof (Proof by Contradiction): To prove $P$ from premises, assume $\\neg P$ is true along with premises, and derive a contradiction ($F$). \n\nProof by Contraposition: To prove $P \\to Q$, prove its contrapositive $\\neg Q \\to \\neg P$.\n\nKey Properties and Identities: The validity of each inference rule is a key property. Understanding that these rules preserve truth is fundamental.\n\nCommon Pitfalls or Tricky Points:\n1. Fallacies: Invalid argument forms that resemble valid ones.\n2. Fallacy of Affirming the Consequent: $Q \\to P, Q \\therefore P$ (NOT a tautology).\n3. Fallacy of Denying the Antecedent: $P \\to Q, \\neg P \\therefore \\neg Q$ (NOT a tautology).\n4. Confusing Validity with Soundness: A valid argument can have false premises and a false conclusion. A sound argument is a valid argument with all true premises (and thus, a true conclusion).\n5. Incorrect Application of Quantifier Rules: Ensure the constant chosen for instantiation is new (for EI) or truly arbitrary (for UG).\n6. Circular Reasoning: Assuming the conclusion as a premise.\n\nTechniques:\n- Formal Proofs: Systematically apply inference rules and logical equivalences.\n- Truth Tables: Convert argument to a single conditional statement and check if it is a tautology.\n- Resolution Principle: Use CNF clauses. If an empty clause ($F$) can be derived, the argument is valid.\n\nQuick Formula Reference:\n- Double Negation: $\\neg(\\neg P) \\equiv P$\n- Commutative: $P \\lor Q \\equiv Q \\lor P$, $P \\land Q \\equiv Q \\land P$\n- Associative: $(P \\lor Q) \\lor R \\equiv P \\lor (Q \\lor R)$, $(P \\land Q) \\land R \\equiv P \\land (Q \\land R)$\n- Distributive: $P \\lor (Q \\land R) \\equiv (P \\lor Q) \\land (P \\lor R)$, $P \\land (Q \\lor R) \\equiv (P \\land Q) \\lor (P \\land R)$\n- De Morgan's: $\\neg(P \\land Q) \\equiv \\neg P \\lor \\neg Q$, $\\neg(P \\lor Q) \\equiv \\neg P \\land \\neg Q$\n- Contrapositive: $P \\to Q \\equiv \\neg Q \\to \\neg P$\n- Inverse Law: $P \\lor \\neg P \\equiv T$, $P \\land \\neg P \\equiv F$\n- Domination Law: $P \\lor T \\equiv T$, $P \\land F \\equiv F$\n- Identity Law: $P \\lor F \\equiv P$, $P \\land T \\equiv P$\n- Idempotent Law: $P \\lor P \\equiv P$, $P \\land P \\equiv P$\n- Absorption Law: $P \\lor (P \\land Q) \\equiv P$, $P \\land (P \\lor Q) \\equiv P$"
+    },
+    {
+      "chapter": "Rules of Inference",
+      "content": "### Propositional Logic\n- **Modus Ponens:** $$p, p \\to q \\vdash q$$\n- **Modus Tollens:** \\neg q, p \\to q \\vdash \\neg p\n- **Hypothetical Syllogism:** $$p \\to q, q \\to r \\vdash p \\to r$$\n- **Disjunctive Syllogism:** $$p \\lor q, \\neg p \\vdash q$$\n- **Addition:** $$p \\vdash p \\lor q$$\n- **Simplification:** $$p \\land q \\vdash p$$\n- **Conjunction:** $$p, q \\vdash p \\land q$$\n- **Resolution:** $$p \\lor q, \\neg p \\lor r \\vdash q \\lor r$$\n\n### First Order Logic\n- **Universal Instantiation (UI):** $$\\forall x P(x) \\vdash P(c)$$\n- **Universal Generalization (UG):** $$P(c) \\text{ for an arbitrary } c \\vdash \\forall x P(x)$$\n- **Existential Instantiation (EI):** $$\\exists x P(x) \\vdash P(c) \\text{ for some specific } c$$\n- **Existential Generalization (EG):** $$P(c) \\vdash \\exists x P(x)$$"
+    },
+    {
+      "chapter": "Important Tips for GATE",
+      "content": "1. **Master Truth Tables:** They are the foundation. Be able to quickly construct and interpret truth tables for any compound proposition, especially for 2-3 variables. This helps in verifying tautologies, contradictions, and equivalences.\n2. **Memorize Key Equivalences and Inference Rules:** Speed and accuracy in GATE questions heavily rely on your ability to recall and apply De Morgan's laws, implication equivalences, and the common rules of inference (Modus Ponens, Modus Tollens, etc.) without hesitation.\n3. **Practice Natural Language Translation:** A significant portion of GATE questions involves translating English sentences into logical expressions (and vice-versa). Pay close attention to keywords like \"all\", \"some\", \"no\", \"only if\", \"unless\", and the correct use of quantifiers and connectives.\n4. **Understand Quantifier Scope and Order:** Incorrectly interpreting the scope of quantifiers or swapping the order of mixed quantifiers ($\\forall$ vs. $\\exists$) is a very common mistake. Always visualize the domain and what each quantifier implies.\n5. **Distinguish Validity from Soundness:** GATE questions usually ask about the validity of an argument (whether the conclusion logically follows from the premises), not its soundness (which also requires premises to be true in the real world). Focus on the logical structure.\n6. **Systematic Approach to Proofs:** When asked to prove an argument's validity, don't guess. Start with the premises and systematically apply inference rules and logical equivalences, one step at a time, until you reach the conclusion. Clearly state the rule used for each step.\n7. **Identify Common Fallacies:** Be aware of fallacies like \"Affirming the Consequent\" and \"Denying the Antecedent\". If an argument structure matches a known fallacy, you can quickly identify it as invalid.\n8. **Time Management:** Some logical reasoning problems can be lengthy, especially those involving formal proofs or complex translations. If a question seems too time-consuming, make an educated guess or mark it for review if time permits, and move on to other questions."
+    },
+    {
+      "chapter": "Propositional Logic",
+      "content": "where $\\land$ is logical AND, $\\lor$ is inclusive OR and $\\neg$ is negation."
+    },
+    {
+      "chapter": "Discrete Mathematics: Set Theory & Algebra",
+      "content": "### Topic-wise Key Concepts\n#### Set Theory\nSet theory is the fundamental language for describing collections of objects. It provides the basis for understanding relations, functions, and many other discrete structures.\n\n**Definition and Core Idea:**\nA set is a well-defined collection of distinct objects, called elements. Sets are typically denoted by capital letters, and their elements are enclosed in curly braces. The core idea is to classify and manipulate collections of items.\n\n**Important Formulas and Results:**\n*   **Cardinality:** The number of elements in a set $A$ is denoted by $|A|$.\n*   **Power Set:** The set of all subsets of $A$, denoted $P(A)$. If $|A| = n$, then $|P(A)| = 2^n$.\n*   **Principle of Inclusion-Exclusion:**\n    *   For two sets: $|A \\cup B| = |A| + |B| - |A \\cap B|$\n    *   For three sets: $|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |B \\cap C| - |A \\cap C| + |A \\cap B \\cap C|$\n\n**Key Properties and Identities:**\n*   **Commutative Laws:** $A \\cup B = B \\cup A$, $A \\cap B = B \\cap A$\n*   **Associative Laws:** $A \\cup (B \\cup C) = (A \\cup B) \\cup C$, $A \\cap (B \\cap C) = (A \\cap B) \\cap C$\n*   **Distributive Laws:** $A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$, $A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$\n*   **De Morgan's Laws:** $(A \\cup B)' = A' \\cap B'$, $(A \\cap B)' = A' \\cup B'$\n*   **Idempotent Laws:** $A \\cup A = A$, $A \\cap A = A$\n*   **Identity Laws:** $A \\cup \\emptyset = A$, $A \\cap U = A$ (where $U$ is the universal set)\n*   **Complement Laws:** $A \\cup A' = U$, $A \\cap A' = \\emptyset$"
+    },
+    {
+      "chapter": "Set Theory",
+      "content": "Common Pitfalls & Tricky Points:\n- Confusing elements with sets containing those elements (e.g., $a \\in A$ but $a \\notin \\{a\\}$).\n- Misinterpreting the empty set $\\emptyset$. Remember $\\emptyset$ is a subset of every set, and $\\emptyset \\subseteq A$.\n- Errors in applying De Morgan's Laws or Inclusion-Exclusion for complex scenarios.\n\nProblem-Solving Techniques:\n- Use Venn diagrams for visualizing set operations and proving identities for up to three sets.\n- For formal proofs, use element-wise arguments (e.g., to prove $A \\subseteq B$, show that if $x \\in A$, then $x \\in B$).\n- Apply the Principle of Inclusion-Exclusion systematically for counting problems involving overlapping sets."
+    },
+    {
+      "chapter": "Relations",
+      "content": "A relation describes how elements from one set relate to elements of another set (or the same set). It's a fundamental concept for modeling connections and dependencies.\n\nDefinition and Core Idea:\n- A relation from set $A$ to set $B$ is a subset of the Cartesian product $A \\times B$. If $(a, b) \\in R$, we say $a$ is related to $b$, often written $aRb$. The core idea is to define specific associations between elements.\n\nImportant Formulas and Results:\n- Number of relations: If $|A| = m$ and $|B| = n$, the number of relations from $A$ to $B$ is $2^{mn}$.\n\nTypes of Relations on a Set $A$:\n1. Reflexive: For all $x \\in A$, $xRx$.\n2. Irreflexive: For all $x \\in A$, $x \\not Rx$.\n3. Symmetric: For all $x, y \\in A$, if $xRy$, then $yRx$.\n4. Antisymmetric: For all $x, y \\in A$, if $xRy$ and $yRx$, then $x=y$.\n5. Asymmetric: For all $x, y \\in A$, if $xRy$, then $y \\not Rx$. (Implies irreflexive and antisymmetric).\n6. Transitive: For all $x, y, z \\in A$, if $xRy$ and $yRz$, then $xRz$.\n\nEquivalence Relation: A relation that is Reflexive, Symmetric, and Transitive.\nEquivalence Class: If $R$ is an equivalence relation on $A$, the equivalence class of an element $a$ is $[a] = \\{x \\in A \\mid xRa \\}$. Equivalence classes partition the set $A$.\n\nPartial Order Relation: A relation that is Reflexive, Antisymmetric, and Transitive. (See Partial Order section for more details).\n\nKey Properties and Identities:\n- The inverse of a relation is $R^{-1} = \\{(b, a) \\mid (a, b) \\in R\\}$.\n- Composition of relations: If $R_1 \\subseteq A \\times B$ and $R_2 \\subseteq B \\times C$, then $R_2 \\circ R_1 = \\{(a, c) \\mid \\exists b \\in B, (a, b) \\in R_1 \\land (b, c) \\in R_2\\}$.\n\nCommon Pitfalls & Tricky Points:\n- Confusing symmetric with antisymmetric. A relation can be neither, both (only if it contains only pairs $(x, x)$), or one but not the other.\n- Verifying transitivity requires checking all possible chains $xRy$ and $yRz$.\n- Forgetting to check reflexivity for equivalence or partial order relations."
+    },
+    {
+      "chapter": "Functions",
+      "content": "Functions are special types of relations where each input maps to exactly one output. They are central to all areas of mathematics and computer science.\n\n### Definition and Core Idea\nA function $f$ from set $A$ (domain) to set $B$ (codomain), denoted $f: A \\to B$, assigns to each element $x \\in A$ exactly one element $y \\in B$. The core idea is a deterministic mapping from inputs to outputs.\n\n### Important Formulas and Results\n- **Range:** The set of all actual output values, $f(A) = \\{f(x) : x \\in A\\}$. Note that $f(A) \\subseteq B$.\n- **Types of Functions:**\n    1. **Injective (One-to-one):** If $f(x_1) = f(x_2)$ for all $x_1, x_2 \\in A \\implies x_1 = x_2$. Each element in the codomain is mapped to by at most one element in the domain.\n    2. **Surjective (Onto):** For every $y \\in B$, there exists at least one $x \\in A$ such that $f(x) = y$. The range of $f$ is equal to its codomain $B$.\n    3. **Bijective (One-to-one and Onto):** A function that is both injective and surjective.\n- **Inverse Function:** A function $f: A \\to B$ has an inverse function $f^{-1}: B \\to A$ if and only if $f$ is bijective. Then $f^{-1}(y) = x \\iff f(x) = y$.\n- **Composition of Functions:** If $f: A \\to B$ and $g: B \\to C$, then $g \\circ f: A \\to C$ is defined as $(g \\circ f)(x) = g(f(x))$.\n\n### Number of Functions (If $|A| = n$ and $|B| = m$)\n- **Total functions from $A$ to $B$:** $m^n$\n- **Injective functions from $A$ to $B$:** $P(m, n) = \\frac{m!}{(m-n)!}$ if $m \\ge n$, else 0.\n- **Bijective functions from $A$ to $B$:** $n!$ if $n=m$, else 0.\n- **Surjective functions from $A$ to $B$:** $m! S_2(n, m)$, where $S_2(n, m)$ is the Stirling number of the second kind.\n  Alternatively, using Inclusion-Exclusion: $\\sum_{k=0}^{m} (-1)^k \\binom{m}{k} (m-k)^n$.\n\n### Key Properties and Identities\n- Composition of functions is associative: $h \\circ (g \\circ f) = (h \\circ g) \\circ f$.\n- If $f: A \\to B$ is bijective, then $f^{-1} \\circ f = I_A$ and $f \\circ f^{-1} = I_B$, where $I_A$ and $I_B$ are identity functions on sets $A$ and $B$ respectively.\n\n### Common Pitfalls & Tricky Points\n- Confusing the codomain with the range.\n- Incorrectly assuming a function has an inverse when it's not bijective.\n- Proving surjectivity requires showing that every element in the codomain has a preimage, not just some."
+    },
+    {
+      "chapter": "Algebraic Structures",
+      "content": "### Definition and Core Idea\nA binary operation on a set $S$ is a function $*: S \\times S \\rightarrow S$. For any $a, b \\in S$, $a * b$ is a unique element in $S$. The core idea is to define an internal way to combine elements.\n\n### Properties of a Binary Operation\n1. **Closure**: For all $a, b \\in S, a * b \\in S$. (This is inherent in the definition).\n2. **Associativity**: For all $a, b, c \\in S, (a * b) * c = a * (b * c)$.\n3. **Commutativity**: For all $a, b \\in S, a * b = b * a$.\n4. **Identity Element**: An element $e$ such that for all $a \\in S, a * e = e * a = a$. If it exists, it is unique.\n5. **Inverse Element**: For an element $a$, an element $b$ is its inverse if $a * b = b * a = e$, where $e$ is the identity element. If an identity exists, inverses are unique for each element.\n\n### Key Properties and Identities\n- If an identity element exists, it is unique.\n- If an identity element exists and the operation is associative, then inverses are unique.\n\n### Common Pitfalls & Tricky Points\n- Forgetting to check closure: the result of the operation must always be in the original set.\n- Misidentifying the identity element or assuming it always exists.\n- Assuming commutativity or associativity when not explicitly stated or proven.\n\n### Problem-Solving Techniques\n- To check properties, test with arbitrary elements or counterexamples.\n- For finite sets, construct a Cayley table (operation table) to check properties visually."
+    },
+    {
+      "chapter": "Group Theory",
+      "content": "### Definition and Core Idea\nGroup theory studies algebraic structures called groups, which are sets equipped with a binary operation satisfying specific axioms. It's fundamental in cryptography, coding theory, and physics.\n\nA group $G$ is a set together with a binary operation $*$ that satisfies four axioms:\n1. **Closure**: For all $a, b \\in G, a * b \\in G$.\n2. **Associativity**: For all $a, b, c \\in G, (a * b) * c = a * (b * c)$.\n3. **Identity Element**: There exists an element $e \\in G$ such that for all $a \\in G, a * e = e * a = a$.\n4. **Inverse Element**: For each $a \\in G$, there exists an element $b \\in G$ such that $a * b = b * a = e$.\n\nThe core idea is to formalize symmetry and transformations.\n\n### Related Structures\n- **Semigroup**: A set with an associative binary operation.\n- **Monoid**: A semigroup with an identity element.\n- **Abelian Group (Commutative Group)**: A group where the operation is commutative ($a * b = b * a$).\n- **Subgroup**: A non-empty subset $H$ of a group $G$ is a subgroup if $H$ is itself a group under the same operation.\n- **Subgroup Test**: $H$ is a subgroup of $G$ if for all $a, b \\in H, a * b^{-1} \\in H$.\n- **Cyclic Group**: A group $G$ is cyclic if there exists an element $a \\in G$ such that every element of $G$ can be written as a power of $a$ (i.e., $G = \\langle a \\rangle$). $a$ is called a generator.\n- **Order of an element**: The smallest positive integer $n$ such that $a^n = e$. If no such $n$ exists, the element has infinite order."
+    },
+    {
+      "chapter": "Poset and Lattice",
+      "content": "A poset is a lattice if for every pair of elements $a, b$, both their least upper bound (LUB or join, denoted $a \\vee b$) and greatest lower bound (GLB or meet, denoted $a \\wedge b$) exist and are unique. The core idea is a structure where elements always have well-defined \"closest\" common superiors and inferiors.\n\n### Important Formulas and Results:\n- **Join (Supremum):** $a \\vee b$.\n- **Meet (Infimum):** $a \\wedge b$.\n\n### Types of Lattices:\n- **Distributive Lattice:** A lattice where the distributive laws hold: $a \\vee (b \\wedge c) = (a \\vee b) \\wedge (a \\vee c)$ and $a \\wedge (b \\vee c) = (a \\wedge b) \\vee (a \\wedge c)$.\n- **Complemented Lattice:** A bounded lattice (has a greatest element $1$ and a least element $0$) where every element $a$ has a complement $b$ such that $a \\vee b = 1$ and $a \\wedge b = 0$.\n- **Boolean Algebra:** A distributive and complemented lattice.\n\n### Key Properties and Identities:\n- **Idempotent Laws:** $a \\vee a = a, a \\wedge a = a$\n- **Commutative Laws:** $a \\vee b = b \\vee a, a \\wedge b = b \\wedge a$\n- **Associative Laws:** $a \\vee (b \\vee c) = (a \\vee b) \\vee c, a \\wedge (b \\wedge c) = (a \\wedge b) \\wedge c$\n- **Absorption Laws:** $a \\vee (a \\wedge b) = a, a \\wedge (a \\vee b) = a$\n- **Duality Principle:** If a statement is true for a lattice, its dual (exchanging $\\vee$ with $\\wedge$, $0$ with $1$) is also true.\n\n### Common Pitfalls & Tricky Points:\n- Not every poset is a lattice. A poset fails to be a lattice if any pair of elements lacks a unique LUB or GLB.\n- Distinguishing between maximal/minimal elements and greatest/least elements in a poset (a lattice always has a greatest and least element if it's bounded).\n\n### Problem-Solving Techniques:\n- Draw Hasse diagrams to visually identify LUBs and GLBs for all pairs.\n- To check for distributivity, look for sublattices isomorphic to $N_5$ (pentagon lattice) or $M_3$ (diamond lattice) in the Hasse diagram (they are non-distributive)."
+    },
+    {
+      "chapter": "Mathematical Induction",
+      "content": "Mathematical Induction is a powerful proof technique used to establish the truth of a statement for all natural numbers (or a subset thereof). It's essential for proving properties of algorithms, data structures, and number theory results.\n\n### Definition and Core Idea:\nThe Principle of Mathematical Induction states that to prove a statement $P(n)$ is true for all integers $n \\ge n_0$:\n1. **Base Case:** Show that $P(n_0)$ is true.\n2. **Inductive Hypothesis:** Assume that $P(k)$ is true for some arbitrary integer $k \\ge n_0$.\n3. **Inductive Step:** Show that $P(k+1)$ is true, using the inductive hypothesis.\nThe core idea is like a chain reaction: if the first domino falls, and falling dominoes always knock over the next one, then all dominoes will fall.\n\n### Important Formulas and Results:\n**Principle of Strong Induction:**\n1. **Base Case:** Show that $P(n_0)$ is true.\n2. **Inductive Hypothesis:** Assume that $P(j)$ is true for all integers $j$ such that $n_0 \\le j \\le k$, for some arbitrary integer $k \\ge n_0$.\n3. **Inductive Step:** Show that $P(k+1)$ is true, using the inductive hypothesis."
+    },
+    {
+      "chapter": "Mathematical Induction",
+      "content": "Key Properties and Identities:\nBoth standard and strong induction are equivalent in power; strong induction is often more convenient for proofs where $P(k)$ depends on more than just $P(k-1)$.\n\nCommon Pitfalls & Tricky Points:\n- Incorrect base case: The statement must hold for the starting value.\n- Assuming what needs to be proven in the inductive step. The inductive hypothesis must be explicitly used.\n- Not clearly stating the inductive hypothesis or the inductive step.\n- Algebraic errors during the inductive step.\n\nProblem-Solving Techniques:\n- Clearly label each step: Base Case, Inductive Hypothesis, Inductive Step.\n- In the inductive step, try to manipulate the expression for $P(k+1)$ to isolate an instance of $P(k)$ that can be substituted using the hypothesis.\n- For inequalities, sometimes it's easier to prove $P(n) \\ge C$ or similar."
+    },
+    {
+      "chapter": "Number Theory",
+      "content": "Number theory is the study of integers and their properties, including divisibility, prime numbers, and modular arithmetic. It has direct applications in cryptography, error correction codes, and algorithm analysis.\n\nDefinition and Core Idea:\nNumber theory explores the relationships and properties of integers. The core idea is to understand the structure and behavior of numbers under various operations.\n\nImportant Formulas and Results:\n- Divisibility: $d|a$ means $d$ divides $a$ (i.e., $a = kd$ for some integer $k$).\n- Division Algorithm: For integers $a$ (dividend) and $b$ (divisor) with $b > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that $a = bq + r$, where $0 \\le r < b$.\n- Greatest Common Divisor (GCD): $\\gcd(a, b)$ is the largest integer that divides both $a$ and $b$.\n- Euclidean Algorithm: An efficient method to compute GCD. $\\gcd(a, b) = \\gcd(b, r)$.\n- B\u00e9zout's Identity: For any integers $a, b$, there exist integers $x, y$ such that $ax + by = \\gcd(a, b)$.\n- Least Common Multiple (LCM): $\\text{lcm}(a, b)$ is the smallest positive integer divisible by both $a$ and $b$.\n- Relationship: $\\gcd(a, b) \\cdot \\text{lcm}(a, b) = |ab|$.\n- Prime Numbers: A positive integer greater than 1 with exactly two positive divisors: 1 and itself.\n- Fundamental Theorem of Arithmetic: Every integer greater than 1 can be uniquely represented as a product of prime numbers (up to the order of factors).\n- Modular Arithmetic: $a \\equiv b \\pmod{n}$ means $n | (a-b)$. This is an equivalence relation.\n- Properties:\n  If $a \\equiv b \\pmod{n}$ and $c \\equiv d \\pmod{n}$, then $a+c \\equiv b+d \\pmod{n}$ and $ac \\equiv bd \\pmod{n}$.\n- Fermat's Little Theorem: If $p$ is a prime number and $a$ is an integer not divisible by $p$, then $a^{p-1} \\equiv 1 \\pmod{p}$. Also, $a^p \\equiv a \\pmod{p}$ for any integer $a$.\n- Euler's Totient Function $\\phi(n)$: Counts the number of positive integers up to $n$ that are relatively prime to $n$.\n  - If $n = p_1^{a_1} \\dots p_k^{a_k}$ is the prime factorization of $n$, then $\\phi(n) = n \\prod_{i=1}^k (1 - 1/p_i)$.\n  - If $n$ is prime, $\\phi(n) = n-1$.\n- Euler's Theorem: If $n$ is a positive integer and $a$ is an integer relatively prime to $n$ (i.e., $\\gcd(a, n) = 1$), then $a^{\\phi(n)} \\equiv 1 \\pmod{n}$.\n\nKey Properties and Identities:\nCongruence modulo $n$ is an equivalence relation."
+    },
+    {
+      "chapter": "Algebraic Structures",
+      "content": "The set of integers modulo $n$, $\\mathbb{Z}_n$, forms a ring under addition and multiplication modulo $n$. If $n$ is prime, $\\mathbb{Z}_n$ is a field.\n\nCommon Pitfalls & Tricky Points:\n- Mistakes in applying modular arithmetic, especially with negative numbers or division. Remember division is not always well-defined in modular arithmetic (requires modular inverse).\n- Confusing prime numbers with relatively prime numbers.\n- Incorrectly calculating $\\phi(n)$ for composite numbers.\n\nProblem-Solving Techniques:\n- Use the Euclidean algorithm for GCD and extended Euclidean algorithm for modular inverses.\n- Simplify large powers in modular arithmetic using Fermat's Little Theorem or Euler's Theorem.\n- For divisibility problems, use properties of congruences."
+    },
+    {
+      "chapter": "Functions",
+      "content": "Onto (Surjective Functions)\nOnto functions, also known as surjective functions, ensure that every element in the codomain is \"hit\" by at least one element from the domain.\n\nDefinition and Core Idea:\nA function $f: A \\to B$ is said to be onto (or surjective) if for every element $y \\in B$ (the codomain), there exists at least one element $x \\in A$ (the domain) such that $f(x) = y$. The core idea is that the function's range completely fills its codomain.\n\nImportant Formulas and Results:\n- A function is surjective if and only if $\\text{range}(f) = B$.\n- If $A$ and $B$ are finite sets, and $f: A \\to B$ is surjective, then $|A| \\ge |B|$.\n- The number of surjective functions from a set of size $n$ to a set of size $m$ is given by $\\sum_{k=0}^{m} (-1)^k \\binom{m}{k} (m-k)^n$.\n\nKey Properties and Identities:\n- If $f: A \\to B$ and $g: B \\to C$ are surjective, then $g \\circ f: A \\to C$ is surjective.\n- If $g \\circ f$ is surjective, then $g$ must be surjective (but $f$ need not be).\n\nCommon Pitfalls & Tricky Points:\n- Confusing surjectivity with injectivity. An onto function doesn't require unique preimages.\n- Failing to demonstrate a preimage for an arbitrary element in the codomain, instead just showing some elements have preimages.\n\nProblem-Solving Techniques:\n- To prove a function is surjective, pick an arbitrary $y \\in B$, then show how to construct an $x \\in A$ such that $f(x) = y$. This often involves solving for $x$ in terms of $y$.\n- For finite sets, compare the cardinalities of the domain and codomain. If $|A| < |B|$, no surjective function from $A$ to $B$ can exist."
+    },
+    {
+      "chapter": "Relations",
+      "content": "Partial Order\nPartial order relations define a sense of relative order among elements in a set, but not necessarily for every pair. They are crucial for modeling hierarchies, dependencies, and precedence in computer science (e.g., task scheduling, class inheritance)."
+    },
+    {
+      "chapter": "Discrete Mathematics",
+      "content": "A relation on a set $A$ is a partial order relation if it is reflexive, antisymmetric, and transitive. A set with a partial order relation is called a partially ordered set (poset), denoted $(A, \\preceq)$. The core idea is to establish an ordering where some elements might be incomparable.\n\n### Properties of Partial Order:\n1. **Reflexive**: For all $a \\in A$, $a \\preceq a$.\n2. **Antisymmetric**: For all $a, b \\in A$, if $a \\preceq b$ and $b \\preceq a$, then $a = b$.\n3. **Transitive**: For all $a, b, c \\in A$, if $a \\preceq b$ and $b \\preceq c$, then $a \\preceq c$.\n\n**Comparability**: Two elements are comparable if $a \\preceq b$ or $b \\preceq a$. Otherwise, they are incomparable.\n\n**Total Order (Linear Order)**: A partial order where every pair of elements is comparable.\n\n### Hasse Diagram:\nA graphical representation of a finite poset, where:\n- Elements are represented by nodes.\n- An edge goes upwards from $a$ to $b$ if $a \\preceq b$ and there is no $c$ such that $a \\preceq c \\preceq b$ (i.e., $b$ covers $a$).\n- Reflexive loops and transitive edges are omitted.\n\n### Elements in a Poset:\n- **Maximal Element**: An element $a$ such that there is no $b$ with $a \\preceq b$ and $a \\neq b$.\n- **Minimal Element**: An element $a$ such that there is no $b$ with $b \\preceq a$ and $a \\neq b$.\n- **Greatest Element (Maximum)**: An element $a$ such that for all $b \\in A$, $b \\preceq a$. (If it exists, it is unique).\n- **Least Element (Minimum)**: An element $a$ such that for all $b \\in A$, $a \\preceq b$. (If it exists, it is unique).\n- **Upper Bound**: For a subset $S \\subseteq A$, an element $u$ is an upper bound of $S$ if for all $s \\in S$, $s \\preceq u$.\n- **Lower Bound**: For a subset $S \\subseteq A$, an element $l$ is a lower bound of $S$ if for all $s \\in S$, $l \\preceq s$.\n- **Least Upper Bound (LUB / Supremum)**: The least element among all upper bounds of $S$, denoted $\\text{sup}(S)$.\n- **Greatest Lower Bound (GLB / Infimum)**: The greatest element among all lower bounds of $S$, denoted $\\text{inf}(S)$."
+    },
+    {
+      "chapter": "Algebra",
+      "content": "### Polynomials\nPolynomials are fundamental algebraic expressions used extensively in computer science for modeling, interpolation, error correction, and algorithm analysis (e.g., complexity).\n\n**Definition and Core Idea:**\nA polynomial in a variable $x$ is an expression of the form $P(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_1 x + a_0$, where $a_i$ are coefficients (often real or complex numbers, but can be from finite fields in discrete math) and $n$ is a non-negative integer called the degree of the polynomial (if $a_n \\neq 0$)."
+    },
+    {
+      "chapter": "Polynomials",
+      "content": "Degree: The highest power of $x$ with a non-zero coefficient.\nRoot (or Zero): A value $c$ such that $P(c) = 0$.\nPolynomial Division Algorithm: For polynomials $P(x)$ (dividend) and $D(x)$ (divisor) with $D(x) \\neq 0$, there exist unique polynomials $Q(x)$ (quotient) and $R(x)$ (remainder) such that $P(x) = D(x)Q(x) + R(x)$, where $R(x) = 0$ or $\\text{deg}(R) < \\text{deg}(D)$.\nRemainder Theorem: If a polynomial $P(x)$ is divided by $x - a$, the remainder is $P(a)$.\nFactor Theorem: $x - a$ is a factor of $P(x)$ if and only if $P(a) = 0$ (i.e., $a$ is a root of $P(x)$).\nFundamental Theorem of Algebra: Every non-constant polynomial with complex coefficients has at least one complex root. Consequently, a polynomial of degree $n$ has exactly $n$ complex roots (counting multiplicity).\nVieta's Formulas: Relate the coefficients of a polynomial to the sums and products of its roots. For a quadratic $ax^2 + bx + c = 0$ with roots $r_1, r_2$: $r_1 + r_2 = -b/a$, $r_1r_2 = c/a$.\nKey Properties and Identities:\nA polynomial of degree $n$ has at most $n$ distinct roots.\nPolynomials form a ring under addition and multiplication.\nCommon Pitfalls & Tricky Points:\nAlgebraic errors in polynomial division or evaluating polynomials.\nForgetting to count root multiplicities when applying the Fundamental Theorem of Algebra.\nNot considering the domain of coefficients (e.g., real vs. complex vs. finite field).\nProblem-Solving Techniques:\nUse synthetic division for quick division by $x - a$.\nApply the Remainder and Factor Theorems to find roots or factors efficiently.\nFor problems involving roots, Vieta's formulas can often provide shortcuts."
+    },
+    {
+      "chapter": "Quick Formula Reference",
+      "content": "Set Theory:\nDe Morgan's Laws: $(A \\cup B)^c = A^c \\cap B^c$, $(A \\cap B)^c = A^c \\cup B^c$\nRelations:\nNumber of relations from $A$ to $B$: $2^{|A||B|}$\nEquivalence Relation: Reflexive, Symmetric, Transitive.\nPartial Order: Reflexive, Antisymmetric, Transitive.\nFunctions (from $A$ to $B$): \nTotal functions: $|B|^{|A|}$\nInjective functions: $P(|B|, |A|)$ (if $|B| \\ge |A|$)\nBijective functions: $|A|!$ (if $|A| = |B|$)\nSurjective functions: $\\sum_{k=0}^{|B|} (-1)^k \\binom{|B|}{k} (|B|-k)^{|A|}$\nIdentity function: $I_A(x) = x$\nGroup Theory:\nGroup Axioms: Closure, Associativity, Identity, Inverse.\nLagrange's Theorem: $|H|$ divides $|G|$ for subgroup $H$ of group $G$.\nLattice:\nPoset where every pair has unique LUB (join $\\vee$) and GLB (meet $\\wedge$).\nDistributive Lattice: $a \\wedge (b \\vee c) = (a \\wedge b) \\vee (a \\wedge c)$, etc.\nMathematical Induction:\nBase Case $P(1)$, Inductive Hypothesis $P(k)$, Inductive Step $P(k+1)$.\nNumber Theory:\nDivision Algorithm: $a = bq + r$, $0 \\le r < |b|$\nFermat's Little Theorem: $a^{p-1} \\equiv 1 \\pmod{p}$ (for prime $p, p \\nmid a$)"
+    },
+    {
+      "chapter": "Number Theory",
+      "content": "Euler's Totient Function: $\\phi(n)$\nEuler's Theorem: $a^{\\phi(n)} \\equiv 1 \\pmod n$ (for $\\gcd(a, n) = 1$)\nPolynomials:\nRemainder Theorem: $P(a)$ is the remainder when $P(x)$ is divided by $(x-a)$\nFactor Theorem: $(x-a)$ is a factor if $P(a) = 0$"
+    },
+    {
+      "chapter": "General",
+      "content": "Important Tips for GATE:\n1. Master Definitions and Properties: Many GATE questions directly test your understanding of definitions (e.g., what makes a relation symmetric?) and properties (e.g., De Morgan's laws). Memorize them thoroughly.\n2. Practice with Hasse Diagrams: For partial orders and lattices, drawing Hasse diagrams is crucial. Practice identifying maximal/minimal elements, greatest/least elements, and LUB/GLB from diagrams.\n3. Systematic Verification: When asked to check if a structure is a group, a relation is an equivalence relation, or a function is bijective, systematically go through each axiom/property. Don't skip steps or assume properties.\n4. Number Theory Shortcuts: Familiarize yourself with the Euclidean algorithm for GCD, modular arithmetic properties, and theorems like Fermat's Little Theorem and Euler's Theorem. These are vital for efficiently solving problems involving large numbers or powers.\n5. Inclusion-Exclusion Principle: This principle is frequently tested for counting problems in set theory and functions (especially surjective functions). Practice applying it for 2, 3, and general cases.\n6. Mathematical Induction Structure: Always clearly state your base case, inductive hypothesis, and inductive step. Ensure your inductive step explicitly uses the inductive hypothesis to avoid circular reasoning.\n7. Cardinality vs. Countability: Understand the difference between finite, countably infinite, and uncountable sets. Be familiar with standard examples (e.g., $\\mathbb{N}$ are countable; $\\mathbb{R}$ are uncountable) and Cantor's diagonalization argument.\n8. Watch for \"If and Only If\": Pay close attention to conditions that are \"if and only if\" (iff) as they imply equivalence and are often key to proving properties or identifying specific structures."
     }
   ],
   "questions": [
@@ -2009,6 +2109,1726 @@
       ],
       "difficulty_tag": "normal",
       "explanation_url": "https://gateoverflow.in/8364"
+    },
+    {
+      "id": "3.1.1",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-1989",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Symbolize the expression \"Every mother loves her children\" in predicate logic.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/93179"
+    },
+    {
+      "id": "3.1.2",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gate1991",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Consider the following first order formula:\n$$\\forall x : \\exists y : P(x, y) \\wedge \\neg(\\exists y : Q(x, y) \\wedge \\forall y : (P(x, y) \\implies Q(x, y)))$$\nDoes it have finite models?\nIs it satisfiable? If so, give a countable model for it.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/922"
+    },
+    {
+      "id": "3.1.3",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gate1992",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Which of the following predicate calculus statements is/are valid?",
+      "options": [
+        "A. $$\\forall x : P(x) \\vee \\forall x : Q(x) \\implies \\forall x : (P(x) \\vee Q(x))$$",
+        "B. $$\\exists x : (P(x) \\wedge Q(x)) \\iff (\\exists x : P(x) \\wedge \\exists x : Q(x))$$",
+        "C. $$\\forall x : (P(x) \\vee Q(x)) \\implies (\\forall x : P(x) \\vee \\forall x : Q(x))$$",
+        "D. $$\\forall x : (P(x) \\implies Q(x)) \\implies (\\forall x : P(x) \\implies \\forall x : Q(x))$$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/256"
+    },
+    {
+      "id": "3.1.4",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Which of the following is a valid first order formula? (Here $P$ and $Q$ are first order formulae with $x$ as their only free variable)",
+      "options": [
+        "A. $$\\forall x : (P(x) \\vee Q(x)) \\iff (\\forall x : P(x) \\vee \\forall x : Q(x))$$",
+        "B. $$\\exists x : (P(x) \\wedge Q(x)) \\iff (\\exists x : P(x) \\wedge \\exists x : Q(x))$$",
+        "C. $$\\forall x : (P(x) \\implies Q(x)) \\iff (\\forall x : P(x) \\implies \\forall x : Q(x))$$",
+        "D. $$\\exists x : (P(x) \\implies Q(x)) \\iff (\\exists x : P(x) \\implies \\exists x : Q(x))$$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/26748"
+    },
+    {
+      "id": "3.1.5",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Consider the following formula and its two interpretations $I_1$ and $I_2$.\n$$\\forall x : \\exists y : P(x, y)$$\n$I_1$: Domain: the set of natural numbers",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/923"
+    },
+    {
+      "id": "3.1.5",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "$P(x)$ = 'x is a prime number'\n$D(x, y)$ = 'x divides y'\n$C(x)$: same as $P(x)$ except that $C(x)$ = 'x is a composite number'.\nWhich of the following statements is true?\nA. $\\forall x (P(x) \\rightarrow \\exists y (C(y) \\land D(y, x))), \\exists x (P(x) \\land \\neg \\exists y (C(y) \\land D(y, x)))$ does not\nB. $\\forall x (P(x) \\rightarrow \\exists y (C(y) \\land D(y, x))), \\exists x (P(x) \\land \\neg \\exists y (C(y) \\land D(y, x)))$ does not\nC. Neither $\\forall x (P(x) \\rightarrow \\exists y (C(y) \\land D(y, x)))$ nor $\\exists x (P(x) \\land \\neg \\exists y (C(y) \\land D(y, x)))$ satisfies\nD. Both $\\forall x (P(x) \\rightarrow \\exists y (C(y) \\land D(y, x)))$ and $\\exists x (P(x) \\land \\neg \\exists y (C(y) \\land D(y, x)))$ satisfies",
+      "options": [],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/1166"
+    },
+    {
+      "id": "3.1.6",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Identify the correct translation into logical notation of the following assertion.\nSome boys in the class are taller than all the girls\nNote: $T(x, y)$ is true if x is taller than y.",
+      "options": [
+        "$\\exists b (B(b) \\land \\forall g (G(g) \\rightarrow T(b, g)))$",
+        "$\\exists b (B(b) \\rightarrow \\forall g (G(g) \\rightarrow T(b, g)))$",
+        "$\\forall b (B(b) \\rightarrow \\forall g (G(g) \\rightarrow T(b, g)))$",
+        "$\\exists b (B(b) \\land \\exists g (G(g) \\rightarrow T(b, g)))$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/1020"
+    },
+    {
+      "id": "3.1.7",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "What is the first order predicate calculus statement equivalent to the following?\n\"Every teacher is liked by some student\"",
+      "options": [
+        "$\\forall x (Teacher(x) \\rightarrow \\exists y (Student(y) \\land Likes(y, x)))$",
+        "$\\forall x (Teacher(x) \\rightarrow \\exists y (Student(y) \\land Likes(x, y)))$",
+        "$\\exists x (Teacher(x) \\rightarrow \\forall y (Student(y) \\land Likes(y, x)))$",
+        "$\\forall x (Teacher(x) \\land \\exists y (Student(y) \\land Likes(y, x)))$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/989"
+    },
+    {
+      "id": "3.1.8",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2006",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Which one of the first order predicate calculus statements given below correctly expresses the following English statement?\nTigers and lions attack if they are hungry or threatened.",
+      "options": [
+        "$\\forall x ((Tiger(x) \\land Lion(x)) \\rightarrow ((Hungry(x) \\lor Threatened(x)) \\rightarrow Attacks(x)))$",
+        "$\\forall x ((Tiger(x) \\lor Lion(x)) \\rightarrow ((Hungry(x) \\lor Threatened(x)) \\rightarrow Attacks(x)))$",
+        "$\\forall x ((Tiger(x) \\lor Lion(x)) \\rightarrow (Attacks(x) \\rightarrow (Hungry(x) \\lor Threatened(x))))$",
+        "$\\forall x ((Tiger(x) \\land Lion(x)) \\rightarrow (Attacks(x) \\rightarrow (Hungry(x) \\lor Threatened(x))))$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "N/A"
+    },
+    {
+      "id": "3.1.9",
+      "chapter": "First Order Logic",
+      "subtopic": "GATE CSE 2007 | Question: 22",
+      "exam_tag": "gatecse-2007",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G(x)$ be a predicate which denotes that $x$ is a graph. Let $C(x)$ be a predicate which denotes that $x$ is connected. Which of the following first order logic sentences DOES NOT represent the statement:\n\nA. $\\forall x (G(x) \\implies C(x))$\nB. $\\forall x (\\neg G(x) \\lor C(x))$\nC. $\\forall x (\\neg C(x) \\implies \\neg G(x))$\nD. $\\exists x (G(x) \\land C(x))$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/800"
+    },
+    {
+      "id": "3.1.10",
+      "chapter": "First Order Logic",
+      "subtopic": "GATE CSE 2008 | Question: 30",
+      "exam_tag": "gatecse-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $F(x)$ and $P(x)$ be two predicates such that $F(x)$ means $x$ is a finite state automaton and $P(x)$ means that $x$ is a pushdown automaton. Let $E(x, y)$ be another predicate such that $E(x, y)$ means $x$ and $y$ are equivalent. Which of the following first order logic statements represent the following?\nEach finite state automaton has an equivalent pushdown automaton\n\nA. $\\forall x (F(x) \\implies \\exists y (P(y) \\land E(x, y)))$\nB. $\\forall x (F(x) \\implies \\exists y (P(y) \\lor E(x, y)))$\nC. $\\forall x (F(x) \\implies \\exists y (P(y) \\implies E(x, y)))$\nD. $\\forall x (\\exists y (F(x) \\implies (P(y) \\land E(x, y))))$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/441"
+    },
+    {
+      "id": "3.1.11",
+      "chapter": "First Order Logic",
+      "subtopic": "GATE CSE 2009 | Question: 23",
+      "exam_tag": "gatecse-2009",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following is the most appropriate logical formula to represent the statement?\n\"Gold and silver ornaments are precious\".\nThe following notations are used:\n$G(x): x$ is a gold ornament\n$S(x): x$ is a silver ornament\n$P(x): x$ is precious\n\nA. $\\forall x ((G(x) \\land S(x)) \\implies P(x))$\nB. $\\forall x ((G(x) \\lor S(x)) \\implies P(x))$\nC. $\\forall x ((G(x) \\implies P(x)) \\land (S(x) \\implies P(x)))$\nD. $\\forall x ((G(x) \\lor S(x)) \\land P(x))$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/1220"
+    },
+    {
+      "id": "3.1.12",
+      "chapter": "First Order Logic",
+      "subtopic": "GATE CSE 2009 | Question: 26",
+      "exam_tag": "gatecse-2009",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider the following well-formed formulae:\nI. $\\forall x (P(x)) \\lor \\forall x (Q(x))$\nII. $\\forall x (P(x) \\lor Q(x))$\nIII. $\\forall x (P(x) \\lor \\exists x (Q(x)))$\nIV. $\\forall x (P(x) \\lor Q(x))$\nWhich of the above are equivalent?\n\nA. I and II\nB. I and III\nC. III and IV\nD. II and III",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/803"
+    },
+    {
+      "id": "3.1.13",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2010",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Suppose the predicate $F(x, y, t)$ is used to represent the statement that person $x$ can fool person $y$ at time $t$. Which one of the statements below expresses best the meaning of the formula, $\\neg \\exists x \\exists y \\forall t F(x, y, t)$?",
+      "options": [
+        "A. Everyone can fool some person at some time",
+        "B. No one can fool everyone all the time",
+        "C. Everyone cannot fool some person all the time",
+        "D. No one can fool some person at some time"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/1538"
+    },
+    {
+      "id": "3.1.14",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2011",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following options is CORRECT given three positive integers $x, y, z$ and a predicate $P(x, y, z)$? \n$P(x, y, z) \\equiv \\forall a (a > 1 \\land a < z \\implies \\neg(x = a \\times y))$\n$P(x, y, z)$ being true means that",
+      "options": [
+        "A. $z$ being true means that $x$ is a prime number",
+        "B. $P(x, y, z)$ being true means that $z$ is a number other than $x \\times y$",
+        "C. $P(x, y, z)$ is always true irrespective of the value of $z$",
+        "D. $P(x, y, z)$ being true means that $x$ has exactly two factors other than $1$ and $x$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/45"
+    },
+    {
+      "id": "3.1.15",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2012",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the correct translation of the following statement into mathematical logic?\n\u201cSome real numbers are rational\u201d",
+      "options": [
+        "A. $\\exists x (Real(x) \\land Rational(x))$",
+        "B. $\\forall x (Real(x) \\implies Rational(x))$",
+        "C. $\\exists x (Real(x) \\implies Rational(x))$",
+        "D. $\\forall x (Real(x) \\land Rational(x))$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/2132"
+    },
+    {
+      "id": "3.1.16",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2013",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the logical translation of the following statement?\n\"None of my friends are perfect.\"",
+      "options": [
+        "A. $\\exists x (Friend(x) \\land \\neg Perfect(x))$",
+        "B. $\\forall x (Friend(x) \\implies \\neg Perfect(x))$",
+        "C. $\\exists x (Friend(x) \\implies Perfect(x))$",
+        "D. $\\forall x (Friend(x) \\land \\neg Perfect(x))$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/1156"
+    },
+    {
+      "id": "3.1.17",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gatecse-2013",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following is NOT logically equivalent to $\\neg \\forall x P(x)$?",
+      "options": [
+        "A. $\\exists x \\neg P(x)$",
+        "B. $\\neg \\exists x P(x)$",
+        "C. $\\exists x \\neg P(x)$",
+        "D. $\\neg \\exists x P(x)$ (Note: Assuming correct options are derived from formula components)"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/80"
+    },
+    {
+      "id": "3.1.23",
+      "chapter": "First Order Logic",
+      "subtopic": "Model Theory",
+      "exam_tag": "gatecse-2018",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Consider the first-order logic sentence $\\phi$ where $\\phi$ is a quantifier-free first-order logic formula using only predicate symbols, and possibly equality, but no function symbols. Suppose $\\phi$ has a model with a universe containing $n$ elements. Which one of the following statements is necessarily true?",
+      "options": [
+        "A. There exists at least one model of $\\phi$ with universe of size less than or equal to $n$",
+        "B. There exists no model of $\\phi$ with universe of size less than or equal to $n$",
+        "C. There exists no model of $\\phi$ with universe size of greater than $n$",
+        "D. Every model of $\\phi$ has a universe of size equal to $n$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/302813"
+    },
+    {
+      "id": "3.1.24",
+      "question_text": "Consider the first order predicate formula $\\psi$: $\\forall x \\forall y [P(x, y) \\rightarrow P(y, x)] \\land \\forall x \\forall y \\forall z [P(x, y) \\wedge P(y, z) \\rightarrow P(x, z)] \\land \\forall x \\exists y P(x, y)$. Here $P(x, y)$ denotes that $x < y$, where $x$ and $y$ are integers. Consider the following sets: $S_1$: Set of all positive integers, $S_2$: Set of all integers. Which of the above sets satisfy $\\psi$?",
+      "exam_tag": "gatecse-2019",
+      "type": "MCQ",
+      "marks": "2",
+      "options": [
+        "A. $S_1$ and $S_2$",
+        "B. $S_1$ and not $S_2$",
+        "C. not $S_1$ and $S_2$",
+        "D. not $S_1$ and not $S_2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/333192"
+    },
+    {
+      "id": "3.1.25",
+      "question_text": "Which one of the following predicate formulae is NOT logically valid? Note that $\\psi$ is a predicate formula without any free occurrence of $x$.",
+      "exam_tag": "gatecse-2020",
+      "type": "MCQ",
+      "marks": "2",
+      "options": [
+        "A. $(\\forall x [\\phi(x) \\vee \\psi]) \\equiv (\\forall x \\phi(x) \\vee \\psi)$",
+        "B. $(\\exists x [\\phi(x) \\wedge \\psi]) \\equiv (\\exists x \\phi(x) \\wedge \\psi)$",
+        "C. $(\\forall x [\\phi(x) \\wedge \\psi]) \\equiv (\\forall x \\phi(x) \\wedge \\psi)$",
+        "D. $(\\exists x [\\phi(x) \\vee \\psi]) \\equiv (\\exists x \\phi(x) \\vee \\psi)$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/399295"
+    },
+    {
+      "id": "3.1.26",
+      "question_text": "Geetha has a conjecture about integers, which is of the form $\\forall x \\exists y P(x, y)$ where $P$ is a statement about integers, and $Q$ is a statement about pairs of integers. Which of the following (one or...",
+      "exam_tag": "gatecse-2023",
+      "type": "MCQ",
+      "marks": "2",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/204102"
+    },
+    {
+      "id": "3.1.35",
+      "chapter": "First Order Logic",
+      "subtopic": "First Order Logic",
+      "exam_tag": "gateit-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following is the negation of $\\exists x \\alpha(x)$?",
+      "options": [
+        "$\\forall x \\neg \\alpha(x)$",
+        "$\\neg \\forall x \\alpha(x)$",
+        "$\\forall x \\alpha(x)$",
+        "$\\exists x \\neg \\alpha(x)$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/33"
+    },
+    {
+      "id": "3.2.1",
+      "chapter": "Logical Reasoning",
+      "subtopic": "Logical Reasoning",
+      "exam_tag": "gatecse-2012",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider the following logical inferences.\n\n$I_1$: If it rains then the cricket match will not be played. The cricket match was played. Inference: There was no rain.\n\n$I_2$: If it rains then the cricket match will not be played. It did not rain. Inference: The cricket match was played.\n\nWhich of the following is TRUE?",
+      "options": [
+        "Both $I_1$ and $I_2$ are correct inferences",
+        "$I_1$ is correct but $I_2$ is not a correct inference",
+        "$I_1$ is not correct but $I_2$ is a correct inference",
+        "Both $I_1$ and $I_2$ are not correct inferences"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/3283"
+    },
+    {
+      "id": "3.2.2",
+      "chapter": "Logical Reasoning",
+      "subtopic": "Logical Reasoning",
+      "exam_tag": "gatecse-2015-set2",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider the following two statements.\n\n$S_1$: If a candidate is known to be corrupt, then he will not be elected\n$S_2$: If a candidate is kind, he will be elected\n\nWhich one of the following statements follows from $S_1$ and $S_2$ as per sound inference rules of logic?",
+      "options": [
+        "If a person is known to be corrupt, he is kind",
+        "If a person is not known to be corrupt, he is not kind",
+        "If a person is kind, he is not known to be corrupt",
+        "If a person is not kind, he is not known to be corrupt"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8049"
+    },
+    {
+      "id": "3.2.3",
+      "chapter": "Logical Reasoning",
+      "subtopic": "Logical Reasoning",
+      "exam_tag": "gatecse-2015-set3",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "In a room there are only two types of people, namely $T$ and $F$. $T$ people always tell the truth and $F$ people always lie. You give a fair coin to a person in that room, without knowing which type he is from and tell him to toss it and hide the result from you till you ask for it. Upon asking the person replies the following\n\"The result of the toss is head if and only if I am telling the truth\"\nWhich of the following options is correct?",
+      "options": [
+        "A. The result is head",
+        "B. The result is tail",
+        "C. If the person is of $T$, then the result is tail",
+        "D. If the person is of $F$, then the result is tail"
+      ],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/84861"
+    },
+    {
+      "id": "3.3.1",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gate1987",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Show that the conclusion follows from the premises",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/87126"
+    },
+    {
+      "id": "3.3.2",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gate1988",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Define the validity of a well-formed formula(wff)?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/93947"
+    },
+    {
+      "id": "3.3.3",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gate1989",
+      "type": "MSQ",
+      "marks": "1",
+      "question_text": "Which of the following well-formed formulas are equivalent?",
+      "options": [
+        "A. $P \\to Q$",
+        "B. $\\neg Q \\to \\neg P$",
+        "C. $Q \\to P$",
+        "D. $\\neg P \\vee Q$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/82457"
+    },
+    {
+      "id": "3.3.4",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gate1990",
+      "type": "MSQ",
+      "marks": "1",
+      "question_text": "Indicate which of the following well-formed formulae are valid:",
+      "options": [
+        "A. $P \\to Q$",
+        "B. $\\neg P \\vee Q$",
+        "C. $\\neg(P \\wedge \\neg Q)$",
+        "D. $P \\wedge \\neg Q$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8427"
+    },
+    {
+      "id": "3.3.5",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gate1991",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "If $F_1$, $F_2$ and $F_3$ are propositional formulae such that $F_1 \\to F_2$ and $F_2 \\to F_3$ are both tautologies, then which of the following is true:",
+      "options": [
+        "A. Both $F_1$ and $F_3$ are tautologies",
+        "B. The conjunction $F_1 \\wedge F_3$ is not satisfiable",
+        "C. Neither is tautologous",
+        "D. Neither is satisfiable",
+        "E. None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/526"
+    },
+    {
+      "id": "3.3.6",
+      "chapter": "Propositional Logic",
+      "subtopic": "Tautology",
+      "exam_tag": "gate1992",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following is/are a tautology?\nA. ![diagram](/images/43_diagram.png) ![diagram](/images/44_diagram.png) ![diagram](/images/45_diagram.png) ![diagram](/images/46_diagram.png) ![diagram](/images/47_diagram.png) ![diagram](/images/48_diagram.png)\nB. ...\nC. ...\nD. ...",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2499"
+    },
+    {
+      "id": "3.3.7",
+      "chapter": "Propositional Logic",
+      "subtopic": "Inference",
+      "exam_tag": "gate1992",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Use Modus ponens or resolution to show that the following set is inconsistent:\n1. $P(a) \\vee P(b)$\n2. $P(x) \\rightarrow Q(x)$\n3. $\\neg Q(a)$\n4. $\\neg Q(b)$\nwhere $x$ and $y$ are universally quantified variables, $a$ and $b$ are constants and $P, Q$ are monadic predicates.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2300"
+    },
+    {
+      "id": "3.3.8",
+      "chapter": "Propositional Logic",
+      "subtopic": "Logical Consequence",
+      "exam_tag": "gate1993",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Show that proposition $P$ is a logical consequence of the formula $(P \\vee Q) \\wedge (P \\vee \\neg Q)$ using truth tables.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2315"
+    },
+    {
+      "id": "3.3.9",
+      "chapter": "Propositional Logic",
+      "subtopic": "Equivalence",
+      "exam_tag": "gate1993",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The proposition $(P \\rightarrow Q) \\leftrightarrow (\\neg Q \\rightarrow \\neg P)$ is:\nA. a tautology\nB. logically equivalent to $P \\rightarrow Q$\nC. logically equivalent to $\\neg P \\rightarrow \\neg Q$\nD. a contradiction\nE. none of the above",
+      "options": [
+        "a tautology",
+        "logically equivalent to $P \\rightarrow Q$",
+        "logically equivalent to $\\neg P \\rightarrow \\neg Q$",
+        "a contradiction"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/594"
+    },
+    {
+      "id": "3.3.10",
+      "chapter": "Propositional Logic",
+      "subtopic": "Implication",
+      "exam_tag": "gate1994",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $P$ and $Q$ be propositions. Using only the Truth Table, decide whether $P \\rightarrow Q$ does not imply $\\neg P \\rightarrow \\neg Q$ is True or False.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/574"
+    },
+    {
+      "id": "3.3.11",
+      "chapter": "Propositional Logic",
+      "subtopic": "Normal Forms",
+      "exam_tag": "gate1995",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Obtain the principal (canonical) conjunctive normal form of the propositional formula $P \\rightarrow ((P \\rightarrow Q) \\wedge \\neg(\\neg Q \\vee \\neg P))$",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2649"
+    },
+    {
+      "id": "3.3.12",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-1995",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "If the proposition $p \\to q$ is true, then the truth value of the proposition $\\neg p \\lor q$, where $\\neg$ is negation, $\\lor$ is inclusive OR and $\\to$ is implication, is",
+      "options": [
+        "True",
+        "Multiple Values",
+        "False",
+        "Cannot be determined"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1513"
+    },
+    {
+      "id": "3.3.13",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-1996",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following is NOT True?\n(Read $\\land$ as AND, $\\lor$ as OR, $\\neg$ as NOT, $\\to$ as one way implication and $\\leftrightarrow$ as two way implication)\nA. $p \\land q \\leftrightarrow q \\land p$\nB. $p \\lor q \\leftrightarrow q \\lor p$\nC. $\\neg(p \\lor q) \\leftrightarrow \\neg p \\land \\neg q$\nD. $p \\to q \\leftrightarrow \\neg p \\to \\neg q$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1642"
+    },
+    {
+      "id": "3.3.14",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-1997",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following propositions is a tautology?\nA. $(p \\lor q) \\to p$\nB. $p \\lor (q \\to p)$\nC. $p \\lor (p \\to q)$\nD. $p \\to (p \\lor q)$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/2233"
+    },
+    {
+      "id": "3.3.15",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-1998",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the converse of the following assertion?\nI stay only if you go\nA. I stay if you go\nB. If I stay then you go\nC. If you do not go then I do not stay\nD. If I do not stay then you go",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/2732"
+    },
+    {
+      "id": "3.3.16",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-1999",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Show that the formula $(p \\to q) \\to (\\neg p \\to \\neg q)$ is not a tautology.\nLet $P$ be a tautology and $Q$ any other formula. Prove that $P \\lor Q$ is a tautology.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2631"
+    },
+    {
+      "id": "3.3.22",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The following propositional statement is \n![diagram](/images/0_diagram.png)\nA. satisfiable but not valid B. valid\nC. a contradiction D. None of the above",
+      "options": [
+        "satisfiable but not valid",
+        "valid",
+        "a contradiction",
+        "None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/442"
+    },
+    {
+      "id": "3.3.23",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $P$, $Q$ and $R$ be three atomic propositional assertions. Let $X$ denote $(P \\vee Q) \\to R$ and $Y$ denote $(P \\to R) \\vee (Q \\to R)$. Which one of the following is a tautology?\nA. $X \\equiv Y$ B. $X \\to Y$ C. $Y \\to X$ D. $\\neg Y \\to X$",
+      "options": [
+        "$X \\equiv Y$",
+        "$X \\to Y$",
+        "$Y \\to X$",
+        "$\\neg Y \\to X$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1165"
+    },
+    {
+      "id": "3.3.24",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2006",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider the following propositional statements:\n$P1: ((P \\wedge Q) \\to R) \\equiv ((P \\to R) \\wedge (Q \\to R))$\n$P2: ((P \\vee Q) \\to R) \\equiv ((P \\to R) \\vee (Q \\to R))$\nWhich one of the following is true?\nA. $P1$ is a tautology, but not $P2$ B. $P2$ is a tautology, but not $P1$\nC. $P1$ and $P2$ are both tautologies D. Both $P1$ and $P2$ are not tautologies",
+      "options": [
+        "$P1$ is a tautology, but not $P2$",
+        "$P2$ is a tautology, but not $P1$",
+        "$P1$ and $P2$ are both tautologies",
+        "Both $P1$ and $P2$ are not tautologies"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1064"
+    },
+    {
+      "id": "3.3.25",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "$P$ and $Q$ are two propositions. Which of the following logical expressions are equivalent?\nI. $P \\vee Q$\nII. $\\neg P \\to Q$\nIII. $P \\vee \\neg Q$\nIV. $\\neg P \\to \\neg Q$\nA. Only I and II B. Only I, II and III\nC. Only I, II and IV D. All of I, II, III and IV",
+      "options": [
+        "Only I and II",
+        "Only I, II and III",
+        "Only I, II and IV",
+        "All of I, II, III and IV"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/801"
+    },
+    {
+      "id": "3.3.26",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2009",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The binary operation $\\odot$ is defined as follows:\n$P \\odot Q = P \\vee \\neg Q$\nWhich one of the following is equivalent to $P \\odot Q$?\nA. $\\neg P \\to \\neg Q$ B. $P \\to Q$\nC. $\\neg P \\to Q$ D. $Q \\to P$",
+      "options": [
+        "$\\neg P \\to \\neg Q$",
+        "$P \\to Q$",
+        "$\\neg P \\to Q$",
+        "$Q \\to P$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/990"
+    },
+    {
+      "id": "3.3.27",
+      "chapter": "Mathematical Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2014-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following propositional logic formulas is TRUE when exactly two of $p$, $q$ and $r$ are TRUE?",
+      "options": [
+        "$((p \\wedge q) \\vee (q \\wedge r) \\vee (r \\wedge p)) \\wedge \\neg (p \\wedge q \\wedge r)$",
+        "$((p \\wedge q) \\wedge \\neg r) \\vee ((q \\wedge r) \\wedge \\neg p) \\vee ((r \\wedge p) \\wedge \\neg q)$",
+        "$((p \\wedge q) \\wedge r) \\vee \\neg (p \\wedge q \\wedge r)$",
+        "$((p \\wedge q) \\vee (q \\wedge r) \\vee (r \\wedge p)) \\wedge (p \\wedge q \\wedge r)$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/8209"
+    },
+    {
+      "id": "3.3.28",
+      "chapter": "Mathematical Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2014-set2",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following Boolean expressions is NOT a tautology?",
+      "options": [
+        "$(p \\leftrightarrow q) \\leftrightarrow (\\neg p \\leftrightarrow \\neg q)$",
+        "$(p \\rightarrow q) \\leftrightarrow (\\neg q \\rightarrow \\neg p)$",
+        "$(p \\rightarrow q) \\leftrightarrow (\\neg p \\vee q)$",
+        "$(p \\leftrightarrow q) \\leftrightarrow (\\neg p \\vee q) \\wedge (\\neg q \\vee p)$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2035"
+    },
+    {
+      "id": "3.3.29",
+      "chapter": "Mathematical Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2014-set3",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider the following statements:\n$P$: Good mobile phones are not cheap\n$Q$: Cheap mobile phones are not good\n$L$: $P$ implies $Q$\n$M$: $Q$ implies $P$\n$N$: $P$ is equivalent to $Q$\nWhich one of the following about $L$, $M$, and $N$ is CORRECT?",
+      "options": [
+        "Only $L$ is TRUE.",
+        "Only $M$ is TRUE.",
+        "Only $N$ is TRUE.",
+        "$L$, $M$ and $N$ are TRUE."
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/1933"
+    },
+    {
+      "id": "3.3.30",
+      "chapter": "Mathematical Logic",
+      "subtopic": "Propositional Logic",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following is NOT equivalent to $\\neg (p \\rightarrow q)$?",
+      "options": [
+        "$\\neg (\\neg p \\vee q)$",
+        "$p \\wedge \\neg q$",
+        "$\\neg p \\rightarrow \\neg q$",
+        "$\\neg (p \\rightarrow q) \\leftrightarrow (p \\wedge \\neg q)$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/2020"
+    },
+    {
+      "id": "3.3.36",
+      "chapter": "Propositional Logic",
+      "subtopic": "Tautology",
+      "exam_tag": "gatecse-2021-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $p$ and $q$ be two propositions. Consider the following two formulae in propositional logic.\n$S_1: (p \\land (p \\to q)) \\to q$\n$S_2: (q \\land (p \\to q)) \\to p$\nWhich one of the following choices is correct?",
+      "options": [
+        "A. Both $S_1$ and $S_2$ are tautologies.",
+        "B. $S_1$ is a tautology but $S_2$ is not a tautology",
+        "C. $S_1$ is not a tautology but $S_2$ is a tautology",
+        "D. Neither $S_1$ nor $S_2$ is a tautology"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/357525"
+    },
+    {
+      "id": "3.3.37",
+      "chapter": "Propositional Logic",
+      "subtopic": "Tautology/Contradiction",
+      "exam_tag": "gatecse-2021-set2",
+      "type": "MSQ",
+      "marks": "1",
+      "question_text": "Choose the correct choice(s) regarding the following proportional logic assertion :\n$((p \\to q) \\land \\neg p) \\to \\neg q$",
+      "options": [
+        "A. It is neither a tautology nor a contradiction",
+        "B. It is a tautology",
+        "C. It is a contradiction",
+        "D. The antecedent of the assertion is logically equivalent to the consequent of it"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/357445"
+    },
+    {
+      "id": "3.3.38",
+      "chapter": "Propositional Logic",
+      "subtopic": "Propositional logic representation",
+      "exam_tag": "gatecse-2024-set2",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $p$ and $q$ be the following propositions:\n$p$: Fail grade can be given.\n$q$: Student scores more than 50 marks.\nConsider the statement: \"Fail grade cannot be given when student scores more than 50 marks.\"\nWhich one of the following is the CORRECT representation of the above statement in propositional logic?",
+      "options": [
+        "A. $q \\to \\neg p$",
+        "B. $\\neg p \\to q$",
+        "C. $p \\to \\neg q$",
+        "D. $\\neg q \\to p$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422943"
+    },
+    {
+      "id": "3.3.39",
+      "chapter": "Propositional Logic",
+      "subtopic": "Tautology",
+      "exam_tag": "gate-ds-ai-2024",
+      "type": "MSQ",
+      "marks": "1",
+      "question_text": "Let $p$ and $q$ be two propositions. Which of the following statements is a tautology /are tautologies?",
+      "options": [
+        "A. $((p \\to q) \\land \\neg q) \\to \\neg p$",
+        "B. $((p \\to q) \\land \\neg p) \\to \\neg q$",
+        "C. $((p \\lor q) \\land \\neg p) \\to q$",
+        "D. $((p \\lor q) \\land \\neg q) \\to p$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422895"
+    },
+    {
+      "id": "4.1.1",
+      "chapter": "Set Theory & Algebra",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-1989",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "The number of possible commutative binary operations that can be defined on a set of $n$ elements (for a given $n$) is ___________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2469"
+    },
+    {
+      "id": "4.1.2",
+      "chapter": "Set Theory & Algebra",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-1994",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "On the set of non-negative integers $\\mathbb{N}$, the binary operation ______ is associative and non-commutative.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/87051"
+    },
+    {
+      "id": "4.1.3",
+      "chapter": "Set Theory & Algebra",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-2003",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Consider the set $C$ with binary operators $+$ and $*$ defined as follows:\nFor example, $a + b$ and $a * b$.\nGiven the following set of equations:\n$a * x = b$\n$c * x = d$\nThe number of solution(s) (i.e., pair(s) $(x, y)$ that satisfy the equations) is",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/929"
+    },
+    {
+      "id": "4.1.4",
+      "chapter": "Binary Operation",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-2006",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "A logical binary relation $\\odot$ is defined as follows: $x \\odot y = x \\neg y \\lor \\neg x y$. Let $\\neg$ be the unary negation (NOT) operator, with higher precedence then $\\odot$. Which one of the following is equivalent to $x \\odot (y \\odot z)$?",
+      "options": [
+        "$(x \\odot y) \\odot z$",
+        "$(x \\odot y) \\lor z$",
+        "$(x \\lor y) \\odot z$",
+        "None of these"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8226"
+    },
+    {
+      "id": "4.1.5",
+      "chapter": "Binary Operation",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-2013",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "A binary operation $\\oplus$ on a set of integers is defined as $x \\oplus y = x^2 + y^2$. Which one of the following statements is TRUE about $\\oplus$?",
+      "options": [
+        "Commutative but not associative",
+        "Both commutative and associative",
+        "Associative but not commutative",
+        "Neither commutative nor associative"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/59"
+    },
+    {
+      "id": "4.1.6",
+      "chapter": "Binary Operation",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The binary operator $\\odot$ is defined by the following truth table.\n| $x$ | $y$ | $x \\odot y$ |\n|---|---|---|\n| 0 | 0 | 0 |\n| 0 | 1 | 1 |\n| 1 | 0 | 1 |\n| 1 | 1 | 0 |\nWhich one of the following is true about the binary operator $\\odot$?",
+      "options": [
+        "Both commutative and associative",
+        "Commutative but not associative",
+        "Not commutative but associative",
+        "Neither commutative nor associative"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/991"
+    },
+    {
+      "id": "4.1.7",
+      "chapter": "Binary Operation",
+      "subtopic": "Binary Operation",
+      "exam_tag": "gatecse-2015-set3",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $\\oplus$ be the binary operator defined as $x \\oplus y = xy + x'y'$ where $x$ and $y$ are Boolean variables. Consider the following two statements.\n(i) $P \\oplus Q = P \\oplus Q'$\n(ii) $P \\oplus Q = P' \\oplus Q$\nWhich one of the following is true?",
+      "options": [
+        "(i) is true and (ii) is false",
+        "(i) is false and (ii) is true",
+        "Both (i) and (ii) are true",
+        "Both (i) and (ii) are false"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8393"
+    },
+    {
+      "id": "4.3.3",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1989",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Find the number of single valued functions from set $A$ to another set $B$ given that the cardinalities of the sets $A$ and $B$ are $m$ and $n$ respectively.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2273"
+    },
+    {
+      "id": "4.3.4",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1993",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Let $A$ and $B$ be sets with cardinalities $m$ and $n$ respectively. The number of one-one mappings from $A$ to $B$, when $|A| \\leq |B|$, is",
+      "options": [
+        "$n^m$",
+        "$m^n$",
+        "$\\frac{n!}{(n-m)!}$",
+        "$\\frac{m!}{(m-n)!}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2707"
+    },
+    {
+      "id": "4.3.5",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1996",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Suppose $A$ and $B$ are sets and $|A|=m$ and $|B|=n$ are their respective cardinality. It is given that there are exactly $n^m$ functions from $A$ to $B$. From this one can conclude that",
+      "options": [
+        "$|A| \\leq |B|$",
+        "$|A| \\geq |B|$",
+        "$|A| = |B|$",
+        "None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2304"
+    },
+    {
+      "id": "4.3.6",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1996",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Let $R$ denote the set of real numbers. Let $f: R \\to R$ be a bijective function defined by $f(x) = x^3 + 5$. The inverse function of $f$ is given by",
+      "options": [
+        "$f^{-1}(x) = (x - 5)^{1/3}$",
+        "$f^{-1}(x) = (x + 5)^{1/3}$",
+        "$f^{-1}(x) = (x^3 - 5)^{1/3}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/93178"
+    },
+    {
+      "id": "4.3.7",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1997",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Let $S$ be the set of one-to-one functions from the set $A = \\{1, 2, 3\\}$ to the set $B = \\{1, 2, 3, 4, 5\\}$ where $|A|=3$ and $|B|=5$.\na. How many functions are members of $S$?\nb. How many functions in $S$ satisfy the property $f(1)=1$ for some $1 \\in A$?\nc. How many functions in $S$ satisfy the property $f(i) \\neq 1$ for all $i \\in A$?",
+      "options": [],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/2730"
+    },
+    {
+      "id": "4.3.8",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-1998",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of functions from an element set to an element set is",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/927"
+    },
+    {
+      "id": "4.3.9",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2001",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $f: A \\to B$ be a function, and let $E$ and $F$ be subsets of $A$. Consider the following statements about images:\n$S1: f(E \\cup F) = f(E) \\cup f(F)$\n$S2: f(E \\cap F) = f(E) \\cap f(F)$\nWhich of the following is true about S1 and S2?",
+      "options": [
+        "Only $S1$ is correct",
+        "Only $S2$ is correct",
+        "Both $S1$ and $S2$ are correct",
+        "None of $S1$ and $S2$ is correct"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/745"
+    },
+    {
+      "id": "4.3.10",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2001",
+      "type": "descriptive",
+      "marks": "4",
+      "question_text": "Consider the function $f: \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}$ so that $f(m, n) = 2^m(2n+1)$, where $\\mathbb{N}$ is the set of natural numbers.\na. Prove that the function $f$ is an injection (one-one).\nb. Prove that it is also a Surjection (onto)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/721"
+    },
+    {
+      "id": "4.3.11",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $f: A \\to B$ be an injective (one-to-one) function. Define $g: P(A) \\to P(B)$ as:\n$g(S) = \\{f(s) : s \\in S\\}$, for all subsets $S$ of $A$.\nDefine $h: P(B) \\to P(A)$ as: $h(T) = \\{a \\in A : f(a) \\in T\\}$, for all subsets $T$ of $B$.\nWhich of the following statements is always true?",
+      "options": [
+        "$h(g(S)) = S$",
+        "$g(h(T)) = T$",
+        "$h(g(S)) \\supseteq S$",
+        "$g(h(T)) \\subseteq T$"
+      ],
+      "difficulty_tag": "difficult",
+      "explanation_url": "https://gateoverflow.in/1645"
+    },
+    {
+      "id": "4.3.12",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $\\Sigma = \\{a, b\\}$ be an alphabet. We define an encoding scheme as follows:\n$f(a) = 1, f(b) = 2$.\nLet $p_i$ denote the $i$-th prime number ($p_1=2, p_2=3, ...$).\nFor a non-empty string $s = x_1x_2...x_k$, where each $x_j \\in \\Sigma$, define $f(s) = \\prod_{j=1}^k p_j^{f(x_j)}$.\nFor a non-empty sequence of strings $S = (s_1, s_2, ..., s_m)$ from $\\Sigma^+$, define $g(S) = \\prod_{i=1}^m p_i^{f(s_i)}$.\nWhich of the following numbers is the encoding, $g(S)$, of a non-empty sequence of strings?",
+      "options": [
+        "15",
+        "10",
+        "8",
+        "6"
+      ],
+      "difficulty_tag": "difficult",
+      "explanation_url": "https://gateoverflow.in/930"
+    },
+    {
+      "id": "4.3.19",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2014-set3",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $X$ and $Y$ be finite sets and $f: X \\to Y$ be a function. Which one of the following statements is TRUE?",
+      "options": [
+        "A. For any subsets $A$ and $B$ of $X$, $f(A \\cup B) = f(A) \\cup f(B)$",
+        "B. For any subsets $A$ and $B$ of $X$, $f(A \\cap B) = f(A) \\cap f(B)$",
+        "C. For any subsets $A$ and $B$ of $X$, $f(A) \\setminus f(B) = f(A \\setminus B)$",
+        "D. For any subsets $A$ and $B$ of $X$, $f(A) = f(B)$ implies $A = B$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8257"
+    },
+    {
+      "id": "4.3.20",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2014-set3",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Consider the set of all functions $f: \\{1, 2, 3\\} \\to \\{1, 2, 3\\}$ such that $f(f(i)) = i$, for all $i \\in \\{1, 2, 3\\}$. Consider the following statements:\n(i) For each such function it must be the case that $f(i) = i$ for every $i \\in \\{1, 2, 3\\}$.\n(ii) For each such function it must be the case that $f(i) = j$ for some $i \\neq j$ and $f(j) = i$.\n(iii) Each function must be onto.\nWhich one of the following is CORRECT?",
+      "options": [
+        "A. (i) and (ii) are true",
+        "B. Only (i) and (iii) are true",
+        "C. Only (ii) and (iii) are true",
+        "D. Only (iii) is true"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8212"
+    },
+    {
+      "id": "4.3.21",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "If $f(x) = x^2$ and $g(x) = \\sqrt{x}$, then $g(f(x))$ is:",
+      "options": [
+        "A. $x$",
+        "B. $x^2$",
+        "C. $\\sqrt{x}$",
+        "D. $|x|$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8025"
+    },
+    {
+      "id": "4.3.22",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2015-set2",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The number of onto functions (surjective functions) from set $X$ to set $Y$ is ______.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2036"
+    },
+    {
+      "id": "4.3.23",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2015-set2",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Let $A$ and $B$ denote the sets containing $n$ and $m$ distinct objects respectively and $Y^X$ denote the set of all possible functions defined from $X$ to $Y$. Let $f$ be randomly chosen from $Y^X$. The probability of $f$ being one-to-one is ______.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2083"
+    },
+    {
+      "id": "4.3.24",
+      "chapter": "Functions",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse-2016-set1",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "A function $f: \\mathbb{N} \\to \\mathbb{N}$, defined on the set of positive integers $\\mathbb{N}$, satisfies the following properties:\n$f(n) = f(n/2)$ if $n$ is even\n$f(n) = f(n+5)$ if $n$ is odd",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/39717"
+    },
+    {
+      "id": "4.3.29",
+      "chapter": "Functions",
+      "subtopic": "Set Theory & Algebra",
+      "exam_tag": "gateit-2005",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $f$ be a function from a set $A$ to a set $B$, $g$ a function from $B$ to $C$, and $h$ a function from $A$ to $C$, such that $h = g \\circ f$ for all $x \\in A$. Which of the following statements is always true for all such functions $f$ and $g$?",
+      "options": [
+        "$h$ is onto $\\implies g$ is onto",
+        "$h$ is onto $\\implies f$ is onto",
+        "$h$ is onto $\\implies f$ and $g$ are onto",
+        "$f$ is onto and $g$ are onto"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/593"
+    },
+    {
+      "id": "4.3.30",
+      "chapter": "Functions",
+      "subtopic": "Set Theory & Algebra",
+      "exam_tag": "gateit-2006",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Given a boolean function $f(x_1, x_2)$, which of the following equations is NOT true?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/84039"
+    },
+    {
+      "id": "4.4.1",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1988",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Show that if $G$ is a group such that $(ab)^2 = a^2b^2$ for all $a, b$ belonging to $G$, then $G$ is an abelian.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/94353"
+    },
+    {
+      "id": "4.4.2",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1990",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Match the pairs in the following questions:",
+      "options": [],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/3545"
+    },
+    {
+      "id": "4.4.3",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1992",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "If $G$ is a group of even order, then show that there exists an element $a \\neq e$, the identity in $G$, such that $a^2 = e$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3777"
+    },
+    {
+      "id": "4.4.4",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1993",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $S$ be a semigroup where $a^2 = a$. Show that:\na. $aba = a$ and $bab = b$\nb. $a^2b = ab$",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2324"
+    },
+    {
+      "id": "4.4.5",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1994",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Some group $G$ is known to be abelian. Then, which one of the following is true for $g \\in G$?",
+      "options": [
+        "$g^2 = e$",
+        "$g = g^{-1}$",
+        "$g^2 = g$",
+        "$g$ is of finite order"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2733"
+    },
+    {
+      "id": "4.4.6",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1995",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G$ be the set of all non-singular matrices over real number and let $\\cdot$ be the matrix multiplication operation. Then",
+      "options": [
+        "$G$ is closed under $\\cdot$ but is not a semigroup.",
+        "$G$ is a semigroup but not a monoid.",
+        "$G$ is a monoid but not a group.",
+        "$G$ is a group but not an abelian group."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2708"
+    },
+    {
+      "id": "4.4.7",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1995",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $H$ and $K$ be subgroups of a group $G$.\nA. Show that $H \\cap K$ is also a subgroup of $G$.\nB. Is $H \\cup K$ always a subgroup of $G$?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2659"
+    },
+    {
+      "id": "4.4.8",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1996",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following statements is FALSE?",
+      "options": [
+        "The set of rational numbers is an abelian group under addition",
+        "The set of integers is an abelian group under addition",
+        "The set of rational numbers form an abelian group under multiplication",
+        "The set of real numbers excluding zero is an abelian group under multiplication"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2451"
+    },
+    {
+      "id": "4.4.9",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-1996",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following is false?",
+      "options": [
+        "The set of all bijective functions on a finite set forms a group under function composition",
+        "The set $\\mathbb{Z}_p$ forms a group under multiplication mod $p$, where $p$ is a prime number",
+        "The set of all strings over a finite alphabet forms a group under concatenation",
+        "A subset $S$ of $G$ is a subgroup of the group $G$ if and only if $a, b \\in S \\implies ab^{-1} \\in S$ for any pair of elements"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2629"
+    },
+    {
+      "id": "4.4.10",
+      "chapter": "Group Theory",
+      "subtopic": "Algebraic Structures",
+      "exam_tag": "gatecse-1997",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G = (\\mathbb{Z}, *)$ be an algebraic structure where $\\mathbb{Z}$ is the set of integers and the operation $*$ is defined by $a * b = a + b + ab$. Which of the following statements is true for $G$?",
+      "options": [
+        "$G$ is a monoid",
+        "$G$ is an Abelian group",
+        "$G$ is a group",
+        "None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/810"
+    },
+    {
+      "id": "4.4.11",
+      "chapter": "Group Theory",
+      "subtopic": "Semigroups",
+      "exam_tag": "gatecse-1998",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $S$ be a semigroup. Furthermore, for every $a$ and $b$ in $S$, if $a^2 = b^2$, then $a = b$. \n a. Show that for every $a$ in $S$, $a^3 = a$. \n b. Show that for every $a, b$ in $S$, $ab = ba$. \n c. Show that for every $a$ in $S$, $a^2 = a$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/675"
+    },
+    {
+      "id": "4.4.12",
+      "chapter": "Group Theory",
+      "subtopic": "Subgroups",
+      "exam_tag": "gatecse-1999",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $G$ be a finite group and $H$ be a subgroup of $G$. For $g \\in G$, define $Hg = \\{hg : h \\in H\\}$. \n a. Show that $|Hg| = |H|$. \n b. Show that for every pair of elements $g_1, g_2 \\in G$, either $Hg_1 = Hg_2$ or $Hg_1$ and $Hg_2$ are disjoint. \n c. Use the above to argue that the order of $H$ must divide the order of $G$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1503"
+    },
+    {
+      "id": "4.4.13",
+      "chapter": "Group Theory",
+      "subtopic": "Modular Arithmetic",
+      "exam_tag": "gatecse-2000",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Let $G = (\\mathbb{Z}_n, \\times_n)$ and $H = (\\mathbb{Z}_n \\setminus \\{0\\}, \\times_n)$ denote multiplication modulo $n$, that is, $a \\times_n b = (a \\times b) \\mod n$. \n a. Prove that $G$ is not a group. \n b. Write three distinct groups where $n = 5$ and $H$ has 4 elements.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1726"
+    },
+    {
+      "id": "4.4.14",
+      "chapter": "Group Theory",
+      "subtopic": "Groups under Multiplication",
+      "exam_tag": "gatecse-2002",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following is true?",
+      "options": [
+        "The set of all rational negative numbers forms a group under multiplication.",
+        "The set of all non-singular matrices forms a group under multiplication.",
+        "The set of all matrices forms a group under multiplication.",
+        "Both B and C are true."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2232"
+    },
+    {
+      "id": "4.4.15",
+      "chapter": "Group Theory",
+      "subtopic": "Strings",
+      "exam_tag": "gatecse-2003",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Consider the set of all strings over the alphabet $\\Sigma = \\{a, b\\}$ with the concatenation operator for strings.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/898"
+    },
+    {
+      "id": "4.4.26",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2018",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "Let $G$ be a finite group on $n$ elements. The size of a largest possible proper subgroup of $G$ is _____.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/333213"
+    },
+    {
+      "id": "4.4.27",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2019",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G$ be an arbitrary group. Consider the following relations on $G$:\n$R_1 = \\{ (x, y) \\in G \\times G \\mid y = gxg^{-1} \\text{ for some } g \\in G \\}$\n$R_2 = \\{ (x, y) \\in G \\times G \\mid y = x^{-1} \\}$\nWhich of the above is/are equivalence relation/relations?\nA. $R_1$ and $R_2$ B. $R_1$ only C. $R_2$ only D. Neither $R_1$ nor $R_2$",
+      "options": [
+        "$R_1$ and $R_2$",
+        "$R_1$ only",
+        "$R_2$ only",
+        "Neither $R_1$ nor $R_2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/302838"
+    },
+    {
+      "id": "4.4.28",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2020",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "Let $G$ be a group of $n$ elements. Then the largest possible size of a subgroup of $G$ other than itself is _______.",
+      "options": [],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/204093"
+    },
+    {
+      "id": "4.4.29",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2021-set1",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $G$ be a group of order $n$, and $H$ be a subgroup of $G$ such that $|H| = 2$. Which one of the following options is correct?",
+      "options": [
+        "Both $G$ and $H$ are always cyclic",
+        "$G$ may not be cyclic, but $H$ is always cyclic",
+        "$H$ is always cyclic, but $G$ may not be cyclic",
+        "Both $G$ and $H$ may not be cyclic"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/399270"
+    },
+    {
+      "id": "4.4.30",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2022",
+      "type": "MSQ",
+      "marks": "1",
+      "question_text": "Which of the following statements is/are true for a group $G$?\nA. If $x^2 = e$ for all $x \\in G$ then $G$ is commutative.\nB. If $(xy)^2 = x^2y^2$ for all $x, y \\in G$ then $G$ is commutative. Here, $e$ is the identity element of $G$.\nC. If the order of $G$ is 6, then $G$ is commutative.\nD. If $G$ is commutative, then a subgroup of $G$ need not be commutative.",
+      "options": [
+        "If $x^2 = e$ for all $x \\in G$ then $G$ is commutative.",
+        "If $(xy)^2 = x^2y^2$ for all $x, y \\in G$ then $G$ is commutative.",
+        "If the order of $G$ is 6, then $G$ is commutative.",
+        "If $G$ is commutative, then a subgroup of $G$ need not be commutative."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371919"
+    },
+    {
+      "id": "4.4.31",
+      "chapter": "Group Theory",
+      "subtopic": "Group Theory",
+      "exam_tag": "gatecse-2023",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Let $S$ be a set and $P(S)$ denote the powerset of $S$. Define a binary operation on $P(S)$ as follows:",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/357417"
+    },
+    {
+      "id": "4.4.32",
+      "chapter": "Group Theory",
+      "subtopic": "Operations",
+      "exam_tag": "gatecse-2024-set1",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "Consider the operators $\\oplus$ and $\\odot$ defined by $a \\oplus b = a + b + 1$ and $a \\odot b = a + b + ab$, for positive integers. Which of the following statements is/are TRUE?\nA. Operator $\\oplus$ obeys the associative law\nB. Operator $\\odot$ obeys the associative law\nC. Operator $\\odot$ over the operator $\\oplus$ obeys the distributive law\nD. Operator $\\oplus$ over the operator $\\odot$ obeys the distributive law",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422800"
+    },
+    {
+      "id": "4.4.33",
+      "chapter": "Group Theory",
+      "subtopic": "Groups",
+      "exam_tag": "gatecse-2024-set2",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Let $\\mathbb{Z}_{12}$ be the group of integers with addition modulo 12 as the group operation. The number of elements in the group that are their own inverses is ___________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/91351"
+    },
+    {
+      "id": "4.5.1",
+      "chapter": "Identify Function",
+      "subtopic": "Functions",
+      "exam_tag": "gatecse2025-set1",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "$\\mathbb{N}$ is the set of non-negative integers. Let $F$ be the set of functions from $\\mathbb{N}$ to itself. For any two functions, $f_1, f_2 \\in F$, we define $(f_1 \\circ f_2)(n) = f_1(f_2(n))$ for every number $n$ in $\\mathbb{N}$. Which of the following is/are CORRECT about the mathematical structure $(F, \\circ)$?\nA. $(F, \\circ)$ is an Abelian group.\nB. $(F, \\circ)$ is an Abelian monoid.\nC. $(F, \\circ)$ is a non-Abelian group.\nD. $(F, \\circ)$ is a non-Abelian monoid.",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/460041"
+    },
+    {
+      "id": "4.6.1",
+      "chapter": "Lattice",
+      "subtopic": "Complements",
+      "exam_tag": "gatecse-1988",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "The complement(s) of the element $a$ in the lattice shown in below figure is (are) ____ ![diagram](/images/4.6.1_diagram.png)",
+      "options": [
+        "b",
+        "c",
+        "d",
+        "None of these"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422844"
+    },
+    {
+      "id": "4.6.2",
+      "chapter": "Lattice",
+      "subtopic": "Lattice Property",
+      "exam_tag": "gatecse-1990",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Show that the elements of the lattice $(\\mathbb{Z}^+, \\mid)$, where $\\mathbb{Z}^+$ is the set of positive integers and $a \\le b$ if and only if $a$ divides $b$, satisfy the distributive property.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2234"
+    },
+    {
+      "id": "4.6.3",
+      "chapter": "Lattice",
+      "subtopic": "Algebraic Structures",
+      "exam_tag": "gatecse-1992",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Consider the set of integers together with the two binary operations LCM (lowest common multiple) and GCD (greatest common divisor). Which of the following algebraic structures does this represent?",
+      "options": [
+        "A. group",
+        "B. ring",
+        "C. field",
+        "D. lattice"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2476"
+    },
+    {
+      "id": "4.6.4",
+      "chapter": "Lattice",
+      "subtopic": "Hasse Diagrams",
+      "exam_tag": "gatecse-1994",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "The Hasse diagrams of all the lattices with up to four elements are ________ (write all the relevant Hasse diagrams)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/86884"
+    },
+    {
+      "id": "4.6.5",
+      "chapter": "Lattice",
+      "subtopic": "Complements",
+      "exam_tag": "gatecse-1997",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "In the lattice defined by the Hasse diagram given in following figure, how many complements does the element 'a' have? ![diagram](/images/4.6.5_diagram.png)",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/43580"
+    },
+    {
+      "id": "4.6.6",
+      "chapter": "Lattice",
+      "subtopic": "Binary Relation",
+      "exam_tag": "gatecse-2002",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "$S$ is a binary relation on set $A$. Is it irreflexive? Add the minimum number of ordered pairs to $S$ to make it an equivalence relation. Give the modified $S$. Let $A = \\{1, 2, 3\\}$ and let $P(A)$ be the powerset of $A$. Consider the binary relation '$\\subseteq$ (set inclusion)' on $P(A)$. Draw the Hasse diagram corresponding to the lattice $(P(A), \\subseteq)$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8281"
+    },
+    {
+      "id": "4.6.7",
+      "chapter": "Lattice",
+      "subtopic": "Hasse Diagram",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "The following is the Hasse diagram of the poset. ![diagram](/images/4.6.7_diagram.png) The poset is :",
+      "options": [
+        "not a lattice",
+        "a lattice but not a distributive lattice",
+        "a distributive lattice but not a Boolean algebra",
+        "a Boolean algebra"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1158"
+    },
+    {
+      "id": "4.6.8",
+      "chapter": "Lattice",
+      "subtopic": "Lattice Probability",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Suppose $L$ is a lattice represented by the following Hasse diagram: ![diagram](/images/4.6.8_diagram.png) For any $x, y \\in L$, not necessarily distinct, $x \\vee y$ and $x \\wedge y$ are join and meet of $x, y$, respectively. Let $S$ be the set of all ordered triplets $(x, y, z)$ of the elements of $L$. Let $p$ be the probability that an element chosen equiprobably from $S$ satisfies $x \\vee (y \\wedge z) = (x \\vee y) \\wedge (x \\vee z)$. Then",
+      "options": [
+        "p = 0",
+        "p = 3/5",
+        "p = 1",
+        "p = 4/5"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/857"
+    },
+    {
+      "id": "4.6.9",
+      "chapter": "Lattice",
+      "subtopic": "Hasse Diagram",
+      "exam_tag": "gatecse-2017-set2",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Consider the set $L = \\{a, b, c, d, e\\}$ under partial ordering. The Hasse diagram of the partial order is shown below. ![diagram](/images/4.6.9_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/118278"
     }
   ],
   "answer_keys": [
@@ -2575,6 +4395,286 @@
     {
       "question_id": "2.9.1",
       "correct_answer": "C"
+    },
+    {
+      "question_id": "3.1.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "3.1.3",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.1.4",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "3.1.5",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "3.1.5",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "3.1.6",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.7",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.8",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.1.9",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.1.10",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.11",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.1.12",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "3.1.13",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.1.14",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.1.15",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.16",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.1.17",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.1.23",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.24",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.1.25",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.1.35",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.2.1",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "3.2.2",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "3.2.3",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.3",
+      "correct_answer": "A;B;D"
+    },
+    {
+      "question_id": "3.3.4",
+      "correct_answer": "A;B;C"
+    },
+    {
+      "question_id": "3.3.5",
+      "correct_answer": "E"
+    },
+    {
+      "question_id": "3.3.12",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.13",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.3.14",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.3.15",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.22",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.23",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "3.3.24",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.25",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.26",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.3.27",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "3.3.28",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.3.29",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "3.3.30",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "4.1.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.1.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.1.3",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.1.4",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.1.5",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.1.6",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.1.7",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "4.3.3",
+      "correct_answer": "n^m"
+    },
+    {
+      "question_id": "4.3.4",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "4.3.5",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "4.3.6",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.3.8",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.3.9",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.3.11",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.3.12",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.3.19",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "4.3.20",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "4.3.21",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "4.3.22",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.3.23",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.4.26",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.4.27",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "4.4.28",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.4.29",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "4.4.30",
+      "correct_answer": "A;B"
+    },
+    {
+      "question_id": "4.4.31",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "4.4.32",
+      "correct_answer": "A;B;C"
+    },
+    {
+      "question_id": "4.4.33",
+      "correct_answer": "4"
+    },
+    {
+      "question_id": "4.5.1",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "4.6.3",
+      "correct_answer": "D"
     }
   ]
 }
