@@ -1,0 +1,4389 @@
+[
+    {
+        "type": "text",
+        "text": "The set of values of $p$ for which the roots of the equation $3 x ^ { 2 } + 2 x + p ( p - 1 ) = 0$ are of opposite sign is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $( - \\infty , 0 )$ B. (0,1) C. $( 1 , \\infty )$ D. $( 0 , \\infty )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The quality of services delivered by a company consists of six factors as shown below in the radar diagram. The dots in the figure indicate the score for each factor on a scale of  to The standardized coefficient for each factor is given in the parentheses. The contribution of each factor to the overall service quality is directly proportional to the factor score and its standardized coefficient. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/440cf0905ed32716307f1e57fb19b7e2724e85c9038ba590ea54dc70ab11ab91.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The lowest contribution among all the above factors to the overall quality of services delivered by the company is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $1 0 \\%$ B. $2 0 \\%$ C. $2 4 \\%$ D. $4 0 \\%$ gate2011-gg difficult quantitative-aptitude data-interpretation radar-chart ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (3Q) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "9.48.1 Ratio Proportion: GATE CSE 2016 Set 1 GA Question: 10 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In a process, the number of cycles to failure decreases exponentially with an increase in load. At a load of units, it takes cycles for failure. When the load is halved, it takes  for failure.The load for which the failure will happen in is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 40.00 B. 46.02 C. 60.01 D. 92.02 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 quantitative-aptitude ratio-proportion normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "​The ratio of boys to girls in a class is  to . Among the options below, an acceptable value for the total number of students in the class is: ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. B. 37 C. D. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 quantitative-aptitude ratio-proportion one-mark ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of students in three classes is in the ratio $3 : 1 3 : 6$ . If  students are added to each class, the ratio changes to $1 5 : 3 5 : 2 1$ . ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The total number of students in all the three classes in the beginning was: ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. B. 66 C. 88 D. 110 ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 ratio-proportion quantitative-aptitude two-marks ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If two distinct non-zero real variables $x$ and $y$ are such that $( x + y )$ is proportional to $( x - y )$ then the value of $\\textstyle { \\frac { x } { y } }$ ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. depends on B. depends only on $x$ and not on $y$ C. depends only on $y$ and not on $x$ D. is a constant ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 quantitative-aptitude ratio-proportion one-mark ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "9.48.6 Ratio Proportion: GATE2011 AG: GA-8 ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Three friends, $R , S$ and $T$ shared toffee from a bowl. $R$ took ${ \\frac { 1 } { 3 } } ^ { \\mathrm { r d } }$ of the toffees, but returned four to the bowl. $\\boldsymbol { s }$ took $\\frac { 1 } { 4 } ^ { \\mathrm { t h } }$ of what was left but returned three toffees to the bowl. $T$ took half of the remainder but returned two back into the bowl. If the bowl had  toffees left, how may toffees were originally there in the bow ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. B. 31 C. 48 D. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "general-aptitude quantitative-aptitude gate2011-ag ratio-proportion ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "9.48.7 Ratio Proportion: GATE2011 GG: GA-4 ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If students require a total of  pages of stationery in  days, then  students will require  pages of stationery in ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. days B. m/100 days C. days D. days ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate2011-gg quantitative-aptitude ratio-proportion ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "9.48.8 Ratio Proportion: GATE2013 AE: GA-1 ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If $3 \\leq X \\leq 5$ and $8 \\leq Y \\leq 1 1$ then which of the following options is TRUE? ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array} { l } { \\displaystyle \\left( \\frac { 3 } { 5 } \\leq \\frac { X } { Y } \\leq \\frac { 8 } { 5 } \\right) } \\\\ { \\displaystyle \\left( \\frac { 3 } { 1 1 } \\leq \\frac { X } { Y } \\leq \\frac { 8 } { 5 } \\right) } \\end{array}$ $\\begin{array} { r } { \\mathsf { B . } \\left( \\displaystyle \\frac { 3 } { 1 1 } \\leq \\displaystyle \\frac { X } { Y } \\leq \\displaystyle \\frac { 5 } { 8 } \\right) } \\\\ { \\mathsf { D . } \\left( \\displaystyle \\frac { 3 } { 5 } \\leq \\displaystyle \\frac { X } { Y } \\leq \\displaystyle \\frac { 8 } { 1 1 } \\right) } \\end{array}$ ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The smallest angle of a triangle is equal to two thirds of the smallest angle of a quadrilateral. The between the angles of the quadrilateral is $3 : 4 : 5 : 6$ The largest angle of the triangle is twice its smallest angle. What is the sum, in degrees, of the second largest angle of the triangle and the largest angle of the quadrilateral? ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate2014-ae quantitative-aptitude ratio-proportion numerical-answers ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "9.49 ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Sequence Series (4) ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (1Q) ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given the sequence of terms, CG FK , the next term is ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. OV B. OW C. D. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 quantitative-aptitude sequence-series easy ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the missing number in the following sequence? ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2, 12, 60, 240, 720, 1440, ，0 ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 2880 B. 1440 C. 720 D. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 quantitative-aptitude sequence-series easy one-mark ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A series of natural numbers $F _ { 1 } , F _ { 2 } , F _ { 3 } , F _ { 4 } , F _ { 5 } , F _ { 6 } , F _ { 7 } , \\ldots$ obeys $F _ { n + 1 } = F _ { n } + F _ { n - 1 }$ for all integers $n \\geq 2$ .   \nIf $F _ { 6 } = 3 7$ and $F _ { 7 } = 6 0$ then what is $F _ { 1 }$ ？ ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 quantitative-aptitude sequence-series one-mark ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "​The sum of the following infinite series is ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n2 + { \\frac { 1 } { 2 } } + { \\frac { 1 } { 3 } } + { \\frac { 1 } { 4 } } + { \\frac { 1 } { 8 } } + { \\frac { 1 } { 9 } } + { \\frac { 1 } { 1 6 } } + { \\frac { 1 } { 2 7 } } + \\cdots\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. B. 7/2 C. 13/4 D. 9/2 ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 quantitative-aptitude sequence-series one-mark ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/950ecd7adb22ab57b3187bff416f0d2c793977d8d39e1821d71e175ebcbeaca6.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The cost of travel on an edge between two nodes is given in rupees. Nodes $^ { \\circ } a ^ { \\prime } , ^ { \\circ } b ^ { \\prime } , ^ { \\circ } c ^ { \\prime } , ^ { \\circ } d ^ { \\prime } , ^ { \\circ } e ^ { \\prime }$ and $' f '$ are toll booths. The toll price at toll booths marked $^ { \\mathfrak { s } } a ^ { \\mathfrak { s } }$ and $^ { \\mathfrak { s } } e ^ { \\mathfrak { s } }$ is Rs. , and is Rs. for the other toll booths. Which is the cheapest route from node to node ? ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $1 - a - c - 2$ $\\begin{array} { c c c c } { { } } & { { } } & { { \\mathsf { B . ~ 1 - f - b - 2 } \\qquad } } & { { \\mathsf { C . ~ 1 - b - 2 } } } & { { \\mathsf { D . ~ 1 - f - e - 2 } } } \\end{array}$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 quantitative-aptitude graph-theory shortest-path one-mark ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (11Q) ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "9.51.1 Speed Time Distance: GATE CSE 2013 Question: 64 ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A tourist covers half of his journey by train at $6 0 \\mathrm { { k m / h } }$ , half of the remainder by bus at $3 0 \\mathrm { k m / h }$ and the rest by cycle at $\\mathbf { 1 0 k m / h }$ . The average speed of the tourist in $\\mathrm { { k m / h } }$ during his entire journey is ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. B. 30 C. 24 D. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 quantitative-aptitude easy speed-time-distance ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Two cars at the same time from the same location and go in the same direction. The speed of the first car is $5 0 \\ k \\mathrm { m } / \\mathsf { h }$ and the speed of the second car is $6 0 ~ \\mathsf { k m / h }$ . The number of hours it takes for the distance between the two cars to be $2 0 \\kappa \\mathrm { m }$ is ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 general-aptitude quantitative-aptitude speed-time-distance one-mark ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Velocity of an object fired directly in upward direction is given by $V = 8 0 - 3 2 t$ , where $t$ (time) is in seconds. When will the velocity be between $3 2 m / s e c$ and $6 4 m / s e c ?$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "CA. $\\left( 1 , { \\frac { 3 } { 2 } } \\right)$ $\\begin{array} { c } { { \\mathsf { B . } } } \\\\ { { \\mathsf { D . } } } \\end{array} \\left( \\begin{array} { l } { { \\mathsf { 1 } } } \\\\ { { \\mathsf { 2 } } } \\end{array} , { \\mathsf { 1 } } \\right)$ $\\left( { \\frac { 1 } { 2 } } , { \\frac { 3 } { 2 } } \\right)$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (11Q) ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following assertions are CORRECT? ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "P: Adding  to each entry in a list adds  to the mean of the list . Q: Adding  to each entry in a list adds  to the standard deviation of the list + R: Doubling each entry in a list doubles the mean of the list S: Doubling each entry in a list leaves the standard deviation of the list unchanged ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. , B. , C. , D. , ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 quantitative-aptitude statistics normal ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "9.52.2 Statistics: GATE CSE 2024 Set 1 GA Question: 3 ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sample of numbers: 9,18,11,14,15,17,10,69,11,13 The median of the sample is ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 13.5 B. C. 11 D. 18.7 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 quantitative-aptitude statistics one-mark ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "9.52.3 Statistics: GATE2012 AE: GA-5 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The arithmetic mean of five different natural numbers is . The largest possible value among the numbers is ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. B. 40 C. 50 D. 60 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate2012-ae statistics quantitative-aptitude ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The number of solutions for the following system of inequalities is ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "X1≥0   \nX≥0   \nX1+X2≤10   \n2X1 +2X2 ≥ 22 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. B. infinite C. D. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate2011-gg quantitative-aptitude system-of-equations ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/98b46d0ce9bdd0f2c8aeb92f6a41dbedb6e355436e4478ac70543435ea369373.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $X ( i ) = X ( i - 1 ) + I ( i ) ; \\ Y ( i ) = Y ( i - 1 ) I ( i ) ; \\ i >$ 0B. $X ( i ) = X ( i - 1 ) I ( i ) ; Y ( i ) = Y ( i - 1 ) + I ( i$ ； i>0C. $X ( i ) = X ( i - 1 ) I ( i )$ ； $\\begin{array} { r } { Y ( i ) = Y ( i - 1 ) I ( i ) } \\end{array}$ ； i>0D. $X ( i ) = X ( i - 1 ) + I ( i )$ ； $Y ( i ) = Y ( i - 1 ) I ( i - 1 ) ; i > 0$ ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 7 (12Q) ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In a survey, respondents were asked whether they own a vehicle or not. If yes, they were further asked to mention whether they own a car or scooter or both. Their responses are tabulated below. What percent of respondents do not own a scooter? ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/7bf549acd566805736c7e7455a8f552ef33b91e3fd9e1cd971599f4bdfd3a75c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 quantitative-aptitude normal numerical-answers data-interpretation tabular-data ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The table below has question-wise data on the performance of students in an examination. The marks fo each question are also listed. There is no negative or partial marking in the examination. ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/198749fc20780637260ba6cf9825a4ad91dda3ded4fd13e606a583a0b9a2d559.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What is the average of the marks obtained by the class in the examination? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. B. 1.74 C. 3.02 D. 3.91 ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 quantitative-aptitude normal data-interpretation tabular-data ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/d4f9fb41fc8dd9ab2fb062cc2c6881a8bf56a58295a92dc37a13f01189398237.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "What is the average of the marks obtained by the class in the examination? ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 2.290 B. 2.970 C. 6.795 D. 8.795 ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 quantitative-aptitude easy data-interpretation tabular-data ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A shaving set company sells different types of razors- Elegance, Smooth, Soft and Executive. Elegance sells at , Smooth at , Soft at 78 and Executive at  per piece. The table below shows the numbers of each razor sold in each quarter of a year. ",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/28fb276a248fd7e5d3f10f7f78d48381a694c1842b441c8a02c07ef5ffa9658b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which product contributes the greatest fraction to the revenue of the company in that year? ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. Elegance B. Executive C. Smooth D. Soft ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 quantitative-aptitude data-interpretation easy tabular-data ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Four archers P, Q, R, and S try to hit a bull’s eye during a tournament consisting of seven rounds. As illustrated in the figure below, a player receives points for hitting the bull's eye, 5 points for hitting within the inner circle and point for hitting within the outer circle. ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/9022dd6f6be7b22a8606cc7c6a17e93d157489391d02506d21560967ff0311ee.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The final scores received by the players during the tournament are listed in the table below. ",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/647cda53229f55ab973987e29222c9b9609b94408e9c45b1a92faf60b79ea0ce.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The most accurate and the most consistent players during the tournament are respectively ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. P and S B. Q and R C. Q and Q D. R and Q ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate2011-mn data-interpretation quantitative-aptitude tabular-data ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Following table gives data on tourist from different countries visiting India in the year ",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/abb97276de40750e03f682db491e753e4ce03011692e7e50e668a21055049d7e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which two countries contributed to the one third of the total number of tourists who visited India in ? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. USA and Japan B. USA and Australia C. England and France D. Japan and Australia ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate2013-ae quantitative-aptitude data-interpretation normal tabular-data ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Following table provides figures(in rupees) on annual expenditure of a firm for two years - and . ",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/6626e0d7713c40f39ec9777f6e461bbf6c9ffe203c7563aa3568c227c8a38622.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In , which of the two categories have registered increase by same percentage? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. Raw material and Salary & wages. B. Salary & wages and Advertising. C. Power & fuel and Advertising. D. Raw material and research & Development. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "9.56.1 Triangles: GATE CSE 2015 Set 2 | GA Question: 8 ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In a triangle $P Q R , P S$ is the angle bisector o $\\angle Q P R$ and $\\angle Q P S = 6 0 ^ { \\circ }$ . What is the length of $P S$ ? ",
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b8895b0e990a08ebc65b693cbe9c8cc7e6d4bcdde11e967fcef552d3433cefa6.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. DB.   \nC. $\\sqrt { ( q ^ { 2 } + r ^ { 2 } ) }$ ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 quantitative-aptitude geometry difficult triangles ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In the figure below, $\\angle D E C + \\angle B F C$ is equal to ",
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/87d73546337490d1f3c8fc693fee8e8aa14231d88938e18bac062654ccb1f710.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. ∠BCD-∠BAD B. $\\angle B A D + \\angle B C F$   \nC. $\\angle B A D + \\angle B C D$ D. $\\angle C B A + \\angle A D C$ ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 quantitative-aptitude geometry normal triangles two-marks ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The corners and mid-points of the sides of a triangle are named using the distinct letters and but not necessarily in the same order. Consider the following statements: ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The line joining $\\mathbf { P }$ and is parallel to the line joining $\\mathbf { Q }$ and P is placed on the side opposite to the corner . and  cannot be placed on the same side. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is correct based on the above information? ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. cannot be placed at a corner B. cannot be placed at a corner C. cannot be placed at a mid-point D. cannot be placed at a corner ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 quantitative-aptitude geometry triangles two-marks ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "persons are in a room. of them play hockey, of them play football and of them play both hockey and football. Then the number of persons playing neither hockey nor football is: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 quantitative-aptitude easy set-theory&algebra venn- diagram ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "9.57.2 Venn Diagram: GATE CSE 2016 Set 2 GA Question: 06 ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Among  faculty members in an institute, are connected with each other through Facebook and are connected through Whatsapp. faculty members do not have Facebook or Whatsapp accounts. The numbers of faculty members connected only through Facebook accounts is ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 65 D. 90 ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 quantitative-aptitude venn-diagram easy ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In the given diagram, teachers are represented in the triangle, researchers in the circle and administrators in the rectangle. Out of the total number of the people, the percentage of administrators shall be in the range of ",
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/95d6301c536c665aee7791e6a6ee68f59d4d29af5f34cda915c51df099123371.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A.  to B. to C.  to D. to gatecse-2019 general-aptitude quantitative-aptitude venn-diagram two-marks ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In a college, there are three student clubs,  students are only in the Drama club,  students are only in the Dance club, students are only in Maths club, 40 students are in both Drama and Dance clubs, students are in both Dance and Maths clubs, students are in both Drama and Maths clubs, and  students are in all clubs. If $7 5 \\%$ of the students in the college are not in any of these clubs, then the total number of students in the college is ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 1000 B. 975 C. 900 D. 225 gatecse-2019 general-aptitude quantitative-aptitude venn-diagram two-marks ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "9.57.5 Venn Diagram: GATE CSE 2024 Set 2 GA Question: 3 ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In an engineering college of students,  like neither their core branches nor other branches The number of students who like their core branches i s of the number of students who like other branches. The number of students who like both their core and other branches is . ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The number of students who like their core branches is ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 1,800 B. 3,500 C. 1,600 D. 1,500 ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A gathering of linguists discovered that  knew Kannada Telugu and Tamil 7 knew only Telugu and Tamil knew only Kannada and Tamil ， 6 knew only Telugu and Kannada If the number of linguists who knew Tamil is and those who knew Kannada is also  how many linguists knew only Telugu ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. B. 10 C. D. 8 ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "general-aptitude quantitative-aptitude gate2010-tf venn-diagram ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "9.57.7 Venn Diagram: GATE2011 GG: GA-7 ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In a class of students in an M.Tech programme, each student is required to take at least one subject from the following three: ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "M600: Advanced Engineering Mathematics C600: Computational Methods for Engineers E600: Experimental Techniques for Engineers ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The registration data for the M.Tech class shows that students have taken M600, students have taken C600, and  students have taken E600. What is the maximum possible number of students in the class who have taken all the above three subjects? ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 40 D. gate2011-gg quantitative-aptitude set-theory&algebra venn-diagram ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "We have  rectangular sheets of paper,  and , of dimensions $6 \\mathrm { c m } \\times 1$ cm each. Sheet  is rolled to form an open cylinder by bringing the short edges of the sheet together. Sheet $\\mathbf { N }$ is cut into equal square patches and assembled to form the largest possible closed cube. Assuming the ends of the cylinder are closed, the ratio of the volume of the cylinder to that of the cube is ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. π2 3 D. gatecse-2021-set1 quantitative-aptitude mensuration volume two-marks ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test (15Q) Test 2 (8Q) ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Alternatively, if he uses only trucks, then all the orders are cleared at the end of the day. What is the minimum number of trucks required so that there will be no pending order at the en d of day? ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 quantitative-aptitude normal work-time ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The current erection cost of a structure is Rs. If the labour wages per day increase by $1 / 5$ of the current wages and the working hours decrease by $\\mathbf { 1 } / 2 4$ of the current period, then the new cost of erection in Rs. is ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 16,500 B. 15,180 C. 11,000 D. 10,120 ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 quantitative-aptitude normal work-time ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/8900827f48e335752fd3c1f0e29029341f5d4512a28d6b9bcda96b8e4c8fa3f0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/e48872baa6a8f329674e10b6804a4b275746915ce52931dcb54d5c0ce1727f2f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "table",
+        "img_path": "images/385073d706f400d76734faea533682e882580aa12e5093a88b065516aaadd63e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Transformation of shapes: translation, rotation, scaling, mirroring, assembling, and grouping, Paper folding, cutting, and patterns in 2 and 3 dimensions ",
+        "page_idx": 13
+    },
+    {
+        "type": "table",
+        "img_path": "images/b1f51f52513b6d1bd5b281b13d0388777e46a8e64f3727af6cf8056236960749.jpg",
+        "table_caption": [
+            "MarkDistribution in Previous GATE "
+        ],
+        "table_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"General Aptitude: Spatial Aptitude\" chapter of your GATE Computer Science exam preparation. This section is designed to equip you with the essential concepts, strategies, and quick references needed to excel in spatial reasoning questions. Spatial aptitude tests your ability to visualize, interpret, and manipulate objects and patterns in two and three dimensions. For GATE CS, mastering this area is crucial not just for the General Aptitude section, but also for developing fundamental visualization skills that are indirectly beneficial in areas like computer graphics, data structures, and algorithms. Typically, you can expect 1-3 questions from Spatial Aptitude in the General Aptitude section, contributing 2-5 marks. Questions often involve identifying patterns, mentally rotating shapes, understanding mirror images, or assembling figures, usually presented as Multiple Choice Questions (MCQs). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "1. 3D Structure ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves understanding and visualizing three-dimensional objects from their twodimensional representations (like orthographic or isometric views) or vice-versa. It requires the ability to mentally construct, deconstruct, and manipulate 3D shapes, identifying their hidden faces, edges, and vertices. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Euler's Formula for Polyhedra: For any simple (convex) polyhedron, the number of vertices $( V )$ , edges $( E )$ , and faces $( F )$ are related by the formula: ",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV - E + F = 2\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "This formula is fundamental for checking the consistency of polyhedral structures. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Common Polyhedra Properties: Cube: $V = 8$ , $E = 1 2$ , $F = 6$ Cuboid: $V = 8$ , $E = 1 2$ , $F = 6$ Triangular Prism: $V = 6 , E = 9 , F = 5$ Square Pyramid: $V = 5$ $= 5 , E = 8 , F = 5$ Tetrahedron: $V = 4 , E = 6 , F = 4$ ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Orthographic Projections: These are 2D views (Front, Top, Side) that show the true shape and size of one face of an object, without perspective distortion.   \nIsometric Views: A 3D representation where all three axes are equally foreshortened, giving a sense of depth and volume. Parallel lines remain parallel.   \nNets of 3D Shapes: 2D pattern that can be folded to form a 3D shape. Understanding nets is crucial for visualizing how faces connect.   \nHidden Lines: In 2D representations of 3D objects, dashed lines often represent edges that are not directly visible from the chosen viewpoint. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Misinterpreting hidden lines or confusing different orthographic views.   \nIncorrectly counting faces, edges, or vertices, especially when parts are hidden or joined.   \nDifficulty in visualizing the folding/unfolding of complex nets.   \nConfusing isometric projection with perspective projection. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": ". Mental Rotation and Manipulation: Practice mentally rotating and viewing objects from different angles. Feature Tracking: Focus on a unique corner, edge, or patterned face and track its position across different views or during folding.   \nElimination Strategy: Quickly eliminate options that clearly violate geometric principles or don't match specific features.   \nAuxiliary Views: If struggling, mentally sketch an additional view to clarify the structure.   \nNets to 3D: For nets, identify adjacent faces and opposite faces. Opposite faces never share an edge. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "2. Assembling ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves combining given 2D or 3D components to form a complete shape or object, or identifying which set of components can form a specified shape. It tests your spatial reasoning to fit parts together precisely without overlap or gaps. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific mathematical formulas are typically used. The core idea relies on geometric principles of congruence, tessellation, and conservation of area/volume. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Congruence: Pieces must match exactly in shape and size to fit together.   \nTessellation: The ability of shapes to fit together without gaps or overlaps to cover a surface (for 2D assembling).   \nConservation of Area/Volume: The total area (for 2D) or volume (for 3D) of the assembled figure must equal the sum of the areas/volumes of its constituent pieces.   \nEdge/Face Matching: The edges or faces that meet must be identical in length and shape.   \nSymmetry: Recognizing symmetry in the target shape or individual pieces can aid assembly. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Overlooking small details or subtle differences in piece shapes.   \nAssuming pieces can be resized, distorted, or flipped (unless explicitly allowed).   \nNot considering all possible orientations (rotations and reflections) for each piece.   \nDifficulty in visualizing how irregular shapes fit into complex outlines. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Start with Distinctive Pieces: Begin by placing pieces with unique shapes, sharp corners, or specific patterns that have limited fitting options.   \nWork from the Edges/Corners: For outline-based problems, try to fill the outer boundaries first.   \nIdentify Complementary Shapes: Look for pieces whose contours fit together like puzzle pieces.   \nMental Rotation and Translation: Actively rotate and slide pieces mentally to test fits.   \nElimination: If a piece clearly doesn't fit in any orientation, eliminate the option containing it. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "3. Assembling Pieces ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic is a specific type of assembling, often focusing on arranging a set of smaller, usually irregular, 2D pieces to form a larger, specified 2D figure. It's akin to solving a jigsaw puzzle or tangram, requiring visualization of how shapes fit together, including rotation and reflection. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. The principles are geometric matching and conservation of area. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Area Conservation: The sum of the areas of the individual pieces must equal the area of the final assembled figure.   \nEdge and Vertex Matching: Edges of adjacent pieces must align perfectly, and vertices must meet precisely.   \nNo Overlap or Gaps: The assembled figure must be solid, with no parts of pieces overlapping and no empty spaces within the boundary.   \nOrientation Flexibility: Pieces can usually be rotated and/or reflected unless specified otherwise. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Incorrectly assuming a piece can be flipped (reflected) when only rotation is allowed, or vice-versa.   \nMisjudging the size or shape of internal gaps that need to be filled.   \nDifficulty in visualizing how multiple irregular pieces combine to form a regular outline.   \nOverlooking that pieces might need to be rotated by angles other than 90 degrees. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": ". Focus on Unique Features: Identify pieces with distinct curves, sharp angles, or long straight edges.   \nLargest Piece First: Often, starting with the largest or most complex piece helps define the initial structure.   \nWork from the Outside In: Try to form the outer boundary of the target figure first.   \nConsider Negative Space: Sometimes, it's easier to visualize the shape of the 'hole' that needs to be filled by the remaining pieces.   \nTrial and Error (Mental): Mentally try fitting pieces, eliminating options as you go. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "4. Counting Figure ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This involves systematically counting the number of specific geometric shapes (e.g., triangles, squares, rectangles, cubes) within a complex, often overlapping, figure. The core idea is to develop a structured approach to avoid double-counting or missing any figures. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Number of Squares in an $n \\times n$ Grid: ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum _ { k = 1 } ^ { n } k ^ { 2 } = { \\frac { n ( n + 1 ) ( 2 n + 1 ) } { 6 } }\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "For example, in a $\\mathbf { 3 \\times 3 }$ grid, it's $\\mathbf { 3 } ^ { 2 } + \\mathbf { 2 } ^ { 2 } + \\mathbf { 1 } ^ { 2 } = \\mathbf { 9 } + 4 + 1 = \\mathbf { 1 } 4$ squares. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Number of Rectangles in an $n \\times m$ Grid: ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left( { \\frac { n ( n + 1 ) } { 2 } } \\right) \\times \\left( { \\frac { m ( m + 1 ) } { 2 } } \\right)\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "This counts all possible rectangles, including squares. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Number of Triangles in a Simple Base with $\\scriptstyle n$ Segments: If a base line is divided into $\\scriptstyle n$ segments and a common vertex is connected to all endpoints, the number of triangles formed is: ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac { n ( n + 1 ) } { 2 }\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "This applies to triangles sharing a common vertex and lying on the same base line. More complex configurations require specific counting methods. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Number of Cubes in a Stack: For a stack of unit cubes, count cubes layer by layer, or by identifying visible and hidden cubes based on the structure. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Hierarchical Counting: Often, figures can be counted by their size (e.g., 1-unit squares, 2x2 squares, etc.) or by the number of smaller units they encompass.   \nSystematic Listing: Labeling vertices or sections can help in systematically listing and counting figures without repetition.   \nSymmetry: If a figure is symmetrical, counting one part and multiplying can be a shortcut, but be careful with figures on the axis of symmetry. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Double -counting figures or missing smaller, embedded figures.   \nNot having a systematic approach, leading to confusion and errors.   \nDifficulty in visualizing overlapping shapes, especially triangles or rectangles.   \nFor 3D figures, forgetting to count hidden cubes or structures. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Size-Based Counting: Count all figures of the smallest size, then combinations of two, three, and so on, up to the largest possible figure.   \nVertex/Line-Based Counting: For triangles, identify a common vertex and count the number of base segments.   \nFor rectangles, count horizontal and vertical lines.   \nDecomposition: Break down complex figures into simpler, countable components. Labeling: Assign numbers or letters to distinct regions or vertices to help track counted figures.   \nPattern Recognition: For grids, apply the formulas directly. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "5. Grouping ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves identifying a common characteristic or underlying rule among a set of figures and grouping them accordingly, or identifying the 'odd one out' that does not share the common property. It primarily tests pattern recognition and classification based on visual attributes. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. Relies purely on observational skills and logica deduction. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Number of Elements/Sides: Counting internal components, sides of a polygon, or lines.   \nSymmetry: Presence or absence of rotational, reflectional, or point symmetry.   \nOrientation: The direction or alignment of figures or their internal components.   \nShading/Filling Patterns: Whether parts are filled, hollow, or have specific textures.   \nRelative Positions: The spatial relationship between different elements within a figure (e.g., inside/outside, left/right).   \nTransformations: Whether figures are related by rotation, reflection, or translation.   \nConnectivity: Whether elements are connected or separate. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Focusing on superficial differences rather than fundamental commonalities.   \nMissing subtle patterns or rules that apply to most figures.   \nNot considering all possible attributes (e.g., only looking at shape, not shading or orientation).   \nAssuming a simple rule when a more complex one is at play. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Attribute Listing: For each figure, list all observable attributes (e.g., number of sides, type of lines, shading, orientation of internal arrow).   \nCompare and Contrast: Systematically compare each figure with the others to find commonalities or unique features.   \nHypothesis Testing: Formulate a hypothesis about a potential grouping rule and test it against all figures. Look for Deviations: When finding the odd one out, identify the property that one figure lacks or possesses uniquely.   \nConsider Transformations: Check if figures can be grouped based on being rotations or reflections of each othe ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "6. Image Rotation ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves mentally rotating a 2D or 3D object to match a given orientation or to predict its appearance after a specified rotation. It tests your ability to visualize how shapes and their internal components change position relative to each other during rotation. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas, but understanding angular rotation (e.g., $9 0 ^ { \\circ }$ , $1 8 0 ^ { \\circ }$ , $2 7 0 ^ { \\circ }$ clockwise/anticlockwise) is key. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Relative Positions: The spatial relationship between different parts of the object remains constant during rotation Only the object's overall orientation changes.   \nClockwise vs. Anticlockwise: Distinguish between the direction of rotation.   \nDegrees of Rotation: Standard rotations are often multiples of 90 degrees. A 180-degree rotation results in an inverted image (upside down). A 360-degree rotation returns the object to its original orientation.   \nFixed Point/Axis: Rotation occurs around a central point (for 2D) or an axis (for 3D). ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Incorrectly rotating parts of the image independently instead of the whole figure.   \nConfusing clockwise with anticlockwise rotation.   \nMisjudging the exact angle of rotation, especially for non-90-degree rotations.   \nDifficulty in tracking multiple features simultaneously during rotation. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Focus on a Distinctive Feature: Pick a unique part of the figure (e.g., an arrow, a specific corner, a shaded region) and track its movement during rotation.   \nMental Overlay: Imagine overlaying the rotated figure onto the original to check alignment.   \nUse Reference Points: Mentally fix a point on the figure and observe its path during rotation.   \n. Elimination: Quickly rule out options that are clearly not rotations (e.g., reflections, altered shapes).   \nPractice with Physical Objects: If struggling, use a physical object (like a matchbox or a drawn shape on paper) and rotate it to build intuition. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "7. Mirror Image ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves determining the appearance of an object o figure when reflected across a mirror line (which can be vertical, horizontal, or diagonal). The core idea is to understand the concept of lateral inversion. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. The principle is geometric reflection. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Lateral Inversion (Vertical Mirror): For a vertical mirror, left becomes right, and right becomes left. The top and bottom parts remain in their respective positions.   \nVertical Inversion (Horizontal Mirror): For a horizontal mirror, top becomes bottom, and bottom becomes top. The left and right parts remain in their respective positions.   \nDistance Preservation: Every point in the original figure is the same perpendicular distance from the mirror line as its corresponding point in the mirror image.   \nSymmetry: If a figure has reflectional symmetry along the mirror line, its mirror image will be identical to the original. Text/Numbers: Letters and numbers appear reversed in a mirror image (e.g., 'b' becomes 'd', 'p' becomes 'q', '6' becomes '9'). Some letters (A, H, I, M, O, T, U, V, W, X, Y) are symmetrical and appear unchanged in a vertical mirror. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Confusing mirror image with rotation (especially 180-degree rotation, which looks similar to a horizontal mirror image followed by a vertical mirror image).   \nIncorrectly reflecting across diagonal mirror lines, which requires more complex visualization.   \nMisinterpreting internal patterns or text within the figure.   \nForgetting that the 'depth' or 'front-back' orientation is also inverted in a 3D mirror image. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Imagine Folding: Mentally fold the paper along the mirror line. The image should appear on the other side.   \nPoint-by-Point Reflection: For complex figures, reflect key points or vertices one by one.   \nFeature Tracking: Pick a distinctive feature (e.g., an arrow, a shaded corner) and visualize its reflected position.   \n. Elimination: Rule out options that show rotation or distortion instead of reflection.   \nPractice with Letters/Numbers: Familiarize yourself with the mirror images of common letters and digits. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "8. Paper Folding ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves visualizing a sequence of folds made on a piece of paper and then predicting the pattern of holes or cuts when the paper is unfolded, or vice-versa. The core idea is to mentally reverse the folding process, understanding how cuts/holes multiply and reflect across each fold line. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. Relies on principles of symmetry and reflection. Key Properties and Identities: ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Symmetry: Each fold line acts as a mirror line. When the paper is unfolded, any cut or hole will be reflected across that fold line.   \nNumber of Layers: A cut made through multiple layers of folded paper will result in multiple holes upon unfolding, corresponding to the number of layers cut.   \nOrder of Unfolding: The paper must be unfolded in the reverse order of folding. The last fold made is the first one to be unfolded.   \nPosition of Cuts: The position of a cut relative to the edges and previous fold lines is crucial. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Incorrectly reversing the order of folds during unfolding.   \nMissing reflections across fold lines, especially when multiple folds are involved.   \nMisjudging the number of layers a cut passes through.   \nDifficulty in visualizing the exact shape and position of holes after multiple reflections.   \nConfusing the orientation of the paper after each fold. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Work Backward: Start from the final folded and cut state and mentally unfold the paper step-by-step, applying reflection at each fold line.   \nDraw Each Stage: If the problem is complex, quickly sketch the paper at each stage of unfolding, marking the reflections of the cuts.   \nIdentify Fold Lines as Mirror Lines: Each fold line becomes an axis of symmetry for the cuts/holes when unfolded. . Focus on a Single Cut/Hole: Track how one specific cut or hole multiplies and reflects across the folds. Eliminate Options: Use the first few unfolding steps to eliminate options that don't match the expected pattern. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "9. Patterns In Three Dimensions ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves identifying sequences or transformations of 3D objects, predicting the next object in a series, or identifying relationships between 3D patterns. It extends 2D pattern recognition skills to three dimensions, often involving rotation, translation, and changes in internal features of 3D shapes. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. Relies on understanding 3D geometry and transformations. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "3D Transformations: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Rotation: Around X, Y, or Z axes (e.g., a cube rotating on its edge or face). Translation: Movement along an axis. Scaling: Change in size (less common in GATE spatial aptitude). Internal Features: Patterns, markings, or smaller objects within the 3D structure can also follow a sequence of changes. Structural Changes: Addition or removal of smaller cubes or components from a larger 3D structure. Perspective Changes: How the 2D representation of a 3D object changes with different viewpoints. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Difficulty in visualizing complex 3D changes from static 2D representations.   \nMissing subtle transformations or changes in internal elements.   \nConfusing rotations around different axes.   \nOverlooking hidden changes in the back or underside of the 3D object. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Focus on One Aspect at a Time: Analyze the pattern of change for one specific feature (e.g., the top face, a specific corner, an internal dot) before combining observations.   \nMentally Manipulate: Actively imagine the 3D objects moving or transforming.   \nLook for Consistent Rules: Identify a clear, repeatable rule or sequence of operations that applies to all given figures in the series.   \nUse a Reference Point/Axis: Mentally fix a point or an axis on the object to track its movement or rotation. Elimination: Rule out options that clearly do not follow the established pattern. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "10. Patterns In Two Dimensions ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic involves identifying the underlying rule or sequence in a series of 2D figures and predicting the next figure, or finding the odd one out. It requires recognizing transformations (rotation, reflection, translation), changes in number, size, shading, or arrangement of elements within the figures. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: No specific formulas. Relies on logical deduction and visual pattern recognition. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Transformations: Rotation: Clockwise or anticlockwise, by specific degrees (e.g., $4 5 ^ { \\circ }$ , 90°, 180°). ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "。 Reflection: Across a horizontal, vertical, or diagonal axis. Translation: Movement of the entire figure or its components in a specific direction. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Changes in Attributes: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Number: Increase or decrease in the count of elements.   \nSize/Shape: Enlargement, reduction, or alteration of shapes.   \nShading/Filling: Alternating or progressive changes in shading.   \nArrangement: Changes in the relative positions of components.   \nConnectivity: Elements joining or separating. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Alternating Patterns: A pattern that alternates between two or more states. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Progressive Patterns: A pattern that changes incrementally with each step. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Overlooking subtle changes in size, orientation, or shading.   \nAssuming a simple pattern when a more complex, multi-layered rule is present.   \nNot considering all possible transformations (e.g., only looking for rotation, ignoring reflection).   \nGetting confused by multiple elements changing simultaneously. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Systematic Analysis: Break down the figure into its constituent elements. Analyze how each element (e.g., outer shape, inner shape, arrow, dot, shading) changes from one figure to the next.   \nTrack One Element at a Time: If multiple elements are changing, focus on one element's transformation throughout the series before moving to the next.   \nLook for Cycles: Identify if a pattern repeats after a certain number of figures.   \nIdentify the Rule: Formulate a clear rule (e.g., \"the inner square rotates 90 degrees clockwise, and the outer circle alternates shading\").   \nTest the Rule: Apply your hypothesized rule to the subsequent figures in the series to confirm its validity. Elimination: Use the identified pattern to quickly eliminate options that do not conform. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "This section consolidates the key formulas and mathematical results important for Spatial Aptitude problems. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Euler's Formula for Polyhedra: For any simple polyhedron, the relationship between vertices $( V )$ , edges $( E )$ , and faces $( F )$ is given by: ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV - E + F = 2\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Number of Squares in an $n \\times n$ Grid: The total number of squares (of all sizes) in an $n \\times n$ grid is: ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum _ { k = 1 } ^ { n } k ^ { 2 } = { \\frac { n ( n + 1 ) ( 2 n + 1 ) } { 6 } }\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Number of Rectangles in an $n \\times m$ Grid: The total number of rectangles (including squares) in an $n \\times m$ grid is: ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left( { \\frac { n ( n + 1 ) } { 2 } } \\right) \\times \\left( { \\frac { m ( m + 1 ) } { 2 } } \\right)\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Number of Triangles in a Simple Base with $n$ Segments: If a base line is divided into $n$ segments and a common vertex is connected to all endpoints, the number of triangles formed is: ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac { n ( n + 1 ) } { 2 }\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Mastering Spatial Aptitude for GATE requires not just understanding concepts but also developing effective exam strategies. Here are some practical tips: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "1. Visualize Actively, Don't Just Observe: Spatial aptitude is about mental manipulation. Don't just look at the figures; actively imagine them moving, rotating, folding, or reflecting. Close your eyes briefly if it helps to form a clearer mental image. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "2. Adopt a Systematic Approach: Avoid haphazard guessing. For each problem type (e.g., counting, paper folding, pattern series), develop and follow structured method. This prevents errors like double-counting or missing steps. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "3. Focus on Key Features and Reference Points: When dealing with rotations, reflections, complex patterns, identify a unique or distinctive element (e.g., a specific corner, an arrow, a shaded region). Track its movement or transformation throughout the sequence or across options.   \n4. Leverage the Elimination Strategy: In multiple-choice questions, often several options can be quickly ruled out because they clearly violate a fundamental rule (e.g., a reflection instead of a rotation, an extra piece in an assembly). This narrows down your choices and increases your chances.   \n5. Practice Under Time Constraints: Spatial aptitude questions can be time-consuming due to the mental effort required. Practice solving problems within strict time limits to improve your speed and efficiency. The more you practice, the faster your visualization skills will become.   \n6. Clearly Differentiate Mirror Image from Rotation: These are common sources of confusion. Remember that a mirror image involves lateral inversion (left-right flip for a vertical mirror), while rotation changes orientation without flipping. A 180-degree rotation can sometimes look similar to a mirror image, so pay close attention.   \n7. Don't Hesitate to Sketch (Mentally or Physically): For complex problems like paper folding or 3D structures, a quick mental or physical sketch of intermediate steps can significantly clarify the problem and prevent errors. This is especially useful for tracking reflections in paper folding.   \n8. Start with Simpler Problems to Build Confidence: If you find a particular type of spatial problem challenging, begin with simpler variations to build your foundational understanding and confidence before tackling more complex ones. Gradually increase the difficulty. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "10.1.1 3d Structure: GATE CSE 2026 Set 1 GA Question: 7 ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "In Panel  of the figure below, the front view and top view of a structure are shown. Which one of the structures shown in Panel possesses the views shown in Panel ",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/534f51aa29896ae5e04d6ee43b12495ac6a77844233ebad468059eee02a26aa2.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A. (i) B. (ii) C. (iii D. (iv) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 spatial-aptitude 3d-structure two-marks 一1\\~ ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Which one of the figures labelled as , and S can be constructed by using each of the four pieces only once without overlaps? ",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f97d4b7e3f1373a0e2149af4bdcad50d5127e4822dbce8ffc17f59d1c80da2e.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. B. Q C. D. S ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A jigsaw puzzle has pieces. One of the pieces is shown above. Which one of the given options for the missing piece when assembled will form a rectangle? The piece can be moved, rotated or flipped to assemble with the above piece. ",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1944d51838e4590507ad73409b1d3b419a3eb21949e185ff21954d833d128a0.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 spatial-aptitude assembling-pieces two-marks ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ✍ Practice Test: Test (7Q) ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A palindrome is a word that reads the same forwards and backwards. In a game of words, a player has the following two plates painted with letters. ",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/98e0240d8a0f3bbf845faa8bdd9582d7709a38cb5d9ce96b00438cfe37e8c6b6.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "From the additional plates given in the options, which one of the combinations of additional plates would allow the player to construct a five-letter palindrome. The player should use all the five plates exactly once. The plates can be rotated in their plane. ",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/057144a19a0f6309dc6a2290fd43bd8c050bd6e22729c3af6340c47e2b7b6c11.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "☆—小一",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A. Operation 1: A clockwise rotation by $9 0 ^ { \\circ }$ about an axis perpendicular to the plane of the figure A reflection along a horizontal line   \nB. A counter clockwise rotation by $9 0 ^ { \\circ }$ about an axis perpendicular to the plane of the figure A reflection along a horizontal line   \nC. Operation A clockwise rotation by $9 0 ^ { \\circ }$ about an axis perpendicular to the plane of the figure A reflection along a vertical line   \nD. A counter clockwise rotation by $1 8 0 ^ { \\circ }$ about an axis perpendicular to the plane of the figure Operation 2: A reflection along a vertical line ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Three different views of a dice are shown in the figure below. ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/5f0562fc4f75ebbdc8b560a610cbdf5d27c7c876fe1fe60b8c8a67f012fed8cb.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "The piece of paper that can be folded to make this dice is ​The least number of squares to be added in the figure to make a line of symmetry is ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/df0c42260758d91ab0dff6ec628715017fbba65d13a22acc6eb17b15df250a73.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/f821522da2f0c28b1275ca7ca8c8c26743cfa9e69cc2d27ae171731aebb4c9b4.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 spatial-aptitude mirror-image two-marks ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a75c821b573f11eadfd18f7a9755823b70fcd2e9c3541df99c763a28b0ec9d0.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A circular sheet of paper is folded along the lines in the directions shown. The paper, after being punched in the final folded state as shown and unfolded in the reverse order of folding, will look like ",
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/f2c59bab84a6f240600597552c8f13614c770f78cd6c32f46fd5e3bf8a77adab.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 spatial-aptitude paper-folding one-mark ",
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/de9a3b709ad1f7807301e05089b82c305e8c38903757ccb0d2f54912d2915d4d.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A transparent square sheet shown above is folded along the dotted line. The folded sheet will look like ",
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/074290512253c5798de0ccfdebca9cb5bb48c2c0302f11c768ab81d522df9bb1.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "10.6.3 Paper Folding: GATE CSE 2024 Set 1 GA Question: 9 ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A rectangular paper of $2 0 \\mathrm { c m } \\times 8$ is folded  times. Each fold is made along the line of symmetry, which is perpendicular to its long edge. The perimeter of the final folded sheet (in ) is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A square paper, shown in figure $( I )$ , is folded along the dotted lines as shown in the figures $( I I )$ and $( I I I )$ . Then a few cuts are made as shown in figure $( I V )$ . Which one of the following patterns will be obtained when the paper is unfolded? ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Note: The figures shown are representative. ",
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/d17fde61d1f3db9058c0b5ea63b460418866a35141cb11088c3205dfa9b88e0b.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/8dd7d10ba10bfaf44e1ff6cf15b9e556e260c24ef5c429eb5b4107d7c60d2319.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/d616b9e0d305372658116b8c70f4a19731896082abbb3c6ff35c68c156ad4b16.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "images/2b7e9c37fe4e325b0d5e6cf923d3f0dab0f186ae609bbedf903298465babb58e.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (10Q) ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Looking at the surface of a smooth -dimensional object from the outside, which one of the following options is ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "AB. The surface of the object must be concave everywhere. The surface of the object must be convex everywhere.   \nC. The surface of the object may be concave in some places and convex in other places.   \nD. The object can have edges, but no corners. ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Visualize two identical right circular cones such that one is inverted over the other and they share a common circular base. If a cutting plane passes through the vertices of the assembled cones, what shape does the outer boundary of the resulting cross-section make? ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. A rhombus B. A triangle C. An ellipse D. A hexagon ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 spatial-aptitude patterns-in-three-dimensions two-marks ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/29e37f7a5e31e48356df698999c53a926464b65fe894bb15df76fb044a652ff3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "10.8.1 Patterns In Two Dimensions: GATE CSE 2021 Set GA Question: 2 ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A polygon is convex if, for every pair of points, and $\\mathbf { Q }$ belonging to the polygon, the line segment  lies completely inside or on the polygon. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is a convex polygon? ",
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/62532fc38536fd17878e2f51d3ca5dde402117b87e62596ad8d3b64032cea786.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A plot of land must be divided between four families. They want their individual plots to be similar in shape, not necessarily equal in area. The land has equally spaced poles, marked as dots in the below figure. Two ropes, and are already present and cannot be moved. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "What is the least number of straight ropes needed to create the desired plots? A single rope can pass through three poles that are aligned in a straight line. ",
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/ec52db4349a12e17a88c49aa660dca6b0bce941cd28e5a25455d8d6e09a485a9.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. 3 ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "：",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Either one or both of the patterns can be used any number of times and in any orientation to construct a new pattern. Which one of the options below cannot be constructed by using only these two -tile patterns assuming there are no overlaps among them? ",
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/02fe76df77b803c35ce57158519c08a177769967cbfb568a001160f70d9349af.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "A black square PQRS has been cut into two parts. One part of it is shown in Panel Which one of the shapes in Panel  is the other part? ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Panel I Panel II R H H 5 (i) (ii) L 5 (iii) (iv) ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A. (i) B. 11 C. (ii) D. (iv) ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "table",
+        "img_path": "images/bf44859fa9be0a5de1a17efa70bb96d2aca8bfa9be50f58a705217e1d7260074.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "table",
+        "img_path": "images/6bc5810263b4c438ad89f40d9491277d28ac1d381d35a1094fafc233a40f54ed.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "table",
+        "img_path": "images/77cbcbcbc98d10297346fc75d2b6c58b52df2d11e2b2121cbd3ac3255861a3ed.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "table",
+        "img_path": "images/92a664f6b71208357f3e923936277912fee8b06a37b268893d5d027c5e25a54c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "table",
+        "img_path": "images/02d10a51254458fa3bcfd0c14f93b081f9bf19ae8e37f675e142480682d34222.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Syllabus: English grammar, Sentence completion. Verbal analogies, Word groups. Instructions, Critical reasoning and Verbal deduction ",
+        "page_idx": 30
+    },
+    {
+        "type": "table",
+        "img_path": "images/c70e4065981342dcb8746e8cafb202bd9351abef50a01f1bfceb87dd400f66f4.jpg",
+        "table_caption": [
+            "MarkDistribution in Previous GATE "
+        ],
+        "table_footnote": [],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"General Aptitude: Verbal Aptitude\" chapter of your GATE Computer Science exam preparation. This section is designed to equip you with the essential linguistic and reasoning skills necessary to excel in the verbal aptitude segment of the GATE exam. Verbal Aptitude assesses your comprehension of English language, grammar, vocabulary, and logical reasoning abilities, which are crucial not just for the exam but also for effective communication in your professional career. Typically, verbal aptitude questions constitute a significant portion (around 5-8 marks out of 15 for General Aptitude) and can range from direct vocabulary and grammar questions to more complex reading comprehension and logical deduction problems. Mastering these topics can significantly boost your overall GATE score. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Antonyms ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Antonyms are words that have opposite meanings. Understanding antonyms enhances vocabulary and comprehension by highlighting contrasts in meaning. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Antonyms can be absolute (e.g., hot/cold) or relative (e.g., happy/sad). 。 Often formed by adding prefixes (e.g., un-, dis-, in-, im-, non-) to a word. 。 Context is crucial; a word can have different antonyms depending on its u ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Choosing a word that is merely different, not opposite. Ignoring prefixes/suffixes that might indicate an antonym. O Misinterpreting the nuance of the given word. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "1. Understand the exact meaning of the given word.   \n2. Look for prefixes that reverse meaning (e.g., capable $\\scriptscriptstyle - >$ incapable).   \n3. Consider the context if the word has multiple meanings.   \n4. Eliminate options that are synonyms or unrelated.   \n5. If unsure, try to use the options in a sentence to see which one creates an opposite meaning. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Articles ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Articles are words (a, an, the) that define whether a noun is specific or unspecific. They are determiners that precede nouns. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "1. Indefinite Article 'a': Used before singular, countable nouns that begin with a consonant sound. E.g., $a$ , $a$ university (starts with 'y' sound).   \n2. Indefinite Article 'an': Used before singular, countable nouns that begin with a vowel sound. E.g., , (starts with 'o sound).   \n3. Definite Article 'the': Used before specific or unique nouns, or nouns that have been previously mentioned. E.g., , the book I read yesterday.   \n4. Zero Article: No article is used before plural countable nouns, uncountable nouns, proper nouns, or abstract nouns when speaking generally. E.g., , students learn. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "□ 'A' and 'an' are used for general or non-specific items. 'The' is used for specific or previously identified items.   \n。 Sound, not spelling, determines 'a' vs. 'an'. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Confusing 'a' and 'an' based on spelling rather than sound. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Overusing 'the' with general nouns or proper nouns.   \nOmitting articles where they are required for singular countable nouns. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. Identify if the noun is singular/plural, countable/uncountable.   \n2. Determine if the noun is specific or general in the context.   \n3. Pay attention to the initial sound of the word following the article.   \n4. Check for common phrases or idioms that require specific article usage. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Comparative Forms ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Comparative forms of adjectives and adverbs are used to compare two things, while superlative forms are used to compare three or more things. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. One-syllable adjectives/adverbs: Add -er for comparative, -est for superlative. E.g., $t a l l  t a l l e r  t a l l e s t .$   \n2. Two-syllable adjectives ending in -y: Change -y to $- \\dot { I }$ and add -er/-est. E.g., $h a p p y  h a p p i e r  h a p p i e s t .$   \n3. Two or more syllable adjectives/adverbs: Use more for comparative, most for superlative. E.g., beauti ful $$ more beautiful $$ most beautiful.   \n4. Irregular forms: Some words have irregular comparative/superlative forms. E.g., $g o o d  b e t t e r  b e s t \\$ $b a d  w o r s e  w o r s t$ ; /many → more → most. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "5. Comparison structure: Comparative forms are often followed by than. E.g., $X$ is taller than $Y$ . ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: Do not use double comparatives/superlatives (e.g., \"more happier\" is incorrect). Ensure logical comparison (comparing like with like). ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "0 Using \"more\" or \"most\" with -er or -est endings. Incorrectly forming irregular comparatives/superlatives. Making illogical comparisons (e.g., \"My car is faster than John\") ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. Count the syllables of the adjective/adverb.   \n2. Check for irregular forms.   \n3. Ensure the comparison is grammatically and logically sound. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "English Grammar ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: English grammar refers to the set of structural rules governing the composition of clauses, phrases, and words in the English language. It ensures clarity and correctness in communication. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. Basic Sentence Structure:  (SVO) is the most common structure. E.g., She reads a book.   \n2. Parts of Speech: Nouns, Pronouns, Verbs, Adjectives, Adverbs, Prepositions, Conjunctions, Interjections. Each has specific roles.   \n3. Subject-Verb Agreement: The verb must agree in number with its subject. E.g., $H e$ (singular); (plural).   \n4. Tense Consistency: Maintain a consistent tense throughout a sentence or paragraph unless there's a specific reason to change.   \n5. Parallelism: Similar items in a series or comparison should be in the same grammatical form. E.g., Helikes swimming, hiking,and cycling. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: 。 Grammar provides the framework for meaningful sentences. Correct grammar prevents ambiguity and misinterpretation. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Errors in subject-verb agreement, pronoun agreement, and tense usage.   \nLack of parallelism.   \nMisplaced modifiers.   \nIncorrect punctuation. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. Break down the sentence into its core components (subject, verb, object).   \n2. Identify the part of speech for each word.   \n3. Check for agreement (subject-verb, pronoun-antecedent).   \n4. Look for consistency in tense and structure.   \n5. Read the sentence aloud to catch awkward phrasing or obvious errors. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Grammatical Error ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Grammatical errors are mistakes in the structure or usage of language that violate standard English grammar rules. Identifying and correcting them is key to effective communication. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common error types include subject-verb agreement, pronoun agreement, tense consistency, parallelism, misplaced modifiers, comma splices, run-on sentences, fragment sentences, and incorrect word choice. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Overlooking subtle errors, especially in complex sentences. 0 Focusing only on obvious errors and missing nuanced ones. 。 Not knowing the specific rule being tested. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "1. Read the sentence carefully, looking for any awkward phrasing.   \n2. Check for subject-verb agreement (singular subject, singular verb; plural subject, plural verb).   \n3. Verify pronoun-antecedent agreement (pronoun matches the noun it refers to in number and gender).   \n4. Ensure tense consistency throughout the sentence.   \n5. Look for parallel structure in lists or comparisons.   \n6. Identify misplaced or dangling modifiers.   \n7. Check for correct use of articles, prepositions, and conjunctions.   \n8. Consider punctuation errors. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Incorrect Sentence Part ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This question type presents a sentence divided into several parts, one of which contains a grammatical error. The task is to identify the erroneous part. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Errors can span any grammatical rule: subject-verb agreement, tense, pronouns, articles, prepositions, parallelism, vocabulary, etc.   \nOften, the error is subtle and requires careful attention to detail. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: 。 Rushing through the sentence and missing the error. 0 Fixating on one type of error and ignoring others. 0 Assuming a part is correct because it \"sounds\" okay. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "1. Read the entire sentence first to understand its meaning and flow.   \n2. Examine each part individually, checking for common grammatical e ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Subject-Verb Agreement: Does the verb match the subject in number?   \nTense: Is the tense consistent and appropriate for the context?   \nPronouns: Do pronouns agree with their antecedents in number, gender, and case?   \nArticles/Prepositions: Are they used correctly?   \nParallelism: Are items in a list or comparison structured similarly?   \nWord Choice/Vocabulary: Is the correct word used (e.g., affect vs. effect)?   \nModifiers: Are adjectives and adverbs placed correctly? ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "3. If no error is found, consider the \"No Error\" option if available ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Most Appropriate Word ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This involves choosing the word that best fits the meaning and context of a given sentence or passage from a set of options. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "。 Requires strong vocabulary and understanding of nuances in word meanings. Context is paramount; a word might be grammatically correct but semantically inappropriate. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Choosing a word that is a near-synonym but doesn't fit the exact context.   \nIgnoring the tone or register of the sentence.   \nMisinterpreting the overall meaning of the sentence. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Read the sentence carefully to grasp its full meaning and tone.   \n2. Consider the part of speech required for the blank (noun, verb, adjective, adverb).   \n3. Substitute each option into the sentence.   \n4. Evaluate which option makes the most sense semantically and grammatically.   \n5. Look for collocations (words that naturally go together) or idiomatic expressions.   \n6. Eliminate options that are clearly incorrect in meaning or grammar. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Narrative Sequencing ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This task involves arranging a set of jumbled sentences or paragraphs into a coherent and logical narrative sequence. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A coherent narrative follows a logical progression, often chronological, cause-and-effect, or problem-solution.   \nTransition words and pronouns are crucial clues. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Ignoring transition words or pronoun references. Focusing only on the first sentence and not the overall flow. 。 Assuming a chronological order when a different logical order is intended. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the opening sentence: Look for sentences that introduce a topic, character, or setting, often without pronouns or conjunctions referring to previous sentences. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "2. Identify transition words/phrases: Words like however, therefore, meanwhile, subsequently, in addition, finally, etc., indicate relationships between sentences. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "3. Look for pronoun references: A pronoun (he, she, it, they, this, that) must refer back to a noun introduced in a previous sentence. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "4. Establish cause-and-effect or chronological order: Determine if events follow a time sequence or if one event leads to another. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "5. Identify the concluding sentence: Look for sentences that summarize or provide a final thought. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "6. Form pairs: Try to identify two sentences that logically follow each other. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "7. Read the assembled sequence: Once you have an order, read it through to ensure it flows logically and makes sense. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Noun Verb Adjective ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This topic focuses on understanding the definitions, functions, and interrelationships of nouns (naming words), verbs (action/state words), and adjectives (describing words). ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Noun: Names a person, place, thing, or idea. Can be subject or object. E.g., . 2. Verb: Expresses an action, occurrence, or state of being. E.g., . 3. Adjective: Modifies or describes a noun or pronoun. Answers questions like \"which one?\", \"what kind?\", \"how many?\". E.g., . ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "4. Common Suffixes: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Nouns: -tion, -sion, -ment, -ness, -ity, -ance, -ence, -er, -or (e.g.,   \ninformation,development, happiness).   \nVerbs: -ate, -ify, -ize, -en (e.g., activate, simplify, modernize).   \nAdjectives: -ful, -less, -able, -ible, -ous, -ic, -al, -y (e.g., ). ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A word's function (noun, verb, adjective) can change based on context (e.g., \"run\" as a verb vs. \"a run\" as a noun). Understanding these parts of speech is fundamental to sentence construction and error identification. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "。 Confusing words that have similar forms but different parts of speech (e.g., \"advice\" (noun) vs. \"advise\" (verb)).   \n。 Incorrectly identifying the function of a word in a sentence. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the word's role in the sentence (e.g., is it naming something, performing an action, or describing something?).   \n2. Look for common suffixes that indicate a specific part of speech.   \n3. Test the word by replacing it with a clear example of a noun, verb, or adjective to see if the sentence structure ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "remains valid. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Passage Reading ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This involves reading a given passage and answering comprehension questions based on its content, including main idea, specific details, inference, and author's tone. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "。 Questions can be direct (explicitly stated in the text) or inferential (requiring logical deduction from the text).   \n。 Understanding the main idea and supporting details is crucial. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Reading too slowly or too quickly without comprehension. Making assumptions not supported by the text. Getting bogged down by unfamiliar vocabulary. 0 Misinterpreting the author's intent or tone. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "1. Skim the passage first: Read quickly to get a general idea of the topic, main argument, and structure. Pay attention to the first and last sentences of paragraphs.   \n2. Read the questions: Understand what information you need to find. This helps you focus your reading.   \n3. Scan for keywords: For specific detail questions, scan the passage for keywords from the question.   \n4. Read carefully for answers: When you locate relevant sections, read them thoroughly to understand the context and find the exact answer.   \n5. Inferential questions: Look for clues, implications, and logical connections within the text. Avoid bringing in outside knowledge.   \n6. Main idea questions: Often found in the introduction or conclusion, or can be derived from summarizing the key points.   \n7. Vocabulary in context: Use surrounding words and sentences to deduce the meaning of unfamiliar words. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Phrasal Verb ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: A phrasal verb is a verb combined with a preposition or an adverb (or both) to create a new meaning that is often different from the original verb's meaning. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "1. Verb + Preposition (e.g., $\\mathbf { \\sigma } = \\mathbf { \\sigma }$ care for)   \n2. $V e r b + A d \\bar { v } e r b$ ， (e.g., break down $\\mathbf { \\tau } = \\mathbf { \\tau }$ stop functioning)   \n3. Verb + Adverb + (e.g., up to $\\mathbf { \\sigma } = \\mathbf { \\sigma }$ admire) ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: 。 Meanings are often idiomatic and cannot be deduced from the individual words. Can be separable (object can go between verb and particle) or inseparable. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Assuming the literal meaning of the words. Confusing similar-looking phrasal verbs. Incorrectly using separable/inseparable phrasal verbs. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "1. Memorize common phrasal verbs and their meanings.   \n2. Pay close attention to the context of the sentence to infer meaning.   \n3. If unsure, try to replace the phrasal verb with a single-word synonym to see if it fits. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Phrase Meaning ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This involves understanding the meaning of idiomatic expressions, proverbs, or common phrases that often have a figurative meaning different from the literal interpretation of their individual words. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: 。 Idioms are non-literal and culturally specific. 。 Context is vital for interpreting the correct nuance of a phrase. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: 。 Interpreting phrases literally. Confusing similar-sounding idioms. 0 Not recognizing the figurative nature of the expression. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "1. Read the sentence containing the phrase carefully to understand the overall context.   \n2. If the phrase is unfamiliar, try to infer its meaning from the surrounding words and the situation described.   \n3. Consider the options provided and see which one logically fits the context.   \n4. Eliminate options that represent a literal interpretation or are completely irrelevant.   \n5. Familiarity with common idioms and proverbs is the best preparation. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Prepositions ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Prepositions are words that show the relationship between a noun or pronoun and other words in a sentence, indicating location, time, direction, or manner. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1. Prepositions of Place: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": ": for enclosed spaces, cities, countries (e.g., the room, ).   \n■ : for surfaces, streets, specific days (e.g., , ).   \n■ : for specific points, addresses, events (e.g., corner, ). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "2. Prepositions of Time: ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": ": for months, years, seasons, long periods (e.g., , ).   \n■ : for specific days, dates (e.g., Friday, August ).   \n□ : for specific times (e.g., , ). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "3. Prepositions of Direction: to,into,onto, from,through,across. E.g., , jump into the water ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "4. Fixed Prepositional Phrases: Many verbs, adjectives, and nouns are followed by specific prepositions (e.g., afraid , , good ). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Prepositions always introduce a prepositional phrase, which includes a noun or pronoun (the object of the preposition).   \nTheir usage is often idiomatic and requires memorization. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Confusing prepositions with similar meanings (e.g., \"between\" vs. \"amon 。 Incorrectly using fixed prepositional phrases. Omitting necessary prepositions or adding unnecessary ones. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the relationship the preposition is trying to express (place, time, direction, etc.).   \n2. Check if the verb, adjective, or noun preceding the blank requires a specific preposition.   \n3. Consider the context and the object of the preposition.   \n4. Memorize common fixed prepositional phrases. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Pronouns ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Pronouns are words that replace nouns to avoid repetition. They must agree with the nouns they refer to (antecedents) in number, gender, and case. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1. Types of Pronouns: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Personal:  (subjective); (objective).   \nPossessive: .   \nReflexive/Intensive: myself,yourself,himself,herself,itself,ourselves,yourselves,themselves.   \nRelative: who,whom, whose,which,that.   \nDemonstrative: .   \nIndefinite: nothing, all, many, few. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "2. Pronoun-Antecedent Agreement: A pronoun must agree with its antecedent in number (singular/plural) and gender (masculine/feminine/neuter). E.g., . Thestudents submitted their assignments. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "3. Pronoun Case: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Subjective Case: Used when the pronoun is the subject of a verb (e.g., ). Objective Case: Used when the pronoun is the object of a verb or preposition (e.g., , Giveitto me). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: 。 Pronouns clarify sentences by preventing redundancy. Correct pronoun usage is essential for grammatical accuracy. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "。 Incorrect agreement in number or gender with the antecedent.   \nConfusing subjective and objective cases (e.g., \"between you and I\" instead of \"between you and me\").   \nAmbiguous pronoun reference (unclear what noun the pronoun refers to).   \n。 Using \"its\" (possessive) vs. \"it's\" (it is). ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the pronoun and its antecedent (the noun it replaces).   \n2. Check for agreement in number (singular/plural) and gender.   \n3. Determine if the pronoun is acting as a subject or an object to choose the correct case.   \n4. Ensure the pronoun's reference is clear and unambiguous. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Sentence Ordering ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Similar to Narrative Sequencing, this involves arranging jumbled parts of a single sentence (or a short paragraph) into a grammatically correct and logically coherent order. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Focuses on sentence structure, grammatical rules, and logical flow within a single sentence or a very short set of related sentences. Often involves identifying the subject, verb, and object, and then arranging modifiers correctly. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Creating grammatically incorrect structures.   \nProducing a sentence that is grammatically correct but makes no logical sense.   \nMisplacing modifiers, leading to ambiguity. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the subject and main verb: These usually form the core of the sentence.   \n2. Look for introductory phrases/clauses: These often come at the beginning.   \n3. Identify conjunctions: Words like and, but, or, because, while connect clauses or phrases.   \n4. Check for pronoun references: Ensure pronouns follow their antecedents.   \n5. Consider logical flow: What event or idea logically precedes another?   \n6. Read the assembled sentence: Ensure it is grammatically correct, makes sense, and flows naturally. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Statement Sufficiency ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: In this type of question, a question is given, followed by two or more statements. You need to determine whether the information in the statements is sufficient to answer the question. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "。 Focus is on sufficiency, not necessarily on finding the answer itself.   \nStatements are evaluated independently first, then together if neither is sufficient alone. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Trying to solve the question instead of just checking sufficiency. 。 Assuming information not explicitly given in the statements. 。 Incorrectly combining statements. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "1. Analyze the question: Understand exactly what information is required to answer it.   \n2. Evaluate Statement 1 alone: Can the question be answered using only the information in Statement 1? Ignore Statement 2.   \n3. Evaluate Statement 2 alone: Can the question be answered using only the information in Statement 2? Ignore Statement 1.   \n4. Evaluate Statements 1 and 2 together: If neither statement alone is sufficient, check if combining them provides enough information. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "5. Select the appropriate option: ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Statement 1 alone is sufficient.   \nStatement 2 alone is sufficient.   \nEither Statement 1 alone or Statement 2 alone is sufficient.   \nBoth Statement and Statement 2 together are sufficient (but neither alone).   \nNeither Statement 1 nor Statement 2 nor both together are sufficient. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Statements Follow ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This involves analyzing a set of given statements (premises) and determining which conclusion(s) logically follow from them, often based on principles of deductive reasoning. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "1. Deductive Reasoning: If the premises are true, the conclusion must be true. Example: All A are B. All B are C. Therefore, All A are C. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "2. Categorical Syllogisms: Often involve \"All,\" \"No,\" \"Some\" statements. All X are Y (Universal Affirmative) (Universal Negative) Some (Particular Affirmative) Some X are not (Particular Negative) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "3. Venn Diagrams: A useful tool for visually representing relationships between categories and testing the validity of conclusions. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: Conclusions must be derived solely from the given statements, without external knowledge. Focus on logical necessity, not probability or common sense. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Bringing in outside knowledge or personal opinions.   \nMaking assumptions not supported by the statements.   \nConfusing \"some\" with \"all\" or \"none.   \nErrors in interpreting negative statements. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "1. Read statements carefully: Understand the exact meaning of each premise.   \n2. Use Venn Diagrams: Draw circles to represent the categories and their relationships as described by the statements.   \n3. Test each conclusion: Check i the conclusion is necessarily true based on your diagram or logical deduction. If there's even one scenario where the conclusion is false, it does not follow.   \n4. Avoid assumptions: Stick strictly to the information provided in the statements. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Synonyms ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Synonyms are words that have the same or very similar meanings. Understanding synonyms expands vocabulary and allows for varied expression. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "。 Few words are perfect synonyms; most have slightly different connotations or contexts of use.   \nCan often be identified by root words, prefixes, and suffixes. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Choosing a word that is related but not a true synonym. Ignoring the context in which the word is used. Misinterpreting the nuance of the given word. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "1. Understand the precise meaning of the given word.   \n2. Consider the context if the word has multiple meanings.   \n3. Look for words with similar roots or derivations.   \n4. Substitute each option into a sentence where the original word is used to see which one fits best.   \n5. Eliminate options that are antonyms or unrelated. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Tenses ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Tenses indicate the time an action occurs (past, present, future) and its aspect (simple, continuous, perfect, perfect continuous), showing whether an action is completed, ongoing, or habitual. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results: ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "1. Simple Present: $S + V 1 + ( s / e s )$ (for 3rd person singular). Used for habits, facts, scheduled events. E.g., He walks.   \n2. Present Continuous: $S + i s / a m / a r e + V - i n g$ . Used for actions happening now or temporary actions. E.g., $H e$ is walking.   \n3. Present Perfect: $S + h a s / h a v e + V 3$ . Used for actions completed in the past but with present relevance. E.g., $H e$ has walked.   \n4. Present Perfect Continuous: $S + h a s / h a v e + b e e n + V - i n g$ . Used for actions that started in the past and continue to the present. E.g., $H e$ has been walking. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "5. Simple Past: $S + V 2$ . Used for completed actions in the past. E.g., . ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "6. Past Continuous: $S + w a s / w e r e + V - i n g$ . Used for actions ongoing in the past. E.g., $H e$ was walking. 7. Past Perfect: $S + h a d + V 3 .$ Used for an action completed before another past action. E.g., before arrived. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "8. Past Perfect Continuous: $S + h a d + b e e n + V - i n g$ . Used for an action ongoing up to a point in the past. E.g., $H e$ for an hour when saw him. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "9. Simple Future: $S + w i l l / s h a l l + V 1$ . Used for future actions. E.g., walk. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "10. Future Continuous: $S + w i l l / s h a l l + b e + V - i n g$ . Used for actions ongoing at a specific time in the future. E.g., $H e$ will be walking. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "11. Future Perfect: $S + w i l \\bar { l } / s h a l l + h a v e + V 3$ . Used for actions that will be completed by a certain time in the future. E.g., $H e$ will have walked $1 0 \\mathsf { k m }$ by then. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "12. Future Perfect Continuous: $S + w i l l / s h a l l + h a v e + b e e n + V - i n g$ . Used for actions that will have been ongoing up to a point in the future. E.g., $H e$ for two hours. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Tense consistency is crucial within a sentence or paragraph.   \nTime markers (e.g., yesterday, now, next week, since, for) often indicate the appropriate tense. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Incorrectly mixing tenses within a sentence. Confusing similar tenses (e.g., simple past vs. present perfect). Incorrect verb forms (V1, V2, V3). ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the time frame of the action (past, present, future).   \n2. Determine the aspect (simple, continuous, perfect, perfect continuous) based on whether the action is   \ncompleted, ongoing, or has relevance to another time.   \n3. Look for time expressions or other verbs in the sentence that provide clues about the correct tense.   \n4. Ensure tense consistency, especially in complex sentences or reported speech. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Verbal Reasoning ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: Verbal Reasoning assesses the ability to understand and logically process information presented in words, including analogies, critical reasoning, and logical deduction from textual information. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Requires analytical thinking and the ability to identify patterns, relationships, and logical fallacies.   \nOften involves drawing conclusions, identifying assumptions, or evaluating arguments. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Making assumptions not explicitly stated.   \nConfusing correlation with causation.   \nAllowing personal bias to influence judgment.   \nMisinterpreting logical connectors (e.g., \"if...then,\" \"unless\"). ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "1. Read carefully: Understand the exact meaning of all statements and the question.   \n2. Identify the core argument/relationship: For analogies, determine the relationship between the first pair. For critical reasoning, identify the premise(s) and conclusion.   \n3. Break down complex statements: Simplify sentences to their core logical components.   \n4. Look for keywords: Words like therefore, because, however, if, then, unless, all, some, none are crucial for logical deduction.   \n5. Test options: For multiple-choice questions, evaluate each option against the given information.   \n6. Avoid outside knowledge: Base your reasoning strictly on the provided text. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Word Meaning ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This involves understanding the precise definition of a word, often in a given context, and choosing the option that best reflects that meaning. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "。 Words can have multiple meanings; context determines the relevant one.   \n。 Knowledge of root words, prefixes, and suffixes can help deduce meanings. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: Choosing a common meaning of a word when the context implies a less common one. Misinterpreting the nuance or connotation of a word. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Ignoring contextua clues. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "1. Read the sentence or phrase containing the word carefully.   \n2. Try to infer the meaning of the word from its context (surrounding words, overall sentence meaning).   \n3. Look for synonyms or antonyms within the sentence that might provide clues.   \n4. Break down the word into its root, prefix, and suffix if applicable.   \n5. Substitute each option into the sentence to see which one makes the most sense.   \n6. Eliminate options that are clearly incorrect or irrelevant. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Word Pairs ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Definition and core idea: This question type presents a pair of words that share a specific relationship, and you must identify another pair of words from the options that shares the same relationship (analogies). ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Important formulas, theorems, and results:   \n1. Common Relationship Types: Synonym: Happy : Joyful Antonym: Hot Cold Part-Whole: Hand Cause-Effect: Rain Flood Tool-User: Writer Object-Function: Knife Cut Category-Member: Fruit Apple Intensity: Warm Hot Producer-Product: Baker Bread Action-Object: Read Book ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Key properties and identities: ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "。 The relationship must be consistent across both pairs.   \nThe order of words in the pair often matters (e.g., cause-effect is different from effect-cause). ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Common pitfalls: ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Identifying a weak or incorrect relationship in the original pair.   \nFinding a relationship in the options that is similar but not identical to the original.   \nIgnoring the order of the words in the pair. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Standard problem-solving techniques: ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "1. Identify the precise relationship: Clearly define how the two words in the given pair are related. Be specific (e.g., \"is a type of,\" \"is used to,\" \"is the opposite of\").   \n2. Formulate a sentence: Create a simple sentence that expresses the relationship (e.g., \"A finger is a part of a hand\").   \n3. Apply the sentence to options: Test each option by plugging its words into your sentence. The option that fits best is likely the answer.   \n4. Consider nuances: If multiple options seem plausible, re-evaluate the strength and specificity of the relationship.   \n5. Check for order: Ensure the order of the words in the option pair matches the order of the relationship in the original pair. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "For Verbal Aptitude, \"formulas\" refer to core rules, structures, and patterns. Here's a consolidated list: ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Articles: ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "0 'a': Singular, countable, consonant sound.   \n0 'an': Singular, countable, vowel sound.   \n'the': Specific, unique, or previously mentioned.   \n□ Zero Article: General plural/uncountable/abstract nouns, proper nouns. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Comparative Forms: 1-syllable: $A d j + - e r / - e s t$ 2-syllable ending in -y: $\\dot { A d j } ( - y  - i ) + - e r / - e s t$ $^ { 2 + }$ syllables: $\\mathit { \\Delta } ^ { \\prime } m o s t + A d j$ 。 Irregular: good → better $$ , $b a d  w o r s e  w o r s t$ , etc. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "English Grammar (Core): Sentence Structure: ${ \\dot { S } } + V + O$ (common). ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Subject-Verb Agreement: $s \\to$ SingularV PluralS → PluralV.   \nTense Consistency: Maintain consistent tense.   \nParallelism: Similar items in same grammatical form. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Pronouns: ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Agreement: Pronoun matches antecedent in number, gender.   \nCase: Subjective $( I , h e , s h e , w e , t h e y )$ for subjects; Objective ( ) for objects. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Tenses (Basic Structures): Simple Present: $S + V 1 + ( s / e s )$ Present Continuous: $S + i s / a m / a r e + V - i n g$ Present Perfect: $S + h a s / h a v e + V 3$ Simple Past: $S + V 2$ Past Continuous: $S + w a s / w e r e + V - i n g$ Past Perfect: $S + h a d + V 3$ Simple Future: $S + w i l l / s h a l l + V 1$ ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": ". Phrasal Verbs: (often idiomatic meaning).   \nStatement Sufficiency: Evaluate Statement 1 alone, then Statement 2 alone, then both together.   \nStatements Follow (Deductive Logic): If  and Premise2 are true, then  MUST be true.   \nUse Venn Diagrams.   \nWord Pairs (Analogies): Identify the specific relationship $A : B$ and find $C : D$ with the same relationship. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "1. Build a Strong Vocabulary: Many questions (Synonyms, Antonyms, Word Meaning, Most Appropriate Word, Word Pairs, Phrasal Verbs, Phrase Meaning) directly test vocabulary. Read widely, use flashcards, and learn root words, prefixes, and suffixes. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "2. Master Grammar Rules: Questions on Articles, Comparative Forms, English Grammar, Grammatical Error, Incorrect Sentence Part, Prepositions, Pronouns, and Tenses require a solid understanding of fundamental grammar. Practice identifying common errors. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "3. Read Actively and Critically: For Passage Reading, Narrative Sequencing, and Verbal Reasoning, don't just read passively. Actively look for main ideas, supporting details, logical connections, transition words, and author's tone. Practice skimming and scanning. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "4. Context is King: For vocabulary-based questions and even grammar, the context of the sentence or passage is crucial. A word's meaning or the correct grammatical form can change depending on its usage. Always read the full sentence. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "5. Practice Time Management: Verbal Aptitude questions can be time-consuming, especially Passage Reading and Sentence Ordering. Practice solving questions under timed conditions to improve speed and accuracy. Don't get stuck on one question; move on and return if time permits. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "6. Eliminate Options Strategically: For multiple-choice questions, if you're unsure of the answer, try to eliminate obviously incorrect options first. This increases your chances of selecting the correct answer, especially if negative marking is less severe. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "7. Don't Overthink Verbal Reasoning: For Statement Sufficiency and Statements Follow, stick strictly to the information given in the statements. Do not bring in outside knowledge or make assumptions. Focus purely on logical deduction. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "8. Review Common Pitfalls: Be aware of common errors like subject-verb agreement, pronoun-antecedent agreement, tense shifts, double comparatives, and literal interpretation of idioms. Regularly review these tricky areas. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "11.1 Antonyms (7) ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (7Q) ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Choose the word that is opposite in meaning to the word “coherent”. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. sticky B. well-connected C. rambling D. friendly ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 verbal-aptitude antonyms easy ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "The antonym of the word protagonist is ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. agnostic B. antagonist C. arsonist D. anarchist ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 verbal-aptitude antonyms easy one-mark ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Verbosity $\\because$ Brevity :: Insolence Choose the word that best fills the blank. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. Innocence B. Respect C. Solace D. Wealth ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 verbal-aptitude antonyms one-mark ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "11.1.5 Antonyms: GATE2011 AG: GA-2 ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Choose the word from the questions given below that is most nearly opposite in meaning to the given word: Frequency ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. periodicity B. rarity C. gradualness D. persistency ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "general-aptitude verbal-aptitude gate2011-ag antonyms ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "11.1.6 Antonyms: GATE2011 GG: GA-2 ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Choose the word from the options given below that is most nearly opposite in meaning to the given word: ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Polemical ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. imitative B. conciliatory C. truthful D. ideological ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "11.1.7 Antonyms: GATE2011 MN: GA-56 ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Choose the word from the options given below that is most nearly opposite in meaning to the given word: Deference ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. aversion B. resignation C. suspicion D. contempt ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "verbal-aptitude gate2011-mn antonyms ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. the security guard at a university B. a security guard at the university C. a security guard at university D. the security guard at the university ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 verbal-aptitude english-grammar normal articles ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Ravi had younger brother who taught at university. He was widely regarded as honorable man. ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Select the option with the correct sequence of articles to fill in the blanks. ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. a;a;an B. the; an; a C. a;an;a D. an; an; a ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 verbal-aptitude articles easy one-mark ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (7Q) ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "11.3.1 Comparative Forms: GATE CSE 2015 Set GA Question: ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Didn't you buy when you went shopping? ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. any paper B. much paper C. no paper D. a few paper ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 verbal-aptitude easy english-grammar comparative-forms ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Gauri said that she can play the keyboard her sister. ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. as well as B. as better as C. as nicest as D. as worse as ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 verbal-aptitude comparative-forms one-mark ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (11Q) ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "11.4.1 English Grammar: GATE CSE 2015 Set 2 | GA Question: □ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "We our friends's birthday and we how to make it up to him. ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. completely forgot --- don't just B. forgot completely don't just know know   \nC. completely forgot --- just don't D. forgot completely --- just don't know know ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 verbal-aptitude easy english-grammar ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Saturn is to be seen on a clear night with the naked eye. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. enough bright B. bright enough C. as enough bright D. bright as enough ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Raman is confident of speaking English six months as he has been practising regularly the last three weeks ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. during, for B. for, since C. for, in D. within, for ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 verbal-aptitude english-grammar one-mark ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sentences: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "i. Everybody in the class is prepared for the exam.   \nii. Babu invited Danish to his home because he enjoys playing chess. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is the CORRECT observation about the above two sentences? ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. (i) is grammatically correct and is unambiguous B. is grammatically incorrect and is unambiguous C. (i) is grammatically correct and is ambiguous D. (i) is grammatically incorrect and  is ambiguous ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (11Q) ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "11.5.1 Grammatical Error: GATE CSE 2012 Question: 59 ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Choose the grammatically INCORRECT sentence: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. They gave us the money back less the service charges of Three Hundred rupees.   \nB. This country’s expenditure is not less than that of Bangladesh.   \nC. The committee initially asked for a funding of Fifty Lakh rupees, but later settled for a lesser sum.   \nD. This country’s expenditure on educational reforms is very less. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Out of the following sentences, select the most suitable sentence with respect to grammar and usage: ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. Since the report lacked needed information, it was of no use to them.   \nB. The report was useless to them because there were no needed information in it.   \nC. Since the report did not contain the needed information, it was not real useful to them.   \nD. Since the report lacked needed information, it would not had been useful to them. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 verbal-aptitude normal english-grammar grammatical-error ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "11.5.4 Grammatical Error: GATE CSE 2016 Set 1 GA Question: 01 ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Out of the following four sentences, select the most suitable sentence with respect to grammar and usage. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. will not leave the place until the minister does not meet me.   \nB. will not leave the place until the minister doesn't meet me.   \nC. will not leave the place until the minister meet me.   \nD. will not leave the place until the minister meets me. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 verbal-aptitude english-grammar easy grammatical-error ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Choose the grammatically CORRECT sentence: ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. He laid in bed till o’clock in the morning.   \nB. He layed in bed till  o’clock in the morning.   \nC. He lain in bed till  o’clock in the morning.   \nD. He lay in bed till  o’clock in the morning. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate2012-ar verbal-aptitude english-grammar easy grammatical-error ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Choose the grammatically CORRECT sentence: ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. Two and two add four. B. Two and two become four.   \nC. Two and two are four. D. Two and two make four. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gate2013-ee english-grammar verbal-aptitude grammatical-error ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 44
+    },
+    {
+        "type": "image",
+        "img_path": "images/07b29124fe56789caeccc976e8ba3f4e645c698fe718a1f7242db8385ac3f5f3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "11.6.1 Incorrect Sentence Part: GATE CSE 2014 Set 3 GA Question: 1 ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "While trying to collect an envelope from under the table, Mr. X fell down I Ⅱ Ⅲ   \nwas losing consciousness. IV   \nWhich one of the above underlined parts of the sentence is NOT appropriate? ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "B. 1 C. III D. IV gatecse-2014-set3 verbal-aptitude easy english-grammar incorrect-sentence-part ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Which one of the parts (A, B, C, D) in the sentence contains an ERROR? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "No sooner had the doctor seen the results of the blood test, than he suggested the patient to see the specialist. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. no sooner had B. results of the blood test C. suggested the patient D. see the specialist ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gate2012-ar verbal-aptitude incorrect-sentence-part ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "One of the parts $( A , B , C , D )$ in the sentence given below contains an ERROR. Which one of the following is INCORRECT? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "I requested that he should be given the driving test today instead of tomorrow. ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. requested that B. should be given C. the driving test D. instead of tomorrow ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gate2012-cy verbal-aptitude incorrect-sentence-part ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "All engineering students should learn mechanics, mathematics and how to do computation. II III IV ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which of the above underlined parts of the sentence is not appropriate? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "a. I b. II c. III d. IV ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "The professor ordered to the students to go out of the class. I Ⅱ Ⅲ IV Which of the above underlined parts of the sentence is grammatically incorrect? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. I B. II C. III D. IV ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gate2013-ce incorrect-sentence-part verbal-aptitude ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test (15Q) Test 10 (3Q) Test 2 (15Q) Test 3 (15Q) Test 4 (15Q) Test 5 (15Q) Test 6 (15Q) Test 7 (15Q) Test 8 (15Q) Test 9 (15Q) ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "11.7.1 Most Appropriate Word: GATE CSE 2010 Question: 56 ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate word from the options given below to complete the following sentence: His rather casual remarks on politics his lack of seriousness about the subject. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. masked B. belied C. betrayed D. suppressed ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 verbal-aptitude most-appropriate-word normal ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. uphold B. restrain C. cherish D. conserve ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate word(s) from the options given below to complete the following sentence.   \ncontemplated Singapore for my vacation but decided against it. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. to visit B. having to visit C. visiting D. for a visit ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 verbal-aptitude most-appropriate-word easy ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "11.7.4 Most Appropriate Word: GATE CSE 2011 Question: 59 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate word from the options given below to complete the following sentence. If you are trying to make a strong impression on your audience, you cannot do so by being understated, tentative or ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. hyperbolic B. restrained C. argumentative D. indifferent ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 verbal-aptitude most-appropriate-word normal ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "11.7.5 Most Appropriate Word: GATE CSE 2012 Question: 57 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate alternative from the options given below to complete the following sentence: Despite several the mission succeeded in its attempt to resolve the conflict. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. attempts B. setbacks C. meetings D. delegations ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 verbal-aptitude easy most-appropriate-word ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "11.7.6 Most Appropriate Word: GATE CSE 2012 Question: 60 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate alternative from the options given below to complete the following sentence: Suresh’s dog is the one was hurt in the stampede. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. that B. which C. who D. whom ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 verbal-aptitude most-appropriate-word normal ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "1.7.7 Most Appropriate Word: GATE CSE 2014 Set 1 GA Question: 2 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate word from the options given below to complete the following sentence. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "She could not understand the judges awarding her the first prize, because she thought that her performance was quite ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. superb B. medium C. mediocre D. exhilarating",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 verbal-aptitude most-appropriate-word easy ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Choose the most appropriate phrase from the options given below to complete the following sentence. India is a post-colonial country because ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. it was a former British colony   \nB. Indian Information Technology professionals have colonized the world   \nC. India does not follow any colonial practices   \nD. India has helped other countries gain freedom ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A generic term that includes various items of clothing such as a skirt, a pair of trousers and a shirt is ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. fabric B. textile C. fiber D. apparel ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 verbal-aptitude easy most-appropriate-word ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "11.7.10 Most Appropriate Word: GATE CSE 2015 Set 3 GA Question: 3 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Extreme focus on syllabus and studying for tests has become such a dominant concern of Indian student that they close their minds to anything to the requirements of the exam. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. related B. extraneous C. outside D. useful ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 verbal-aptitude normal most-appropriate-word ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "11.7.11 Most Appropriate Word: GATE CSE 2016 Set 1 GA Question: 03 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Archimedes said, \"Give me a lever long enough and a fulcrum on which to place it, and I will move the world.\"   \nThe sentence above is an example of a statement. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. figurative B. collateral C. literal D. figurine ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 verbal-aptitude normal most-appropriate-word ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Research in the workplace reveals that people work for many reasons ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. money beside B. beside money C. money besides D. besides money ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 general-aptitude verbal-aptitude english-grammar most-appropriate-word ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "11.7.13 Most Appropriate Word: GATE CSE 2018 GA Question: 1 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "\"From where are they bringing their books? bringing books from The words that best fill the blanks in the above sentence are ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. Their, they're, there B. They're, their, there C. There, their, they're D. They're, there,there ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 verbal-aptitude most-appropriate-word easy one-mark ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "11.7.14 Most Appropriate Word: GATE CSE 2018 GA Question: 2 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A investigation can sometimes yield new facts, but typically organized ones are more successful. The word that best fills the blank in the above sentence is ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. meandering B. timely C. consistent D. systematic ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "The expenditure on the project as follows: equipment Rs. lakhs, salaries Rs. lakhs, and contingency Rs.  lakhs. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. break down B. break C. breaks down D. breaks ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 general-aptitude verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "11.7.16 Most Appropriate Word: GATE CSE 2019 GA Question: 2 ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "The search engine’s business model around the fulcrum of trust. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. revolves B. plays C. sinks D. bursts ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 general-aptitude verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "11.7.17 Most Appropriate Word: GATE CSE 2019 GA Question: 5 ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A court is to a judge as is to a teacher ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. student B. a punishment C. a syllabus D. a school ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 general-aptitude verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "11.7.18 Most Appropriate Word: GATE CSE 2022 GA Question: ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "The is too high for it to be considered ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. fair / fare B. faer fair C. fare fare D. fare / fair ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "11.7.19 Most Appropriate Word: GATE CSE 2023 GA Question: ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "We reached the station late, and missed the train. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. near B. nearly C. utterly D. mostly ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "1.7.20 Most Appropriate Word: GATE CSE 2024 Set 1 GA Question: ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "${ \\mathfrak { H } } ^ { \\prime } \\to ^ { \\prime }$ denotes increasing order of intensity, then the meaning of the words [dry $$ arid $$ parched] is analogous to [diet $$ fast $$ Which one of the given options is appropriate to fill the blank? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. starve B. reject C. feast D. deny ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "11.7.21 Most Appropriate Word: GATE CSE 2024 Set 1 GA Question: 6 ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "In the given text, the blanks are numbered . Select the best match for all the blanks. Steve was advised to keep his head (i)  before heading (ii) to bat; for, while he had a head (iii) batting, he could only do so with a cool head  iv his shoulders. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. (i) down (ii) down (iii) on (iv) for B. (i) on (ii) down (iii) for (iv) on C. (i) down (ii) out (iii) for (iv) on D. (i) on (ii) out (iii) on (iv) for ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 verbal-aptitude most-appropriate-word two-marks ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "If $\\because \\cdot  \\cdot$ denotes increasing order of intensity, then the meaning of the words [walk $$ jog $$ sprint] is analogous to [bothered $\\longrightarrow \\longrightarrow$ daunted]. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Which one of the given options is appropriate to fill the blank? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. phased B. phrased C. fazed D. fused ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 verbal-aptitude most-appropriate-word one-mark ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "11.7.23 Most Appropriate Word: GATE CSE 2025 Set 1 GA Question: 2 ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "The CEO's decision to downsize the workforce was considered because it sacrificed long-term stability to accommodate short-term gains. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Select the most appropriate option that can replace the word \"myopic\" without changing the meaning of the sentence. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. visionary B. shortsighted C. progressive D. innovative ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 verbal-aptitude most-appropriate-word easy one-mark ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Despite his initial hesitation, Rehman's to contribute to the success of the project never wavered.   \nSelect the most appropriate option to complete the above sentence. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. ambivalence B. satisfaction C. resolve D. revolve ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 verbal-aptitude most-appropriate-word easy one-mark ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "11.7.25 Most Appropriate Word: GATE DA 2025 GA Question: ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "​Courage Bravery :: Yearning $\\because$ Select the most appropriate option to complete the analogy. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. Longing B. Yelling C. Yawning D. Glaring ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 verbal-aptitude most-appropriate-word easy one-mark ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "11.7.26 Most Appropriate Word: GATE DS&AI 2024 GA Question: ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "${ \\mathfrak { H } } ^ { \\cdot } \\to ^ { \\cdot }$ denotes increasing order of intensity, then the meaning of the words [sick $$ infirm $$ moribund] is analogous to [silly $\\longrightarrow \\longrightarrow$ daft]. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Which one of the given options is appropriate to fill the blank? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "A. frown B. fawn C. vein D. vain ",
+        "page_idx": 49
+    }
+]

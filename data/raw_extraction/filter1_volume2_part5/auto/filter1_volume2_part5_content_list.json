@@ -1,0 +1,3924 @@
+[
+    {
+        "type": "text",
+        "text": "A complete $n$ -ary tree is one in which every node has  or $\\scriptstyle n$ sons. If $x$ is the number of internal nodes of a complete $n$ -ary tree, the number of leaves in it is given by ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $x ( n - 1 ) + 1$ B. xn 11 C. xn+1 D. $x ( n + 1 )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1998 data-structures tree normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.15.6 Tree: GATE CSE 2002 Question: 2.9 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The number of leaf nodes in a rooted tree of n nodes, with each node having or children is: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\frac { n } { 2 } }$ B. $\\frac { ( n - 1 ) } { 3 }$ C (n-1) D. (2n+1) 3 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 data-structures tree normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.15.7 Tree: GATE CSE 2004 Question: 6 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Level order traversal of a rooted tree can be done by starting from the root and performing ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. preorder traversal B. in-order traversal C. depth first search D. breadth first search ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures tree easy ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.15.8 Tree: GATE CSE 2005 Question: 36 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In a complete $k$ -ary tree, every internal node has exactly $k$ children. The number of leaves in such a tree with $n$ internal node is: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\begin{array} { c c c } { { \\mathsf { B . } \\ ( n - 1 ) k + 1 } } & { { \\qquad } } & { { \\mathsf { C . } \\ n ( k - 1 ) + 1 } } \\end{array} \\qquad \\begin{array} { c c } { { \\mathsf { D . } \\ n ( k - 1 ) } } & { { \\qquad } } & { { \\mathsf { D . } \\ n ( k - 1 ) } } \\end{array}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures tree normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.15.9 Tree: GATE CSE 2007 Question: 43 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A complete $n - a r y$ tree is a tree in which each node has $n$ children or no children. Let $I$ be the number of internal nodes and $L$ be the number of leaves in a complete $n - a r y$ tree. If $L = 4 1$ and $I = 1 0$ , what is the value of $n ^ { \\prime }$ ? ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. B. 4 C. D. 6 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 data-structures tree normal ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The order in which the nodes are visited during an in-order traversal of the tree is ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. SQPTRWUV B. SQPTUWRV C. SQPTWUVR D. SQPTRUWV ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the pseudocode given below. The function takes as argument a pointer to the root of an arbitrary tree represented by the  representation. Each node of the tree is of type . ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "typedef struct treeNode\\* treeptr;   \nstruct treeNode treeptr leftMostChild, rightSibling;   \nint DoSomething (treeptr tree) int value $_ { : = 0 }$ ; i (tree $\\mid =$ NULL) { if (tree->leftMostChild $\\scriptstyle = =$ NULL) value $= 1$ ; else value $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ DoSomething(tree->leftMostChild); value $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ value $^ +$ DoSomething(tree->rightSibling); } return(value); ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "When the pointer to the root of a tree is passed as the argument to , the value returned by the function corresponds to the ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. number of internal nodes in the B. height of the tree. tree.   \nC. number of nodes without a right D. number of leaf nodes in the tree sibling in the tree. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $T$ be a tree with vertices. The sum of the degrees of all the vertices in $T$ is ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 data-structures tree easy numerical-answers ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A n in a connected graph is a vertex such that removing the vertex and its inciden edges disconnects the graph into two or more connected components. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $T$ be a  tree obtained by doing  in a connected undirected graph . Which of the following options is/are correct? ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. Root of $T$ can never be an articulation point in $G$ .   \nB. Root of $T$ is an articulation point in $G$ if and only if it has  or more children.   \nC. A leaf of $T$ can be an articulation point in $G$ .   \nD. I f $u$ is an articulation point in $G$ such that $x$ is an ancestor of $u$ in $T$ and $y$ is a descendent of $u$ in $T$ , then all paths from $x$ to $y$ in $G$ must pass through $u$ . ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (5Q) ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The set $\\mathbf { T }$ represents various traversals over binary tree. The set represents the order of visiting nodes during a traversal. ",
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/1e51c554935d31ed8ef6bf439a6ca1d5da52ecea41315f63ac1849fe64238058.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the correct match from  to  ? ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. I-L,Ⅱ-M,I-N B.I-M,Ⅱ-L,I-N C.I-N,I-M,Ⅲ-L D.I-L,I-N,Ⅲ-M gatecse-2026-set2 data-structures tree-traversal one-mark ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider performing uniform hashing on an open address hash table with load factor $\\begin{array} { r } { \\alpha = \\frac { n } { m } < 1 } \\end{array}$ where $\\scriptstyle n$ elements are stored in the table with $m$ slots. The expected number of probes in an unsuccessful search is at most $\\textstyle { \\frac { 1 } { 1 - \\alpha } }$ . Inserting an element in this hash table requires at most probes, on average. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $\\begin{array} { r } { \\ln \\left( \\frac { 1 } { 1 - \\alpha } \\right) } \\end{array}$ $\\begin{array} { r } { \\textsf { B . } \\frac { 1 } { 1 - \\alpha } } \\end{array}$ $\\mathsf { C } . \\mathsf { \\Omega } ^ { 1 + \\frac { \\alpha } { 2 } }$ D. $\\textstyle { \\frac { 1 } { 1 + \\alpha } }$ gate-ds-ai-2024 data-structures hashing uniform-hashing one-mark ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/249f4440d96aeb1bbe075469c669bfc0cf465271dd4a0741db891a2e62ed3ab3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/3d3d2064281b78df939cd6aa398fab9e5e6cd16addc50ae1d3f91877ba47fe36.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Programming in C. Recursion. ",
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/eb589c622d3fc9418d07986809c81cd5269b8c22802d0b109c0642ff60f7c1ca.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE "
+        ],
+        "table_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Programming and DS: Prog ramming\" chapter, specifically focusing on the crucial aspect of Output. This subject is fundamental to understanding how programs execute and interact with the user or external systems. For the GATE Computer Science exam, mastering output prediction is not merely about knowing syntax; it's about deeply comprehending the semantics of programming languages, including data types, operators, control flow, memory management, and function calls. Questions related to output prediction are ubiquitous in the GATE CS paper, often integrated into problems involving $\\mathsf { C } / \\mathsf { C } + + \\prime$ /Python code snippets. They typically carry a weightage of 1-2 marks per question, but their underlying concepts are essential for solving larger programming problems. You can expect Multiple Choice Questions (MCQs), Multiple Select Questions (MSQs), and Numerical Answer Type (NAT) questions where you must accurately determine the final output of a given program or code segment. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Basic Output Functions $\\mathbf { \\hat { C } } / \\mathbf { C } + + \\mathbf { \\eta }$ /Python) ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "his section covers the primary mechanisms for displaying information to the console, which is critical for verifying program logic and understanding execution flow. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Output functions are library routines or built-in statements that send data from a program to a standard output device, typically the console. They allow programs to communicate results, status, or prompts to the user. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: C - printf(): The standard output function in C. int printf(const char \\*format, ...); Returns the number of characters printed, or a negative value on error. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Format Specifiers: These tell printf how to interpret and display the corresponding argument.   \n■ $\\% \\mathsf { d }$ or $\\% \\mathrm { i }$ : Signed decimal integer   \n■ $\\% \\mathrm { ~ }$ : Unsigned decimal integer   \n■ $\\\\text{‰}$ : Unsigned octal integer   \n■ $\\% x$ or $\\% x$ : Unsigned hexadecimal integer (lowercase/uppercase)   \n■ %f: Decimal floating point (float or double)   \n■ %lf: Used with scanf for double, but %f works for printf for both float and double due to default argument promotions.   \n■ $\\% \\text{‰}$ or $\\% E$ : Scientific notation (lowercase/uppercase 'e')   \n■ $\\% 9$ or $\\% G$ : Shorter of %f or $\\% 0$   \n■ $\\% c$ : Character $\\\\text{‰}$ : String (null-terminated character array)   \n■ $\\% 0$ : Pointer address (implementation-defined format) $\\%$ : Prints a literal $\\%$ character %n: Writes the number of characters written so far into the integer pointed to by the corresponding argument. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Flags (optional): ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "-: Left-justify   \n$+ \\mathrm { . }$ Always print sign for signed numbers   \n(space): Print space if no sign   \n0: Pad with leading zeros   \n#: Alternate form (e.g., $0 \\times$ for hex, leading zero for octal, decimal point for floats) ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Width (optional): Minimum field width. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Precision (optional): For floats, number of digits after decimal; for strings, max number of characters to print. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$^ { \\circ + + }$ cout: The standard output stream object in $^ { \\mathsf { C } + + }$ std::cout $\\scriptstyle < <$ expression $\\scriptstyle < <$ expression ...; ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Uses operator overloading for various data types. No format specifiers like printf, but manipulators can be used. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Manipulators: ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "std::endl: Inserts a newline character and flushes the buffer.   \nstd::fixed: Uses fixed-point notation for floating-point numbers.   \nstd::scientific: Uses scientific notation.   \nstd::setprecision(n): Sets the decimal precision (total digits for default, digits after decimal for fixed/scientific).   \nstd::setw(w): Sets field width for the next item.   \nstd::left, std::right: Justification.   \nstd::hex, std::oct, std::dec: Base conversion. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Python print(): The built-in function for output in Python. print(\\*objects, $\\mathsf { s e p } = 1$ end $\\vert = ^ { \\prime } \\ln ^ { \\prime }$ , file $\\ c =$ sys.stdout, flush $\\mid =$ False) ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\*objects: One or more objects to be printed.   \nsep $\\ c = ^ { \\prime }$ ': Separator between objects (default is space).   \nend $= \\ \" \\boldsymbol { \\mathsf { m } } ^ { \\prime }$ : String appended after the last object (default is newline).   \nfile $\\vDash$ sys.stdout: Output stream (default is standard output). ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Formatted String Literals (f-strings) (Python $\\pmb { 3 . 6 + }$ ): ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "f\"text {variable name:format specifier} text\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Example: f\"Value: {x:.2f}\" for two decimal places. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Escape Sequences (Common to $\\pmb { \\complement } / \\mathbf { C } + + I$ Python strings): ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\n: Newline   \n\\t: Horizontal tab   \n\\b: Backspace   \n\\r: Carriage return   \n\\\\: Backslash   \n\\': Single quote   \n\\\": Double quote   \n\\0: Null character (string terminator in ${ \\mathsf { C } } / { \\mathsf { C } } + + { \\mathsf { \\Omega } }$ )   \n\\xhh: Hexadecimal value hh   \n\\ooo: Octal value ooo ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "0 printf returns the count of characters printed.   \n。 cout returns a reference to std::cout, allowing chaining. print() in Python always returns None. String literals in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ are null-terminated. Floating-point precision issues can lead to unexpected output. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Mismatching format specifiers in C printf: Using $\\% d$ for a float or %f for an int leads to undefined behavior, often printing garbage.   \nMissing arguments for printf: If a format specifier is present but no corresponding argument, it can lead to crashes or printing garbage from the stack.   \nForgetting std::endl vs. $\" \\boldsymbol { \\mathbf { \\mathit { n } } } ^ { \\prime }$ in $^ { \\circ + + }$ : std::endl flushes the buffer, which can be slower. $\" \\boldsymbol { \\mathsf { n } } ^ { \\prime }$ just inserts a newline. Python print() default behavior: Forgetting sep or end arguments can lead to unintended spacing or newlines. Precision with floating-point numbers: Output might be truncated or rounded differently than expected due to internal representation.   \nBuffer flushing: Output might not appear immediately if the buffer is not flushed (e.g., after printf without a newline, or cout without endl). ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Trace format specifiers carefully: For C printf, ensure each format specifier matches the type and order of the arguments.   \nUnderstand default output behavior: For $^ { \\mathsf { C } + + }$ , know that cout automatically handles types. For Python, remember default $\\mathsf { s e p } = 1$ and end $\\vert = ^ { \\prime } \\ln ^ { \\prime }$ .   \nDry run with specific values: Substitute variables with their values and mentally execute the output statement. Pay attention to escape sequences: These can drastically alter the visual layout of the output. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data Types and Type Casting ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The way data is stored and interpreted directly influences its output. Type casting allows explicit conversion, which is a common source of tricky output questions. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Data types define the kind of values a variable can hold and the operations that can be performed on them. Type casting is the process of converting a value from one data type to another, either implicitly (automatic) or explicitly (programmer-specified). ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Integer Types $( C / { \\bf C } + + )$ : char, short, int, long, long long (signed/unsigned variants). Sizes are implementation  \ndependent but typically: char: byte   \n■ short: 2 bytes int: 2 or 4 bytes (commonly 4) long: 4 or 8 bytes (commonly 4 on 32-bit, 8 on 64-bit) long long: 8 bytes ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Floating-Point Types $( C / { \\bf C } + + )$ : float, double, long double. float: 4 bytes (single precision) double: 8 bytes (double precision) long double: 10 or 16 bytes ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Implicit Type Conversion (Promotion): Occurs automatically in expressions to prevent data loss. Smaller types are promoted to larger types (e.g., int to float, float to double).   \nExample: int ${ \\dot { \\mathsf { I } } } = 5$ ; float ${ \\mathfrak { f } } = 2 . 5$ ; float result $\\mathbf { \\sigma } = \\mathbf { i } \\mathbf { \\sigma } + \\mathbf { \\sigma }$ f; (i is promoted to float). ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Explicit Type Casting (C-style): (type)expression Example: int $\\mathsf { X } = ( \\mathsf { i n t } ) 3 . 1 4$ ; $\\langle { \\sf x }$ becomes 3) ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Explicit Type Casting ( $( c + +$ -style): ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "static _cast<type>(expression): For safe and predictable conversions (e.g., numeric conversions). reinterpret_cast<type>(expression): For low-level, potentially unsafe conversions (e.g., pointer to integer). 。 Integer Division: In $\\mathsf { C } / \\mathsf { C } \\mathrm { + } \\mathsf { + } / \\mathsf { P }$ ython 2, division of two integers results in an integer (truncates fractional part). Example: int $\\mathtt { a } = 7 / 3$ ; (a becomes 2) In Python 3, performs float division, // performs integer (floor) division. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "When a larger type is cast to a smaller type, data loss can occur (e.g., double to int truncates, int to char can lose higher-order bits).   \n。 Unsigned integers wrap around on overflow/underflow.   \nCharacter types are often treated as small integers in arithmetic operations (ASCII values). ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Integer division vs. floating-point division: $5 / 2$ is 2 in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ , but $5 . 0 / 2$ is 2.5.   \nLoss of precision/data: Casting a large int to a float can lose precision if the int value exceeds the float's representable range. Casting a negative number to an unsigned type can result in a large positive number.   \nCharacter arithmetic: $\\because A ^ { \\prime } + 1$ results in 'B' (assuming ASCII).   \nOrder of operations with casting: (float)a b vs. (float)(a / b) yield different results if a and b are integers. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "。 Identify implicit conversions: Trace expressions to see how types are promoted.   \n0 Evaluate explicit casts carefully: Understand the potential for truncation or data loss.   \n。 Pay attention to integer division: Always check if operands are integers or floats.   \n。 Consider the range of data types: Especially for questions involving overflow/underflow or conversions between signed/unsigned types. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Operators and Expressions ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Operators combine variables and values to form expressions, whose evaluation order is governed by precedence and associativity, directly impacting the final output. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Operators are symbols that perform operations on one or more operands. An expression is a combination of operators, operands, and function calls that evaluates to a single value. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Arithmetic Operators: $+ , - , \\star , / , \\%$ (modulus). $\\%$ operator only works with integer operands.   \nRelational Operators: $\\scriptstyle = =$ (equal to), $\\mathrel { \\mathop : } =$ (not equal to), $< , > , < = , > =$ . ■ Return 0 (false) or (true) in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ . Return True or False in Python.   \nLogical Operators: ${ \\mathsf { C } } / { \\mathsf { C } } + +$ : && (AND), || (OR), ! (NOT). Short-circuit evaluation: && evaluates right operand only if left is true. $| |$ evaluates right operand only if left is false. ■ Python: and, or, not. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Bitwise Operators $( C / { \\bf C } + + )$ : & (AND), (OR), / (XOR), $\\sim$ (NOT), $\\ll$ (left shift), $\\gg$ (right shift). ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "■ $< < : x < < y$ is equivalent to $x \\times 2 ^ { y }$ .   \n$\\cdot > > : \\mathsf { X } > > \\mathsf { y }$ is equivalent to $x / 2 ^ { y }$ . For signed numbers, right shift behavior (arithmetic vs. logical) can be implementation-defined for negative numbers. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Assignment Operators: $= , + = , - = , \\mathbf { \\varphi } ^ { \\star } = , / = , \\% = , \\& = , / = , \\uparrow = , < < = , > >$ . ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Increment/Decrement Operators $( C / C + + ) : + +$ (increment), -- (decrement) ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "■ Prefix $( + + x )$ : Increments then uses the new value. Postfix $( x + + )$ : Uses the current value then increments.   \nConditional (Ternary) Operator $( C / { \\bf C } + + )$ : condition ? expression1 expression2. If condition is true, expression1 is evaluated; otherwise, expression2 is evaluated.   \nComma Operator $( C / { \\bf C } + + )$ : expression1, expression2. Evaluates expression1, discards its result, then evaluates expression2 and returns its result.   \nOperator Precedence and Associativity: (See Quick Formula Reference for detailed table) Precedence determines which operator is evaluated first in an expression (e.g., before $^ +$ ). Associativity determines evaluation order for operators of the same precedence (e.g., left-to-right for arithmetic, right-to-left for assignment). ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "。 In ${ \\mathsf { C } } / { \\mathsf { C } } + +$ , any non-zero value is considered true in a boolean context; zero is false. 。 Side effects: Operators like $^ { + + }$ , --, and assignment operators modify the value of an operand. 。 Undefined behavior: Modifying a variable multiple times within the same expression without an intervening sequence point (e.g., $\\dot { \\mathsf { I } } = \\dot { \\mathsf { I } } + + \\mathsf { + + } \\dot { \\mathsf { I } } \\dot { \\mathsf { I } } ,$ ) leads to undefined behavior. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "。 $\\mathbf { \\tau } = \\mathbf { \\tau }$ vs. $\\scriptstyle = =$ : Accidental assignment in a conditional (e.g., f $( \\mathsf { X } = 0 )$ ) instead of if $( \\mathsf { X } = = 0 )$ )). The assignment evaluates to 0 (false), so the block might not execute.   \nOperator precedence errors: Misinterpreting the order of operations can lead to incorrect results (e.g., $1 + 2 ^ { \\star } 3$ is 7, not 9).   \nSide effects with increment/decrement: Understanding when the value is used and when it's updated (prefix vs. postfix) is crucial, especially in complex expressions.   \nShort-circuiting: Logical operators $\\& \\&$ and $| |$ can prevent the evaluation of the right-hand operand, which can hide side effects or prevent errors (e.g., null pointer dereference).   \nBitwise operations on signed numbers: Right shift of negative numbers can be tricky due to sign extension. Comma operator: Often misunderstood; only the last expression's value is returned. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "0 Parenthesize ambiguous expressions: If unsure about precedence, add parentheses.   \n0 Trace side effects: Keep track of variable values \\*before\\* and \\*after\\* each operation, especially with $+ + / \\mathrm { - }$ . Evaluate expressions step-by-step: Apply precedence and associativity rules rigorously. Understand short-circuiting: Determine if the right-hand side of a logical expression will be evaluated. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Control Flow Statements ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Control flow statements dictate the order in which instructions are executed, determining which parts of the code contribute to the final output. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Control flow statements manage the sequence of execution of program instructions. They include conditional statements (if-else, switch) for decision-making and loop statements (for, while, do-while) for repetition. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: if-else $( C / \\ C + + /$ Python): if (condition) $\\{ \\nearrow$ statements $^ { \\star } /$ } else $\\{ \\nearrow$ statements \\*/ } In Python, if condition: ... elif condition: ... else: ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "switch-case $( C / C + + )$ :   \nswitch (expression) case constant1: ... break; case constant2: ... break; default: ... } expression must evaluate to an integer type. break is crucial to exit the switch; otherwise, execution \"falls through\" to the next case. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "for loop $( C / C + + )$ /Python): ${ \\mathsf { C } } / { \\mathsf { C } } + +$ : for (initialization; condition; update) { /\\* statements \\*/ } Python: for item in iterable: $/ ^ { \\star }$ statements $^ { \\star } /$ ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D while loop $( C / C + +$ /Python): while (condition) $\\{ \\nearrow$ statements $^ { \\star } /$ } do-while loop $( C / C + + )$ : do $\\{ \\nearrow$ statements $^ { \\star } / \\}$ while (condition); ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "■ Guarantees at least one execution of the loop body. 。 break statement: Terminates the innermost loop or switch statement immediately. 0 continue statement: Skips the rest of the current iteration of the innermost loop and proceeds to the next iteration. 。 goto statement $( C / { \\bf C } + + )$ : Unconditional jump to a labeled statement. Generally discouraged but can appear in GATE questions. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "。 Conditions in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ are evaluated as true if non-zero, false if zero.   \n。 Loop termination conditions are critical.   \n□ Scope of variables declared within loop headers or blocks. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Dangling else: An else always binds to the nearest preceding unmatched if.   \nif (cond1) if (cond2) stmt1; else stmt2; (else binds to if (cond2))   \nMissing break in switch: Leads to fall-through, executing subsequent case blocks.   \nInfinite loops: Incorrect loop conditions or update statements (e.g., while(1) without a break, or for(;;)). Off-by-one errors in loops: Incorrect loop bounds (e.g., $< = \\mathsf { N \\ v s . < N } )$ .   \nLoop variables scope: A variable declared in a for loop's initialization part is typically scoped to the loop itself (C99, $^ { \\mathsf { C } + + }$ , Python).   \nSide effects in loop conditions: while $( \\mathfrak { i } + + < 1 0 )$ can be tricky. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Dry run loop iterations: Manually trace the values of loop variables and conditions for each iteration.   \nIdentify loop termination: Determine exactly when a loop will exit.   \nCheck for break and continue: These alter normal loop flow.   \nUnderstand switch fall-through: Assume fall-through unless a break is present.   \nTrace nested loops carefully: Inner loops complete all iterations for each iteration of the outer loop. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Functions ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Functions encapsulate reusable code, and their call mechanisms (pass by value/reference) and recursion significantly influence variable states and output. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A function is a block of organized, reusable code that performs a single, related action.   \nThey allow modular programming and abstraction. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: Call by Value $( C / C + + )$ Python): Arguments are passed as copies. Changes to parameters inside the function do not affect the original arguments in the caller. Example (C): void func(int x) $\\lbrace \\ x = 1 0 ; \\rbrace$ int main() { int $\\mathtt { a } = 5$ ; func(a); printf(\"%d\", a); // Output: 5 } ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Call by Reference $\\scriptstyle \\mathbf { C } / \\mathbf { C } + +$ using pointers/references): Arguments are passed by their memory addresses (pointers) or aliases (references). Changes to parameters inside the function directly affect the original arguments. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Example (C with pointers): ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "void func $( \\mathsf { i n t } ^ { \\star } \\mathsf { x } ) \\left\\{ \\mathsf { \\Omega } ^ { \\star } \\mathsf { x } = 1 0 ; \\right\\}$ int main() $\\{$ int $\\mathtt { a } = 5$ ; func(&a); printf(\"%d\", a); / Output: 10 } ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Example $^ { \\mathsf { C } + + }$ with references): ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "void func(int &x) $\\lbrace \\times = 1 0 ; \\rbrace$ int main() $\\{$ int $\\mathtt { a } = 5$ ; func(a); std::cout $< < a$ ; // Output: 10 } ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Recursion: A function calling itself. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Base Case: A condition that stops the recursion. Without it, infinite recursion occurs. Recursive Step: The function calls itself with a modified input, moving towards the base case. Function Prototypes $( C / { \\bf C } + + )$ : Declare a function's return type, name, and parameter types before its definition. return_type function name(parameter_type1, parameter_type2, ...); Return Value: A function can return a single value using the return statement. If no return is specified for a non-void function, it's undefined behavior in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ . Python functions implicitly return None if no return statement is reached. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Local variables within a function have automatic storage duration and are destroyed upon function exit.   \nStatic local variables retain their value across function calls.   \nGlobal variables are accessible from any function.   \nFunction call stack: Each function call creates a new stack frame for its local variables and parameters. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Forgetting & or \\* with pointers: Incorrectly passing by value when reference was intended, or dereferencing issues.   \nMissing base case in recursion: Leads to stack overflow (infinite recursion).   \nIncorrect base case logic: Can lead to incorrect results or infinite recursion.   \nReturning address of local variable: A local variable's memory is deallocated after the function returns, making its address invalid (dangling pointer).   \nSide effects in function calls: If a function modifies global variables or uses call-by-reference, it affects the program state outside the function.   \nOrder of evaluation of function arguments: In ${ \\mathsf { C } } / { \\mathsf { C } } + +$ , the order in which function arguments are evaluated is unspecified. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "门 Trace function calls: Keep track of the call stack for recursive functions.   \nDistinguish call by value vs. call by reference: Determine if the original arguments are modified.   \nIdentify base cases and recursive steps: Crucial for understanding recursive function behavior.   \nTrack variable scope and lifetime: Know which variables are accessible and when they exist.   \nDry run with small inputs: Especially for recursive functions, trace a few calls. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Arrays and Pointers ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Arrays and pointers are intimately related in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ and are frequent subjects of output questions, often involving memory addresses and dereferencing. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: An array is a collection of elements of the same data type stored in contiguous memory locations. A pointer is a variable that stores the memory address of another variable. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Array Declaration $( C / { \\bf C } + + )$ : type array name[size];   \nExample: int arr[5];   \n。 Array Indexing: Elements are accessed using array_name[index], where index ranges from 0 to size-1.   \n。 Array-Pointer Duality $( C / { \\bf C } + + )$ : An array name, when used in an expression (except with sizeof or &), decays into a pointer to its first element.   \narr is equivalent to &arr[0].   \narr[i] is equivalent to $^ { \\star } ( \\mathsf { a r r } + \\mathsf { i } )$ .   \nr Pointer Declaration $( C / { C } + + )$ : type \\*pointer_ name;   \nExample: int \\*ptr; Address-of Operator $( C / C + + ) : \\alpha$ returns the memory address of a variable.   \nDereference Operator $( C / { \\bf C } + + )$ : accesses the value at the memory address stored in a pointer. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Pointer Arithmetic $( C / { \\bf C } + + )$ : ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "■ ptr $+ \\mathsf { n } \\mathrm { : }$ Moves the pointer n \\* sizeof(type) bytes forward.   \n■ ptr - n: Moves the pointer $\\mathfrak { n } ^ { \\star }$ sizeof(type) bytes backward.   \n■ ptr1 - ptr2: Difference between two pointers of the same type (results in number of elements between them).   \n■ Increment/Decrement: $\\mathsf { p t r } { + } { + }$ , ptr-- move by sizeof(type). Pointers to Pointers $( C / { \\mathsf { C } } + + )$ : type \\*\\*ptr_to_ptr;   \nExample: int $^ { \\star \\star } \\mathsf { p } \\mathsf { p }$ ; ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Dynamic Memory Allocation (C): ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "malloc(size _t size): Allocates size bytes. Returns void\\*.   \ncalloc(size num, size size): Allocates num size bytes and initializes to zero.   \nrealloc(void \\*ptr, size_t new size): Resizes previously allocated memory.   \nfree(void $\\star _ { \\mathsf { p t r } }$ ): Deallocates memory. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "。 Arrays are stored contiguously.   \n。 Pointers can be assigned, compared, and used in arithmetic.   \n。 NULL pointer: A pointer that points to no valid memory location (often 0).   \n。 sizeof(array_name) gives the total size of the array in bytes. sizeof(pointer_name) gives the size of the pointer variable itself (e.g., 4 or 8 bytes). ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Array out-of-bounds access: Accessing arr[size] or negative indices leads to undefined behavior ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "(reading/writing to arbitrary memory). ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Dangling pointers: Pointers that point to deallocated memory.   \nWild pointers: Uninitialized pointers that point to arbitrary memory.   \nPointer type mismatch: Assigning a pointer of one type to another without explicit casting can lead to incorrect dereferencing.   \nConfusion between array name and pointer: While arr decays to &arr[0], sizeof(arr) is different from sizeof(&arr[0]).   \nIncorrect pointer arithmetic: Adding an integer to a pointer moves it by multiples of the pointed-to type's size. Memory leaks: Forgetting to free dynamically allocated memory. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "0 Draw memory diagrams: Visualize memory addresses, array elements, and what pointers point to. Trace pointer values: Keep track of the address stored in each pointer variable.   \n0 Trace dereferenced values: When \\*ptr is used, find the value at that address.   \n。 Calculate pointer arithmetic carefully: Remember to multiply by sizeof(type). Check array bounds: Ensure all array accesses are within 0 to size-1. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Strings ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Strings, often implemented as character arrays in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ , involve specific functions and memory handling that are frequently tested. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A string is a sequence of characters. In ${ \\mathsf { C } } / { \\mathsf { C } } + +$ , strings are typically null-terminated character arrays. Python has a built-in immutable string type. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results $( C / { \\mathsf { C } } _ { + + } )$ : ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Declaration: char str[] $\\mathbf { \\sigma } = \\mathbf { \\sigma }$ \"hello\"; or char \\*str $\\mathbf { \\sigma } = \\mathbf { \\sigma }$ \"hello\"; (read-only string literal).   \nNull Termination: All C-style strings end with a null character $( \\ \" 0 \\ \" )$ .   \nStandard Library Functions (from <string.h>): ■ size_t strlen(const char ${ } ^ { \\star } { \\mathsf { s } } _ { } ^ { \\cdot }$ );: Returns the length of string s (excluding $\" \\mathrm { { \\Omega } }$ ). char \\*strcpy(char \\*dest, const char $^ { \\star } \\mathsf { s r c } )$ ;: Copies src to dest. Returns dest. char \\*strncpy(char \\*dest, const char \\*src, size_t n);: Copies at most n characters. Does not guarantee null termination if src is longer than n. char \\*strcat(char \\*dest, const char $^ { \\star } \\mathsf { s r c } )$ ;: Appends src to dest. Returns dest. char \\*strncat(char \\*dest, const char \\*src, size_t n);: Appends at most n characters. int strcmp(const char $^ { \\star } \\mathsf { s } 1$ , const char $^ { \\star } \\mathsf { s } 2$ );: Compares s1 and s2 lexicographically. Returns ${ < } 0$ if s $1 < \\mathsf { s } 2$ , 0 if $\\mathsf { s } 1 = = \\mathsf { s } 2$ , ${ > } 0$ if $\\mathsf { s } 1 > \\mathsf { s } 2$ . int strncmp(const char $^ { \\star } \\mathsf { s } 1$ , const char $^ { \\star } \\mathsf { s } 2$ , size_t n);: Compares at most n characters. char \\*strstr(const char \\*haystack, const char \\*needle);: Finds the first occurrence of needle in haystack. Returns pointer to first occurrence or NULL. char \\*strchr(const char $^ { \\star } \\mathsf { s }$ , int c);: Finds the first occurrence of character c in string s. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "String literals are often stored in read-only memory. Modifying them leads to undefined behavior.   \nstrcpy and strcat do not perform bounds checking, making them vulnerable to buffer overflows.   \nString comparison functions return integer values based on lexicographical order. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "。 Buffer Overflow: Copying a string larger than the destination buffer using strcpy or strcat.   \n。 Missing Null Terminator: If a string is not null-terminated, functions like strlen or printf $( \" \\% 5 \" )$ will read past the allocated memory, leading to crashes or garbage output. strncpy is particularly prone to this if n is less than the source string's length.   \nModifying String Literals: Attempting to change characters in char ${ } ^ { \\star } \\mathsf { s } =$ \"hello\"; results in a runtime error or undefined behavior. Use char $\\mathsf { s } [ ] =$ \"hello\"; for modifiable strings.   \nIncorrect comparison: Using $\\scriptstyle = =$ to compare C-style strings compares their memory addresses, not their content. Use strcmp().   \nEmpty strings: An empty string 1 contains only a null terminator. strlen(\"\") is 0.   \n。 ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Trace memory for string operations: Visualize how characters are copied, concatenated, or modified in memory, including the null terminator.   \nCheck buffer sizes: Ensure destination buffers are large enough to accommodate source strings plus the null terminator.   \nUse strcmp for content comparison: Never use $\\scriptstyle = =$ for C-style strings.   \n。 Be aware of strncpy behavior: It might not null-terminate if the source is too long. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Storage Classes ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Storage classes determine the scope, lifetime, and linkage of variables, which directly impacts their values and accessibility at different points in a program's execution. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": ". Definition and Core Idea: Storage classes in ${ \\mathsf { C } } / { \\mathsf { C } } + +$ specify the scope (visibility), lifetime (duration), and linkage (how names are shared across files) of variables and functions. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "。 auto (Automatic): ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Scope: Local to the block in which it's declared.   \nLifetime: Created on entry to the block, destroyed on exit.   \nInitialization: Contains garbage value if not explicitly initialized.   \nLinkage: No linkage.   \nDefault for local variables. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "□ static: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Local static variables: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Scope: Local to the block.   \nLifetime: Persists throughout the program's execution (initialized once).   \nInitialization: Zero-initialized by default if not explicitly initialized.   \nLinkage: No linkage. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Global static variables/functions: Scope: File scope. Lifetime: Program execution. Initialization: Zero-initialized by default. Linkage: Internal linkage (visible only within the file where declared). ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "0 extern (External): ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Scope: Global (can be accessed from other files).   \nLifetime: Program execution.   \nInitialization: Zero-initialized by default.   \nLinkage: External linkage (can be shared across multiple files).   \nUsed to declare a variable/function defined in another file. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "register: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Scope: Local to the block.   \nLifetime: Block execution.   \nInitialization: Garbage value.   \nLinkage: No linkage.   \nHint to the compiler to store the variable in a CPU register for faster access. Compiler may ignore this hint.   \nCannot take address of a register variable. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "。 static variables are initialized only once, even if the function is called multiple times.   \n。 Global variables (declared outside any function) have extern linkage by default.   \nUninitialized auto variables have indeterminate values; uninitialized static/extern variables are zero-initialized. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Uninitialized auto variables: Using their values before initialization leads to garbage output or undefined behavior.   \nMisunderstanding static local variables: Forgetting they retain their value across function calls.   \nScope confusion: Shadowing a global variable with a local variable of the same name.   \nextern without definition: Declaring a variable extern but never defining it in any compilation unit will lead to a linker error.   \nTaking address of register variable: This is an error. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Track variable lifetime: For each variable, determine when it comes into existence and when it's destroyed.   \n。 Identify variable scope: Determine where each variable is accessible.   \n。 Pay attention to initialization: Differentiate between default zero-initialization and indeterminate values.   \nTrace function calls with static variables: Keep a separate record of static variable values that persist. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Macros and Preprocessor Directives ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Preprocessor directives modify the source code before compilation, which can subtly alter program behavior and output. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": ". Definition and Core Idea: Preprocessor directives are instructions to the ${ \\mathsf { C } } / { \\mathsf { C } } + +$ preprocessor to perform text substitutions or conditional compilation before the actual compilation phase. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results: ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "#define (Macro Definition): ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Object-like macro: #define PI 3.14159 (simple text replacement). Function-like macro: #define MAX(a, b) $[ { \\mathsf { a } } ) > ( { \\mathsf { b } } )$ ? (a) (b)) (takes arguments). #include: Inserts the content of a specified file. #include <filename>: Searches standard library paths. #include \"filename\": Searches current directory first, then standard paths. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Conditional Compilation: ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "#ifdef MACRO #ifndef MACRO: Checks if MACRO is defined/not defined.   \n#if constant expression: Evaluates a constant integer expression.   \n#elif constant _expression #else #endif.   \ndefined(MACRO): Operator used within #if to check if a macro is defined. #undef: Undefines a previously defined macro.   \n#pragma: Provides compiler-specific directives. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Macros are simple text substitutions; they do not respect scope or type checking.   \n0 Function-like macros are expanded inline, potentially leading to faster execution but also larger code size.   \nPreprocessor directives are processed before compilation. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Macro argument side effects: If a macro argument has a side effect (e.g., $\\mathsf { M A X } ( \\mathsf { i } + + , \\mathsf { j } ) )$ , it might be evaluated multiple times, leading to unexpected results.   \nExample: #define SQUARE(x) $( \\textsf { x } ^ { \\star } \\textsf { x } )$ . SQUARE $( a + b )$ expands to $( a + b \\cdot a + b )$ , which is $( { \\mathsf { a } } + ( { \\mathsf { b } } ^ { \\star } { \\mathsf { a } } ) + { \\mathsf { b } } )$ due to operator precedence.   \nMissing parentheses in macros: Crucial for correct evaluation, especially in function-like macros. Always parenthesize arguments and the entire macro definition.   \nCorrect: #define SQUARE(x) $( ( \\mathsf { x } ) ^ { \\star } ( \\mathsf { x } ) )$   \nSemicolons after macros: Don't put a semicolon after a macro definition unless it's part of the replacement text. Conditional compilation logic: Incorrect #ifdef/#ifndef or #if conditions can include/exclude wrong code blocks. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques: ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "。 Mentally expand macros: Replace macro calls with their expanded text before evaluating the expression.   \n。 Trace conditional compilation: Determine which code blocks are included based on macro definitions.   \n。 Watch for side effects in macro arguments: Be extra careful when arguments involve $^ { + + }$ , --, or function calls. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "This section provides a consolidated list of essential formulas and rules for quick revision. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "$c / c + +$ Operator Precedence and Associativity (Highest to Lowest) ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Precedence ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Operators ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(Highest) () [] . -> :: 2 ++ -- (postfix) (+ty+p--e)(prefix) + - (unary) \\~ (dereference) & (address-of) sizeof 3 456789 \\* / % + - (binary) << >> < <= > >= == != & (bitwise AND) 10 A (bitwise XOR) 112 (bitwise OR) && (logical AND) || (logical OR) 14 ?: (conditional) 15 $= + = - = \\cdot = \\cdot = \\% = 8 = \\vert = \\cdot = < < = > > =$ 16 (Lowest) (comma) ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Associativity Left-to-Right Left-to-Right Right-to-Left Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Left-to-Right Right-to-Left Right-to-Left Left-to-Right ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "C printf() Format Specifiers ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "$\\% 0$ , %i: signed int   \n%u: unsigned int   \n$\\\\text{‰}$ : unsigned octal   \n%x, %X: unsigned hexadecimal   \n%f: float/double (decimal)   \n%e, %E: float/double (scientific)   \n%g, %G: float/double (shorter of %f or $\\% 0$ )   \n$\\% c$ : char   \n%s: string (char array)   \n%p: pointer address   \n$\\%$ : literal $1 \\%$   \n%n: writes count of characters printed so fa ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Escape Sequences ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "\\n: Newline \\t: Tab \\b: Backspace \\r: Carriage return \\\\: Backslash \\': Single quote \\\": Double quote \\0: Null character ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Pointer Arithmetic $( C / { \\bf C } + + )$ ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "ptr $+ \\mathsf { n }$ : Address of ptr $\\boldsymbol { + } \\boldsymbol { \\mathsf { n } } ^ { \\star }$ sizeof(\\*ptr)   \nptr n: Address of ptr n sizeof(\\*ptr)   \nptr1 ptr2: (address _of_ptr1 address of_ptr2) sizeof(\\*ptr1) ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "C String Functions (from <string.h>) ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "strlen(s): Length of string s (excluding '\\0').   \nstrcpy(dest, src): Copies src to dest.   \nstrcat(dest, src): Appends src to dest.   \nstrcmp(s1, s2): Compares s1 and s2. Returns 0 if equal. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Storage Class Properties $( C / { C } + + )$ ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "auto: Local scope, block lifetime, garbage init, no linkage.   \nstatic (local): Local scope, program lifetime, zero init, no linkage.   \nstatic (global): File scope, program lifetime, zero init, internal linkage.   \nextern: Global scope, program lifetime, zero init, external linkage.   \nregister: Local scope, block lifetime, garbage init, no linkage (cannot take address). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "1. Meticulous Dry Running: For every code snippet, mentally execute it line by line. Keep a scratchpad to track variable values, memory addresses (for pointers/arrays), and the exact output generated at each printf/cout/print() call. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "2. Master Operator Precedence and Associativity: This is arguably the most common source of errors in output prediction. Memorize the table or at least the relative order of common operators (arithmetic, logical, bitwise, assignment, increment/decrement). When in doubt, use parentheses. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "3. Watch for Side Effects and Sequence Points: Be extremely cautious with expressions involving increment/decrement operators $( + + , \\ -- )$ or multiple assignments within a single statement (e.g., $\\mathsf { a } = \\mathsf { b } _ { + + } + + + \\mathsf { c } _ { 3 } ^ { \\cdot }$ ). If a variable is modified more than once without an intervening sequence point, the behavior is undefined, though GATE questions usually imply a specific, predictable (though tricky) outcome. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "4. Understand Data Types and Type Casting: Pay close attention to integer division (truncation), implicit type promotions, and explicit type casts. Conversions between signed and unsigned integers, or between integer and floating-point types, can drastically change values. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "5. Trace Control Flow Rigorously: For loops, identify the initialization, condition, and update parts. Determine the exact number of iterations. For if-else and switch-case, carefully evaluate conditions and watch for break statements (or their absence, leading to fall-through). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "6. Demystify Pointers and Arrays: Draw memory diagrams to visualize array elements and what pointers are pointing to. Remember array-pointer duality, pointer arithmetic (sizeof the pointed-to type is crucial), and the difference between arr and &arr[0]. Be wary of out-of-bounds access. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "7. Grasp Function Call Mechanisms: Clearly distinguish between call-by-value (copies are passed, originals unaffected) and call-by-reference (pointers/references, originals can be modified). For recursion, identify the base case and the recursive step, and trace a few calls to understand the pattern. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "8. Preprocessor Directives and Macros: Mentally expand macros before evaluating the code. Be aware of common macro pitfalls like missing parentheses around arguments or the macro body, which can lead to unexpected operator precedence issues. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "​Consider the following function definition. ",
+        "page_idx": 14
+    },
+    {
+        "type": "table",
+        "img_path": "images/8cbfea1d99d25686f2e70f4ce6bb7b3fee56462337b65856ea26c71ea645376d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE? ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. The function call fX(\"abcd\") will always return a value   \nB. Assuming a character array c is declared as char ${ \\mathsf { c } } [ ] =$ \"abcd\" in main (), the function call fX(c) will always return a value   \nC. The code of the function will not compile   \nD. Assuming a character pointer c is declared as char $^ { \\star } \\mathsf { c } = ^ { \\prime }$ \"abcd\" in main (), the function call fX(c) will always return a value ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "table",
+        "img_path": "images/d180e7df9a88021188e3b7b52505de6f1faa0e06627248bf35993a8c6cd1754b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Programming: Programming in C\" chapter of your GATE Computer Science exam preparation. This section is designed to be a comprehensive, exam-focused reference, providing a quick yet thorough review of all essential concepts, formulas, and problem-solving techniques relevant to C programming for the GATE exam. Mastering C is fundamental not just for direct programming questions but also for understanding underlying principles of Data Structures, Algorithms, Operating Systems, and Computer Architecture. It forms the bedrock of many advanced computer science concepts. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Subject Overview ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The \"Programming in C\" subject is a cornerstone of the GATE Computer Science syllabus, focusing on the syntax, semantics, and practical application of the C programming language. It is crucial for building a strong foundation in computer science, as C's low-level memory management capabilities and efficiency make it indispensable for system programming, embedded systems, and high-performance computing. For GATE CS, this subject typically carries a weightage of 5-10 marks, often integrated with questions from Data Structures and Algorithms. Questions usually involve code snippets for output prediction, error identification, understanding memory allocation, pointer arithmetic, function calls, recursion, and conceptual questions on data types, control flow, and storage classes. A deep understanding of C helps in visualizing program execution and memory layout, which is vital for solving complex problems. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Programming In C ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: C is a general-purpose, procedural, imperative computer programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is known for its efficiency, low-level memory access, and portability, making it a popular choice for system programming and embedded systems. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "。 Mid-level language: Combines features of high-level languages with the ability to manipulate memory directly.   \n。 Procedural: Programs are structured as a sequence of function calls.   \nCompiled: Source code is translated into machine code by a compiler.   \n。 Strongly typed (but with implicit conversions): Variables have specific types, but C allows flexible type casting.   \nMemory management: Manual memory allocation and deallocation using functions like malloc() and free(). ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Undefined behavior: Operations like accessing out-of-bounds array elements or dereferencing a dangling pointer can lead to unpredictable results.   \nMemory leaks: Forgetting to free() dynamically allocated memory.   \nBuffer overflows: Writing past the end of an allocated buffer. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Understand the compilation process (preprocessor, compiler, assembler, linker).   \nAlways initialize variables to avoid garbage values.   \nPay attention to operator precedence and associativity. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Programming Constructs ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Programming constructs are the fundamental building blocks that control the flow of execution in a program. They include sequential execution, selection (conditional statements), and iteration (loops). ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Sequential: Statements execute one after another.   \nSelection: if-else: Executes a block of code based on a condition. if (condition) { // code else { // code } □ switch-case: Multi-way branching based on the value of an integer expression.   \nIteration (Loops): for loop: Used when the number of iterations is known. for (initialization; condition; increment/decrement) { // code } while loop: Executes as long as a condition is true (entry-controlled).   \nwhile (condition) { // code }   \n■ do-while loop: Executes at least once, then continues as long as a condition is true (exit-controlled). do { // code while (condition); ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "0 Jump Statements: break, continue, goto, return. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Off-by-one errors in loops.   \nInfinite loops due to incorrect loop conditions or missing increment/decrement.   \nForgetting break in switch-case, leading to fall-through.   \nUsing $\\mathbf { \\sigma } = \\mathbf { \\sigma }$ (assignment) instead of $\\scriptstyle = =$ (comparison) in conditions. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Trace the execution path of the program step-by-step for conditional and loop statements.   \nFor loops, identify the initial state, the termination condition, and how variables change in each iteration. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Programming Paradigms ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A programming paradigm is a fundamental style of computer programming, providing a way to classify programming languages based on their features. C primarily adheres to the procedural paradigm. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Procedural Programming: Focuses on a sequence of instructions (procedures or functions) to perform computations. Data and functions are separate. C, Fortran, Pascal are examples.   \nImperative Programming: Programs explicitly state how the computation should be performed, detailing changes to the program state. C is an imperative language.   \nContrast with Object-Oriented (data and methods encapsulated) and Functional (computation as evaluation o mathematical functions, avoiding state changes) paradigms. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Confusing C's procedural nature with object-oriented concepts like classes and objects, which are not directly supported. Trying to apply functional programming principles (like immutability) where C's mutable state is fundamental. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Understand that C programs are executed as a series of instructions that modify program state.   \nFocus on function calls, parameter passing, and global/local variable interactions. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Variable Binding ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Variable binding refers to the process of associating attributes (like type, value, and storage location) with a variable name. This binding can occur at different stages of a program's lifecycle. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Static Binding (Compile-time): Attributes are determined before runtime and remain fixed. E.g., type binding for most variables in C.   \nDynamic Binding (Run-time): Attributes are determined during program execution. E.g., value binding, or in some languages, type binding (polymorphism). ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "age Class Binding: Determines the scope and lifetime of a variable. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "■ auto: Local to a block, created on entry, destroyed on exit (default for local variables).   \nstatic: Local to a block/file, created once, persists throughout program execution.   \nextern: Global variable, declared in one file, defined in another.   \nregister: Suggests storing variable in CPU register for faster access (compiler may ignore). Scope: Region of code where a variable is accessible (block scope, function scope, file scope, program scope).   \n。 Lifetime: Period during which a variable exists in memory. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Confusing scope and lifetime: A variable might be alive but out of scope. Modifying static local variables across multiple function calls. 0 Shadowing: A local variable having the same name as a global variable. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Draw scope boxes for functions and blocks to visualize variable accessibility.   \nTrack variable values across function calls, especially for static variables. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Type Checking ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Type checking is the process of verifying and enforcing the type constraints of a programming language. It ensures that operations are applied to compatible data types, preventing common programming errors. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Static Type Checking (Compile-time): Types are checked before program execution. C is primarily statically typed.   \nDynamic Type Checking (Run-time): Types are checked during program execution.   \nType Compatibility: Rules for when types can be used together (e.g., implicit conversions).   \nType Casting: Explicit conversion of one data type to another using (type)expression.   \nImplicit Type Promotion (Integral Promotion): Smaller integer types (char, short) are promoted to int in expressions.   \nArithmetic Conversion: In binary operations, operands are converted to a common type (usually the \"larger\" or \"wider\" type). ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Unexpected implicit type conversions, especially between signed and unsigned integers, or between integers and floating-point types, leading to loss of precision or incorrect results.   \n。 Incorrect type casting, e.g., casting a pointer to an incompatible type and then dereferencing it.   \n。 Integer division truncates the fractional part (e.g., $5 / 2 = 2 \\AA$ ). ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Always be aware of the data types involved in an expression.   \nUse explicit type casting when precision or specific type behavior is required.   \nRemember that sizeof operator returns an unsigned integer type (size_t). ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Output ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Output refers to the process of displaying information from a program to the user or writing it to a file. In C, standard output functions like printf(), puts(), and putchar() are commonly used. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "printf(const char \\*format, ...): Formatted output to standard output. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Format specifiers: $\\% \\mathsf { d }$ or $\\% \\mathrm { i }$ : signed decimal integer $\\% \\mathrm { ~ }$ : unsigned decimal integer %f: decimal floating point (double by default) $\\\\% c$ : character $\\% s$ : string $\\% 0$ : pointer address (hexadecimal) $\\% x$ or $\\% x$ : hexadecimal integer $\\\\text{‰}$ : octal integer $\\%$ : print a literal $\\%$ character ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "■ Modifiers: .precision, width, - (left-align), $^ +$ (sign), 0 (zero-pad), (long), ll (long long), h (short). 0 puts(const char \\*str): Writes a string to standard output, followed by a newline. 。 putchar(int char_val): Writes a single character to standard output. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Mismatched format specifiers and argument types can lead to undefined behavior or incorrect output.   \n。 Forgetting newline characters $\\mathsf { \\backslash n }$ in printf() (puts() adds it automatically).   \nBuffer flushing issues, especially when mixing buffered and unbuffered I/O. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Carefully match each format specifier in printf() with its corresponding argument.   \nTrace the exact values and types of variables being printed.   \nUnderstand the effect of width and precision specifiers on output formatting. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Array ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: An array is a collection of elements of the same data type, stored in contiguous memory locations. Elements are accessed using an index, typically starting from zero. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: 0 Contiguous memory allocation. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "。 Fixed size at compile time (for static arrays). Zero-indexed: The first element is at index 0. Array name decays to a pointer to its first element in most contexts. Address Calculation (1D Array): ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname { A d d r e s s } ( A [ i ] ) = \\operatorname { B a s e A d d r e s s } + i \\times \\operatorname { s i z e o f } ( \\operatorname { E l e m e n t T y p e } )\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "门 Address Calculation (2D Array, Row-Major): ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm { A d d r e s s } ( A [ i ] [ j ] ) = \\mathrm { B a s e A d d r e s s } + ( i \\times \\mathrm { c o l s } + j ) \\times \\mathrm { s i z e o f ( E l e m e n t T y p e ) }\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "where cols is the number of columns in the array ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "。 Array out-of-bounds access: Accessing elements beyond the declared size leads to undefined behavior.   \n。 When an array is passed to a function, it decays into a pointer, losing its size information.   \nsizeof(array_in function) will return the size of a pointer, not the array. Multidimensional arrays are stored in row-major order in C. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Draw memory diagrams to visualize array elements and their addresses. Always check loop bounds to prevent out-of-bounds access. Remember that array indexing A[i] is equivalent to pointer arithmetic $^ { \\star } ( \\mathsf { A } + \\mathsf { i } )$ ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Strings ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: In C, a string is a sequence of characters stored in a character array, terminated by a null character (\\0). This null terminator marks the end of the string. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Declared as char array name[] or char \\*pointer_name.   \nAlways null-terminated. The size of the array must be at least one greater than the number of characters in the   \nstring to accommodate \\0.   \nStandard library functions (from <string.h>): ■ strlen(const char $^ \\star \\mathsf { s }$ ): Returns the length of the string (excluding $\\updownarrow 0$ ). strcpy(char \\*dest, const char \\*src): Copies src to dest. strncpy(char \\*dest, const char \\*src, size_t n): Copies at most n characters. Does not guarantee null termination if src is longer than n. strcat(char \\*dest, const char \\*src): Appends src to dest. strncat(char \\*dest, const char \\*src, size_t n): Appends at most n characters. strcmp(const char $^ { \\star } \\mathsf { s } 1$ , const char $^ { \\star } \\mathsf { s } 2$ ): Compares s1 and s2 lexicographically. Returns 0 if equal, ${ < } 0$ if s1 < s2, ${ > } 0$ if $\\mathsf { s } 1 > \\mathsf { s } 2$ . strncmp(const char $^ { \\star } \\mathsf { s } 1$ , const char $^ { \\star } \\mathsf { s } 2$ , size_t n): Compares at most n characters. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Buffer overflow: Using strcpy() or strcat() without ensuring the destination buffer is large enough. Always prefer strncpy() and strncat() with careful handling of null termination.   \nForgetting the null terminator $\\updownarrow 0$ , leading to functions like strlen() reading past the allocated memory. Modifying string literals (e.g., char ${ } ^ { \\star } \\mathsf { s } =$ \"hello\"; $\\mathsf { s } [ 0 ] = \\mathsf { \\ \" H \\ \" }$ ) leads to undefined behavior, as string literals are often stored in read-only memory. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "。 Always allocate sufficient memory for strings, considering the null terminator.   \n。 When dealing with string manipulation, mentally trace the contents of the character arrays, including the \\0.   \n。 Be careful with pointer arithmetic on string pointers. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Pointers ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A pointer is a variable that stores the memory address of another variable. It allows for indirect access to data and is fundamental for dynamic memory management, arrays, and complex data structures in C. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Declaration: type \\*pointer_name;   \nAddress-of operator: $\\&$ (returns the memory address of a variable).   \nDereference operator: (accesses the value at the address stored in a pointer).   \nPointer Arithmetic: Adding an integer to a pointer: ${ \\mathsf p } + { \\mathsf n }$ points to the memory location $n \\times \\mathrm { s i z e o f ( ^ { * } p ) }$ bytes away from p. ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname { A d d r e s s } ( p + n ) = \\operatorname { A d d r e s s } ( p ) + n \\times \\operatorname { s i z e o f } ( { \\mathfrak { * } } _ { \\mathrm { p } } )\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Subtracting an integer from a pointer: ${ \\mathsf p } - { \\mathsf n }$ .   \nSubtracting two pointers (of the same type): p q gives the number of elements between them. ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\np - q = { \\frac { \\operatorname { A d d r e s s } ( p ) - \\operatorname { A d d r e s s } ( q ) } { \\operatorname { s i z e o f } ( { } ^ { * } { \\mathrm { p } } ) } }\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Pointers can be compared for equality or order. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "。 void\\* (Generic Pointer): Can point to any data type but cannot be dereferenced directly or used in arithmetic without casting.   \nNULL Pointer: A pointer that points to no valid memory location. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Dangling Pointers: Pointers that point to memory that has been deallocated or is no longer valid.   \nWild Pointers: Uninitialized pointers that point to arbitrary memory locations.   \nDereferencing a NULL pointer or a wild pointer leads to segmentation faults or undefined behavior.   \nIncorrect pointer arithmetic (e.g., adding incompatible types, or arithmetic on void\\* without casting).   \nConfusing ${ } ^ { \\star } { \\mathsf p }$ (value at address p) with p (the address itself). ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Draw memory diagrams showing variable names, their addresses, and their values.   \nMentally trace pointer assignments and dereferencing operations.   \nAlways initialize pointers to NULL if they don't point to valid memory immediately.   \nCheck for NULL before dereferencing pointers. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Aliasing ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Aliasing occurs when multiple distinct names or pointers refer to the same memory location.   \nIn C, this often happens with pointers, array names, or when passing arguments by reference (using pointers). ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "If p1 and p2 are pointers and $\\mathsf { p } \\mathsf { 1 } = \\mathsf { p } 2$ ;, then both p1 and p2 alias the same memory loca Modifying data through one alias will affect the data accessed through other aliases. Can occur with function parameters if pointers are passed. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Unexpected side effects: Changes made through one alias might inadvertently affect other parts of the program that use a different alias to the same data.   \n。 Difficult to optimize for compilers due to potential data dependencies.   \nCan lead to subtle bugs that are hard to trace. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Draw memory diagrams to explicitly show when multiple pointers point to the same location. 。 Be extra cautious when modifying data through pointers, especially when those pointers might be aliases. 。 In GATE questions, always consider i multiple variables/pointers might be referring to the same underlying memory. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Functions ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A function is a self-contained block of code that performs a specific task. Functions promote modularity, reusability, and readability in C programs. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Declaration (Prototype): Specifies the function's return type, name, and parameter types (e.g., nt add(int a, int b);).   \n。 Definition: Contains the actual code of the function.   \nCall: Invokes the function's execution.   \nReturn Type: The data type of the value the function sends back to the caller. void if no value is returned.   \nParameters (Arguments): Values passed to the function.   \n。 Local Variables: Declared inside a function, have function scope and automatic lifetime.   \nGlobal Variables: Declared outside any function, have file scope and static lifetime. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "。 Scope o local variables: Local variables cease to exist once the function returns. Returning a pointer to a local variable leads to a dangling pointer. 。 Side effects: Functions modifying global variables or parameters passed by reference (pointers) can lead to ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "hard-to-track bugs. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Function prototypes are crucial for correct compilation, especially when functions are defined after their calls. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Trace function calls using a call stack model, keeping track of local variables and parameters for each active function.   \nClearly distinguish between parameters (formal arguments) and arguments (actual arguments).   \nUnderstand how return values are passed back to the caller. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Parameter Passing ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Parameter passing refers to the mechanism by which arguments (actual parameters) are passed from the calling function to the called function (formal parameters). ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Call by Value (C's default): A copy of the actual argument's value is passed to the formal parameter. Changes to the formal parameter inside the function do not affect the original actual argument in the caller.   \nvoid func(int x) $\\{ \\textsf { X } = \\textsf { X } + 1 ;  \\} / / \\textsf { X }$ is a copy   \nCall by Reference (Simulated in C using Pointers): The address of the actual argument is passed. The formal parameter is a pointer. Changes made through the pointer inside the function directly modify the original actual argument in the caller.   \nvoid func(int \\*ptr) $\\{ { } ^ { \\star } \\mathsf { p t r } = { } ^ { \\star } \\mathsf { p t r } + 1 ; \\mathsf { \\beta } / / \\mathsf { \\beta } ^ { \\star } |$ \\*ptr modifies original variable ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Arrays are always passed by reference (decay to a pointer to their first element). ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Misunderstanding when a function can modify the caller's variables. Only possible with call by reference (pointers).   \nForgetting to dereference a pointer when intending to modify the original value in call by reference. Passing large structures by value can be inefficient due to copying. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "。 When tracing code, explicitly note whether a variable is being passed by value (copy) or by reference (address). 。 For call by reference, always draw an arrow from the pointer parameter to the actual variable it points to in the caller's memory. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Recursion ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Recursion is a programming technique where a function calls itself, either directly or indirectly, to solve a problem. It's often used for problems that can be broken down into smaller, similar subproblems. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Base Case: A condition that stops the recursion, preventing an infinite loop. Without a base case, recursion leads to stack overflow.   \n。 Recursive Step: The part of the function that calls itself with a modified input, moving closer to the base case. 。 Every recursive function can be rewritten iteratively, and vice-versa.   \nOften involves a call stack: Each recursive call adds a new frame to the stack.   \nTail Recursion: A special form where the recursive call is the last operation in the function. Some compilers ca optimize this to iterative code. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Formulas and Results (for complexity analysis): ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Recurrence relations are used to analyze the time and space complexity of recursive algorithms. E.g., for factorial: $T ( n ) = T ( n - 1 ) + O ( 1 )$ . Space complexity often depends on the maximum depth of the recursion stack. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Missing or incorrect base case, leading to infinite recursion and stack overflow.   \nExcessive recursion depth can lead to stack overflow even with a correct base case.   \nDifficulty in tracing complex recursive calls.   \nRedundant computations in non-optimized recursive solutions (e.g., naive Fibonacci). ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "。 Identify the base case first.   \n。 Assume the recursive call works correctly for smaller inputs.   \n。 Trace the execution for small inputs, drawing the call stack to visualize the flow and variable states.   \n。 For GATE, often involves predicting output or determining the number of function calls. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Structure ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A structure (struct) in C is a user-defined data type that groups together variables of different data types under a single name. It allows for creating complex data types that represent real-world entities. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Declared using the struct keyword.   \nMembers are stored in contiguous memory, but padding may be inserted by the compiler for alignment.   \nMember Access: □ Dot operator (.) for structure variables: struct var.member Arrow operator $( \\neg > )$ for pointers to structures: struct_ptr- $\\mathrm { > }$ member (equivalent to (\\*struct_ptr).member)   \nsizeof(struct): The size of a structure is at least the sum of the sizes of its members, but due to padding, it can   \nbe larger. The compiler aligns members to optimize memory access. ",
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname { s i z e o f } ( { \\mathrm { s t r u c t } } ) \\geq \\sum \\operatorname { s i z e o f } ( { \\mathrm { m e m b e r } } )\n$$",
+        "text_format": "latex",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Structures can contain members of other structure types or pointers to themselves (for linked lists, trees). ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Understanding memory alignment and padding, which affects sizeof() and memory efficiency.   \nConfusing and $\\begin{array} { r } { \\mathrm { ~ - > ~ } } \\end{array}$ operators.   \n0 Passing structures by value can be inefficient for large structures; passing by pointer is often preferred.   \nSelf-referential structures (e.g., for linked lists) require careful handling of pointers. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "。 When calculating sizeof(struct), consider the alignment requirements of each member (usually to its own size or the largest member's size). 。 Draw diagrams for structures, especially those with pointers or nested structures, to visualize memory layout. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Union ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A union is a special user-defined data type in C that allows different data types to be stored n the same memory location. Only one member of the union can hold a value at any given time. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "。 Declared using the union keyword.   \n。 All members share the same memory space.   \n0 sizeof(union): The size of a union is equal to the size of its largest member, ensuring enough space for any member. ",
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm { s i z e o f ( u n i o n ) } = \\mathrm { m a x } ( \\mathrm { s i z e o f ( m e m b e r _ { 1 } ) , s i z e o f ( m e m b e r _ { 2 } ) , . . . ) }\n$$",
+        "text_format": "latex",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Accessing a member that was not the last one written to results in undefined behavior (unless it's a \"typepunning\" scenario which is implementation-defined). ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "。 Accessing an inactive member (a member that was not the last one assigned a value) leads to undefined behavior.   \nUnions are primarily used for memory optimization or type punning (interpreting the same memory in different ways).   \nUnderstanding that changing one member's value overwrites the previous member's value. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "When calculating sizeof(union), simply find the largest member's size.   \nMentally track which member of the union is currently \"active\" (last written to) to predict output. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Switch Case ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The switch-case statement is a multi-way branch control statement that allows a program to execute different blocks of code based on the value of a single expression. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The switch expression must evaluate to an integer type (char, short, int, long, long long, or an enumeration type).   \n。 case labels must be constant integer expressions.   \n。 break statement: Exits the switch block.   \ndefault label: Optional, executed if no case matches. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Fall-through: If a break statement is omitted, execution \"falls through\" to the next case label. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Forgetting break statements, leading to unintended fall-through and incorrect logic. This is a very common GATE question trap.   \n。 Using non-integer expressions or non-constant values for case labels.   \nPlacing statements before the first case label (these will always execute). ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Carefully trace the execution path, paying close attention to the presence or absence of break statements.   \nIdentify the value of the switch expression and which case (or default) it matches. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Goto ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The goto statement provides an unconditional jump from one point in a function to another labeled point within the same function. It alters the normal sequential flow of control. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Syntax: goto label; and label: statement;   \n0 The label must be within the same function.   \n。 Can be used to break out of nested loops or handle error conditions. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Generally discouraged in modern programming practice as it can lead to \"spaghetti code\" that is difficult to read, debug, and maintain. 。 Jumping into a block can bypass variable initialization, leading to undefined behavior. Jumping out of a block can skip destructors (though C doesn't have explicit destructors like ${ \\mathsf { C } } { + } { + }$ ). ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "When encountering goto, simply follow the jump to the specified label to trace the control flow.   \nUnderstand its direct impact on program execution flow. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Identify Function ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic refers to the ability to analyze a given C function's code, its signature (return type, name, parameters), and its interactions with other parts of the program to determine its precise purpose, behavior, and potential side effects. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Function Signature: return_type function_name(parameter _list); provides initial clues about what the function takes and what returns.   \nFunction Body: The statements within the function define its logic.   \nSide Effects: Changes a function makes to the program state outside its local scope (e.g., modifying global variables, parameters passed by reference, performing I/O).   \nPure Functions: Functions that, given the same input, always return the same output and have no side effects. (Rare in C, but a useful concept). ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Misinterpreting the purpose due to complex logic or subtle side effects.   \n。 Not recognizing the impact of parameter passing mechanisms (call by value vs. call by reference).   \nOverlooking hidden dependencies on global variables or external resources. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Trace the function with a few sample inputs, noting the return value and any changes to external variables 。 Break down complex functions into smaller, understandable parts.   \n。 Look for common patterns: mathematical operations, array/string manipulations, recursive calls, pointer operations. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Loop Invariants ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A loop invariant is a condition or property that holds true before the first iteration of a loop, remains true before each subsequent iteration, and is true after the loop terminates. It is a powerful tool for proving the correctness of loops and algorithms. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "。 Initialization: The invariant must be true before the first iteration of the loop. 。 Maintenance: If the invariant is true before an iteration, it must remain true after that iteration (before the next). Termination: When the loop terminates, the invariant, combined with the loop termination condition, should ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "imply the desired property of the algorithm. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Identifying the correct loop invariant for a given problem. Rigorously proving all three properties (initialization, maintenance, termination). Confusing the loop invariant with the loop condition or the desired post-condition ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "。 For common algorithms (e.g., sorting, searching), try to recall standard loop invariants.   \n。 To find an invariant, consider what property is preserved or incrementally built up by each iteration towards the final solution.   \n0 Useful for understanding why an algorithm works, not just how. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Runtime Environment ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The runtime environment refers to the state of a program during its execution, including its memory layout, the call stack, heap, and interaction with the operating system. Understanding this is crucial for debugging and optimizing C programs. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Memory Layout: ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "■ Text Segment: Stores compiled code (read-only).   \n■ Data Segment: Stores global and static variables (initialized data). BSS Segment: Stores uninitialized global and static variables (zero-initialized by OS). Heap: Dynamically allocated memory (malloc(), calloc(), realloc(), free()). Grows upwards. Stack: Stores local variables, function parameters, and return addresses for function calls. Grows downwards. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "。 Call Stack: A stack data structure that stores information about the active subroutines (functions) of a computer program. Each function call creates a \"stack frame. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Stack Overflow: Occurs when the call stack runs out of memory, often due to infinite recursion or very deep recursion.   \nMemory Leaks: Dynamically allocated memory that is no longer referenced by the program but has not been deallocated using free().   \nSegmentation Faults: Occur when a program tries to access a memory location that it is not allowed to access (e.g., dereferencing a NULL pointer, accessing out-of-bounds array memory).   \nReturning pointers to local stack variables (dangling pointers). ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "。 Draw the stack and heap to visualize memory allocation and deallocation.   \n。 For recursive functions, trace the stack frames to understand memory usage.   \n0 Always match every malloc() with a free() to prevent memory leaks. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "This section consolidates key formulas and results for quick revision. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Array Address Calculation (1D): ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname { A d d r e s s } ( A [ i ] ) = \\operatorname { B a s e A d d r e s s } + i \\times \\operatorname { s i z e o f } ( { \\mathrm { E l e m e n t T y p e } } )\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Array Address Calculation (2D, Row-Major): ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm { A d d r e s s } ( A [ i ] [ j ] ) = \\mathrm { B a s e A d d r e s s } + ( i \\times \\mathrm { c o l s } + j ) \\times \\mathrm { s i z e o f ( E l e m e n t T y p e ) }\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Pointer Arithmetic (Addition): ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname { A d d r e s s } ( p + n ) = \\operatorname { A d d r e s s } ( p ) + n \\times \\operatorname { s i z e o f } ( ^ { * } \\operatorname { p } )\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Pointer Arithmetic (Subtraction): ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\np - q = { \\frac { \\mathrm { A d d r e s s } ( p ) - \\mathrm { A d d r e s s } ( q ) } { \\mathrm { s i z e o f } ( { } ^ { * } { \\mathrm { p } } ) } } \\quad { \\mathrm { ( f o r ~ s a m e ~ t y p e ~ p o i n t e r s ) } }\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "sizeof(struct): ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathrm { s i z e o f ( s t r u c t ) } } \\geq \\sum { \\mathrm { s i z e o f ( m e m b e r ) } } \\quad { \\mathrm { ( d u e ~ t o ~ p a d d i n g ) } }\n$$",
+        "text_format": "latex",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "sizeof(union): ",
+        "page_idx": 24
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathrm { s i z e o f ( u n i o n ) } } = \\operatorname* { m a x } ( { \\mathrm { s i z e o f ( m e m b e r } } _ { 1 } ) , { \\mathrm { s i z e o f ( m e m b e r } } _ { 2 } ) , \\dots )\n$$",
+        "text_format": "latex",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "String Length: strlen(s) returns number of characters before $\\updownarrow 0$ .   \nInteger Division: $a / b$ truncates towards zero for positive integers. E.g., $5 / 2 = 2$ .   \nModulo Operator: $a \\% b$ result sign is implementation-defined for negative operands, but typically matches the sign of $a$ . ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "1. Master Pointers and Arrays: A significant portion of C questions revolves around pointers, array indexing, and their interaction. Practice drawing memory diagrams for complex pointer expressions and array manipulations. Understand array decay to pointers. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "2. Trace Code Meticulously: For output prediction questions, mentally (or on scratch paper) trace the execution flow, variable values, and memory changes step-by-step. Pay close attention to loop conditions, conditional statements, and function calls. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "3. Understand Scope and Lifetime: Differentiate between local, global, and static variables. Be aware of when variables are created and destroyed, especially for recursive functions and functions returning pointers to local variables. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "4. Beware of Type Conversions and Operator Precedence: C's implicit type conversions can lead to unexpected results. Always be mindful of data types in expressions. Memorize common operator precedence rules (e.g., and / before $^ +$ and -; unary operators have high precedence). ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "5. Practice Recursion Tracing: Recursion questions are common. Practice tracing recursive calls, identifying the base case, and understanding how values are returned up the call stack. Watch out for stack overflow scenarios. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "6. Look for Edge Cases and Undefined Behavior: GATE questions often test understanding of edge cases (e.g., empty strings, NULL pointers, array bounds) and undefined behavior (e.g., dereferencing NULL, modifying string literals, out-of-bounds access). ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "7. Memory Management: Understand the difference between stack and heap memory. Know how malloc(), calloc(), realloc(), and free() work, and the consequences of memory leaks or double- freeing. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "8. Time Management: C programming questions can be time-consuming due to detailed tracing. If a question seems too complex, try to quickly identify the core concept being tested or make an educated guess based on common pitfalls. Don't get stuck on one question. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Aliasing in the context of programming languages refers to ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "A. multiple variables having the same memory location B. multiple variables having the same value C. multiple variables having the same identifier D. multiple uses of the same variable ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "What does the following fragment of C program print? ",
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/109c174c2aa8cd4ed24a0e4863fd0c5ce909199d56d66e34f0897831d7b97071.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. GATE2011 B. E2011 C. 2011 D. 011 ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 programming programming-in-c normal array ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the following C code? Assume that the address of $x$ is (in decimal) and an integer requires four bytes of memory. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "int main () { unsigned int x [4] [3] $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ {{1, 2, 3}, {4, 5 6}, {7, 8, 9}, {10, 11, 12}}; printf $\\because S _ { \\Delta } u$ , %u, %u\", $\\textsf { x } + 3$ , $^ { \\star } ( \\mathsf { X } + 3 )$ , $^ { \\star } ( \\mathsf { X } + 2 ) + 3 )$ ; ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. 2036,2036,2036 B. 2012,4,2204   \nC. 2036,10,10 D. 2012,4,6 ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 programming programming-in-c array normal ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two C code segments. $Y$ and $X$ are one and two dimensional arrays of size $n$ and $n \\times n$ respectively, where $2 \\leq n \\leq 1 0$ . Assume that in both code segments, elements of $Y$ are initialized to  and each element $X [ i ] [ j ]$ of array $X$ is initialized to $i + j$ . Further assume that when stored in main memory all elements of $X$ are in same main memory page frame. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Code segment ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "// initialize elements of Y to 0   \n// initialize elements of X[i][j] of $x$ to i+j   \nfor $( \\mathsf { i } = 0$ ; i<n; $\\mathbf { i } \\mathbf { + } \\mathbf { + }$ ) Y[i $\\bf { \\tau } ] \\cdot \\mathrm { = } \\times [ 0 ] [ \\dot { 1 } ]$ ; ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Code segment 2 ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "// initialize elements of Y to 0   \n// initialize elements of X[i][j] of $\\mathsf { x }$ to i+j   \nfor $( \\mathsf { i } = 0$ ; i<n; $\\mathbf { i } \\mathbf { + } \\mathbf { + }$ ) Y[i] $+ = { \\sf X } [ \\dot { \\sf I } ] [ 0 ]$ ; ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are correct? ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "S1: Final contents of array $Y$ will be same in both code segments S2: Elements of array $X$ accessed inside the for loop shown in code segment  are contiguous in main memory S3: Elements of array $X$ accessed inside the for loop shown in code segment  are contiguous in main memory ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. Only S2 is correct B. Only S3 is correct C. Only S1 and S2 are correct D. Only S1 and S3 are correct ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 programming-in-c normal array int main() char ${ \\mathsf { s } } 1 [ 7 ] = \" 1 2 3 4 \"$ , \\*p; ${ \\mathsf p } = { \\mathsf s } 1 + 2$ ; ${ \\bf \\Pi } ^ { * } { \\bf p } = { \\bf \\Pi } ^ { \\prime } 0 { \\bf \\Pi } ^ { \\prime }$ ; printf(\"%s\" s1); ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "What will be printed by the program? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. B. 120400 C. 1204 D. 1034 ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 programming programming-in-c normal array ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "5.2.6 Array: GATE CSE 2019 Question: 24 ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program: ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "table",
+        "img_path": "images/cda024d7c209215327d1516eda672715cfead26b0b4bb8fcb5811d7cafcc7d26.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The number that will be displayed on execution of the program is ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers programming-in-c programming array easy one-mark ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "5.2.7 Array: GATE CSE 2020 Question: 22 ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program. ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "table",
+        "img_path": "images/5ec0c732b83cd56603f0ec6d0f785d6c937822d291c7226d2449b69dd459a64b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers programming-in-c array one-mark ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "5.2.8 Array: GATE CSE 2021 Set 2 Question: 10 ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Consider the following program. ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "images/49b5d1580e323106f3903adb1707f8859bef43da5e60aea165914696e3f3a085.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the above program? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the following ANSI program? ",
+        "page_idx": 27
+    },
+    {
+        "type": "table",
+        "img_path": "images/0227113d3f7720b1928c60f0f41bb5beaa5af91144f89f953468a71c09c4deef.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "123 ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "A. 10 11 12 19 20 21 147   \nB. 101316 19 22 25 123   \nC. 789 123   \nD. 131415 252627 ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "X for (i = 0; i < 4; ++i) for (j $= 0 ; \\mathrm { j } < 4 ; + + \\mathrm { j } )$ printf (\"%d\", M[i][j]); ",
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/854cc08735f897a2f8627fbc0b8d5e48a21dc1753e3c345b2b6b9b5c16e1a68b.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "5.2.11 Array: GATE IT 2008 Question: 49 ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "What is the output printed by the following C code? ",
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e65fd1ca1482229d1bc1540735e8ef75d3dd9630daeb8c8ef03cde780b5070d.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "A. dlrow B. Null string C. dlrld D. worow ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 programming programming-in-c normal array ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Consider the C program given below. What does it print? ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "#include <stdio.h>   \nint main () int i, j; int a [8] = {1, 2, 3, 4, 5, 6, 7, 8}; for(i = 0; i < 3; i++) { $\\mathsf { a } [ \\mathsf { i } ] = \\mathsf { a } [ \\mathsf { i } ] + 1$ ; i++; i--; for $( \\mathrm { j } = 7 ; \\mathrm { j } > 4 ; \\mathrm { j } \\mathrm { - } )$ { int i = j/2; a[i] = a[i] - 1; printf (\"%d, %d\", i, a[i]); ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "A. B. 2,4 C. 3,2 D. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 programming programming-in-c normal array ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "5.2.13 Array: GATE IT 2008 Question: 52 ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "C program is given below: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "# include <stdio.h> int main () ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "int i, j;   \nchar a [2] $[ 3 ] = \\{ \\{ \\mathsf { a } ^ { \\prime }$ , 'b', $\\langle { \\bf c } ^ { \\prime } \\rangle$ , {'d', 'e', 'f'}};   \nchar b [3] [2];   \nchar ${ } ^ { \\star } \\mathsf { p } = { } ^ { \\star } \\mathsf { b }$ ：   \nfor $( \\mathfrak { i } = 0 ; \\mathfrak { i } < 2 ; \\mathfrak { i } + + )$ { for $( { \\mathfrak { j } } = 0 ; { \\mathfrak { j } } < 3$ ; $\\mathbf { j } { + } + \\mathbf { \\beta } )$ { ${ } ^ { \\star } ( { \\mathsf p } + 2 ^ { \\star } { \\mathsf j } + { \\mathsf i } ) = { \\mathsf a }$ [i] [j]; ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "What should be the contents of the array b at the end of the program? ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A. C d e ef B. be cf C. b df D. e d C bf ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program: ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "#include<stdio.h>   \nint f1(void);   \nint f2(void);   \nint f3(void);   \nint $\\scriptstyle x = 1 0$ ;   \nint main() int $\\scriptstyle x = 1$ ; $\\textsf { X } + = \\textsf { f } 1 ( \\ l ) + \\textsf { f } 2 \\ l ( \\ l ) + \\textsf { f } 3 ( \\ l ) + \\textsf { f } 2 ( \\ l ) ;$ ; printf(\"%d\", x); return 0;   \nint f1() int $x = 2 5$ ; $^ { x + + }$ ; return $\\left| x ; \\right\\}$   \nint f2() static int $\\mathsf { x } = 5 0$ ; $^ { x + + }$ ; return x;}   \nint f3() $\\mathbf { \\nabla } \\times \\mathbf { \\dot { \\tau } } = 1 0$ ; return x;} ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is gatecse-2015-set3 programming programming-in-c functions normal numerical-answers ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 29
+    },
+    {
+        "type": "image",
+        "img_path": "images/f07c16ff7d7f4124e862d67b8356b8c35191f964108f607ce777840e529c0e4a.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is the CORRECT output of the above  program? ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A. 20101020 B. 10202010 C. 20102010 D. 10201020 ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 programming programming-in-c functions one-mark ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "An unrestricted use of the \"go to\" statement is harmful because of which of the following reason (s): ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A. It makes it more difficult to verify programs.   \nB. It makes programs more inefficient.   \nC. It makes it more difficult to modify existing programs.   \nD. It results in the compiler generating longer machine code. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "gate1989 normal programming goto ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "An unrestricted use of the \" \" statement is harmful because ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A. it makes it more difficult to verify programs B. it increases the running time of the programs C. it increases the memory required for the programs D. it results in the compiler generating longer machine code ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Consider the following high level programming segment. Give the contents of the memory locations for variables W, $X , Y$ and $Z$ after the execution of the program segment. The values of the variables $A$ and $B$ are $5 C H$ and $9 2 H$ , respectively. Also indicate error conditions if any. ",
+        "page_idx": 30
+    },
+    {
+        "type": "table",
+        "img_path": "images/2cabdb926a73ceb4fa027540a6cd79de21e53bf9b6787091b237bf972e87ce28.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "gate1995 programming identify-function descriptive ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "program side-effect (input, output); var x, result: integer; function (var x:integer):integer; begin ${ \\sf x } : { \\sf x } + 1 ; { \\sf f } : = { \\sf x } ;$ end begin $x : = 5$ ; result: $\\scriptstyle = { \\mathsf { f } } ( \\mathbf { x } ) ^ { \\star } \\mathbf { f } ( \\mathbf { x } )$ ; writeln(result); end ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 36 D. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "gate1998 programming normal identify-function ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Consider the following function implemented in C: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "void printxy(int x, int y) { int \\*ptr; $\\scriptstyle x = 0$ ; ptr $\\scriptstyle \\sum \\alpha$ ; y=\\*ptr; \\*ptr=1; printf(“%d, %d”, x, y); ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The output of invoking printxy $( 1 , 1 )$ is: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "A. B. 0,1 C. 1,0 D. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 programming-in-c identify-function pointers ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Consider the following snippet of a C program. Assume that swap $( \\& x , \\& y )$ exchanges the content of $x$ and $y$ : ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "int main () { int array[] $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ {3, 5, 1, 4, 6, 2}; int done $_ { = 0 }$ ; int i; while $\\scriptstyle \\mathrm { \\ c d o n e = = } 0$ ) done $^ { = 1 }$ ; for (i= $\\scriptstyle 1 , \\ i < = 4 , \\ i + +$ ) { if (array[i] $\\prec$ array[i+1]) { swap(&array[i], &array[i+1]); done $_ { : = 0 }$ ; for (i=5; $\\mathrm { i } _ { > } = 1$ ; i--) { if (array[i] $>$ array[i-1]) { swap(&array[i], &array[i-1]); done $_ { = 0 }$ ; printf(“%d”, array[3]); ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 programming algorithms numerical-answers identify-function ",
+        "page_idx": 31
+    },
+    {
+        "type": "table",
+        "img_path": "images/32dc0880add22a3a266f51dea403fcaeb438fecb27c0ef02f1e5ed58f8d28fee.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "The value printed by the program is ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 programming-in-c numerical-answers identify-function one-mark ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Let $x$ be an integer which can take a value of or . The statement ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "is equivalent to which one of the following ? ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "A. $\\scriptstyle x = 1 + x$ ； B. $\\begin{array} { r } { x = 1 - x ; } \\end{array}$ C. x=x-1; D. $\\begin{array} { r } { x = 1 \\% x \\colon } \\end{array}$ ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 programming easy identify-function ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "List the invariant assertions at points $A , B , C , D$ and $E$ in program given below: ",
+        "page_idx": 32
+    },
+    {
+        "type": "table",
+        "img_path": "images/19492d940ff539c143b7b9964112c55bd4caca3c798f4c5c6b96d3ad05dcb7e5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "gate1987 programming loop-invariants descriptive ",
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/f6f95f6a7a9a44a86b7b691293233edfcefecba7eb4183fce6eeb073af07d648.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Consider the two program segments below: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "a. for i:=1 to f(x) by do S end ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "b. i:=1; While i<=f(x) do S i:=i+1 end ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Under what conditions are these two programs equivalent? Treat $\\boldsymbol { S }$ as any sequence of statements and $f$ as a function. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Consider the following PASCAL program segment: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "if i mod $\\overline { { 2 \\ : = 0 } }$ then while $\\dot { \\mathsf { I } } > = 0$ do begin $\\dot { \\mathsf { I } } : = \\dot { \\mathsf { I } }$ div 2; if i mod $2 < > 0$ then $\\dot { \\mathsf { I } } : = \\dot { \\mathsf { I } } - \\mathsf { 1 }$ else ${ \\dot { \\mathsf { I } } } : = { \\dot { \\mathsf { I } } } - 2$ ; end; ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "An appropriate loop-invariant for the while-loop is gate1991 programming loop-invariants normal fill-in-the-blanks ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "The loop invariant condition at the end of the $i ^ { t h }$ iteration is: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. $n = d _ { 1 } d _ { 2 } \\dots d _ { m - i }$ $\\begin{array} { l } { { \\dots d _ { m - i } \\qquad \\mathrm { a n d } \\qquad \\mathrm { r e v } = d _ { m } d _ { m - 1 } \\dots d _ { m - i + 1 } } } \\\\ { { \\mathrm { } _ { \\mathrm { { } } } \\dots d _ { m - 1 } d _ { m } \\qquad \\mathrm { o r } \\qquad \\mathrm { r e v } = d _ { m - i } \\dots d _ { 2 } d _ { 1 } } } \\end{array}$ B. $n = d _ { m - i + 1 } \\ \\dots \\ d _ { m - 1 } d _ { m }$   \nC. $n \\neq { \\mathrm { r e v } }$   \nD. $n = d _ { 1 } d _ { 2 } \\dots d _ { m }$ or $\\mathrm { r e v } = d _ { m } \\ldots d _ { 2 } d _ { 1 }$ ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Consider the following pseudo code, where $x$ and $y$ are positive integers. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "begin ${ \\mathfrak { q } } : = 0$ ${ \\sf r } : = { \\sf x }$ while $\\boldsymbol { \\mathsf { r } } \\geq \\boldsymbol { \\mathsf { y } }$ do begin r := r - y ${ \\mathsf { q } } : = { \\mathsf { q } } + 1$ end   \nend ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "The post condition that needs to be satisfied after the program terminates is ",
+        "page_idx": 34
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { l } { \\left\\{ r = q x + y \\wedge r < y \\right\\} } \\\\ { \\left\\{ x = q y + r \\wedge r < y \\right\\} } \\\\ { \\left\\{ y = q x + r \\wedge 0 < r < y \\right\\} } \\\\ { \\left\\{ q + 1 < r - y \\wedge y > 0 \\right\\} } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "The following function computes for positive integers $X$ and $Y$ . ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "int exp (int X, int Y) { int res $^ { = 1 }$ , $\\sf { a } = \\sf X$ , $\\boldsymbol { \\mathsf { b } } = \\boldsymbol { \\mathsf { Y } }$ ; while $( \\boldsymbol { \\mathsf { b } } \\mathrel { ! } = \\boldsymbol { 0 } )$ { if $( { \\mathsf { b } } \\ { \\% } \\ 2 = = 0$ ) $\\{ \\mathsf { a } = \\mathsf { a } ^ { \\star }$ a; ${ \\mathsf { b } } = { \\mathsf { b } } / { 2 } ;$ } else {res = res \\* a; $\\mathsf { b } = \\mathsf { b } - \\mathsf { 1 } ; \\mathsf { j }$ return res; ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following conditions is TRUE before every iteration of the loop? ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "A. $X ^ { Y } = a ^ { b }$ B $( r e s * a ) ^ { Y } = ( r e s * X ) ^ { b }$ C. $X ^ { Y } = r e s * a ^ { b }$ D. $X ^ { Y } = ( r e s * a ) ^ { b }$ ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 programming loop-invariants normal ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Which of the following conditions on the variables $x , y , q$ and $r$ before the execution of the fragment will ensure that the loop terminated in a state satisfying the condition $\\scriptstyle x = = ( y * q + r ) ?$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. $( q = = r )$ 】 && $( r = = 0 )$ ) B. $( x > 0 )$ &8 $\\scriptstyle { \\ u { \\varepsilon } } \\left( r = = x \\right) \\operatorname { \\& } \\& \\left( y > 0 \\right)$ C $\\left( q = = 0 \\right) \\& \\& \\left( r = = x \\right) \\& \\& \\left( y > 0 \\right)$ D. $\\scriptstyle ( q = = 0$ ) &&(y>0) ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the following ANSI C program? ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "table",
+        "img_path": "images/2220c58944f5883200fd3e213dfc91ee01148b531eee213b1f9f22f845f3e9fd.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "ASCII encoding for relevant characters is given below ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "table",
+        "img_path": "images/e5d7f79c12c041e643273e4a8ec13de8b14a6871fa3e918c47a09d42cca4331e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "table",
+        "img_path": "images/e71f051548d7e22f0cdac027c0c226aa12c7105d3620a418b8ed10370c248494.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "table",
+        "img_path": "images/29fb78e5d13ad236a839ac329eb6c15478c08e67b9682835984f35cf73278fb9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "A. B. 122 75 83 C. D. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 programming programming-in-c output two-marks ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Consider the following program: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "table",
+        "img_path": "images/9c583610b305c254b5fdd6132a1778614a6befd49f290790059f690293ba5f29.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is CORRECT? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. The program prints $9$ as output B. The program prints as output C. The program gets stuck in an D. The program prints as output infinite loop ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "​Consider the following program: ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "table",
+        "img_path": "images/d9ad20697c2a272dd190989ca3d489dd1faa0552307b3f4e480f585109180b15.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Assume that the input to the program from the command line is  followed by a newline character. Which one of the following statements is CORRECT? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. The program will not terminate B. The program will terminate with no output C. The program will terminate with as output D. The program will terminate with as output ",
+        "page_idx": 36
+    },
+    {
+        "type": "image",
+        "img_path": "images/28d47be04ec6a8b13d1d7c4718f6119522f140a349f3360f7323a0f788c1ccb7.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The value printed by the given $\\boldsymbol { C }$ program is (Answer in integer) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "5.7.6 Output: GATE CSE 2025 Set 2 Question: 23 ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/47d10135604a751196209297f8366e2a7897f53e87bef610348a49283d25706a.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The output of the given C code segment is (Answer in integer) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 programming-in-c output numerical-answers one-mark ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program: ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/e67c34ddec6cfaf474ab488dd6c9a7b834af6e681bf2626bddcf49d87a077d95.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The output of the given C program is (Answer in integer) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gatecse202 5-set2 programming-in-c output numerical-answers two-marks ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/04c62f8609c75c7a76c8958e0825b12c360b3c241a2fc37768e1ed91ae6feb4b.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is (answer in integer) ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Note: Assume that the program compiles and runs successfully. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Show the activation records and the display structure just after the procedures called at lines marked $x$ and $y$ have started their execution. Be sure to indicate which of the two procedures named $A$ you are referring to. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Program Test; Procedure A; Procedure B; Procedure A; begin …… end A; begin y: A; end B; begin B; end A;   \nbegin x: A;   \nend Test ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gate1992 parameter-passing programming runtime-environment normal descriptive ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "In which of the following cases is it possible to obtain different results for call-by-reference and call-by-name parameter passing methods? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. Passing a constant value as a B. Passing the address of an array as parameter a parameter C. Passing an array element as a D. Passing an array parameter ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "gate1994 programming parameter-passing easy ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "5.8.3 Parameter Passing: GATE CSE 2001 Question: 2.17 UGCNET-AUG2016-III: 21 ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the print statements in the program $P 1$ assuming call by reference parameter passing? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Program P1() $\\mathsf { x } = 1 0$ ; $\\mathsf { y } = 3$ ; func1 $( { \\tt y } , { \\tt x } , { \\tt x } )$ ; print $\\mathsf { x }$ ; ",
+        "page_idx": 38
+    },
+    {
+        "type": "image",
+        "img_path": "images/66904a9fa2ec0abb156b0af29b40d9d992c63c1868d57c8e59a69ce694ee911c.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. 10,3 B. 31,3 C. 27,7 D. None of the above gatecse-2001 programming-in-c parameter-passing normal ugcnetcse-aug2016-paper3 ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "The following program fragment is written in a programming language that allows global variables and does not allow nested declarations of functions. ",
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/47f0716eb7147e6310da6478513813bfca80cf839dbf393b7f3c34dba691d861.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "If the programming language uses static scoping and call by need parameter passing mechanism, the values printed by the above program are: ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. 115,220 B. 25,220 C. 25,15 D. 115,105 gatecse-2003 compiler- design normal runtime-environment parameter-passing ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the following C program? ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "int f(int x, int \\*py, int $\\overline { { \\star \\star } } _ { \\mathsf { p p z } }$ ) int y, z; $^ { \\star \\star } \\mathsf { p p z } + = 1$ ; ${ \\pmb z } = { \\star } { \\star } _ { \\mathsf { p p z } } ;$ / corrected $z = \\sqrt { p } p z$ ; to ${ \\tt z } = { \\tt ^ { \\star \\star } } { \\tt p } { \\tt p } { \\tt z }$ ; \\*py += 2; $\\mathsf { y } = \\mathsf { \\Pi } ^ { \\ast } \\mathsf { p } \\mathsf { y }$ ; $x + = 3$ ; return $x + y + z$ ;   \nvoid main() int c, \\*b, \\*\\*a; ${ \\mathsf c } = 4$ ; $b = 8 c$ ; $a = 8 b$ ; printf(\"%d\", f(c, b, a)); ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. gatecse-2008 programming programming-in-c normal parameter-passing ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "int i=0, j=1;  \nint main() {f(&i, &j);printf(\"%d %d\\n\", i,j);return 0;",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. gatecse-2010 programming programming-in-c easy parameter-passing ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "What is the return value of $f ( p , p )$ , if the value of $p$ is initialized to before the call? Note that the first parameter is passed by reference, whereas the second parameter is passed by value. ",
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f60eb18d3b7dd55f8ceeb028ae7d77c89b8a0ce7a4083451ac4039461f7a1f8.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 compiler-design normal marks-to-all numerical-answers parameter-passing runtime-environment ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program. ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "# include <stdio.h>   \nvoid mystery (int \\*ptra, int \\*ptrb) { int \\*temp; temp $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ ptrb; ptrb $_ { \\tt = p t r a }$ ; ptra $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ temp;   \nint main () { int $\\mathsf { a } = 2 0 1 6$ , $\\scriptstyle \\mathtt { b = 0 }$ , $\\mathtt { C } = 4$ , ${ \\mathsf { d } } = 4 2$ ; mystery (&a, &b); if $( { \\mathsf { a } } < { \\mathsf { c } } )$ mystery (&c, &a); mystery (&a, &d); printf(\"%d\\n\", a); ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is gatecse-2016-set1 programming-in-c easy numerical-answers parameter-passing ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "#include<stdio.h>   \nvoid fun1(char s1, char\\* s2){ char\\* temp; $\\tan \\mathsf { p } = \\mathsf { s } 1$ ; $\\mathsf { s } \\mathsf { 1 } = \\mathsf { s } \\mathsf { 2 }$ ; $\\mathbf { \\boldsymbol { s } } \\mathbf { \\boldsymbol { 2 } } = \\mathbf  \\boldsymbol  \\$ temp;   \nvoid fun2(char\\* s1, char\\*\\* s2){ char\\* temp; temp ${ \\bf \\Pi } = { \\bf \\Pi } ^ { * } { \\bf s } 1$ ; ${ { \\bf { \\dot { \\tau } } } } _ { \\bf { S } } 1 = { { \\bf { \\dot { \\tau } } } } { \\bf { S } } 2$ ; ${ } ^ { \\star } \\mathsf { s } 2 = { } $ temp;   \nint main(){ char ${ } ^ { \\star } \\mathsf { s t r } 1 = \\mathsf { \" H i \" }$ , ${ } ^ { \\star } \\mathsf { s t r } 2 = { } ^ { \\mathsf { w } } \\mathsf { B } \\mathsf { y e } ^ { \\mathsf { w } }$ ; fun1(str1, str2); printf $\" \\text{‰}$ , str1, str2); fun2(&str1, &str2); printf $\" \\% s$ %s\", str1, str2); return 0; ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "The output of the program above is: ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. Hi Bye Bye Hi B. Hi Bye Hi Bye C. Bye Hi Hi Bye D. Bye Hi Bye Hi gatecse-2018 programming-in-c pointers parameter-passing normal programming two-marks ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Which one of the choices given below would be printed when the following program is executed? ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "#include <stdio.h>   \nvoid swap (int $^ { \\star } \\mathsf { X } ,$ int \\*y) static int \\*temp; $\\tan { \\mathsf { p } } = { \\mathsf { X } }$ ; $\\mathsf { X } = \\mathsf { y }$ ; $\\mathsf { y } =$ temp;   \nvoid printab () static int i, $\\mathtt { a } = - 3 , \\mathtt { b } = - 6$ ; $\\dot { \\mathsf { I } } = 0$ ; while $( \\mathfrak { i } < = 4 )$ ) if $( ( \\mathsf { i } + + ) \\% 2 = = 1$ ) continue; $\\mathsf { a } = \\mathsf { a } + \\mathsf { i }$ ; ${ \\mathsf { b } } = { \\mathsf { b } } + { \\mathsf { i } } ;$ ; } swap (&a, &b); printf( $\\because a = \\% d$ , $b = \\% \\mathsf { d } \\mathsf { h } ^ { \\prime \\prime }$ , a, b);   \nmain() printab(); printab(); ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. a=0,b=3 B. a=3,b=0 a=0,b=3 a=12,b=9 C. a=3,b=6 D. a=6,b=3 a=3,b=6 a= 15,b=12 gateit-2006 programming programming-in-c normal parameter-passing ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "# define swap1 (a, b) $\\tan \\rho = a$ ; $a = b$ ; ${ \\mathsf b } =$ tmp   \nvoid swap2 int a, int b) int tmp; $\\tan \\rho = \\mathsf { a }$ ; $\\mathtt { a } = \\mathtt { b }$ ; $\\mathsf { b } = \\mathsf { t m p }$ ;   \n}   \nvoid swap3 (int\\*a, int\\*b) int tmp; $\\mathrm { t m p } = { } ^ { \\star } { \\mathsf { a } }$ ; $\\mathbf { \\dot { a } } = \\mathbf { \\dot { b } }$ ; $^ { \\star } \\mathsf { b } = \\mathsf { t m p }$ ;   \nint main () int num1 $= 5$ , $\\mathsf { n u m } 2 = 4$ tmp; if (num1 $<$ num2) {swap1 (num1, num2);} if (num1 $\\prec$ num2) {swap2 (num1 $+ ~ 1$ , num2);} if (num1 $> =$ num2) {swap3 (&num1, &num2);} printf $\" \\% d$ , %d\", num1, num2); ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. B. 5,4 C. 4,5 D. gateit-2008 programming programming-in-c easy parameter-passing ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "The most appropriate matching for the following pairs ",
+        "page_idx": 42
+    },
+    {
+        "type": "table",
+        "img_path": "images/c4b8f6c2866e9f979ad6a7ee8a5641276db6322ad01b289fc9f1262935003982.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "is: ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. $\\begin{array} { c } { { X - 1 \\ Y - 3 \\ Z - 2 } } \\\\ { { X - 3 \\ Y - 2 \\ Z - 1 } } \\end{array}$ $\\begin{array} { c } { { 8 . \\ X - 2 \\ Y - 1 \\ Z - 3 } } \\\\ { { \\mathsf { D } . \\ X - 3 \\ Y - 1 \\ Z - 2 } } \\end{array}$ C.   \ngatecse-2000 programming programming-in-c easy match-the-following pointers ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Consider the following three C functions: $[ P 1 ]$ ",
+        "page_idx": 42
+    },
+    {
+        "type": "table",
+        "img_path": "images/ce8a5c421f3f318c3e1e836f0ab37bbbe508ac63bbe86cd347c044d6b14b9798.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "[P2] ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "int \\*g(void) int \\*px; \\*px = 10; return px; ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "[P3] ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "int \\*g(void) int \\*px; $\\mathsf { p } \\mathsf { x } = ( \\mathsf { i n t } ^ { \\ast } )$ malloc (sizeof(int)); $\\mathsf { ^ { * } p x } = 1 0$ ; return px; ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Which of the above three functions are likely to cause problems with pointers? ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. Only B. Only $P 1$ and $P 3$ C. Only $P 1$ and $P 2$ D. $^ { P 1 , P 2 }$ and ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 programming programming-in-c normal pointers ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Assume the following C variable declaration: int \\*A[10], B[10][10]; ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Of the following expressions: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "I. A[2] II. A[2][3] III. B[1] IV. B[2][3] ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "which will not give compile-time errors if used as left hand sides of assignment statements in a C program? ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. I, II, and IV only B. II, III, and IV only C. II and IV only D. IV only gatecse-2003 programming programming-in-c easy pointers ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Consider the C program shown below: ",
+        "page_idx": 43
+    },
+    {
+        "type": "table",
+        "img_path": "images/b816be165277be26aa66fba92e234a26cd39ee271c53d099445ddd4aae380f3e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "The output of this program is: ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. 1276 B. C. 1466 D. 766 ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 programming programming-in-c normal pointers ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "D. A function that takes an integer pointer as argument and returns a function pointer ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Consider this C code to swap two integers and these five statements: the code ",
+        "page_idx": 44
+    },
+    {
+        "type": "table",
+        "img_path": "images/82ef13860eaef1758c29cff2d88e1dfd63cc9ab6cc9c2a43cb531d6a2ebb3edc.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "S1: will generate a compilation error ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "S2: may generate a segmentation fault at runtime depending on the arguments passed ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "S3: correctly implements the swap procedure for all input pointers referring to integers stored in memory locations accessible to the process ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "S4: implements the swap procedure correctly for some but not all valid input pointers ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "S5: may add or subtract integers and pointers ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. S1 B. S2 and S3 C. S2 and S4 D. S2 and S5 ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 programming programming-in-c normal pointers ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Consider the following program in C language: ",
+        "page_idx": 44
+    },
+    {
+        "type": "table",
+        "img_path": "images/a6f37d60ef0cad1892c00416b6c30864ca7bf10178fd43bc0ec52ca2c1d0ba4d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE? ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. Compilation fails.   \nB. Execution results in a run-time error.   \nC. On execution, the value printed is more than the address of variable $_ i$ .   \nD. On execution, the value printed is more than the integer value entered. ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C code: ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "#include<stdio.h>   \nint \\*assignval (int $^ { \\star } \\mathsf { X } ,$ int val) ${ { \\bf { \\dot { \\tau } } } } _ { \\bf { X } } = { \\bf { v } } \\mathsf { a l }$ ; return x;   \nvoid main () { int ${ { \\bf { \\dot { x } } } } _ { \\bf { X } } =$ malloc(sizeof(int)); if (NULL $\\quad = = \\mathbf { X }$ ) return; $\\mathbf { \\boldsymbol { x } } =$ assignval $( \\mathsf { x } , 0 )$ ; if (x) $\\pmb { x } =$ (int \\*)malloc(sizeof(int)); if (NULL $\\scriptstyle = = { \\mathsf { X } }$ ) return; $\\pmb { x } =$ assignval $( \\mathsf { x } , 1 0 )$ ; } printf(\"%d\\n\", \\*x); free $( { \\pmb x } )$ ; ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "The code suffers from which one of the following problems: ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. compiler error as the return of  is not typecast appropriately.   \nB. compiler error because the comparison should be made as $\\scriptstyle { \\dot { \\mathbf { \\phi } } } _ { \\mathbf { \\phi } } = = { \\dot { \\mathbf { \\phi } } } _ { \\mathbf { \\phi } } { \\mathrm { , } } \\operatorname { \\bar { \\mathbf { \\phi } } } _ { \\mathbf { \\phi } } \\left( \\mathbf { \\phi } _ { \\mathbf { \\phi } } \\right)$ and not as shown.   \nC. compiles successfully but execution may result in dangling pointer.   \nD. compiles successfully but execution may result in memory leak. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program. ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "table",
+        "img_path": "images/5ec6c3b27b5940e6a22366d92b4b9254d2a740775e9e7dac62718528a05d1896.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 programming-in-c numerical-answers array pointers ",
+        "page_idx": 45
+    },
+    {
+        "type": "image",
+        "img_path": "images/cf9d1c3adc81d9590af9a31a00d366e91929d7f7df2da7af8b8f849eaab53aaf.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. 1,10,11 B. 1,10,14 C. 10,14,11 D. 10,10,14 gatecse-2022 programming programming-in-c pointers output one-mark ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "​What is the output of the following program? ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "#include <stdio.h>   \nint main()   \ndouble a[2]={20.0,25.0},\\* p,\\* q;   \n${ \\mathsf p } { = } { \\mathsf a }$ ;   \n$\\mathsf { q } = \\mathsf { p } + 1$ ;   \nprintf $\\because \\% d , \\% d ^ { \\prime \\prime }$ , (int) (q-p),( int)(\\* q- p)); return 0;} ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. 1,5 C. 8,5 D. gatecse-2024-set2 programming programming-in-c pointers two-marks ",
+        "page_idx": 46
+    },
+    {
+        "type": "table",
+        "img_path": "images/700240040e52f692f75f7296c7b52fcd7e0ddde85e229e6059abee141f143c6c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "The output of the given program is (Answer in integer) ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 programming-in-c pointers output numerical-answers easy one-mark ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Consider the following ANSI-C program. ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "table",
+        "img_path": "images/c62aaa3a67c81ee469b604fcbae1ba96a34ec43bbcead3da4367cea1103f2943.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "The output of this program is (answer in integer) ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Note: Assume that the program compiles and runs successfully. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 programming-in-c pointers output numerical-answers two-marks ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Given the programming constructs ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "i. assignment   \nii. for loops where the loop parameter cannot be changed within the loop   \niii. if-then-else   \niv. forward go to   \nv. arbitrary go to   \nvi. non-recursive procedure call   \nvii. recursive procedure/function call   \nviii. repeat loop, ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "which constructs will you not include in a programming language such that it should be possible to program the terminates (i.e., halting) function in the same programming language ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. (ii), (ii)， (iv) B. (v), (vii), (vii)C. (vi)， (vii), (vii) D. (imi)， (vii)，(vi)",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gate1999 programming normal programming-constructs ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. B. 4 C. D. .7 ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 programming programming-in-c easy ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "In the C language: ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. At most one activation record exists between the current activation record and the activation record for the main   \nB. The number of activation records between the current activation record and the activation records from the main depends on the actual function calling sequence.   \nC. The visibility of global variables depends on the actual function calling sequence   \nD. Recursion requires the activation record for the recursive function to be saved in a different stack before the recursive function can be called. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 programming programming-in-c easy descriptive ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "The C language is: ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. A context free language B. A context sensitive language C. A regular language D. Parsable fully only by a Turing machine ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 programming programming-in-c normal ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program: ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "double foo (double); /\\* Line 1 \\*/   \nint main() { double da, db; //input da db $\\mathbf { \\Sigma } = \\mathbf { \\Sigma }$ foo(da);   \ndouble foo (double a) { return a; ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "The above code compiled without any error or warning. If Line is deleted, the above code will show: ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. no compile warning or error   \nB. some compiler-warnings not leading to unintended results   \nC. some compiler-warnings due to type-mismatch eventually leading to unintended results   \nD. compiler errors ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 programming programming-in-c compiler-design easy ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Choose the correct option to fill and $\\boldsymbol { ? 2 } \\mathsf { s o }$ that the program below prints an input string in reverse order.   \nAssume that the input string is terminated by a new line character.   \nvoid reverse(void) int c; if(?1) reverse(); ?2   \nmain() printf( \"Enter text\"); printf $( \" \\boldsymbol { \\mathsf { n } } ^ { * } )$ ; reverse(); printf $( \" \\boldsymbol { \\mathsf { n } } ^ { * } )$ ;   \nA. is $( g e t c h a r ( ) ! = ^ { \\prime } \\backslash n ^ { \\prime } )$ is $\\cdot ( c )$ ；   \nB. ?1 is $( c = g e t c h a r ( ) ) ! = ^ { \\prime } \\setminus n ^ { \\prime } )$ is getchar $( c )$ ；   \nC. is $( c ! = ^ { \\prime } \\backslash n ^ { \\prime } )$ is $( c )$ ；   \nD. is $( c = g e t c h a r ( ) ) ! = ^ { \\prime } \\backslash n ^ { \\prime } )$ is $( c )$ ； ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C code segment. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "int a, b, ${ \\mathsf c } = 0$ ;   \nvoid prtFun(void);   \nmain() static int $\\mathsf { a } = 1$ ; $/ ^ { \\star }$ Line 1 \\*/ prtFun(); $\\mathsf { a } + = 1$ ; prtFun(); printf(“ \\n %d %d ”, a, b);   \nvoid prtFun(void) static int $\\mathtt { a } = 2$ ; $/ ^ { \\star }$ Line 2 \\*/ int ${ \\mathsf b } = 1$ ; $a + = + + b$ ; printf(“ \\n %d %d ”, a, b); ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "What output will be generated by the given code segment? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "3 1 4 2 4 2 3 2 A. B. 1 C. D. 4 2 6 1 2 0 52 ",
+        "page_idx": 49
+    }
+]

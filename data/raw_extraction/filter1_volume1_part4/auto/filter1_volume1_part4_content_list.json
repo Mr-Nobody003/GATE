@@ -1,0 +1,4233 @@
+[
+    {
+        "type": "text",
+        "text": "$P ( L _ { G } )$ denotes the probability of Guwahati having medium and low temperatures respectively. Similarly, we use $P ( H _ { D } )$ ， $P ( M _ { D } )$ and $P ( L _ { D } )$ for Delhi. The following table gives the conditional probabilities for Delhi’s temperature given Guwahati’s temperature. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/68fb7596e40e616af2c4726bd64ed99ae2cea0a0e8edff75c519609fb606f110.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the first row in the table above. The first entry denotes that if Guwahati has high temperature $( H _ { G } )$ then the probability of Delhi also having a high temperature (HD) is  i.e., $P ( H _ { D } \\mid H _ { G } ) = 0 . 4 0$ . Similarly, the next two entries are $P ( M _ { D } \\mid H _ { G } ) = 0 . 4 8$ and $P ( L _ { D } \\mid H _ { G } ) = 0 . 1 2 .$ . Similarly for the other rows. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If it is known that $P ( H _ { G } ) = 0 . 2$ ， $P ( M _ { G } ) = 0 . 5 \\$ , and $P ( L _ { G } ) = 0 . 3$ , then the probability (correct to two decimal places) that Guwahati has high temperature given that Delhi has high temperature is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A sender  transmits a signal, which can be one of the two kinds: $H$ and $L$ with probabilities and respectively, to a receiver . ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the graph below, the weight of edge $( u , v )$ is the probability of receiving $v$ when $u$ is transmitted, where $u , v \\in \\{ H , L \\}$ . For example, the probability that the received signal is $L$ given the transmitted signal was $H$ , is . ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2af8ded67354ac9d896715743e7d01b7ca28b203e1d19daf38e1ecb44162fd7b.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If the received signal is $H$ the probability that the transmitted signal was $H$ (rounded to decimal places) is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "There are three boxes containing white balls and black balls. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Box - contains black and white balls.   \nBox- contains black and white balls.   \nBox -  contains  black and white balls. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In a random experiment, one of these boxes is selected, where the probability of choosing Box- is $\\textstyle { \\frac { 1 } { 2 } }$ , Box-2 is $\\textstyle { \\frac { 1 } { 6 } }$ , and Box- 3 is $\\textstyle { \\frac { 1 } { 3 } }$ . A ball is drawn at random from the selected box. Given that the ball drawn is white, the probability that it is drawn from Box-  is (Round off to two decimal places) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "​Consider five random variables $U , V , W , X$ , and $Y$ whose joint distribution satisfies: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP ( U , V , W , X , Y ) = P ( U ) P ( V ) P ( W \\mid U , V ) P ( X \\mid W ) P ( Y \\mid W )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following statements is FALSE? ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $Y$ is conditionally independent of $V$ given B. $X$ is conditionally independent of $U$ given $W$ C. $U$ and $V$ are conditionally independent given $W$ D. $Y$ and $X$ are conditionally independent given ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Given the following Bayesian Network consisting of four Bernoulli random variables and the associated conditional probability tables: ",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4627b4943246765f56ebf50fe4116eaf5a7660d1da2c3dfd611eda8b49f38ec2.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/8a16406119ac30a4ac14b527e03b85fadb69a0546a05a6695b4c6a86425cfb57.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/c8fef2fb9ebc8b8877ed8fd23114e35fc6eaa81ef9f543cc56e13daa240768d5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/6bce30670b53ee2f7143944a69c0acaa61c19baaf7601c4c80ebc44a272fcef3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/5be9cfff127aee1ee5f4e1030433918404a54337364d2af815eb4c8410b4b877.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The value of $P ( U = 1 , V = 1 , W = 1 , Z = 1 ) = \\phantom { 1 }$ (rounded off to three decimal places). ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "​A random variable $X$ is said to be distributed as Bernoulli $( \\theta )$ , denoted by $X \\sim$ Bernoulli( $\\theta$ ), if ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP ( X = 1 ) = \\theta , \\quad P ( X = 0 ) = 1 - \\theta\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "f o r $0 < \\theta < 1$ . Let $Y = \\sum _ { i = 1 } ^ { 3 0 0 } X _ { i }$ , where $X _ { i } \\sim \\operatorname { B e r n o u l l i } ( \\theta ) , i = 1 , 2 , \\dotsc , 3 0 0$ be independent and identically distributed random variables with $\\theta = 0 . 2 5$ . The value of $P ( 6 0 \\leq Y \\leq 9 0 )$ , after approximation through Central Limit Theorem, is given by Recall that $\\phi ( x ) = { \\frac { 1 } { \\sqrt { 2 \\pi } } } \\int _ { - \\infty } ^ { x } e ^ { - { \\frac { t ^ { 2 } } { 2 } } } d t \\Biggr )$ ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. C. $\\phi ( 2 ) - \\phi ( - 2 )$ B. $\\phi ( 1 ) - \\phi ( - 1 )$   \n$\\phi ( { \\bf 3 } ) - \\phi ( { \\bf - 3 } )$ D. $\\phi ( 9 0 ) - \\dot { \\phi } ( 6 0 )$ ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "L e t be a matrix such that each of its elements follows $( p = 0 . 5 0 )$ distribution independently. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The probability that the row-sum of the second row and the column-sum of the third column are both equal to is (Rounded off to two decimal places) ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability bernoulli-distribution numerical-answers two-marks ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A random bit string of length n is constructed by tossing a fair coin n times and setting a bit to 0 or 1 depending on outcomes head and tail, respectively. The probability that two such randomly generated strings are not identical is: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac { 1 } { 2 ^ { n } }$ $\\mathsf { B } . \\mathrm { ~ } 1 - \\frac { \\mathrm { ~ 1 ~ } } { n }$ C. D. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 probability binomial-distribution easy ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "For each element in a set of size $2 n$ , an unbiased coin is tossed. The $2 n$ coin tosses are independent. An element is chosen if the corresponding coin toss was a head. The probability that exactly $n$ elements are chosen is ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A $\\frac { 2 n _ { \\mathbf { C } _ { n } } } { 4 ^ { n } }$ B. $\\frac { 2 n _ { \\mathrm { C } _ { n } } } { 2 ^ { n } }$ C. $\\textstyle { \\frac { 1 } { 2 n \\mathrm { C } _ { n } } }$ D. 1 ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 probability binomial-distribution normal ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An unbiased coin is tossed repeatedly until the outcome of two successive tosses is the same. Assuming that the trials are independent, the expected number of tosses is ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. 6 ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 probability binomial-distribution expectation normal ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "When a coin is tossed, the probability of getting a Head i $\\scriptstyle { \\mathsf { i } } p , 0 < p < 1$ . Let $N$ be the random variable denoting the number of tosses till the first Head appears, including the toss where the Head appears. Assuming that successive tosses are independent, the expected value of $N$ is ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$\\mathsf { B } . \\mathrm { ~ \\frac { 1 } { ( 1 - p ) } ~ }$ $\\mathsf { C . \\ } \\frac { 1 } { p ^ { 2 } }$ $\\mathsf { D } . \\mathrm { ~ \\frac { 1 } { ( 1 - p ^ { 2 } ) } ~ }$ ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 probability binomial-distribution expectation normal ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Suppose there are two coins. The first coin gives heads with probability $\\frac { 5 } { 8 }$ when tossed, while the second coin gives heads with probability $\\frac { 1 } { 4 }$ One of the two coins is picked up at random with equal probability and tossed. What is the probability of obtaining heads ? ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 7 } { 8 } } \\right)$ ${ \\mathsf { B } } . \\left( { \\frac { 1 } { 2 } } \\right)$ () ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 probability normal binomial-distribution ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key ☟ ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle \\sum _ { i = 1 } ^ { n } X _ { i } ^ { 2 }$ follows Chi-square distribution with $n$ degrees of freedom.   \nB. $\\scriptstyle \\sum _ { i = 1 } ^ { n } ( X _ { i } - { \\bar { X } } ) ^ { 2 }$ follows Chi-square distribution with $( n - 1 )$ degrees of freedom.   \nC. $X _ { 1 } { } ^ { 2 } + X _ { n } { } ^ { 2 }$ follows exponential distribution with mean .   \nD. $( { \\sqrt { n } } { \\bar { X } } ) ^ { 2 }$ follows Chi-square distribution with degrees of freedom. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 random-variable normal-distribution chi-square-distribution multiple-selects two-marks ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test (15Q) Test 2 (15Q) Test 3 (15Q) ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": ".6.1 Conditional Probability: GATE CSE 1994 Question: 1.4, ISRO2017-2 ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ and $B$ be any two arbitrary events, then, which one of the following is TRUE? ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $P ( A \\cap B ) = P ( A ) P ( B )$ B. $P ( A \\cup B ) = P ( A ) + P ( B )$   \nC. $P ( A \\mid B ) = P ( A \\cap B ) P ( B )$ D. $P ( A \\cup B ) \\leq P ( A ) + P ( B )$ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The probability of an event $B$ is $P _ { 1 }$ . The probability that events $A$ and $B$ occur together is $P _ { 2 }$ while the probability that $A$ and $\\bar { B }$ occur together is $P _ { 3 }$ . The probability of the event $A$ in terms of $P _ { 1 } , P _ { 2 }$ and $P _ { 3 }$ is ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $P ( E )$ denote the probability of the event $E$ . Given $P ( A ) = \\mathbf { 1 }$ , $P ( B ) = { \\frac { 1 } { 2 } }$ the values of $P ( A \\mid B )$ and $P ( B \\mid A )$ respectively are ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 1 } { 4 } } \\right) , \\left( { \\frac { 1 } { 2 } } \\right)$ ${ \\mathsf { B } } . \\left( { \\frac { 1 } { 2 } } \\right) , \\left( { \\frac { 1 } { 4 } } \\right)$ $\\mathsf { c . } \\left( \\frac { 1 } { 2 } \\right) , 1$ $\\mathsf { D } . \\quad 1 , \\left( \\frac { 1 } { 2 } \\right)$ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 probability easy conditional-probability ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "7.6.4 Conditional Probability: GATE CSE 2005 Question: 51 ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Box $P$ has red balls and  blue balls and box $Q$ has 3 red balls and  blue ball. A ball is selected follows: (i) select a box (ii) choose a ball from the selected box such that each ball in the box is equally likely to be chosen. The probabilities of selecting boxes $P$ and $Q$ are $\\frac 1 3$ and $\\displaystyle { \\frac { 2 } { 3 } }$ respectively. Given that a ball selected in the above process is a red ball, the probability that it came from the box ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4 5 2 19   \nB. C. 1   \n19 19 30 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 probability conditional-probability normal ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 0.24 B. 0.36 C. 0.4 D. 0.6 ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 probability normal conditional-probability ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An unbalanced dice (with  faces, numbered from to ) is thrown. The probability that the face value is is $9 0 \\%$ of the probability that the face value is even. The probability of getting any even numbered face is the same. If the probability that the face is even given that it is greater than is , which one of the following options is closest to the probability that the face value exceeds ? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 0.453 B. 0.468 C. 0.485 D. 0.492 ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 probability normal conditional-probability ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "7.6.7 Conditional Probability: GATE CSE 2011 Question: 3 ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "If two fair coins are flipped and at least one of the outcomes is known to be a head, what is the probability that both outcomes are heads? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "() ${ \\mathsf { B } } . \\left( { \\frac { 1 } { 4 } } \\right)$ $\\mathsf { C . } \\left( \\frac { 1 } { 2 } \\right)$ D. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 probability easy conditional-probability ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose a fair six-sided die is rolled once. If the value on the die i s  or  the die is rolled a second time. What is the probability that the sum total of values that turn up is at least  ? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 10 B. 5 C. 2 D. 1 21 12 ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "7.6.9 Conditional Probability: GATE CSE 2016 Set 2 Question: 05 ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose that a shop has an equal number of LED bulbs of two different types. The probability of an LED bulb lasting more than  hours given that it is of Type 1 is , and given that it is of Type 2 is . The probability that an LED bulb chosen uniformly at random lasts more than  hours is ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 probability conditional-probability normal numerical-answers ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "$P$ and $Q$ are considering to apply for a job. The probability that $P$ applies for the job is $\\frac 1 4$ ， the probability that $P$ applies for the job given that $Q$ applies for the job is $\\frac { 1 } { 2 }$ and the probability that $Q$ applies for the job given that $P$ applies for the job is $\\frac 1 3$ Then the probability that $P$ does not apply for the job given that $Q$ does not apply for this job is ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": ". $\\left( { \\frac { 4 } { 5 } } \\right)$ ${ \\mathsf { B } } . \\ \\left( { \\frac { \\mathsf { 5 } } { 6 } } \\right)$ $\\mathsf { C } . \\left( \\frac { 7 } { 8 } \\right)$ D. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A bag contains  red balls and  blue balls. Two balls are drawn randomly without replacement. Given that the first ball drawn is red, the probability (rounded off to decimal places) that both balls drawn are red is ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose an unbiased coin is tossed 6 times. Each coin toss is independent of all previous coin tosses. Let $E _ { 1 }$ be the event that among the second, fourth, and sixth coin tosses, there are at least two heads. Let $E _ { 2 }$ be the event that among the first, second, third, and fifth coin tosses, there are equal number of heads and tail ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The conditional probability $\\mathbf { P } ( E _ { 1 } \\mid E _ { 2 } )$ is equal to (rounded off to one decimal place) ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A clinic specializes in testing for a disease . The result of the test can be either positive or negative. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A study revealed that if a person suffers from the disease , the test result in that clinic comes out positive $8 0 \\%$ of the time, and negative $2 0 \\%$ of the time. If a person is not suffering from the disease , the test comes out positive $1 0 \\%$ of the time and negative $9 0 \\%$ of the time. It is also known that among the general population, the disease occurs in $3 0 \\%$ of the individuals. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "If a person tests positive for $\\mathrm { \\Delta D }$ in that clinic, the probability that he/she actually suffers from the disease is (Rounded off to two decimal places) ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability conditional-probability numerical-answers two-marks ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a certain town, the probability that it will rain in the afternoon is known to be . Moreover, meteorological data indicates that if the temperature at noon is less than or equal to $2 5 ^ { \\circ } C$ , the probability that it will rain in the afternoon is . The temperature at noon is equally likely to be above $2 5 ^ { \\circ } C$ , or at/below $2 5 ^ { \\circ } C$ . What is the probability that it will rain in the afternoon on a day when the temperature at noon is above $2 5 ^ { \\circ } C ?$ ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. B. 0.6 C. 0.8 D. 0.9 ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 probability normal conditional-probability ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose that the expectation of a random variable $X$ is . Which of the following statements is true? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. There is a sample point at which $X$ has the value .   \nB. There is a sample point at which $X$ has value greater than .   \nC. There is a sample point at which $X$ has a value greater than equal to .   \nD. None of the above. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1999 probability expectation easy ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.8.2 Expectation: GATE CSE 2004 Question: 74 ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "An examination paper has  multiple choice questions of one mark each, with each question having four choices. Each incorrect answer fetches $- 0 . 2 5$ marks. Suppose students choose all their answers randomly with uniform probability. The sum total of the expected marks obtained by all these students is ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. B. 2550 C. 7525 D. 9375 ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 probability expectation normal ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.8.3 Expectation: GATE CSE 2006 Question: 18 ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We are given a set $X = \\{ X _ { 1 } , \\ldots , X _ { n } \\}$ where $X _ { i } = 2 ^ { i }$ . A sample $S \\subseteq X$ is drawn by selecting each $X _ { i }$ independently with probability $\\begin{array} { r } { P _ { i } = \\frac { 1 } { 2 } } \\end{array}$ The expected value of the smallest number in sample $\\boldsymbol { S }$ is: ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\left( { \\frac { 1 } { n } } \\right) }$ B. 2 C. D. n ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 probability expectation normal ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.8.4 Expectation: GATE CSE 2011 Question: 18 ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "If the difference between the expectation of the square of a random variable $\\left( E \\left[ X ^ { 2 } \\right] \\right)$ and the square of the expectation of the random variable $( E \\left[ X \\right] ) ^ { 2 }$ is denoted by $R$ , then ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $R = 0$ ${ \\sf B } . { \\cal R } < 0 \\qquad \\mathrm { ~  ~ \\sf ~ \\subset ~ } { \\sf R } \\geq 0$ D. R>0 ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 probability random-variable expectation normal ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.8.5 Expectation: GATE CSE 2013 Question: 24 ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider an undirected random graph of eight vertices. The probability that there is an edge between a pair of vertices is $\\frac 1 2$ What is the expected number of unordered cycles of length three? ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$\\frac 1 8$ B. 1 C. 7 D. 8 ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 probability expectation normal ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.8.6 Expectation: GATE CSE 2014 Set 2 | Question: 2 ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Each of the nine words in the sentence $\\deg ^ { \\mathfrak { N } }$ is written on separate piece of paper. These nine pieces of paper are kept in a box. One of the pieces is drawn at random from the box. The expected length of the word drawn is (The answer should be rounded to one decimal place.) ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 probability expectation numerical-answers easy ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For any discrete random variable $X$ , with probability mass function $P ( X = j ) = p _ { j } , p _ { j } \\ge 0 , j \\in \\{ 0 , \\ldots , N \\}$ , and $\\Sigma _ { j = 0 } ^ { N } p _ { j } = 1$ , define the polynomial function $g _ { x } ( z ) = \\Sigma _ { j = 0 } ^ { N } p _ { j } z ^ { j }$ . For a certain discrete random variable $Y$ , there exists a scalar $\\beta \\in [ 0 , 1 ]$ such that $g _ { y } ( z ) = ( \\bar { 1 } - \\beta + \\beta z ) ^ { N }$ . The expectation of $Y$ is ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $N \\beta ( 1 - \\beta )$ B. $N \\beta$   \nC. $N ( 1 - \\beta )$ D. Not expressible in terms of $N$ and $\\beta$ alone ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 probability random-variable difficult expectation ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the two statements. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$S _ { 1 }$ ： There exist random variables $X$ and $Y$ such that $( \\mathbb { E } [ ( X - \\mathbb { E } ( X ) ) ( Y - \\mathbb { E } ( Y ) ) ] ) \\ ^ { 2 } > { \\mathsf { V a r } } [ X ] { \\mathsf { V a r } } [ Y ]$ S For all random variables $X$ and $Y , \\mathsf { C o v } [ X , Y ] = \\mathbb { E } \\left[ \\left| X - \\mathbb { E } [ X ] \\right| \\left| Y - \\mathbb { E } [ Y ] \\right| \\right]$ ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices is correct? ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Both $S _ { 1 }$ and $S _ { 2 }$ are true B. $S _ { 1 }$ is true, but $S _ { 2 }$ is false C. $S _ { 1 }$ is false, but $S _ { 2 }$ is true D. Both $S _ { 1 }$ and $S _ { 2 }$ are false gatecse-2021-set1 probability random-variable difficult two-marks expectation ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In an examination, a student can choose the order in which two questions (QuesA and ) must be attempted. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If the first question is answered wrong, the student gets zero marks.   \n. If the first question is answered correctly and the second question is not answered correctly, the student gets the   \nmarks only for the first question. If both the questions are answered correctly, the student gets the sum of the marks of the two questions. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The following table shows the probability of correctly answering a question and the marks of the question respectively. ",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/5827336ea5183a9aefcaddea2d31caa66d0cc0e2efc989817931ee5668e22422.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Assuming that the student always wants to maximize her expected marks in the examination, in which order should she attempt the questions and what is the expected marks for that order (assume that the questions are independent)? ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. First and then . Expected marks .   \nB. First  and then QuesA. Expected marks .   \nC. First  and then . Expected marks .   \nD. First  and then QuesB. Expected marks . ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\mathsf { L } \\mathsf { e } \\mathsf { t } X$ be a random variable which takes values in the set $\\{ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 \\}$ . Further, $\\operatorname* { P r } ( X = 1 ) = \\operatorname* { P r } ( X = 2 ) = \\operatorname* { P r } ( X = 5 ) = \\operatorname* { P r } ( X = 7 ) = { \\frac { 1 } { 6 } }$ and $\\operatorname* { P r } ( X = 3 ) = \\operatorname* { P r } ( X = 4 ) = \\operatorname* { P r } ( X = 6 ) = \\operatorname* { P r } ( X = 8 ) = { \\frac { 1 } { 1 2 } }$ ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The expected value of $X$ , denoted by $E [ X ]$ , is equal to (rounded off to two decimal places) ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 numerical-answers two-marks probability expectation ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "7.8.11 Expectation: GATE DA 2025 Question: ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Suppose $X$ and $Y$ are random variables. The conditional expectation of $X$ given $Y$ is denoted b $E [ X \\mid Y ]$ . Then $E [ E [ X \\mid Y ] ]$ equals ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $E [ X \\mid Y ]$ ${ \\mathsf { B } } . \\ { \\frac { E [ X ] } { E [ Y ] } }$ C. E[X] D. E[Y] ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability random-variable expectation one-mark ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $X = a Z + b$ , where $Z$ is a standard normal random variable, and $^ { a , b }$ are two unknown constants. It is given that ",
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE [ X ] = 1 , \\quad E [ ( X - E [ X ] ) Z ] = - 2 , \\quad E \\left[ ( X - E [ X ] ) ^ { 2 } \\right] = 4\n$$",
+        "text_format": "latex",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where $E [ X ]$ denotes the expectation of random variable $X$ . The values of $a , b$ are: ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $a = - 2 , b = 1$ $\\mathrm { ~ \\mathsf ~ { ~ B ~ } ~ } . \\mathrm { ~ } a = 2 , b = - 1 \\qquad \\mathrm { ~ \\mathsf ~ { ~ C ~ } ~ } . \\mathrm { ~ } a = - 2 , b = - 1 \\qquad \\mathrm { ~ \\mathsf ~ { ~ D ~ } ~ } . \\mathrm { ~ } a = 1 , b = 1$ ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability expectation random-variable one-mark ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A bag contains white balls and  black balls. In a random experiment, $n$ balls are drawn from the bag one at a time with replacement. Let $S _ { n }$ denote the total number of black balls drawn in the experiment. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The expectation of $S _ { 1 0 0 }$ denoted by $E \\left[ S _ { 1 0 0 } \\right] =$ (Round off to one decimal place) ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability expectation numerical-answers two-marks ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "7.8.14 Expectation: GATE DS&AI 2024 Question: 26 ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "​A fair six-sided die (with faces numbered  ) is repeatedly thrown independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen? ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 6 D. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability expectation two-marks ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Then, $E [ Y \\mid X = 1 . 5 ]$ is ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The lifetime of a component of a certain type is a random variable whose probability density function is exponentially distributed with parameter . For randomly picked component of this type, the probability that its lifetime exceeds the expected lifetime (rounded to decimal places) is ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 probability random-variable numerical-answers one-mark exponential-distribution ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.9.2 Exponential Distribution: GATE DA 2025 Question: 11 ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "It is given that $P ( X \\geq 2 ) = 0 . 2 5$ for an exponentially distributed random variable $X$ with $E [ X ] = { \\frac { 1 } { \\lambda } }$ , where $E [ X ]$ denotes the expectation of $X$ . What is the value of $\\lambda ?$ (ln denotes natural logarithm) ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. ln2 B. ln4 C. ln3 D. ln 0.25 ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability exponential-distribution expectation one-mark ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "​For $\\boldsymbol { x } \\in \\mathbb { R }$ , the floor function is denoted by $f ( x ) = \\lfloor x \\rfloor$ and defined as follows ",
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\lfloor x \\rfloor = k , \\quad k \\leq x < k + 1 ,\n$$",
+        "text_format": "latex",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "where $k$ is an integer. Let $Y = \\lfloor X \\rfloor$ , where $X$ is an exponentially distributed random variable with mean $\\frac { 1 } { \\ln 1 0 }$ where denotes natural logarithm. For any positive integer $\\ell$ , one can write the probability of the event $Y { \\equiv } \\bar { \\ell }$ as follows ",
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP ( Y = \\ell ) = q ^ { \\ell } ( 1 - q )\n$$",
+        "text_format": "latex",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The value of $q$ is ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 0.1 B. 0.01 C. 0.5 D. 0.434 ",
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ { X } ( x ) = { \\left\\{ \\begin{array} { l l } { \\lambda e ^ { - \\lambda x } , } & { x \\geq 0 } \\\\ { 0 , } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "I f $5 E ( X ) = \\operatorname { V a r } ( X )$ , where $E ( X )$ and $\\operatorname { V a r } ( X )$ indicate the expectation and variance of $X$ , respectively, the value of $\\lambda$ is (rounded off to one decimal place). ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 numerical-answers probability random-variable exponential-distribution two-marks ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ and $Y$ be two exponentially distributed and independent random variables with mean $\\alpha$ and $\\beta$ respectively. If $Z = \\mathsf { m i n } \\left( X , Y \\right)$ , then the mean of $Z$ is given by ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 1 } { \\alpha + \\beta } } \\right)$ $\\mathsf { B } . \\mathrm { \\ m i n } ( \\alpha , \\beta )$ $\\left( { \\frac { \\alpha \\beta } { \\alpha + \\beta } } \\right)$ D. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 probability exponential-distribution random-variable normal ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test + (13Q) ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $A , B$ ， and $\\boldsymbol { C }$ be independent events which occur with probabilities  and  respectively. The probability of occurrence of at least one of the event is ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1994 probability normal numerical-answers independent-events ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider two events $E _ { 1 }$ and $E _ { 2 }$ such that probability of $E _ { 1 }$ , $\\begin{array} { r } { P _ { r } [ E _ { 1 } ] = \\frac { 1 } { 2 } } \\end{array}$ , probability of $E _ { 2 }$ , $\\begin{array} { r } { P _ { r } [ E _ { 2 } ] = \\frac { 1 } { 3 } } \\end{array}$ , and probability of $E _ { 1 }$ , and $\\begin{array} { r } { E _ { 2 } , P _ { r } [ E _ { 1 } a n d E _ { 2 } ] = \\frac { 1 } { 5 } } \\end{array}$ . Which of the following statements is/are true? ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $P _ { r } [ E _ { 1 } \\mathrm { o r } E _ { 2 } ]$ is $\\textstyle { \\frac { 2 } { 3 } }$ B. Events $E _ { 1 }$ and $E _ { 2 }$ are independent C. Events $E _ { 1 }$ and $E _ { 2 }$ are not independent D $\\begin{array} { r } { { \\bf \\nabla } . { P } _ { r } [ E _ { 1 } \\mid E _ { 2 } ] = \\frac { 4 } { 5 } { \\bf \\nabla } } \\end{array}$ ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1999 probability normal independent-events ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a random experiment where two fair coins are tossed. Let $A$ be the event that denotes  on both the throws, $B$ be the event that denotes on the first throw, and $C$ be the event that denotes on the second throw. Which of the following statements is/are ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A. $A$ and $B$ are independent. B. $A$ and $C$ are independent.   \nC. $B$ and $C$ are independent. D. $\\operatorname { P r o b } ( B \\mid C ) = \\operatorname { P r o b } ( B )$ ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 probability independent-events multiple-selects two-marks ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Consider a coin-toss experiment where the probability of head showing up is $p$ . In the $i ^ { \\mathrm { t h } }$ coin toss, let $X _ { i } = 1$ if head appears, and $X _ { i } = 0$ if tail appears. Consider ",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\hat { p } } = { \\frac { 1 } { n } } \\sum _ { i = 1 } ^ { n } X _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "where $\\scriptstyle n$ is the total number of independent coin tosses. Which of the following statements is/are correct? ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A. $E [ \\hat { p } ] = p$ B. $E [ { \\hat { p } } ] = { \\frac { p } { n } }$ C. A s $\\scriptstyle n$ increases, variance of $\\hat { p }$ D. Variance of $\\hat { p }$ does not depend on decreases n ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability independent-events multiple-selects two-marks ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Three fair coins are tossed independently. $T$ is the event that two or more tosses result in heads. $\\boldsymbol { S }$ is the event that two or more tosses result in tails. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "What is the probability of the event ${ \\cal T } \\cap { \\cal S } ?$ ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A. B. 0.5 C. 0.25 D. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability independent-events one-mark ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (7Q) ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "7.11.1 Normal Distribution: GATE CSE 2008 Question: 29 ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a random variable following normal distribution with mean $+ 1$ and variance . Let $Y$ be another normal variable with mean $^ { - 1 }$ and variance unknown. If $P ( X \\leq - 1 ) = P ( Y \\geq 2 )$ the standard deviation of $Y$ is ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. $\\sqrt { 2 }$ D. gatecse-2008 random-variable normal-distribution probability normal ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a Gaussian random variable with mean 0 and variance $\\sigma ^ { 2 }$ . Let $Y = \\operatorname* { m a x } \\left( X , 0 \\right)$ where $( a , b )$ is the maximum of $a$ and $b$ . The median of $Y$ is ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Suppose a random variable $Z$ follows $( \\mu = 0 , \\sigma ^ { 2 } = 1 )$ distribution with probability density function $g ( z )$ and cumulative distribution function $G ( z )$ . Another random variable $Y$ follows $t _ { 1 }$ distribution with probability density function $h ( y )$ and cumulative distribution function $H ( y )$ . Let $c$ be the positive real number for which $g ( c ) = h ( c )$ . ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are correct? ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A. $G ( 0 ) = H ( 0 )$ ${ \\mathsf { B } } . \\ G ( c ) < H ( c )$ $\\complement . \\ G ( - c ) < H ( - c ) \\qquad \\ \\mathsf { D .       } \\ g ( 0 ) = h ( 0 )$ ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability random-variable normal-distribution multiple-selects one-mark ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "$P _ { n } ( t )$ is the probability of $n$ events occurring during a time interval $t$ . How will you express $P _ { 0 } ( t + h )$ in terms of $P _ { 0 } ( h )$ , if $P _ { 0 } ( t )$ has stationary independent increments? (Note: $P _ { t } ( t )$ is the probability density function). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive probability poisson-distribution ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Suppose $p$ is the number of cars per minute passing through a certain road junction between PM and PM, and $p$ has a Poisson distribution with mean . What is the probability of observing fewer than cars during any given minute in this interval? ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "$\\frac { 8 } { ( 2 e ^ { 3 } ) }$ ${ \\mathsf { B } } . ~ { \\frac { \\mathsf { 9 } } { ( 2 e ^ { 3 } ) } }$ $\\mathsf { C } . \\ \\frac { 1 7 } { ( 2 e ^ { 3 } ) }$ $\\frac { 2 6 } { ( 2 e ^ { 3 } ) }$ ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 probability poisson-distribution normal ",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL = \\operatorname* { l i m } _ { n \\to \\infty } \\sum _ { k = 0 } ^ { n } { \\frac { e ^ { - n } n ^ { k } } { k ! } }\n$$",
+        "text_format": "latex",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is the value of ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. 0.5 B. 1.0 C. D. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability poisson-distribution two-marks ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "In a multi-user operating system on an average, requests are made to use a particular resource per hour. The arrival of requests follows a Poisson distribution. The probability that either one, three or five requests are made in  minutes is given by ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $6 . 9 \\times 1 0 ^ { 6 } \\times e ^ { - 2 0 }$ B. $1 . 0 2 \\times 1 0 ^ { 6 } \\times e ^ { - 2 0 }$   \nC. $6 . 9 \\times 1 0 ^ { 3 } \\times e ^ { - 2 0 }$ D. $1 . 0 2 \\times 1 0 ^ { 3 } \\times e ^ { - 2 0 }$ ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 probability poisson-distribution normal ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (15Q) Test 4 (15Q) Test 5 (15Q) ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The probability that a number selected at random between  and  (both inclusive) will not contain the digit  is: ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "16 . 27 18 一 B A D. 25 25 ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1995 probability normal ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "7.13.2 Probability: GATE CSE 1995 Question: 2.14 ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A bag contains  white balls and black balls. Two balls are drawn in succession. The probability that one of them is black and the other is white is: ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\frac { 2 } { 3 } }$ B. C. $\\textstyle { \\frac { 1 } { 2 } }$ D. $\\textstyle { \\frac { 1 } { 3 } }$ ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1995 probability normal ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "7.13.3 Probability: GATE CSE 1996 Question: 1.5 ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Two dice are thrown simultaneously. The probability that at least one of them will have facing up is ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac { 1 } { 3 6 }$ B. $\\begin{array} { l } { { \\frac { 1 } { 3 } } } \\end{array}$ C. 25 D. 11   \n36 36 ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "gate1996 probability easy ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "7.13.4 Probability: GATE CSE 1996 Question: 2.7 ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The probability that top and bottom cards of a randomly shuffled deck are both aces is ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\frac { 4 } { 5 2 } } \\times { \\frac { 4 } { 5 2 } }$ B. $\\textstyle { \\frac { 4 } { 5 2 } } \\times { \\frac { 3 } { 5 2 } }$   \nC. $\\textstyle { \\frac { 4 } { 5 2 } } \\times { \\frac { 3 } { 5 1 } }$ D. $\\textstyle { \\frac { 4 } { 5 2 } } \\times { \\frac { 4 } { 5 1 } }$ ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The probability that it will rain today is . The probability that it will rain tomorrow is . The probability that it will rain either today or tomorrow is . What is the probability that it will rain today and tomorrow? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. 0.3 B. 0.25 C. 0.35 D. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gate1997 probability easy ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "7.13.6 Probability: GATE CSE 1998 Question: 1.1 ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A die is rolled three times. The probability that exactly one odd number turns up among the three outcomes is ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "6 38 12 ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gate1998 probability easy ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "7.13.7 Probability: GATE CSE 2001 Question: 2.4 ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Seven (distinct) car accidents occurred in a week. What is the probability that they all occurred on the same day? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "B. C. D. 1 1 1 77 ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 probability normal ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "7.13.8 Probability: GATE CSE 2004 Question: 25 ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "If a fair coin is tossed four times. What is the probability that two heads and two tails will result? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\frac { 3 } { 8 } }$ B. $\\textstyle { \\frac { 1 } { 2 } }$ C. $\\textstyle { \\frac { 5 } { 8 } }$ D. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 probability easy ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "7.13.9 Probability: GATE CSE 2010 Question: 26 ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Consider a company that assembles computers. The probability of a faulty assembly of any computer is $p$ . The company therefore subjects each computer to a testing process. This testing process gives the correct result for any computer with a probability of . What is the probability of a computer being declared faulty? ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A. $p q + ( 1 - p ) ( 1 - q )$ B. $( 1 - q ) p$ $\\complement . \\ ( 1 - p ) q$ D. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 probability easy ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "7.13.10 Probability: GATE CSE 2010 Question: 27 ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "What is the probability that divisor of $1 0 ^ { 9 9 }$ is a multiple of $1 0 ^ { 9 6 } ?$ ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 1 } { 6 2 5 } } \\right)$ ${ \\mathsf { B } } . ~ \\left( { \\frac { 4 } { 6 2 5 } } \\right)$ $\\mathsf { C . } \\left( \\frac { 1 2 } { 6 2 5 } \\right)$ 16   \n625 ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A deck of cards (each carrying a distinct number from to ) is shuffled thoroughly. Two cards are then removed one at a time from the deck. What is the probability that the two cards are selected with the number on the first card being one higher than the number on the second card? ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": ". C. D. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 probability normal ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Four fair six-sided dice are rolled. The probability that the sum of the results being  is $\\frac { X } { 1 2 9 6 }$ The value of $X$ is ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 probability numerical-answers normal ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The security system at an IT office is composed of  computers of which exactly four are working. check whether the system is functional, the officials inspect four of the computers picked at random (without replacement). The system is deemed functional if at least three of the four computers inspected are working. Let the probability that the system is deemed functional be denoted by $p$ · Then $1 0 0 p = .$ ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 probability numerical-answers normal ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The probability that a given positive integer lying between and  (both inclusive) is NOT divisible by , or  is ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Let $\\boldsymbol { S }$ be a sample space and two mutually exclusive events $A$ and $B$ be such that $A \\cup B = S$ . If $P ( . )$ denotes the probability of the event, the maximum value of $P ( A ) P ( B )$ is ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 probability numerical-answers normal ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Two people, $P$ and $Q$ , decide to independently roll two identical dice, each with faces, numbered to . The person with the lower number wins. In case of a tie, they roll the dice repeatedly until there is no tie. Define a trial as a throw of the dice by $P$ and $Q$ . Assume that all numbers on each dice are equi-probable and that all trials are independent. The probability (rounded to 3 decimal places) that one of them wins on the third trial is ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 probability normal numerical-answers one-mark ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A bag has $r$ red balls and $b$ black balls. All balls are identical except for their colours. In a trial, a ball is randomly drawn from the bag, its colour is noted and the ball is placed back into the bag along with another ball of the same colour. Note that the number of balls in the bag will increase by one, after the trial. A sequence of four such trials is conducted. Which one of the following choices gives the probability of drawing a red ball in the fourth trial? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "$\\frac { r } { r + b }$   \nB. $\\frac { r } { r + b + 3 }$   \nC r+3   \nD. $\\left( { \\frac { r } { r + b } } \\right) \\left( { \\frac { r + 1 } { r + b + 1 } } \\right) \\left( { \\frac { r + 2 } { r + b + 2 } } \\right) \\left( { \\frac { r + 3 } { r + b + 3 } } \\right)$ ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 probability normal two-marks ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ and $B$ be two events in a probability space with $P ( A ) = 0 . 3 , P ( B ) = 0 . 5$ , and $P ( A \\cap B ) = 0 . 1$ Which of the following statements is/are TRUE? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A. The two events $A$ and $B$ are independent   \nB. $P ( A \\cup B ) = 0 . 7$   \nC. $P ( A \\cap B ^ { c } ) = 0 . 2$ , where $B ^ { c }$ is the complement of the event $B$   \nD. $P ( A ^ { c } \\cap B ^ { c } ) = 0 . 4$ where $A ^ { c }$ and $B ^ { c }$ are the complements of the events $A$ and $B$ , respectively ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects probability one-mark ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A box contains coins:  regular coins and  fake coin. When a regular coin is tossed, the probability $P _ { \\ l }$ head $) { = } 0 . 5$ and for a fake coin, $P ( \\mathsf { h e a d } ) { = } 1$ . You pick a coin at random and toss it twice, and get two heads. The probability that the coin you have chosen is the fake coin is (rounded off to two decimal places) ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 probability numerical-answers one-mark ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "7.13.22 Probability: GATE CSE 2026 Set 1 Question: ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "An urn contains one red ball and one blue ball. At each step, a ball is picked uniformly at random from the urn, and this ball together with another ball of the same color is put back in the urn. The probability that there are equal number of red and blue balls after two steps is ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. B. 1/3 C. D. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 probability one-mark ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "7.13.23 Probability: GATE DA 2025 Question: 35 ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A random experiment consists of throwing  fair dice, each die having six faces numbered to . An event $A$ represents the set of all outcomes where at least one of the dice shows a . Then, $P ( A ) =$ ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. B. $\\mathsf { C . ~ } 1 - \\left( \\frac { 5 } { 6 } \\right) ^ { 1 0 0 } \\qquad \\mathsf { D . ~ } \\left( \\frac { 5 } { 6 } \\right) ^ { 1 0 0 }$ ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability two-marks ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Suppose that a computer program provides a non-negative and integer-valued random solution to the equation $n _ { 1 } + n _ { 2 } + n _ { 3 } + n _ { 4 } = 2 0$ . ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is the probability that all of $n _ { 1 } , n _ { 2 } , n _ { 3 } , n _ { 4 }$ in the provided solution are positive? ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. ${ \\binom { 1 9 } { 3 } } / { \\binom { 2 3 } { 3 } }$ $\\begin{array} { c } { { \\mathsf { B . ~ } \\left( \\begin{array} { c } { { 2 0 } } \\\\ { { 4 } } \\end{array} \\right) / \\left( \\begin{array} { c } { { 2 4 } } \\\\ { { 4 } } \\end{array} \\right) } } \\\\ { { \\mathsf { D . ~ } \\left( \\begin{array} { c } { { 1 9 } } \\\\ { { 4 } } \\end{array} \\right) / \\left( \\begin{array} { c } { { 2 4 } } \\\\ { { 4 } } \\end{array} \\right) } } \\end{array}$   \nC. $\\textstyle { \\binom { 2 0 } { 3 } } / \\binom { 2 3 } { 3 }$ ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability one-mark ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "7.13.25 Probability: GATE DA 2026 Question: 9 ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Let $M$ be a randomly chosen non-empty subset of $S = \\{ 1 , 2 , 3 , \\ldots , 2 0 2 6 \\}$ Which of the following is the probability that the product of all the elements of $M$ is even? ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A. $2 ^ { 1 0 1 3 }$ (21013 -1) /22026 $\\begin{array} { l } { { \\mathsf { B . ~ 2 ^ { 1 0 1 3 } } / 2 ^ { 2 0 2 6 } } } \\\\ { { \\mathsf { D . ~ 1 } / \\left( 2 ^ { 2 0 2 6 } - 1 \\right) } } \\end{array}$ C. $2 ^ { 1 0 1 3 } \\left( 2 ^ { 1 0 1 3 } - 1 \\right) / \\left( 2 ^ { 2 0 2 6 } - 1 \\right)$ ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability one-mark ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "7.13.27 Probability: GATE Data Science and Artificial Intelligence 2024 Sample Paper Question: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A fair coin is flipped twice and it is known that at least one tail is observed. The probability of getting two tails is ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $\\textstyle { \\frac { 1 } { 2 } }$ B. $\\begin{array} { l } { { \\frac { 1 } { 3 } } } \\end{array}$ C. $\\textstyle { \\frac { 2 } { 3 } }$ D. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Answer key ☟ ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "In a population of $N$ families, $5 0 \\%$ of the families have three children, $3 0 \\%$ of the families have two children and the remaining families have one child. What is the probability that a randomly picked child belongs to a family with two children? ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $\\left( { \\frac { 3 } { 2 3 } } \\right)$ ${ \\mathsf { B } } . \\ \\left( { \\frac { 6 } { 2 3 } } \\right)$ C. D. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 probability normal ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Answer key ☟ ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "7.13.29 Probability: GATE IT 2005 Question: ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A bag contains  blue marbles, green marbles and red marbles. A marble is drawn from the bag, its colour recorded and it is put back in the bag. This process is repeated  times. The probability that no two of the marbles drawn have the same colour is ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $\\left( { \\frac { 1 } { 3 6 } } \\right)$ ${ \\mathsf { B } } . \\left( { \\frac { 1 } { 6 } } \\right)$ $\\mathsf { C . } \\left( \\frac { 1 } { 4 } \\right)$ ${ \\sf D . } \\left( \\frac { 1 } { 3 } \\right)$ ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 probability normal ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "7.13.30 Probability: GATE IT 2008 Question: 2 ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A sample space has two events $A$ and $B$ such that probabilities $P ( A \\cap B ) = { \\frac { 1 } { 2 } } , P ( A ^ { \\prime } ) = { \\frac { 1 } { 3 } } , P ( B ^ { \\prime } ) = { \\frac { 1 } { 3 } }$ What is $P ( A \\cup B )$ ? ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A. $\\left( { \\frac { 1 1 } { 1 2 } } \\right)$ ${ \\sf B } . \\left( \\frac { 1 0 } { 1 2 } \\right)$ $\\mathsf { C } . \\left( \\frac { \\mathsf { 9 } } { 1 2 } \\right)$ D. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 probability easy ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "7.13.31 Probability: GATE IT 2008 Question: 23 ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "What is the probability that in a randomly chosen group of $r$ people at least three people have the same birthday? ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array} { r l } & { \\mathrm { A . ~ 1 - } \\frac { 3 6 5 - 3 6 4 . . . \\left( 3 6 5 - r + 1 \\right) } { 3 6 5 ^ { r } } } \\\\ & { \\mathrm { B . ~ } \\frac { 3 6 5 \\cdot 3 6 4 . . . \\left( 3 6 5 - r + 1 \\right) } { 3 6 5 ^ { r } } + ^ { r } C _ { 1 } \\cdot 3 6 5 \\cdot \\frac { 3 6 4 . 3 6 3 . . . \\left( 3 6 4 - \\left( r - 2 \\right) + 1 \\right) } { 3 6 4 ^ { r + 2 } } } \\\\ & { \\mathrm { C . ~ 1 - } \\frac { 3 6 5 \\cdot 3 6 4 . . . \\left( 3 6 5 - r + 1 \\right) } { 3 6 5 ^ { r } } - ^ { r } C _ { 2 } \\cdot 3 6 5 \\cdot \\frac { 3 6 4 \\cdot 3 6 3 . . . \\left( 3 6 4 - \\left( r - 2 \\right) + 1 \\right) } { 3 6 4 ^ { r - 2 } } } \\\\ & { \\mathrm { D . ~ } \\frac { 3 6 5 \\cdot 3 6 4 . . . \\left( 3 6 5 - r + 1 \\right) } { 3 6 5 ^ { r } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "7.14.1 Probability Density Function: GATE CSE 2003 Question: 60, ISRO2007-45 ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A program consists of two modules executed sequentially. Let $f _ { 1 } ( t )$ and $f _ { 2 } ( t )$ respectively denote the probability density functions of time taken to execute the two modules. The probability density function of the overall time taken to execute the program is given by ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A. $f _ { 1 } ( t ) + f _ { 2 } ( t )$ $\\begin{array} { r l } & { \\mathsf { B . ~ } \\int _ { 0 } ^ { t } f _ { 1 } ( x ) f _ { 2 } ( x ) d x } \\\\ & { \\mathsf { D . ~ } \\operatorname* { m a x } \\{ f _ { 1 } ( t ) , f _ { 2 } ( t ) \\} } \\end{array}$   \nC. $\\begin{array} { r } { \\int _ { 0 } ^ { t } f _ { 1 } ( x ) f _ { 2 } ( t - x ) d x } \\end{array}$ ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 probability normal isro2007 probability-density-function ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "7.15.1 Probability Distribution: GATE CSE 2025 Set 1 Question: 48 ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Consider a probability distribution given by the density function $P ( x )$ . ",
+        "page_idx": 20
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP ( x ) = \\left\\{ \\begin{array} { c } { { C x ^ { 2 } , \\mathrm { f o r } 1 \\leq x \\leq 4 } } \\\\ { { 0 , \\mathrm { f o r } x < 1 \\mathrm { o r } x > 4 } } \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The probability that $x$ lies between and , i.e., $P ( 2 \\leq x \\leq 3 )$ is (rounded off to three decimal places) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 probability probability-distribution numerical-answers two-marks ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test (15Q) Test 2 (15Q) Test 3 (11Q) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "7.16.1 Random Variable: GATE CSE 2005 Question: 12, ISRO2009-64 ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Let $f ( x )$ be the continuous probability density function of a random variable $x$ , the probability that $a < x \\overset { \\cdot } { \\leq } b$ , is : ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A. $f ( b - a )$ $\\begin{array} { l } { { \\mathsf { B . } } } \\\\ { { \\mathsf { \\Pi } } _ { b } ^ { b } } \\\\ { { \\mathsf { D . } } } \\end{array} \\overset { \\textstyle \\mathfrak { J } ( b ) - \\mathfrak { f } ( a ) } { \\underbrace { \\int \\substack { x f ( x ) d x } } }$   \nC. $\\displaystyle { \\mathop { J } _ { a } ^ { b } f ( x ) d x }$ ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 probability random-variable easy isro2009 ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Consider a random variable $X$ that takes values $+ 1$ and $^ { - 1 }$ with probability  each. The values of the cumulative distribution function $F ( x )$ at $x = - 1$ and $+ 1$ are ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. and B. and C. and 1 D. and ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 probability random-variable easy ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "7.16.4 Random Variable: GATE CSE 2015 Set 3 Question: 37 ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Suppose $X _ { i }$ for $i = { 1 , 2 , 3 }$ are independent and identically distributed random variables whose probability mass functions are $\\begin{array} { r } { P r [ X _ { i } = 0 ] = P r [ X _ { i } = 1 ] = \\frac { 1 } { 2 } } \\end{array}$ for $i = { 1 , 2 , 3 }$ . Define another random variable $Y = X _ { 1 } X _ { 2 } \\oplus X _ { 3 }$ , where $\\oplus$ denotes XOR. Then ${ \\bf \\bar { \\it P r } } [ \\bar { Y } = 0 \\mid X _ { 3 } = 0 ] = \\_$ ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 probability random-variable normal numerical-answers ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The probability density function $f ( x )$ of a random variable $X$ which takes real values is ",
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf ( x ) = { \\frac { 1 } { 3 { \\sqrt { 2 \\pi } } } } \\mathrm { e x p } \\left( - { \\frac { x ^ { 2 } } { 1 8 } } \\right) , \\quad x \\in ( - \\infty , + \\infty )\n$$",
+        "text_format": "latex",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is correct about the random variable $X$ ? ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. $X$ is an exponential random B. $X$ is a normal random variable variable   \nC. $X$ is a Poisson random variable D. $X$ is a uniform random variable   \ngatecse-2026-set2 probability random-variable one-mark ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "​Consider the cumulative distribution function (CDF) of a random variable $X$ ",
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ { X } ( x ) = { \\left\\{ \\begin{array} { l l } { 0 } & { x \\leq - 1 } \\\\ { { \\frac { 1 } { 4 } } ( x + 1 ) ^ { 2 } } & { - 1 \\leq x \\leq 1 } \\\\ { 1 } & { x \\geq 1 } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The value of $P \\left( X ^ { 2 } \\leq 0 . 2 5 \\right)$ is ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A. 0.625 B. 0.25 C. 0.5 D. 0.5625 ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability random-variable two-marks ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ { X } ( x ) = { \\left\\{ \\begin{array} { l l } { 0 } & { x \\leq t } \\\\ { \\displaystyle { \\frac { x - t } { 4 - t } } } & { t \\leq x \\leq 4 } \\\\ { 1 } & { x \\geq 4 } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "If the median of $X$ is 3 , then what is the value of $t$ ? ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. 0 ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability random-variable one-mark ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a discrete valued random variable with cumulative distribution function $F ( x )$ . Which of the following statements is/are correct? ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. $F ( x )$ is always a positive function. B. $F ( x )$ is a non-decreasing function.   \nC. $F ( x )$ has jump discontinuity. D. $F ( x )$ is a left continuous function. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 random-variable probability multiple-selects two-marks ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "​Consider the following statements: ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "i. The mean and variance of a Poisson random variable are equal.   \nii. For a standard normal random variable, the mean is zero and the variance is one. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following options is correct? ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A. Both and are true B. is true and  is false C. is true and is false D. Both and are false ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability random-variable one-mark ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Two fair coins are tossed independently. $X$ is a random variable that takes a value of  if both tosses are heads and otherwise. $Y$ is a random variable that takes a value of  if at least one of the tosses is heads and otherwise. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The value of the covariance of $X$ and $Y$ is (rounded off to three decimal places). ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability random-variable numerical-answers two-marks ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "For a given biased coin, the probability that the outcome of a toss is a head is . This coin is tossed times. Let $X$ denote the random variable whose value is the number of times that head appeared in these  tosses. The standard deviation of $X$ (rounded to decimal place) is ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 numerical-answers probability random-variable one-mark statistics ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Let $x$ and $y$ be random variables, not necessarily independent, that take real values in the interval . Let $z = x y$ and let the mean values of $x , y , z$ be $\\bar { x } , \\bar { y } , \\bar { z }$ , respectively. Which one of the following statements is TRUE? ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A. $\\bar { z } = \\bar { x } \\bar { y }$ $\\begin{array} { l } { { \\textsf { B . } \\bar { z } \\leq \\bar { x } \\bar { y } } } \\\\ { { \\textsf { D . } \\bar { z } \\leq \\bar { x } } } \\end{array}$   \nC. $\\bar { z } \\ge \\bar { x } \\bar { y }$ ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 probability random-variable statistics two-marks ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "For a given data set $\\{ x _ { 1 } , x _ { 2 } , . . . , x _ { n } \\}$ , where $n = 1 0 0$ , it is known that ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\frac { 1 } { 2 0 0 0 } } \\sum _ { i = 1 } ^ { n } \\sum _ { j = 1 } ^ { n } ( x _ { i } - x _ { j } ) ^ { 2 } = 9 9\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Let us denote $\\begin{array} { r } { \\overline { { \\pmb { x } } } = \\frac { 1 } { n } \\sum _ { i = 1 } ^ { n } x _ { i } } \\end{array}$ The value of $\\textstyle { \\frac { 1 } { 9 9 } } \\sum _ { i = 1 } ^ { n } ( x _ { i } - { \\bar { x } } ) ^ { 2 }$ is (Answer in integer) ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 numerical-answers two-marks statistics ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (3Q) ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Two friends agree to meet at a park with the following conditions. Each will reach the park between $4 { : } 0 0 ~ \\mathsf { p m }$ and 5:00 pm and will see if the other has already arrived. If not, they will wait for 10 minutes or the end of the hour whichever is earlier and leave. What is the probability that the two will not meet? ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "gate1998 probability normal numerical-answers uniform-distribution ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A point is randomly selected with uniform probability in the $X - Y$ plane within the rectangle with corners at $( 0 , 0 ) , ( 1 , 0 ) , ( 1 , 2 )$ and $( 0 , 2 )$ If $p$ is the length of the position vector of the point, the expected value of $p ^ { 2 }$ is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 2 } { 3 } } \\right)$ B. $\\mathsf { C . } \\left( \\frac { 4 } { 3 } \\right)$ D. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 probability uniform-distribution expectation normal ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Suppose we uniformly and randomly select a permutation from the  permutations of What is the probability that appears at an earlier position than any other even number in the selected permutation? ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "$\\left( { \\frac { 1 } { 2 } } \\right)$ () D. None of these 20！ ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 probability easy uniform-distribution ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Suppose you break a stick of unit length at a point chosen uniformly at random. Then the expected length of the shorter stick is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 probability uniform-distribution expectation numerical-answers normal ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Suppose $Y$ is distributed uniformly in the open interval $( 1 , 6 )$ . The probability that the polynomia $3 x ^ { 2 } + 6 x Y + 3 Y + 6$ has only real roots is (rounded off to decimal place) ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers engineering-mathematics probability uniform-distribution two-marks ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "For $n > 2$ , let $a \\in \\{ 0 , 1 \\} ^ { n }$ be a non-zero vector. Suppose that $x$ is chosen uniformly at random from $\\{ 0 , 1 \\} ^ { n }$ . Then, the probability that is an odd number is ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers probability uniform-distribution two-marks ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The expected length of the subinterval that contains  is (rounded off to two decimal places) ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 probability uniform-distribution numerical-answers two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a random variable that follows Uniform $( - 1 , 1 )$ distribution. The conditional distribution of the random variable $Y$ given $X = x$ is the Uniform $( x ^ { 2 } - 0 . 1 , x ^ { 2 } + 0 . 1 )$ distribution. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "The value of correlation $( X , Y )$ is (Answer in integer) ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a random variable uniformly distributed in the interval and $Y$ be a random variable uniformly distributed in the interval . If $X$ and $Y$ are independent of each other, the probability $P ( X \\geq Y )$ is (rounded off to three decimal places). ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 numerical-answers random-variable probability uniform-distribution two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (5Q) ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let , where $X$ is a normal random variable with mean $\\mu$ and variance $\\sigma ^ { 2 }$ . The variance of $Y$ is ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. 4 ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability random-variable variance two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ and $Y$ be two independent random variables. $X$ follows Bernoulli $( p = 0 . 3 )$ distribution and $Y$ follows $( \\mu = 0 , \\sigma ^ { 2 } = 1 0 0 )$ distribution. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is the variance of $( 2 X - 1 ) Y ?$ ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "A. 100 B. 90 C. 49 D. ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability random-variable normal-distribution variance two-marks ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "table",
+        "img_path": "images/78e4902a590df7541f5586fc02b0c348a4b4d9c99f4862f18e50adae2d2bc231.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "table",
+        "img_path": "images/8ccee4adfeb8f2458d84ce3e414cd898b72b07b17d865d82217eb27f6cb61371.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "table",
+        "img_path": "images/94e142ce28f757acfcaa44fe5970c5f12bdc434770be414479144e05bdac8d29.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "table",
+        "img_path": "images/473ef1899a39daa983df04bdcb8b6dcf1e6ccc3864079caf56ace710557bfcbf.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Logic: deduction and induction, Analogy, Numerical relations and reasoning ",
+        "page_idx": 27
+    },
+    {
+        "type": "table",
+        "img_path": "images/9a46a50032b65476031b2495c92f01e8e172777da80d14285d5625c983c7e0b5.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE "
+        ],
+        "table_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"General Aptitude: Analytical Aptitude\" chapter, a crucial component of your GATE Computer Science exam preparation. This section is designed to sharpen your logical reasoning, problem-solving abilities, and critical thinking skills, which are not only vital for the exam but also fundamental to a successful career in computer science. Analytical Aptitude questions typically form a significant portion of the 15 marks allocated to the General Aptitude section in GATE, often appearing as Multiple Choice Questions (MCQs), Multiple Select Questions (MSQs), or Numerical Answer Type (NAT) questions. Mastering these topics will not only boost your overall score but also enhance your ability to approach complex computational problems with a structured and logical mindset. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Age Relation ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Age relation problems involve determining the current or past/future ages of individuals based on given conditions, often expressed as ratios, sums, or differences. The core idea is to translate these verbal conditions into algebraic equations. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "1. If the current age of a person is $x$ years, then their age $\\scriptstyle n$ years ago was $( x - n )$ years. 2. If the current age of a person is $x$ years, then their age $n$ years hence (in the future) will be $( x + n )$ years. 3. If the ratio of ages of two persons A and B is $a : b$ , their ages can be represented as $a x$ and $b x$ for some constant $x$ . ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "。 The difference in ages between two people remains constant throughout their lives.   \n。 Ratios of ages change over time, but the underlying age values can be determined by setting up equations. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Confusing \"ago\" with \"hence\" when setting up equations.   \nIncorrectly applying ratios (e.g., assuming the constant $x$ in $a x : b x$ is the same for different time periods without adjustment).   \nMaking calculation errors in solving linear equations. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Assign variables $( \\mathsf { e } . \\mathsf { g } . , \\boldsymbol { x } , \\boldsymbol { y } )$ to the current ages of the individuals involved.   \n。 Formulate linear equations based on the given conditions.   \n0 Solve the system of equations. For ratio problems, use a common multiplier.   \n。 Always check if the calculated ages are logically consistent (e.g., no negative ages). ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Analogy ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Analogy questions test your ability to identify the relationship between a given pair of items (words, numbers, letters, or symbols) and then find another pair that shares the exact same relationship. The core idea is pattern recognition and logical extension. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. The \"results\" are types of relationships:   \n1. Synonym/Antonym: e.g., GOOD BAD :: HAPPY : SAD   \n2. Part-Whole: e.g., FINGER HAND :: TOE FOOT   \n3. Cause-Effect: e.g., FIRE ASH :: EVENT MEMORY   \n4. Worker-Tool: e.g., CARPENTER SAW :: WRITER PEN   \n5. Product-Raw Material: e.g., SHOE : LEATHER :: WINE : GRAPES   \n6. Quantity-Unit: e.g., LENGTH METER :: MASS KILOGRAM   \n7. Gender: e.g., LION : LIONESS :: NEPHEW NIECE   \n8. Study-Topic: e.g., BIOLOGY LIFE :: GEOLOGY EARTH   \n9. Function: e.g., KNIFE : CUT :: ERASER ERASE ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "10. Degree of Intensity: e.g., WARM HOT :: ANNOY ENRAGE ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "The relationship must be consistent and precise.   \nConsider the order of elements in the pair; it often matters.   \nRelationships can be direct or indirect, but should be the strongest possible link. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Choosing an option with a weak or secondary relationship. Overthinking and finding obscure connections.   \n。 Not considering all options before making a choice.   \nIgnoring the direction of the relationship (e.g., tool-worker vs. worker-tool). ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Clearly identify the relationship between the first pair. Express it as a sentence (e.g., \"A is a type of B,\" \"A causes B\").   \n。 Apply the exact same relationship to the options provided.   \nIf multiple options seem plausible, look for the most specific and direct relationship.   \nConsider different categories of relationships (functional, structural, categorical, etc.). ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Code Words ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Code word problems involve deciphering a hidden rule used to transform one set of words or letters into another. The core idea is to identify the pattern of transformation and apply it to a new word. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are common coding patterns: 1. Letter Shifting: Each letter is shifted by a fixed number of positions in the alphabet (e.g., A becomes C, B becomes D).   \n2. Letter Reversal: The order of letters in the word is reversed.   \n3. Substitution: Specific letters are replaced by other specific letters or symbols.   \n4. Position-based Coding: Letters are coded based on their position in the word or alphabet.   \n5. Mixed Patterns: A combination of the above, e.g., shifting and reversing. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: 0 The coding rule is consistent throughout the given examples. The rule can be simple (e.g., $+ 1$ shift) or complex (e.g., vowel-consonant specific shifts). ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Missing subtle patterns, especially when multiple rules are combined 0 Assuming a simple rule when a more complex one is in play. 。 Not considering the alphabet's cyclical nature (e.g., $Z + 1 = \\mathsf { A } _ { \\prime } ^ { \\prime }$ ). ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "。 Write down the alphabet and its numerical positions $( A { = } 1 , \\mathsf { B } { = } 2 , . . . , \\mathsf { Z } { = } 2 6 )$ .   \nCompare the original word with its coded form letter by letter.   \n。 Look for common differences in positions, reversals, or direct substitutions.   \n。 Test your identified rule with any other given examples before applying it to the question. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Coding Decoding ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Coding-decoding problems are an extension of code words, often involving numbers, symbols, or more intricate letter manipulations. The core idea remains to identify the underlying coding rule and apply it to decode a message or encode a new one. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No specific formulas, but common methods: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "1. Alphabet Position Values: Using $A = 1 , B = 2 , \\dotsc , Z = 2 6$ and performing arithmetic operations.   \n2. Opposite Letter Coding: Replacing a letter with its opposite (e.g., A with Z, B with Y).   \n3. Symbol Substitution: Each letter or digit is replaced by a unique symbol.   \n4. Matrix/Grid Coding: Letters are coded based on their position in a predefined grid.   \n5. Mixed Operations: Combining letter shifts with numerical operations or symbol substitutions. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "□ The coding scheme is logical and consistent.   \n0 Often, the same letter/number will have the same code throughout a problem. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: Overlooking multiple layers of coding (e.g., shift then reverse). 0 Miscalculating numerical positions or applying incorrect arithmetic. 。 Assuming a simple pattern when a more complex one exists. ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "。 For letter-to-number codes, always write down the alphabet with its numerical positions.   \n。 Look for common letters in different coded words to deduce their codes. Identify if the code is based on position, value, type (vowel/consonant), or a combination.   \nSystematically test hypotheses about the coding rule. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Direction Sense ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Direction sense problems involve determining the relative position and direction of a person or object after a series of movements. The core idea is to visualize or diagram the movements and apply principles of geometry. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "1. Pythagorean Theorem: For finding the shortest distance between two points when movements form a rightangled triangle. If a person moves $x$ units in one perpendicular direction and $y$ units in another, the shortest distance $d$ from the starting point is given by d=yx²+ .   \n23. Cardinal Directions: North (N), South (S), East West $( \\mathsf { W } )$ . Intermediate Directions: Northeast (NE), Northwest (NW), Southeast (SE), Southwest (SW). ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A right turn means a 90-degree clockwise rotation. A left turn means a 90-degree anti-clockwise rotation. \"Facing North\" and \"moving North\" are distinct concepts.   \nShadow problems: In the morning, shadow falls to the West. In the evening, shadow falls to the East. At noon, no shadow (or directly below). ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Confusing left/right turns, especially when facing different directions.   \n[ Misinterpreting \"from\" and \"to\" in distance calculations.   \nCalculation errors in applying the Pythagorean theorem.   \nNot distinguishing between \"distance travelled\" and \"shortest distance from start\". ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "。 Draw a clear diagram. Use a cross $\\left( + \\right)$ to represent cardinal directions.   \nStart from a central point and mark each movement.   \n。 Use coordinates $( \\mathsf { x } , \\mathsf { y } )$ to track position, where North is $+ \\mathsf { y }$ , South is -y, East is $+ x$ , West is -x.   \n。 For shortest distance, identify if a right-angled triangle is formed. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Family Relationship ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Family relationship problems require you to deduce the relationship between two individuals based on a series of statements describing their familial connections. The core idea is to construct a mental or physical family tree. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are standard family relations:   \n1. Parent: Father/Mother   \n2. Sibling: Brother/Sister   \n3. Spouse: Husband/Wife   \n4. Child: Son/Daughter   \n5. Grandparent: Father's/Mother's Father/Mother   \n6. Grandchild: Son's/Daughter's Son/Daughter   \n7. Uncle/Aunt: Parent's Brother/Sister   \n8. Nephew/Niece: Sibling's Son/Daughter   \n9. Cousin: Uncle's/Aunt's Child   \n10. In-laws: Relations by marriage (e.g., Father-in-law, Sister-in-law). ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: 0 Relationships are reciproca (e.g., if A is B's father, B is A's child). 0 Gender is crucial; do not assume gender unless explicitly stated or implied. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Confusing genders (e.g., assuming \"cousin\" implies male or female).   \nMisinterpreting complex statements with multiple \"of\"s (e.g., \"my father's only son's wife\").   \nMaking assumptions not explicitly stated in the problem.   \nOverlooking the possibility of multiple relationships for a single individual. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "。 Draw a family tree diagram. Use symbols for gender (e.g., $^ +$ for male, for female) and relationships (e.g., horizontal line for siblings, vertical line for parent-child, double horizontal line for marriage). Break down complex statements into smaller, manageable parts. ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "D Start from a definite relationship and build outwards.   \n0 Work backwards from the person whose relationship is being asked. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Inequality ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Inequality problems involve comparing quantities using relational operators like greater than $( > )$ , less than $( < )$ , greater than or equal to $( \\geq )$ , less than or equal to $( \\leq )$ , and not equal to $( \\neq )$ . The core idea is to deduce valid conclusions from a set of given inequality statements. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "1. Transitivity: If $a > b$ and $b > c$ , then $a > c$ . Similarly for $< , \\ge , \\le$ .   \n2. Addition/Subtraction: If $a > b$ , then $a + c > b + c$ and $a - c > b - c .$   \n3. Multiplication/Division by Positive: If $a > b$ and $c > 0$ , then $a c > b c$ and $\\begin{array} { r } { \\frac { a } { c } > \\frac { b } { c } } \\end{array}$   \n4. Multiplication/Division by Negative: If $a > b$ and $c < 0$ , then $a c < b c$ and $\\textstyle { \\frac { a } { c } } < { \\frac { b } { c } }$ (Note: The inequality sign reverses).   \n5. Combining Inequalities: If $a > b$ and $c > d$ , then $a + c > b + d$ . If $a > b$ and $c < d$ , no definite conclusion can be drawn about $a + c$ vs $b + d$ . ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Key 0 and 。 The direction of the inequality sign is crucial. 。 An equality sign $\\ c ( = )$ can be treated as both $\\geq$ and . 0 If there is a break in the chain of comparison (e.g., $A > B$ and $C < B )$ , direct comparison between $A$ and $C$ might not be possible without more information. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Incorrectly reversing the inequality sign when multiplying or dividing by a negative number.   \nAssuming a direct relationship between two variables when the chain of comparison is broken.   \nConfusing strict inequalities $( > , < )$ with non-strict ones $( \\geq , \\leq )$ . ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "0 Combine the given statements into a single chain of inequalities (e.g., $A > B \\ge C < D \\}$ .   \n。 Identify common elements to link different statements. For conclusions, trace the path between the two variables in question. If a consistent direction of inequality   \nexists, the conclusion is valid.   \nIf the path involves opposing inequality signs (e.g., $A > B < C )$ ), no definite conclusion can be drawn. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Logical Inference ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Logical inference involves drawing valid conclusions from a set of given premises (statements) using established rules of logic. The core idea s to determine what must be true if the premises are true, without introducing external information. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are rules of inference: ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "1. Modus Ponens: If P then Q. P. Therefore, Q. $( ( P \\to Q ) \\land P ) \\to Q$   \n2. Modus Tollens: If P then Q. Not Q. Therefore, Not P. $( ( P \\to Q ) \\land \\neg Q ) \\to \\neg P$   \n3. Hypothetical Syllogism: If P then Q. If Q then R. Therefore, If P then R. $( ( P \\to Q ) \\land ( Q \\to R ) ) \\to ( P \\to R )$   \n4. Disjunctive Syllogism: P or Q. Not P. Therefore, Q. $( ( P \\lor Q ) \\land \\neg P ) \\to \\operatorname { \\dot { Q } }$   \n5. Conjunction: P. Q. Therefore, P and Q. $( P \\land Q ) \\to { \\dot { ( } } P \\land Q { \\dot { ) } }$   \n6. Simplification: P and Q. Therefore, P. $( P \\land Q ) \\to P$ ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "。 A conclusion is logically valid if it necessarily follows from the premises, regardless of whether the premises themselves are true in reality.   \n。 Validity is about the structure of the argument, not the truth of its content. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "。 Making assumptions not explicitly stated in the premises.   \nConfusing correlation with causation.   \nCommitting logical fallacies (e.g., affirming the consequent, denying the antecedent).   \nDrawing conclusions that are merely possible, not necessary. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "。 Represent statements symbolically (e.g., P for \"It is raining,\" Q for \"The ground is wet\").   \nUse Venn diagrams for categorical propositions (All A are B, Some A are B, No A are B).   \nTest each conclusion against the premises to see if it must be true. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Eliminate options that introduce new information or are only possibly true. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Logical Reasoning ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Logical reasoning is a broad category encompassing various types of puzzles and problems that require deductive or inductive thinking to arrive at a solution. It tests your ability to analyze information, identify patterns, and draw sound conclusions. The core idea is systematic analysis and deduction. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No specific mathematical formulas. \"Results\" are principles of reasoning: 1. Deductive Reasoning: Moving from general principles to specific conclusions (guaranteed if premises are true). 2. Inductive Reasoning: Moving from specific observations to general conclusions (probabilistic). 3. Abductive Reasoning: Inferring the simplest or most likely explanation for an observation. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Consistency: The solution must not contradict any given statement.   \n。 Completeness: All conditions must be satisfied.   \n。 Uniqueness: Often, there is only one correct solution (though some problems may have multiple). ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Jumping to conclusions without considering all possibilities.   \nMisinterpreting complex statements or conditions.   \nFailing to account for all constraints.   \nGetting overwhelmed by the amount of information. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "0 Break down the problem into smaller, manageable parts. Use tables, grids, or diagrams to organize information and track deductions.   \nStart with the most definite statements or constraints. Use elimination: rule out options that contradict any condition. Test hypotheses: try a possible solution and see if it fits all conditions. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Number Relations ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Number relation problems involve identifying the underlying pattern or relationship between numbers in a given sequence, set, or pair. The core idea is to discover the rule that governs the numbers and apply it to find missing terms or solve related questions. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1. Arithmetic Progression (AP): $n$ -th term: $a _ { n } = a _ { 1 } + ( n - 1 ) d$ , where $a _ { 1 }$ is the first term and $d$ is the common difference. Sum of $n$ terms: $\\begin{array} { r } { S _ { n } = \\frac { n } { 2 } ( 2 a _ { 1 } + ( n - 1 ) d ) } \\end{array}$ or $\\begin{array} { r } { S _ { n } = \\frac { n } { 2 } ( a _ { 1 } + a _ { n } ) } \\end{array}$ . ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "2. Geometric Progression $( \\mathsf { G P } )$ : $n$ -th term: $a _ { n } = a _ { 1 } r ^ { n - 1 }$ , where $a _ { 1 }$ is the first term and $r$ is the common ratio. Sum of $n$ terms: $\\begin{array} { r } { S _ { n } = \\frac { a _ { 1 } ( r ^ { n } - 1 ) } { r - 1 } } \\end{array}$ (for $r \\neq 1 \\mathrm { { \\mathrm { i } } }$ ). ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "3. Harmonic Progression (HP): A sequence is an HP if the reciprocals of its terms form an AP. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "4. Special Number Series: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Squares: $1 , 4 , 9 , 1 6 , . . . , n ^ { 2 }$   \nCubes: $1 , 8 , 2 7 , 6 4 , . . . , n ^ { 3 }$   \nPrime Numbers: 2,3,5,7,11,.   \nFibonacci Sequence: $F _ { n } = F _ { n - 1 } + F _ { n - 2 }$ (e.g., ) ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Patterns can involve addition, subtraction, multiplication, division, squares, cubes, prime numbers, or combinations.   \n。 Sometimes patterns involve alternating operations or multiple interleaved series. Digit sums or specific properties of digits can also form patterns. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Assuming a simple AP or GP when the pattern is more complex (e.g., double difference series).   \n。 Missing alternating patterns or interleaved series.   \n0 Calculation errors, especially with larger numbers or multiple operations. Not considering all types of number properties (primes, squares, cubes). ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "。 Calculate differences between consecutive terms. If not constant, calculate differences of differences (secondorder differences).   \n。 Calculate ratios between consecutive terms.   \n。 Check for squares, cubes, or prime numbers.   \n0 Look for alternating patterns or two interleaved series. Consider operations on digits (sum of digits, product of digits). Test your identified pattern with all given terms before predicting the next. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Odd One ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: \"Odd One Out\" problems require you to identify the item (word, number, letter, or figure) that does not belong to a group, based on a shared characteristic among the others. The core idea is classification and identifying the exception. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are common classification criteria: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "1. Category: All items belong to a specific category except one (e.g., fruits, vegetables, animals).   \n2. Property: All items share a common property except one (e.g., all are prime numbers, all are even).   \n3. Function: All items serve a similar function except one (e.g., tools for cutting, modes of transport).   \n4. Structure/Pattern: All items follow a specific structural or sequential pattern except one (e.g., letter series,   \nnumber series).   \n5. Relationship: All items have a specific relationship with each other except one. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: The shared characteristic must be consistent and evident for the majority of the items. The \"odd one\" will lack this specific characteristic. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "。 Finding a superficial or weak connection for the \"odd one\" instead of a strong common property for the rest.   \n。 Not considering all possible patterns or categories.   \nOverlooking a more obvious pattern in favor of a complex one.   \nSubjectivity: sometimes multiple patterns might exist, but usually one is intended. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Analyze each item individually to identify its properties.   \n。 Look for a common theme, category, or pattern that applies to at least three (or more, if applicable) of the items.   \nThe item that does not fit this common theme is the odd one out.   \nConsider different types of relationships: semantic, numerical, alphabetical, functional. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Passage Reading ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Passage reading (or reading comprehension) problems involve reading a given text and answering questions based solely on the information provided in that passage. The core idea is to understand the main idea, identify supporting details, and draw logical inferences from the text. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are reading comprehension strategies:   \n1. Main Idea: The central theme or argument of the passage.   \n2. Supporting Details: Facts, examples, or explanations that elaborate on the main idea.   \n3. Inference: A conclusion logically derived from the text, but not explicitly stated.   \n4. Author's Tone: The author's attitude towards the subject matter (e.g., critical, objective, enthusiastic). ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "。 All answers must be directly supported by the passage.   \nAvoid bringing in outside knowledge or personal opinions.   \nDistinguish between what is explicitly stated and what can be logically inferred. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Misinterpreting details or the main idea.   \n。 Making assumptions not supported by the text.   \nFalling for distractors that are partially true or true in general but not in the context of the passage. Time pressure leading to superficial reading. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "。 Read the questions first: This helps you know what to look for while reading the passage.   \n。 Skim the passage for the main idea: Read the first and last sentences of each paragraph.   \n。 Read the passage carefully: Pay attention to keywords, transition words, and specific details.   \n。 Locate answers: For specific detail questions, find the relevant sentence(s) in the passage.   \n。 Infer carefully: For inference questions, ensure your conclusion is a necessary consequence of the text.   \n。 Eliminate options: Rule out options that are clearly incorrect, not mentioned, or contradict the passage. ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Round Table Arrangement ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Round table arrangement problems involve arranging people or objects around a circular table or in a circular formation based on given conditions. The core idea is to understand relative positioning in a circle and apply principles of circular permutations. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Circular Permutations (Distinct items): For $n$ distinct items arranged in a circle, the number of arrangements is $( n - 1 ) !$ . This is because in a circle, the starting point is arbitrary, so we fix one person's position and arrange the remaining $( n - 1 )$ people linearly.   \n2. Circular Permutations (Symmetric items): If clockwise and anti-clockwise arrangements are considered the same (e.g., arranging beads in a necklace), the number of arrangements is $\\frac { ( n - 1 ) ! } { 2 }$ ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "In a circular arrangement, \"left\" and \"right\" are relative to the person's facing direction.   \n\"Opposite\" means directly across the table.   \nFixing one person's position eliminates rotational symmetry and converts the problem into a linear arrangement for the remaining people. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Confusing left/right turns in a circular setup.   \nMisinterpreting \"between\" (e.g., \"A is between B and C\" means B-A-C or C-A-B).   \nNot fixing a reference point, leading to overcounting arrangements.   \nAssuming a specific number of seats when not explicitly stated. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "。 Draw a circle and mark the number of seats.   \nAlways start by fixing one person's position (e.g., at the \"top\" of the circle) to establish a reference.   \n。 Place individuals with definite positions or relationships first (e.g., \"A is opposite B\").   \n0 Use symbols or abbreviations for people.   \n。 Deduce relative positions step-by-step, eliminating possibilities.   \n。 For \"left\" and \"right\", imagine yourself sitting in that person's position. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Seating Arrangement ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Seating arrangement problems involve arranging people or objects in a linear row, multiple rows, or other geometric shapes (excluding circles, which are covered separately) based on given conditions. The core idea is to deduce the exact positions by satisfying all constraints. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1. Linear Permutations: For $n$ distinct items arranged in a line, the number of arrangements is .   \n2. Adjacent Items: If certain items must sit together, treat them as a single block and arrange the block and other items, then arrange items within the block.   \nKey Properties and Identities: In a linear arrangement, \"left\" and \"right\" are absolute (from the perspective of an observer facing the arrangement). If people are facing each other in two rows, their left/right directions will be opposite. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Misinterpreting \"immediate left/right\" versus \"left/right\" (which can mean anywhere to the left/right).   \nConfusing \"between\" (e.g., \"A is between B and C\" means B-A-C, not necessarily immediately).   \nIncorrectly handling \"facing each other\" in multi-row arrangements.   \nNot considering all possible scenarios before finalizing an arrangement. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Draw a diagram representing the seating arrangement (e.g., a line for a single row, two parallel lines for two rows).   \nStart with definite information (e.g., \"A is at one end\").   \n。 Place individuals with clear relationships first (e.g., \"B is immediately to the left of C\").   \n。 Use symbols or abbreviations.   \n。 For complex conditions, create multiple possible scenarios and eliminate those that contradict other statements 。 Pay close attention to words like \"only,\" \"not,\" \"exactly,\" which impose strict constraints. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Sequence Series ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Sequence and series problems involve identifying the pattern in a given set of numbers or letters arranged in a specific order and then finding the missing term, the next term, or a specific term in the sequence. The core idea is to discover the rule that generates the sequence. ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Arithmetic Progression (AP): $n$ -th term: $a _ { n } = a _ { 1 } + ( n - 1 ) d$ Sum of $n$ terms: $\\begin{array} { r } { S _ { n } = \\frac { n } { 2 } ( 2 a _ { 1 } + ( n - 1 ) d ) } \\end{array}$ or $\\begin{array} { r } { S _ { n } = \\frac { n } { 2 } ( a _ { 1 } + a _ { n } ) } \\end{array}$ ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "2. Geometric Progression $( \\mathsf { G P } )$ : $n$ -th term: $a _ { n } = a _ { 1 } r ^ { n - 1 }$ Sum of $n$ terms: $\\begin{array} { r } { S _ { n } = \\frac { a _ { 1 } ( r ^ { n } - 1 ) } { r - 1 } } \\end{array}$ (for $r \\neq 1 \\mathrm { { \\mathrm { i } } }$ ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "3. Harmonic Progression (HP): A sequence whose reciprocals form an AP. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "4. Fibonacci Sequence: $F _ { n } = F _ { n - 1 } + F _ { n - 2 }$ (starting with $F _ { 0 } = 0 , F _ { 1 } = 1 \\rangle$ ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Other Common Patterns: Squares: $1 , 4 , 9 , 1 6 , \\ldots$ Cubes: 1,8,27,64, Prime numbers: Double difference series (differences between terms form an AP/GP). Alternating series (two patterns interleaved). Series based on operations on digits (sum of digits, product of digits). ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Patterns can involve arithmetic operations, powers, roots, prime numbers, or combinations.   \nLetter series often use alphabetical positions $\\scriptstyle \\mathsf { A } = 1$ , $\\scriptstyle { \\mathsf { B } } = 2$ , etc.) and apply numerical patterns.   \nSometimes the pattern is a combination of two or more simple patterns. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Assuming a simple pattern $( \\mathsf { A P / G P } )$ when a more complex one (e.g., double difference, alternating) is present. Calculation errors, especially with larger numbers or multiple steps.   \n。 Not considering all possible types of numerical relationships (powers, primes, etc.).   \n。 In letter series, forgetting the cyclical nature of the alphabet (Z to A). ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "。 Calculate the differences between consecutive terms. If not constant, calculate the differences of these differences.   \n。 Calculate the ratios between consecutive terms.   \n。 Check if terms are squares, cubes, or related to prime numbers.   \n。 Look for alternating patterns or two interleaved series.   \n。 For letter series, convert letters to their numerical positions and look for numerical patterns.   \n。 Test your identified pattern with all given terms to ensure consistency. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Statements Follow ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: \"Statements Follow\" problems (often syllogisms) present a set of statements (premises) and ask you to determine which of the given conclusions logically and necessarily follow from these statements. The core idea is to deduce conclusions strictly based on the provided information, without using external knowledge. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results: No mathematical formulas. \"Results\" are principles of syllogistic reasoning: 1. Categorical Propositions: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "All A are B (Universal Affirmative) No A are B (Universal Negative) Some A are B (Particular Affirmative) Some A are not B (Particular Negative) ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "2. Rules for Validity: A conclusion is valid if it necessarily follows from the premises. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "3. Venn Diagrams: A visual tool to represent categorical propositions and test the validity of conclusio ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "The truth of the premises is assumed for the purpose of testing validity. □ A conclusion is valid if it is impossible for the premises to be true and the conclusion false. 0 \"Some\" implies \"at least one\" and does not exclude \"all.\" ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "。 Making assumptions based on real-world knowledge that are not stated in the premises.   \n0 Confusing \"some\" with \"all\" or \"most.   \n。 Drawing conclusions that are merely possible, not necessary.   \n。 Misinterpreting the negation of a statement (e.g., the negation of \"All A are B\" is \"Some A are not B,\" not \"No A are B\"). ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts: ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "。 Use Venn Diagrams: Draw overlapping circles for each category mentioned in the statements. Shade or mark regions to represent the information. ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Combine Statements: Look for a common term between two statements to link them. 。 Test Each Conclusion: Check if the conclusion S necessarily true based on your diagram or combined statements. I f there's any possibility for the conclusion to be false while premises are true, it's invalid. Avoid External Knowledge: Stick strictly to the information given in the statements. 。 Focus on Necessity: The conclusion must necessarily follow, not just possibly. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Age Relation: 。 Age $n$ years ago: $x - n$ 。 Age  years hence: $x + n$ 。 Age difference is constant. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Direction Sense: Shortest distance (Pythagorean): $d = { \\sqrt { x ^ { 2 } + y ^ { 2 } } }$ Right turn $= 9 0 ^ { \\circ }$ clockwise; Left turn $= 9 0 ^ { \\circ }$ anti-clockwise. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Inequality: Transitivity: $a > b , b > c \\implies a > c$ Multiply/Divide by negative: Reverse inequality sign $( a > b , c < 0 \\implies a c < b c )$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Logical Inference: Modus Ponens: $( ( P \\to Q ) \\land P ) \\to Q$ Modus Tollens: $( ( P \\to Q ) \\land \\neg Q ) \\to \\neg P$ Hypothetical Syllogism: $( ( P \\to Q ) \\land ( Q \\to R ) ) \\to ( P \\to R )$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Number Relations & Sequence Series: AP: $\\begin{array} { r } { a _ { n } = a _ { 1 } + ( n - 1 ) d , S _ { n } = \\frac { n } { 2 } ( 2 a _ { 1 } + ( n - 1 ) d ) } \\end{array}$ GP: $a _ { n } = a _ { 1 } r ^ { n - 1 }$ $\\begin{array} { r } { S _ { n } = \\frac { a _ { 1 } ( r ^ { n } - 1 ) } { r - 1 } } \\end{array}$ HP: Reciprocals form an AP. Fibonacci: $F _ { n } = F _ { n - 1 } + F _ { n - 2 }$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Round Table Arrangement: 。 $n$ distinct items: $( n - 1 ) !$ arrangements Symmetric items (e.g., necklace): $\\frac { ( n - 1 ) ! } { 2 }$ arrangements ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Seating Arrangement: 。 $\\scriptstyle n$ distinct items in a line: $n !$ arrangements Treat adjacent items as a block for permutation calculations. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "General (Analogy, Coding, Odd One, Family, Passage, Statements Follow): Focus on pattern recognition, logical deduction, and strict adherence to given information. 。 Use diagrams (family tree, Venn diagrams, direction maps) to visualize and organize information. Avoid external assumptions. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1. Read Carefully and Comprehensively: Many errors in Analytical Aptitude stem from misreading the question or statements. Pay close attention to keywords like \"only,\" \"all,\" \"some,\" \"not,\" \"immediate,\" \"opposite,\" and \"between.\" ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "2. Visualize and Diagram: For topics like Direction Sense, Family Relationship, Seating Arrangement, Round Ta Arrangement, and Statements Follow, drawing clear diagrams (maps, family trees, tables, Venn diagrams) is invaluable. It helps organize information and prevents errors. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "3. Break Down Complex Problems: Don't get overwhelmed by lengthy problem descriptions. Break them into smaller, manageable statements. Address definite information first, then deduce relative positions or conditions. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "4. Avoid External Assumptions: In logical reasoning and inference problems, stick strictly to the information provided in the statements. Do not bring in real-world knowledge or personal opinions unless explicitly required (e.g., general knowledge analogies). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "5. Practice Pattern Recognition: For Number Relations, Sequence Series, Coding-Decoding, and Analogy, consistent practice helps you quickly identify common patterns (AP, GP, squares, cubes, prime numbers, letter shifts, types of relationships). ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "6. Time Management: Analytical Aptitude questions can be time-consuming. If a problem seems overly complex or you're stuck, mark it and move on. Return to it if time permits. Sometimes, eliminating options can be faster than finding the direct answer. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "7. Check Your Work: Before finalizing an answer, quickly cross-verify your solution against all given conditions. This is especially crucial for arrangement problems where a single misplaced person can invalidate the entire setup. ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "8. Understand Negations: Be clear about what constitutes a negation of a statement. For instance, the negation of \"All A are B\" is \"Some A are not B,\" not \"No A are B.\" This is vital for logical inference and statements follow ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "questions. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Hari(H), Gita $( G )$ , Irfan(I) and Saira(S) are siblings (i.e., brothers and sisters). All were born on $1 ^ { \\mathrm { s t } }$ January. The age difference between any two successive siblings (that is born one after another) is less than three years. Given the following facts: ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "i. Hari's age $+$ Gita's age $>$ Irfan's age $+$ Saira's age   \nii. The age difference between Gita and Saira is one year. However Gita is not the oldest and Saira is not the youngest.   \niii. There are no twins. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "In what order they were born (oldest first)? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. HSIG B. SGHI C. IGSH D. IHSG gatecse-2010 analytical-aptitude logical-reasoning normal age-relation ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "8.1.2 Age Relation: GATE2013 CE: GA-10 ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Abhishek is elder to Savar. Savar is younger to Anshul. Which of the given conclusions is logically valid and s inferred from the above statements? ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. Abhishek is elder to Anshul B. Anshul is elder to Abhishek C. Abhishek and Anshul are of the D. No conclusion follows same age ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "gate2013-ce logical-reasoning age-relation easy ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Water :  : Food : Choose the $\\mathrm { \\bf P }$ and $\\mathbf { Q }$ combination from the options below to form a meaningful analogy. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "A. $\\mathbf { P } =$ Thirst; $\\mathbf { Q } =$ Hunger B. $\\mathbf { P } =$ Drink; $\\mathbf { Q } =$ Hunger C. $\\mathbf { P } =$ Thirst; $\\mathbf { Q } =$ Satiated D. $\\mathbf { P } =$ Wet; $\\mathbf { Q } =$ Critic ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 analytical-aptitude analogy two-marks ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (5Q) ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "If IMAGE and FIELD are coded as FHBNJ and EMFJG respectively then, which one among the given options is the most appropriate code for BEACH? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. CEADP B. IDBFC C. JGIBC D. IBCEC ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 analytical-aptitude coding-decoding two-marks ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (14Q) ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "8.5.1 Direction Sense: GATE CSE 2015 Set 2 GA Question: 7 ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Four branches of a company are located at and is north of  at a distance of ${ \\bf 4 k m ; P }$ is south of  at a distance of $2 \\mathrm { k m }$ is southeast of  by $1 \\mathrm { k m }$ . What is the distance between and $\\mathbf { P }$ in ? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. 5.34 B. 6.74 C. 28.5 D. 45.49 ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 analytical-aptitude normal direction-sense ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "8.5.2 Direction Sense: GATE CSE 2017 Set 2 GA Question: 3 ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "There are five buildings called $V$ , , $X$ , $Y$ and $Z$ in a row (not necessarily in that order). $V$ is to the West of $W$ . $Z$ is to the East of $X$ and the West of $V$ . is to the West of $Y$ . Which is the building in the middle? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 analytical-aptitude direction-sense normal ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "8.5.3 Direction Sense: GATE CSE 2019 GA Question: 10 ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Three of the five students are allocated to a hostel put in special requests to the warden, Given the floor plan of the vacant rooms, select the allocation plan that will accommodate all their requests. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Request by X: Due to pollen allergy, want to avoid a wing next to the garden.   \nRequest by Y: I want to live as far from the washrooms as possible, since am very much sensitive to smell. Request by Z: believe in Vaastu and so want to stay in South-West wing.   \nThe shaded rooms are already occupied. WR is washroom ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/7eeede26895e4e5026e6c86ef3d3f33f3fa70108a3dff91d345e7148cdbe67e4.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/5770ca42c419276728f5e33a51fded7cf43da2066a93dcd31329185939077ac1.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "B. ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/ac52ef068440c4ba07dff8cde66d994ecb4ac5cd92a761218ddfca801d1253df.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "According to the map shown in the figure, which one of the following statements is correct? Note: The figure shown is representative. ",
+        "page_idx": 38
+    },
+    {
+        "type": "image",
+        "img_path": "images/99f4aff571b06878e0615652ae6733e29f28d82a9d11039d9d989ad99dcc2c19.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "A. The library is located to the northwest of the canteen.   \nB. The hospital is located to the east of the chemistry lab.   \nC. The chemistry lab is to the southeast of physics lab.   \nD. The classrooms and canteen are next to each other. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Consider the relationships among Q,R,S and  : ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "is the brother of .   \nis the daughter of .   \nis the sister of .   \nis the mother of . ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "The following statements are made based on the relationships given above. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "1. is the grandmother of .   \n2. is the uncle of and .   \n3. has only one son.   \n4. Q has only one daughter. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct? ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. Both (1) and  are true. B. Both and are true. C. Only  is true. D. Only  is true. gatecse2025-set1 analytical-aptitude logical-reasoning family-relationship one-mark ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "8.7.1 Logical Inference: GATE CSE 2025 Set 2 GA Question: 6 ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "​Based only on the conversation below, identify the logically correct inference:   \n\"Even if I had known that you were in the hospital, would not have gone there to see you\", Ramya told Josephine. A. Ramya knew that Josephine was in the hospital.   \nB. Ramya did not know that Josephine was in the hospital.   \nC. Ramya and Josephine were once close friends; but now, they are not.   \nD. Josephine was in the hospital due to an injury to her leg. ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 analytical-aptitude logical-inference two-marks ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "I $\\mathbf { 1 3 7 + 2 7 6 = 4 3 5 }$ how much is 731 + 672? ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "A. 534 B. 1403 C. 1623 D. 1513 ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 analytical-aptitude normal logical-reasoning ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "C. $P$ -Home, $Q$ -Power, $T$ -Defense, $\\boldsymbol { S }$ -Telecom, $U$ -Finance D. $Q$ -Home, $U$ -Power, $T$ -Defense, $R$ -Telecom, $P$ -Finance ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "There are three boxes. One contains apples, another contains oranges and the last one contains both apples and oranges. All three are known to be incorrectly labeled. If you are permitted to open just one box and then pull out and inspect only one fruit, which box would you open to determine the contents of all three boxe ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. The box labeled ‘Apples’ B. The box labeled ‘Apples and Oranges’ C. The box labeled ‘Oranges’ D. Cannot be determined ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 analytical-aptitude normal tricky logical-reasoning ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "8.8.4 Logical Reasoning: GATE CSE 2021 Set 2 GA Question: 10 ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Six students , with distinct heights, compare their heights and make the following observations. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": ":  is taller than . Observation : $\\mathbf { Q }$ is the shortest of all. Observation :  is taller than only one student. Observation IV: is taller than but is not the tallest ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "The number of students that are taller than $\\mathbf { R }$ is the same as the number of students shorter than ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 analytical-aptitude logical-reasoning two-marks ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A survey for a certain year found that $9 0 \\%$ of pregnant women received medical care at least once before giving birth. Of these women, $6 0 \\%$ received medical care from doctors, while $4 0 \\%$ received medical care from other healthcare providers. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Given this information, which one of the following statements can be inferred with certainty? ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A. More than half of the pregnant women received medical care at least once from a doctor.   \nB. Less than half of the pregnant women received medical care at least once from a doctor.   \nC. More than half of the pregnant women received medical care at most once from a doctor.   \nD. Less than half of the pregnant women received medical care at most once from a doctor. ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 analytical-aptitude logical-reasoning one-mark ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Combinatorics deals with problems involving counting. For example, \"How many distinct arrangements of distinct objects in spaces on a circle are possible?\" is a typical problem in combinatorics. This kind of counting is sometimes used in the modeling of several physical phenomena. Often, in such models, the different combinatorial possibilities are assigned probability values. Assigning probabilities enables the computation of the average values of physical quantities. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements: ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "P ： Combinatorics is always invoked in the modeling of physical phenomena.   \nModeling some physical phenomena involves assigning probabilities to combinatorial possibilities in order to compute average values of physical quantities. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Based on the passage above, what can be inferred about statements P and Q? ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. P is False and Q is False B. P is False and Q is True C. P is True and Q is False D. P is True and Q is True gatecse-2026-set1 analytical-aptitude logical-reasoning combinatory two-marks ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "In the  summer Olympics' Javelin throw finals, Neeraj Chopra exhibited a spectacular performance to win the gold medal. The silver medal was won by Jakub Vadlejch and the bronze medal was won by Vitezlav Vesely. There were six rounds of throws with each athlete having one throw per round. The best of all the throws o each athlete is considered for the medal. Following were the observations about the throws: ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "i. The first and second rounds were dominated by Neeraj Chopra with a gold medal performance in his second throw, while the other two athletes did not have any medal winning throws in these rounds.   \nii. The throws in the last round by both Jakub Vadlejch and Vitezlav Vesely were fouls and were not considered for scoring.   \niii. After four rounds, Vitezlav Vesely was in the second position and could not improve upon his best throw in the succeeding rounds.   \niv. In the fourth round, the throw by Jakub Vadlejch was the best in that round. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "In which round did Vitezlav Vesely have his best throw? ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. Third B. Fourth C. Fifth D. Sixth ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 analytical-aptitude logical-reasoning two-marks ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "8.8.9 Logical Reasoning: GATE CSE 2026 Set 2 GA Question: 5 ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "'When it is raining, peacocks dance. ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Based only on this sentence, which one of the following options is necessarily true? ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A. Peacocks dance only when it is raining.   \nB. When peacocks dance, it is raining.   \nC. When peacocks are not dancing, it is not raining.   \nD. When it is not raining, peacocks do not dance. ",
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/7177a025e7eb2f5cc3e2f4cecdeeeb0debe6e0ef1fb0ae1767c11553e3651218.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. (i) B. (ii) C. (ii) D. (iv) ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "The figure in Panel  below is a grid of cells with four rows and four columns. The numbers on the top and on the left represent the number of cells that are to be shaded in that column and row, respectively. Which one of the options shown in Panel  below represents the grid shaded correctly? ",
+        "page_idx": 42
+    },
+    {
+        "type": "image",
+        "img_path": "images/0f73dff792261aaa529d67d7351b9f32820816e6e0c675e5f9694f92f13c588a.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "A. (i) B. (ii) C. (ii) D. (iv) ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 analytical-aptitude two-marks logical-reasoning ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Rishi and Swathi are students of Class . Pavan and Tanvi are students of Class . Rishi and Pavan are boys. Swathi and Tanvi are girls. The four students played a total of three games of chess. The games were played one after another. A player who lost a game did not participate in any more games. It was observed tha ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "I. the first game was the only game where two students of the same class played against each other, II. the students of Class won more games than the students of Class , and III. the boys won two games and the girls won one game. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "The student who did not lose any game is ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. Pavan B. Rishi C. Swathi D. Tanvi ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 analytical-aptitude logical-reasoning two-marks ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "8.8.14 Logical Reasoning: GATE2011 GG: GA-8 ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Three sisters $( R , S ,$ and $T$ received a total of  toys during Christmas. The toys were initially divided among them in a certain proportion. Subsequently, $R$ gave some toys to $\\boldsymbol { S }$ which doubled the share of $\\boldsymbol { S }$ . Then $\\boldsymbol { S }$ in turn gave some of her toys to $T$ , which doubled $T ^ { \\prime } { \\mathsf { s } }$ share. Next, some of ${ T ^ { \\prime } } { \\mathsf { s } }$ toys were given to $R$ , which doubled the number of toys that $R$ currently had. As a result of all such exchanges, the three sisters were left with equal number o toys. How many toys did $R$ have originally? ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. B. 9 C. D. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gate2011-gg logical-reasoning analytical-aptitude ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "8.8.15 Logical Reasoning: GATE2011 MN: GA-63 ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "$L , M$ and $N$ are waiting in a queue meant for children to enter the zoo. There are 5 children between $L$ and $M$ , and children between $M$ and $N$ . If there are children ahead of $N$ and children behind $L$ , then what is the minimum number of children in the queue? ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 41 D. 40 ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "analytical-aptitude gate2011-mn logical-reasoning ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "8.8.16 Logical Reasoning: GATE2012 AR: GA-8 ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Ravi is taller than Arun but shorter than Iqbal. Sam is shorter than Ravi. Mohan is shorter than Arun. Balu is taller than Mohan and Sam. The tallest person can be ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "A. Mohan B. Ravi C. Balu D. Arun ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "gate2012-ar logical-reasoning ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Anuj, Bhola, Chandan, Dilip, Eswar and Faisal live on different floors in a six-storeyed building (the ground floor is numbered , the floor above it , and so on) Anuj lives on an even-numbered floor, Bhola does not live on an odd numbered floor. Chandan does not live on any of the floors below Faisal's floor. Dilip does not live on floor number . Eswar does not live on a floor immediately above or immediately below Bhola. Faisal lives three floors above Dilip. Which of the following floor-person combinations is correct? ",
+        "page_idx": 44
+    },
+    {
+        "type": "table",
+        "img_path": "images/47d819a61d6d6b7c465c2c88aa94e994a1d409a2134fd6a0f5cf007068247e85.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "In the $4 \\times 4$ array shown below, each cell of the first three rows has either a cross $( X )$ or a number. ",
+        "page_idx": 44
+    },
+    {
+        "type": "image",
+        "img_path": "images/3aa21ff1bbfcc7474341fb7c33f8baaa79ab2d18cf1ccf694e9d36a83db9f7f3.jpg",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "The number in a cell represents the count of the immediate neighboring cells (left, right, top, bottom, diagonals) NOT having a cross $X$ ). Given that the last row has no crosses $( X )$ , the sum of the four numbers to be filled in the last row is ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "A. B. 10 C. D. 9 ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 analytical-aptitude number-relations two-marks ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "8.10 ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test 1 (6Q) ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "In a recently conducted national entrance test, boys constituted $6 5 \\%$ of those who appeared for the test.   \nGirls constituted the remaining candidates and they accounted for $6 0 \\%$ of the qualified candidates. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the correct logical inference based on the information provided in the above passage? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. Equal number of boys and girls qualified   \nB. Equal number of boys and girls appeared for the test   \nC. The number of boys who appeared for the test is less than the number of girls who appeared   \nD. The number of boys who qualified the test is less than the number of girls who qualified ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 analytical-aptitude logical-reasoning passage-reading two-marks ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "8.11.2 Passage Reading: GATE CSE 2023 GA Question: 6 ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "The country of Zombieland is in distress since more than $7 5 \\%$ of its working population is suffering from serious health issues. Studies conducted by competent health experts concluded that a complete lack of physical exercise among its working population was one of the leading causes of their health issues. As one of the measures to address the problem, the Government of Zombieland has decided to provide monetary incentives to those who ride bicycles to work. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Based only on the information provided above, which one of the following statements can be logically inferred with certainty? ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. All the working population of Zombieland will henceforth ride bicycles to work.   \nB. Riding bicycles will ensure that all of the working population of Zombieland is free of health issues.   \nC. The health experts suggested to the Government of Zombieland to declare riding bicycles as mandatory.   \nD. The Government of Zombieland believes that riding bicycles is a form of physical exercise. ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Test: Test (9Q) ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": ".12.1 Round Table Arrangement: GATE CSE 2017 Set 1 GA Question: ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Six people are seated around a circular table. There are at least two men and two women. There are at least three right-handed persons. Every woman has a left-handed person to her immediate right. None of the women are right-handed. The number of women at the table is ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. Cannot be determined ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 analytical-aptitude round-table-arrangement ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "A. Rahul and Murali B. Srinivas and Arul C. Srinvas and Murali D. Srinivas and Rahul ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 analytical-aptitude logical-reasoning seating-arrangement ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (1Q) ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "If $P = 3$ , $R = 2 7$ , $T = 2 4 3$ , then $Q + S =$ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. 90 D. 110 ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 analytical-aptitude logical-reasoning sequence-series two-marks ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "8.14.2 Sequence Series: GATE CSE 2024 Set 2 GA Question: 5 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "​In the sequence $6 , 9 , 1 4 , x$ ,30, 41, a possible value of $x$ is ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 analytical-aptitude sequence-series one-mark ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "8.14.3 Sequence Series: GATE2010 MN: GA-7 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Given the sequence $A , B , B , C , C , C , D , D , D , D , \\ldots$ etc that is one $A$ two $B ^ { \\prime } s$ three $C ^ { \\prime } s$ four $D _ { s }$ five $E ^ { \\prime } s$ and so on, the letter in the sequence will be ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. B. C. D. W ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "general-aptitude logical-reasoning gate2010-mn sequence-series ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "✍ Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (7Q) ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "8.15.1 Statements Follow: GATE CSE 2016 Set 1 GA Question: 08 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements relating to the level of poker play of four players . ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "I. $P$ always beats $Q$ II. $R$ always beats $\\boldsymbol { S }$ III. $\\boldsymbol { S }$ loses to $P$ only sometimes. IV. $R$ always loses to $Q$ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Which of the following can be logically inferred from the above statements? ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "i. $P$ is likely to beat all the three other players ii. $\\boldsymbol { S }$ is the absolute worst player in the set ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A. (i). only B. (ii) only C. (i) and (ii) only' D. neither (i) nor (ii) ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "8.15.2 Statements Follow: GATE CSE 2016 Set 2 GA Question: 08 ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "All hill-stations have a lake. Ooty has two lakes. Which of the statement(s) below is/are logically valid and can be inferred from the above sentences? ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "i. Ooty is not a hill-station.   \nii. No hill-station can have more than one lake. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. (i) only. B. (ii) only. C. Both (i) and (ii) D. Neither (i) nor (ii) ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 analytical-aptitude easy statements-follow ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Given below are two statements and , and two conclusions  and ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Statement All bacteria are microorganisms.   \nStatement 2: All pathogens are microorganisms.   \nConclusion I: Some pathogens are bacteria.   \nConclusion All pathogens are not bacteria. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Based on the above statements and conclusions, which one of the following options is logically ? ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. Only conclusion is correct B. Only conclusion  is correct C. Either conclusion or  is correct D. Neither conclusion nor is correct ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Given below are four statements. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Statement $1 : \\mathsf { A l l }$ students are inquisitive.   \nStatement Some students are inquisitive.   \nStatement No student is inquisitive.   \nStatement 4 Some students are not inquisitive. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "From the given four statements, find the two statements that  simultaneously, assuming that there is at least one student in the class. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. Statement and Statement B. Statement 1 and Statement 2 1 C. Statement and Statement D. Statement 3 and Statement gatecse-2022 analytical-aptitude logical-reasoning statements-follow one-mark ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "8.15.5 Statements Follow: GATE DS&AI 2024 GA Question: 6 ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Thousands of years ago, some people began dairy farming. This coincided with a number of mutations in a particular gene that resulted in these people developing the ability to digest dairy milk. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Based on the given passage, which of the following can be inferred? ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "A. All human beings can digest dairy milk.   \nB. No human being can digest dairy milk.   \nC. Digestion of dairy milk is essential for human beings.   \nD. In human beings, digestion of dairy milk resulted from a mutated gene. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Answer key☟ ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Some scientists are professors ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Which of the given conclusions is logically valid and is inferred from the above arguments? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. All scientists are researchers B. All professors are scientists C. Some researchers are scientists D. No conclusion follows ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "gate2013-ae analytical-aptitude logical-reasoning statements-follow ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "In a group of four children, Som is younger to Riaz. Shiv is elder to Ansu. Ansu is youngest in the group. Which of the following statements is/are required to find the eldest child in the group? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Statements ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "1. Shiv is younger to Riaz.   \n2. Shiv is elder to Som. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "A. Statement by itself determines the eldest child.   \nB. Statement by itself determines the eldest child.   \nC. Statements 1 and  are both required to determine the eldest child.   \nD. Statements and are not sufficient to determine the eldest child. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "table",
+        "img_path": "images/9222f33203a6e3522467fecf414e6ccc609a4b0d9c8851cef94111eda9a1a7b3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Syllabus: Numerical computation, Numerical estimation, Numerical reasoning and data interpretation ",
+        "page_idx": 49
+    },
+    {
+        "type": "table",
+        "img_path": "images/3a12e4a84597162424e0a434a529d4a1e924fbffc78aab3a27ca3f0d0289a322.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE "
+        ],
+        "table_footnote": [],
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the Quantitative Aptitude section of your GATE Computer Science preparation! This chapter is designed to equip you with the essential mathematical and logical reasoning skills crucial for success in the General Aptitude section of the GATE exam. Quantitative Aptitude tests your ability to solve numerical problems, interpret data, and apply fundamental mathematical concepts efficiently and accurately. Typically, this section carries a significant weightage, often contributing 8-10 marks out of the total 15 marks for General Aptitude, with questions ranging from direct formula application to complex problem-solving and data interpretation. Mastering these topics is not just about scoring in aptitude; also sharpens your analytical thinking, which is invaluable for the core Computer Science subjects. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Absolute Value ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "The absolute value of a real number $x$ , denoted $| x |$ , is its non-negative value regardless of its sign. It represents the distance of $x$ from zero on the number line. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Definition: $| x | = x$ if $x \\ge 0$ , and $| x | = - x$ if $x < 0$ . Properties:   \n1. $| x | \\geq 0$   \n2. $| - x | = | x |$   \n3. $| x y | = | x | | y |$   \n4. $| x / y | = | x | / | y |$ (for $y \\neq 0$ )   \n5. Triangle Inequality: $| x + y | \\leq | x | + | y |$ ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Solving Equations/Inequalities: ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "$| x | = a \\implies x = a$ or $x = - a$ (for $a \\geq 0$ ) 2. $| x | < a \\implies - a < x < a$ (for $a > 0$ ) 3. $| x | > a \\implies x < - a \\mathrm { o r } x > a$ (for $a \\geq 0$ ) ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Pitfall: Forgetting to consider both positive and negative cases when removing the absolute value sig Technique: Isolate the absolute value term, then apply the appropriate definition or rule. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Age Relation ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Age relation problems involve finding the current or future/past ages of individuals based on given conditions, usually forming linear equations. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Core Idea: Translate word problems into algebraic equations involving variables for ages.   \nTechnique: Assign variables (e.g., $x$ for current age), form equations based on the relationships (e.g., \"A is twice as old as $\\mathsf { B } \" \\implies A = 2 B )$ , and solve the system of equations.   \nPitfall: Misinterpreting phrases like $\" \\times$ years ago\" or $\" \\times$ years hence\". ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Algebra ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Algebra deals with symbols and rules for manipulating these symbols. It involves basic operations, factorization, and algebraic identities. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Identities: ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "1. $( a + b ) ^ { 2 } = a ^ { 2 } + 2 a b + b ^ { 2 }$   \n2. $( a - b ) ^ { 2 } = a ^ { 2 } - 2 a b + b ^ { 2 }$   \n3. $a ^ { 2 } - b ^ { 2 } = ( a - b ) ( a + b )$   \n4. $( a + b ) ^ { 3 } = a ^ { 3 } + b ^ { 3 } + 3 a b ( a + b )$ ",
+        "page_idx": 49
+    }
+]
