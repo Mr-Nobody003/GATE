@@ -51,6 +51,138 @@
     {
       "chapter": "Contributors",
       "content": "This page lists the top contributors to the platform, categorized by the number of answers provided and tasks completed."
+    },
+    {
+      "chapter": "Discrete Mathematics: Combinatory",
+      "content": "### Topic-wise Key Concepts: Balls In Bins\n\n**Definition and Core Idea:** The \"Balls In Bins\" paradigm is a versatile model for various counting problems. It involves distributing a certain number of \"balls\" (items) into a certain number of \"bins\" (containers or categories), considering whether the balls are identical or distinct, and whether the bins are identical or distinct, and if bins can be empty or must contain at least one ball.\n\n### Important Formulas, Theorems, and Results:\n\n1. **Distinct Balls into Distinct Bins:**\n   - Any number of balls per bin: Total ways: $n^k$.\n   - At most one ball per bin (injective mapping): Total ways: $n(n-1)...(n-k+1) = P(n, k)$ if $n \\ge k$, and $0$ otherwise.\n\n2. **Identical Balls into Distinct Bins:**\n   - Any number of balls per bin (stars and bars): Total ways: $\\binom{n+k-1}{k}$ (or $\\binom{n+k-1}{n-1}$).\n   - At least one ball per bin (stars and bars with pre-allocation): Total ways: $\\binom{k-1}{n-1}$ if $k \\ge n$, and $0$ otherwise.\n\n3. **Distinct Balls into Identical Bins:**\n   - Any number of balls per bin: Total ways: $\\sum_{j=1}^n S(k, j)$.\n   - At least one ball per bin: Total ways: $S(k, n)$. (Stirling numbers of the second kind)\n\n4. **Identical Balls into Identical Bins:**\n   - Any number of balls per bin: $P(k, n)$, the number of partitions of $k$ into at most $n$ parts.\n   - At least one ball per bin: $P(k, n)$, the number of partitions of $k$ into exactly $n$ parts."
+    },
+    {
+      "chapter": "Combinatorics",
+      "content": "### Confusing Identical vs. Distinct\nAlways identify if the items being distributed and the containers are distinguishable or not.\n\n### Empty vs. Non-empty Bins\nPay close attention to whether bins are allowed to be empty or if they must contain at least one item. This changes the formula significantly.\n\n### Overlapping Cases\nEnsure that cases are mutually exclusive and exhaustive when breaking down a problem.\n\n### Standard Problem-Solving Techniques or Shortcuts\n- **Mapping to Stars and Bars:** Many problems can be rephrased as distributing identical items into distinct bins. For example, finding the number of non-negative integer solutions to an equation.\n- **Inclusion-Exclusion Principle:** For problems where \"at least one\" condition is difficult to apply directly, use inclusion-exclusion to subtract cases where bins are empty.\n- **Complementary Counting:** Sometimes it's easier to count the total ways and subtract the \"unwanted\" ways.\n\n### Important Formulas, Theorems, and Results\n1. **Permutations (Order Matters):**\n   - Permutations of $n$ distinct items taken $k$ at a time: $P(n, k) = \\frac{n!}{(n-k)!}$.\n   - Permutations with Repetition: For $n$ items where there are $n_1$ identical items of type 1, $n_2$ of type 2, ..., $n_k$ of type $k$, and $\\sum n_i = n$. Total ways: $\\frac{n!}{n_1! n_2! \\dots n_k!}$.\n   - Circular Permutations: For $n$ distinct items arranged in a circle, total ways: $(n-1)!$. If arrangements are symmetric (e.g., beads on a necklace), divide by 2: $\\frac{(n-1)!}{2}$.\n2. **Combinations (Order Does Not Matter):**\n   - Combinations of $n$ distinct items taken $k$ at a time: $C(n, k) = \\binom{n}{k} = \\frac{n!}{k!(n-k)!}$.\n   - Combinations with Repetition (multiset combinations): Selecting $k$ items from $n$ types with repetition allowed. Total ways: $\\binom{n+k-1}{k}$. This is equivalent to the \"identical balls into distinct bins\" problem.\n3. **Binomial Theorem:** $(x+y)^n = \\sum_{k=0}^n \\binom{n}{k} x^{n-k} y^k$.\n4. **Multinomial Theorem:** $(x_1 + x_2 + \\dots + x_m)^n = \\sum_{k_1+k_2+\\dots+k_m=n} \\frac{n!}{k_1! k_2! \\dots k_m!} x_1^{k_1} x_2^{k_2} \\dots x_m^{k_m}$.\n\n### Key Properties and Identities\n- **Symmetry Identity:** $\\binom{n}{k} = \\binom{n}{n-k}$.\n- **Pascal's Identity:** $\\binom{n}{k} + \\binom{n}{k-1} = \\binom{n+1}{k}$.\n- **Sum of Binomial Coefficients:** $\\sum_{k=0}^n \\binom{n}{k} = 2^n$.\n- **Hockey-stick Identity:** $\\sum_{i=r}^n \\binom{i}{r} = \\binom{n+1}{r+1}$.\n\n### Common Pitfalls or Tricky Points\n- **Overcounting/Undercounting:** Ensure each valid arrangement/selection is counted exactly once. This often happens when dealing with symmetry or identical items.\n- **\"At Least\" / \"At Most\" Conditions:** These often require complementary counting or casework.\n- **Distinguishing Permutations vs. Combinations:** If the order of selection or arrangement matters, it's a permutation. If not, it's a combination."
+    },
+    {
+      "chapter": "Counting",
+      "content": "Standard Problem-Solving Techniques:\n- Principle of Multiplication: If a task can be broken into $n$ independent steps, and step $i$ can be performed in $k_i$ ways, then the total number of ways is $\\prod_{i=1}^n k_i$.\n- Principle of Addition: If a task can be performed in one of $n$ mutually exclusive ways, and way $i$ can be performed in $k_i$ ways, then the total number of ways is $\\sum_{i=1}^n k_i$.\n- Complementary Counting: Count the total number of ways and subtract the number of \"unwanted\" ways.\n- Casework: Break down a complex problem into simpler, mutually exclusive cases and sum the results.\n\nImportant Formulas:\n1. Principle of Inclusion-Exclusion (PIE):\n- For two sets: $|A_1 \\cup A_2| = |A_1| + |A_2| - |A_1 \\cap A_2|$.\n- For three sets: $|A_1 \\cup A_2 \\cup A_3| = |A_1| + |A_2| + |A_3| - (|A_1 \\cap A_2| + |A_1 \\cap A_3| + |A_2 \\cap A_3|) + |A_1 \\cap A_2 \\cap A_3|$.\n- General form for $n$ sets: $\\left| \\bigcup_{i=1}^n A_i \\right| = \\sum_{i} |A_i| - \\sum_{i < j} |A_i \\cap A_j| + \\sum_{i < j < k} |A_i \\cap A_j \\cap A_k| - \\dots + (-1)^{n-1} |A_1 \\cap \\dots \\cap A_n|$.\n2. Derangements: The number of derangements of $n$ objects, denoted $D_n$ or $!n$:\n- $D_n = n! \\sum_{k=0}^n \\frac{(-1)^k}{k!}$.\n- For large $n$, $D_n \\approx \\frac{n!}{e}$."
+    },
+    {
+      "chapter": "Generating Functions",
+      "content": "Definition and Core Idea: A generating function is a formal power series where the coefficients represent the terms of a sequence. It provides a powerful algebraic tool for solving recurrence relations, counting problems, and proving combinatorial identities by converting sequence operations into algebraic manipulations.\n\nImportant Formulas:\n1. Definition: For a sequence $(a_n)$, its ordinary generating function (OGF) is $A(x) = \\sum_{n=0}^{\\infty} a_n x^n$."
+    },
+    {
+      "chapter": "Generating Functions",
+      "content": "Constant sequence : $a_n = 1$. \nArithmetic progression : $a_n = n$. \nBinomial coefficients for fixed $k$ : $a_n = \\binom{n}{k}$. \nCombinations with repetition for fixed $k$ : $a_n = \\binom{n+k-1}{k}$. \nSequence : $a_n = r^n$. \nSequence : $a_n = n r^n$. \n3. Operations on Generating Functions: \nAddition: If $A(x) = \\sum a_n x^n$ and $B(x) = \\sum b_n x^n$, then $A(x) + B(x) = \\sum (a_n + b_n) x^n$. \nMultiplication (Convolution): If $A(x) = \\sum a_n x^n$ and $B(x) = \\sum b_n x^n$, then $A(x)B(x) = \\sum c_n x^n$, where $c_n = \\sum_{k=0}^n a_k b_{n-k}$. This is crucial for counting combinations of independent choices. \nDifferentiation: $A'(x) = \\sum_{n=1}^\\infty n a_n x^{n-1}$. So, $x A'(x) = \\sum n a_n x^n$. \nIntegration: $\\int_0^x A(t) dt = \\sum_{n=0}^\\infty \\frac{a_n}{n+1} x^{n+1}$. \nShift: $x^k A(x)$ (shifts coefficients to the right). $\\frac{A(x) - a_0 - a_1 x - \\dots - a_{k-1} x^{k-1}}{x^k}$ (shifts coefficients to the left). \nKey Properties and Identities: \nThe coefficient of $x^n$ in a generating function is $a_n$, denoted $[x^n]A(x)$. \nGenerating functions are particularly useful for problems involving sums, combinations with repetition, and solving linear recurrence relations. \nCommon Pitfalls or Tricky Points: \nForming the Correct GF: Carefully translate the problem's constraints (e.g., minimum/maximum number of items, distinct/identical items) into the terms of the generating function. \nExtracting Coefficients: This often requires partial fraction decomposition for rational functions or using generalized binomial theorem. \nConfusion with Exponential Generating Functions (EGFs): EGFs are used for permutations, while OGFs are for combinations. GATE typically focuses on OGFs. \nStandard Problem-Solving Techniques or Shortcuts: \nSolving Recurrence Relations: \n1. Write the recurrence relation. \n2. Multiply by $x^n$ and sum over all valid $n$. \n3. Manipulate the sums to relate them to the generating function $A(x)$. \n4. Solve for $A(x)$ as a rational function. \n5. Use partial fraction decomposition and known series expansions to find the coefficient of $x^n$. \nCounting Combinations: Represent each type of item or choice as a factor in the generating function. The coefficient of $x^n$ in the product of these factors gives the number of ways to choose $n$ items. \nModular Arithmetic \nDefinition and Core Idea: Modular arithmetic is a system of arithmetic for integers, where numbers \"wrap around\" when they reach a certain value\u2014the modulus. It's fundamental in cryptography, number theory, and hashing, and is used in GATE for problems involving remainders, large powers, and divisibility. \nImportant Formulas, Theorems, and Results: \n1. Congruence Relation: $a \\equiv b \\pmod{n}$ if $n$ divides $a-b$, or equivalently, $a$ and $b$ have the same remainder when divided by $n$. \n2. Basic Properties: \nIf $a \\equiv b \\pmod{n}$ and $c \\equiv d \\pmod{n}$, then: \n$a+c \\equiv b+d \\pmod{n}$, $a-c \\equiv b-d \\pmod{n}$, $ac \\equiv bd \\pmod{n}$."
+    },
+    {
+      "chapter": "Pigeonhole Principle",
+      "content": "1. Basic Pigeonhole Principle: If $m$ pigeons are placed into $n$ pigeonholes, and $m > n$, then at least one pigeonhole contains more than one pigeon.\n2. Generalized Pigeonhole Principle: If $m$ pigeons are placed into $n$ pigeonholes, then at least one pigeonhole must contain at least $\\lceil m/n \\rceil$ pigeons.\n\nKey Properties:\n- PHP is an existence principle.\n- Used for proofs where a certain condition must hold true.\n\nCommon Pitfalls:\n- Identifying Pigeons and Pigeonholes correctly is the most crucial step.\n- Applying Generalized PHP correctly.\n- Differentiating between \"At Least\" and \"Exactly\"."
+    },
+    {
+      "chapter": "Recurrence Relation",
+      "content": "Definition: An equation that defines a sequence where each term is a function of preceding terms.\n\n1. Linear Homogeneous Recurrence Relations with Constant Coefficients:\nCharacteristic Equation: $r^2 + c_1r + c_2 = 0$ (for second order).\nDistinct Roots: If $r_1, r_2$ are distinct roots, the general solution is $a_n = A_1r_1^n + A_2r_2^n$.\nRepeated Roots: If a root $r$ has multiplicity $k$, its contribution is $(A_0 + A_1n + \\dots + A_{k-1}n^{k-1})r^n$.\n\n2. Linear Non-Homogeneous Recurrence Relations:\nGeneral solution: $a_n = a_n^{(h)} + a_n^{(p)}$, where $a_n^{(h)}$ is the homogeneous solution and $a_n^{(p)}$ is a particular solution.\nFinding $a_n^{(p)}$: Guess a form for $a_n^{(p)}$ based on $f(n)$. If $f(n)$ is a polynomial of degree $k$, guess a polynomial of degree $k$. If $f(n)$ is a root of the characteristic equation with multiplicity $k$, multiply by $n^k$."
+    },
+    {
+      "chapter": "Harmonic Series and Summation",
+      "content": "5. Harmonic Series: $$H_n = \\sum_{i=1}^{n} \\frac{1}{i} \\approx \\ln n + \\gamma$$, where $\\gamma$ (Euler-Mascheroni constant).\n6. Telescoping Sums: A sum where intermediate terms cancel out.\nKey Properties and Identities:\nLinearity: $$\\sum (a_i + b_i) = \\sum a_i + \\sum b_i$$.\nChanging the limits of summation requires careful adjustment of the terms.\nCommon Pitfalls or Tricky Points:\nOff-by-One Errors: Incorrectly determining the number of terms in a series (e.g., summing from $i=1$ to $n$ vs. $i=0$ to $n$).\nIncorrectly Identifying Series Type: Make sure it's truly arithmetic, geometric, or another standard type before applying formulas.\nConvergence of Infinite Series: For infinite geometric series, ensure $|r| < 1$.\nStandard Problem-Solving Techniques or Shortcuts:\nDirect Formula Application: For standard series (arithmetic, geometric, sums of powers), memorize and apply the formulas.\nTelescoping: Look for terms that can be expressed as differences, leading to cancellation.\nSplitting Sums: Break a complex sum into multiple simpler sums using linearity.\nChanging Index: Adjust the summation index to match standard formulas (e.g., starting from 0 or 1).\nIntegral Approximation: For sums that don't have a closed form, integrals can provide good upper and lower bounds (e.g., for harmonic series)."
+    },
+    {
+      "chapter": "Combinatorics",
+      "content": "Quick Formula Reference\nPermutations: $P(n, k) = \\frac{n!}{(n-k)!}$\nPermutations with Repetition: $n^k$\nCircular Permutations: $(n-1)!$\nCombinations: $C(n, k) = \\binom{n}{k} = \\frac{n!}{k!(n-k)!}$\nCombinations with Repetition: $\\binom{n+k-1}{k}$\nSymmetry: $\\binom{n}{k} = \\binom{n}{n-k}$\nPascal's Identity: $\\binom{n}{k} + \\binom{n}{k-1} = \\binom{n+1}{k}$\nSum: $\\sum_{k=0}^{n} \\binom{n}{k} = 2^n$\nBalls In Bins:\nDistinct Balls, Distinct Bins (any per bin): $n^k$\nDistinct Balls, Distinct Bins (at most one per bin): $P(n, k)$\nIdentical Balls, Distinct Bins (any per bin): $\\binom{n+k-1}{k}$\nIdentical Balls, Distinct Bins (at least one per bin): $\\binom{k-1}{n-1}$\nDistinct Balls, Identical Bins (at least one per bin): $S(k, n)$ (Stirling numbers of 2nd kind)\nPrinciple of Inclusion-Exclusion (PIE)\nDerangements: $D_n = n! \\sum_{k=0}^{n} \\frac{(-1)^k}{k!}$\nGenerating Functions"
+    },
+    {
+      "chapter": "Modular Arithmetic",
+      "content": "Fermat's Little Theorem (p prime, $a^p \\equiv a \\pmod p$): $a^{p-1} \\equiv 1 \\pmod p$\nEuler's Theorem ($\\gcd(a, n)=1$): $a^{\\phi(n)} \\equiv 1 \\pmod n$\nEuler's Totient Function: $\\phi(n) = n \\prod_{p|n} (1 - 1/p)$\nPigeonhole Principle:\nBasic: If $n$ pigeons in $m$ holes and $n > m$, at least one hole has >1 pigeon.\nGeneralized: At least one hole has $\\lceil n/m \\rceil$ pigeons."
+    },
+    {
+      "chapter": "Recurrence Relations",
+      "content": "Homogeneous Linear: Solve characteristic equation $r^k - c_1r^{k-1} - \\dots - c_k = 0$.\nMaster Theorem: For $T(n) = aT(n/b) + f(n)$. Compare $f(n)$ with $n^{\\log_b a}$."
+    },
+    {
+      "chapter": "Summation Formulas",
+      "content": "Arithmetic Series: $\\sum_{i=1}^n i = \\frac{n(n+1)}{2}$\nGeometric Series: $\\sum_{i=0}^n ar^i = \\frac{a(r^{n+1}-1)}{r-1}$\nInfinite Geometric Series ($|r|<1$): $\\sum_{i=0}^\\infty ar^i = \\frac{a}{1-r}$\nSum of Squares: $\\sum_{i=1}^n i^2 = \\frac{n(n+1)(2n+1)}{6}$\nSum of Cubes: $\\sum_{i=1}^n i^3 = \\left(\\frac{n(n+1)}{2}\\right)^2$"
+    },
+    {
+      "chapter": "Discrete Mathematics: Graph Theory",
+      "content": "Important Formulas, Theorems, and Results:\n\n1. Number of simple labeled graphs with $n$ vertices:\n$$2^{\\binom{n}{2}}$$\nThis is because for each pair of vertices, there can either be an edge or not.\n\n2. Number of simple directed labeled graphs with $n$ vertices:\n$$2^{n(n-1)}$$\nFor each ordered pair of distinct vertices $(u, v)$, there can be an edge from $u$ to $v$, or not.\n\n3. Number of spanning trees in a complete graph $K_n$ (Cayley's Formula):\n$$n^{n-2}$$\nThis formula is critical for counting trees on a given set of labeled vertices.\n\n4. Number of spanning trees in a general graph (Matrix Tree Theorem): This theorem uses the Laplacian matrix of a graph, but its direct application is usually beyond GATE scope; Cayley's formula is more common.\n\n5. Number of paths of length $k$ between two vertices in an adjacency matrix: The $(i, j)$-th entry of $A^k$ (where $A$ is the adjacency matrix) gives the number of paths of length $k$ from vertex $i$ to vertex $j$.\n\nKey Properties and Identities:\nUnderstanding the difference between labeled and unlabeled graphs is crucial. GATE questions usually imply labeled graphs unless specified.\nBasic combinatorial identities like $\\binom{n}{k} = \\binom{n}{n-k}$ and $\\binom{n}{k} = \\binom{n-1}{k} + \\binom{n-1}{k-1}$ are fundamental.\nThe Inclusion-Exclusion Principle can be used for more complex counting problems, especially when dealing with properties that overlap."
+    },
+    {
+      "chapter": "Graph Theory",
+      "content": "### Degree of Graph\nThe degree of a vertex $v$, denoted $\\deg(v)$ or $d(v)$, is the number of edges incident to it. For directed graphs, we distinguish between in-degree and out-degree.\n\n**Important Results:**\n1. **Handshaking Lemma (Undirected):** $\\sum_{v \\in V} d(v) = 2|E|$\n2. **Directed Graphs:** $\\sum d_{in}(v) = \\sum d_{out}(v) = |E|$\n3. **Odd-degree vertices:** In any undirected graph, the number of vertices with odd degree is even.\n4. **Degrees:** $\\Delta(G)$ denotes the maximum degree and $\\delta(G)$ denotes the minimum degree.\n\n**Key Identities:**\n- For a simple graph with $n$ vertices, $0 \\leq d(v) \\leq n-1$."
+    },
+    {
+      "chapter": "Graph Algorithms",
+      "content": "### Graph Algorithms\n1. **Breadth-First Search (BFS):** Explores layer by layer.\n   - Purpose: Shortest path in unweighted graphs, connected components.\n   - Time Complexity: $O(V+E)$ for adjacency list, $O(V^2)$ for adjacency matrix.\n2. **Depth-First Search (DFS):** Explores as far as possible before backtracking.\n   - Purpose: Connected components, topological sort, cycle detection, bridges/articulation points."
+    },
+    {
+      "chapter": "Graph Theory",
+      "content": "### Graph Algorithms Summary\n\n1.  **Dijkstra's Algorithm**: Single-source shortest path for non-negative edge weights.\n    *   Time Complexity: $O((V+E) \\log V)$ (Fibonacci heap), $O((V+E) \\log V)$ (binary heap), $O(V^2)$ (adjacency matrix).\n\n2.  **Prim's Algorithm**: Finds Minimum Spanning Tree (MST).\n    *   Time Complexity: $O(E \\log V)$ (binary heap), $O(V^2)$ (adjacency matrix).\n\n3.  **Kruskal's Algorithm**: Finds MST.\n    *   Time Complexity: $O(E \\log E)$ or $O(E \\log V)$ using Disjoint Set Union (DSU).\n\n4.  **Bellman-Ford Algorithm**: Single-source shortest path, handles negative edge weights, detects negative cycles.\n    *   Time Complexity: $O(VE)$.\n\n5.  **Floyd-Warshall Algorithm**: All-pairs shortest path, handles negative weights but not negative cycles.\n    *   Time Complexity: $O(V^3)$.\n\n6.  **Topological Sort**: Linear ordering for Directed Acyclic Graphs (DAGs) where for every directed edge $(u, v)$, $u$ comes before $v$.\n    *   Time Complexity: $O(V+E)$ (using DFS or Kahn's algorithm).\n\n7.  **Ford-Fulkerson Algorithm (and Edmonds-Karp)**: Finds maximum flow.\n    *   Time Complexity: Edmonds-Karp is $O(VE^2)$.\n\n### Graph Coloring\n*   **Definition**: Vertex coloring ensures no two adjacent vertices have the same color.\n*   **Chromatic Number $\\chi(G)$**: Minimum colors required to color graph $G$.\n*   **Bounds**:\n    *   **Lower Bound**: $\\chi(G) \\ge \\omega(G)$, where $\\omega(G)$ is the clique number.\n    *   **Upper Bound (Brooks' Theorem)**: For a connected graph (not a complete graph or odd cycle), $\\chi(G) \\le \\Delta(G)$, where $\\Delta(G)$ is the maximum degree. In general, $\\chi(G) \\le \\Delta(G) + 1$.\n*   **Bipartite Graphs**: A graph $G$ is bipartite if and only if it contains no odd-length cycles. If a bipartite graph has at least one edge, $\\chi(G) = 2$."
+    },
+    {
+      "chapter": "Planar Graphs",
+      "content": "5. Planar Graphs (Four Color Theorem): Every planar graph is 4-colorable. Thus, for any planar graph $G$, $\\chi(G) \\le 4$."
+    },
+    {
+      "chapter": "Chromatic Polynomial",
+      "content": "6. Chromatic Polynomial $P(G, \\lambda)$: A polynomial whose value at integer $\\lambda$ is the number of ways to color $G$ using at most $\\lambda$ colors. For a graph with $n$ vertices, $P(G, \\lambda)$ is a polynomial in $\\lambda$ of degree $n$."
+    },
+    {
+      "chapter": "Key Properties and Identities",
+      "content": "A graph is 2-colorable if and only if it is bipartite.\nIf a graph contains a clique of size $k$, then at least $k$ colors are needed.\nThe chromatic number of a complete graph $K_n$ is $n$.\nThe chromatic number of a cycle graph $C_n$ is 2 if $n$ is even, and 3 if $n$ is odd."
+    },
+    {
+      "chapter": "Common Pitfalls or Tricky Points",
+      "content": "Minimum vs. Any Coloring: The goal is to find the minimum number of colors, not just any valid coloring.\nIdentifying Cliques: Finding the largest clique ($\\omega(G)$) can be hard, but it provides a lower bound for $\\chi(G)$.\nEdge Coloring ($\\chi'(G)$): Similar concept but for edges (adjacent edges have different colors). Vizing's Theorem states $\\Delta(G) \\le \\chi'(G) \\le \\Delta(G)+1$. GATE usually focuses on vertex coloring."
+    },
+    {
+      "chapter": "Standard Problem-Solving Techniques or Shortcuts",
+      "content": "Greedy Coloring: Assign colors iteratively to vertices in some order (e.g., decreasing degree). While not always optimal, it's a common heuristic.\nIdentify Cliques and Odd Cycles: These structures directly give lower bounds for the chromatic number.\nTrial and Error/Backtracking: For small graphs, try to color with 2, then 3, etc., until a valid coloring is found."
+    },
+    {
+      "chapter": "Graph Connectivity",
+      "content": "Definition and Core Idea: Connectivity refers to the property of a graph being \"connected,\" meaning there's a path between any two vertices. More generally, it quantifies how many vertices or edges must be removed to disconnect the graph.\n1. Connected Graph: A graph is connected if there is a path between every pair of distinct vertices.\n2. Connected Components: Maximal connected subgraphs.\n3. Cut Vertex (Articulation Point): A vertex whose removal increases the number of connected components.\n4. Cut Edge (Bridge): An edge whose removal increases the number of connected components.\n5. Vertex Connectivity $\\kappa(G)$: The minimum number of vertices whose removal disconnects $G$ or reduces it to a trivial graph. A graph is $k$-connected if $\\kappa(G) \\ge k$.\n6. Edge Connectivity $\\lambda(G)$: The minimum number of edges whose removal disconnects $G$. A graph is $k$-edge-connected if $\\lambda(G) \\ge k$.\n7. Relationship: For any graph $G$, $\\kappa(G) \\le \\lambda(G) \\le \\delta(G)$, where $\\delta(G)$ is the minimum degree of $G$.\n8. Menger's Theorem: For any two non-adjacent vertices $u$ and $v$ in a graph $G$, the maximum number of vertex-disjoint paths between $u$ and $v$ is equal to the minimum number of vertices whose removal separates $u$ and $v$."
+    },
+    {
+      "chapter": "Connectivity Key Properties",
+      "content": "A tree with more than one vertex has $\\kappa=1$ and $\\lambda=1$.\nA complete graph $K_n$ has $\\kappa=n-1$ and $\\lambda=n-1$.\nIf a graph has a bridge, its edge connectivity is 1. If it has an articulation point, its vertex connectivity is 1 (unless it's $K_2$)."
+    },
+    {
+      "chapter": "Graph Theory",
+      "content": "### Common Pitfalls or Tricky Points in Matching:\n- **Confusing Matching with Vertex Cover or Edge Cover**: These are related but distinct concepts. A vertex cover is a set of vertices that touch all edges. An edge cover is a set of edges that touch all vertices (only exists if no isolated vertices).\n- **General vs. Bipartite Graphs**: Finding maximum matchings in general graphs is more complex (e.g., Edmonds' blossom algorithm) than in bipartite graphs. GATE usually focuses on bipartite matching or simpler cases.\n- **Existence of Perfect Matching**: A perfect matching requires an even number of vertices ($|V|$ is even).\n\n### Standard Problem-Solving Techniques:\n- **Greedy Approach**: While not always optimal for maximum matching, a greedy approach (e.g., pick an edge, remove its endpoints, repeat) can give a good starting point.\n- **Augmenting Paths**: For bipartite graphs, the concept of augmenting paths is key. Start with an empty matching, find an augmenting path, update the matching, and repeat until no more augmenting paths exist. This is the basis of the Hopcroft-Karp algorithm.\n- **Applying Hall's Theorem**: For bipartite graphs, use Hall's condition to check for the existence of a matching covering one side."
+    },
+    {
+      "chapter": "Graph Planarity",
+      "content": "### Definition and Core Idea:\nA graph is planar if it can be drawn in the plane without any edges crossing each other (except at vertices). Such a drawing is called a planar embedding.\n\n### Important Formulas, Theorems, and Results:\n1. **Euler's Formula for Planar Graphs**: For any connected planar graph with $V$ vertices, $E$ edges, and $F$ faces (regions),\n   $$V - E + F = 2$$\n2. **Corollaries of Euler's Formula** (for simple connected planar graphs with $V \\ge 3$):\n   - If $G$ has no cycles of length 3 (i.e., no $K_3$ subgraph), then $E \\le 2V - 4$.\n   - In general, $E \\le 3V - 6$.\n   - There is at least one vertex with degree at most 5 ($\\delta(G) \\le 5$).\n3. **Kuratowski's Theorem**: A graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ (complete graph on 5 vertices) or $K_{3,3}$ (complete bipartite graph with 3 vertices in each partition).\n\n### Key Properties and Identities:\n- $K_5$ and $K_{3,3}$ are non-planar.\n- Any graph that contains $K_5$ or $K_{3,3}$ as a minor (or subdivision) is non-planar.\n- The dual of a planar graph is also planar.\n\n### Common Pitfalls:\n- **Misapplying Euler's Formula**: Remember it's for connected planar graphs. For disconnected graphs, $V - E + F = 1 + C$, where $C$ is the number of connected components.\n- **Identifying Subdivisions**: Recognizing $K_5$ or $K_{3,3}$ subdivisions can be tricky. Look for 5 vertices all connected to each other (possibly via paths) or 6 vertices arranged in a bipartite manner.\n\n### Shortcuts:\n- **Check Euler's Formula Corollaries**: If $E > 3V - 6$ (or $E > 2V - 4$ if no triangles), the graph is definitely non-planar."
+    },
+    {
+      "chapter": "Jaccard Coefficient",
+      "content": "The Jaccard Coefficient (or Jaccard Index) is a statistical measure used to gauge the similarity between two finite sets, finding applications in data mining, machine learning, and graph analysis (e.g., comparing neighbor sets)."
+    },
+    {
+      "chapter": "Jaccard Index",
+      "content": "The Jaccard Coefficient is defined for two sets, $A$ and $B$, as the size of their intersection divided by the size of their union:\n$$J(A, B) = \\frac{|A \\cap B|}{|A \\cup B|}$$\nIt quantifies the overlap between sets.\n\n### Important Formulas, Theorems, and Results\n1. **Jaccard Coefficient**: $J(A, B) = \\frac{|A \\cap B|}{|A \\cup B|}$\n2. **Jaccard Distance**: Measures dissimilarity: $D_J(A, B) = 1 - J(A, B)$\n\n### Key Properties and Identities\n* The Jaccard Coefficient ranges from 0 to 1.\n* $J(A, B) = 1$ if $A = B$ (perfect similarity).\n* $J(A, B) = 0$ if $A \\cap B = \\emptyset$ (no similarity).\n* It is symmetric: $J(A, B) = J(B, A)$.\n* It is sensitive to the size of the union; a large union with a small intersection leads to a low coefficient.\n\n### Common Pitfalls or Tricky Points\n* **Miscalculating Intersection or Union**: Ensure correct set operations, especially when dealing with lists that might contain duplicates (convert to sets first).\n* **Empty Sets**: If both sets are empty, the Jaccard coefficient is usually defined as 1 (perfect similarity). If one is empty and the other is not, it's 0.\n\n### Application Context\nIn graph theory, it's often used to compare the neighborhood sets of two vertices to determine their \"structural similarity\" or to compare sets of features associated with graph nodes.\n\n### Standard Problem-Solving Techniques\n* **Direct Calculation**: Identify the elements in the intersection and union, then apply the formula.\n* **Venn Diagrams**: For small sets, a Venn diagram can help visualize the intersection and union."
+    },
+    {
+      "chapter": "Graph Theory Reference",
+      "content": "### Quick Formula Reference\n* **Counting Simple Labeled Graphs ($n$ vertices)**: $2^{\\binom{n}{2}}$\n* **Counting Simple Directed Labeled Graphs ($n$ vertices)**: $2^{n(n-1)}$\n* **Cayley's Formula (Spanning Trees in $K_n$)**: $n^{n-2}$\n* **Handshaking Lemma (Undirected)**: $\\sum_{v \\in V} deg(v) = 2|E|$\n* **Handshaking Lemma (Directed)**: $\\sum_{v \\in V} deg^-(v) = \\sum_{v \\in V} deg^+(v) = |E|$\n* **BFS/DFS Time Complexity**: $O(V+E)$ (adj list), $O(V^2)$ (adj matrix)\n* **Dijkstra's Time Complexity**: $O((V+E)\\log V)$ (binary heap), $O(V^2)$ (adj matrix)\n* **Prim's/Kruskal's Time Complexity (MST)**: $O(E \\log V)$ or $O(E \\log E)$\n* **Bellman-Ford Time Complexity**: $O(VE)$\n* **Floyd-Warshall Time Complexity**: $O(V^3)$\n* **Topological Sort Time Complexity**: $O(V+E)$\n* **Chromatic Number Lower Bound**: $\\chi(G) \\ge \\omega(G)$ (clique number)\n* **Chromatic Number Upper Bound (Brooks' Theorem)**: $\\chi(G) \\le \\Delta(G)$ (for non-complete, non-odd cycle connected graphs), else $\\chi(G) \\le \\Delta(G) + 1$\n* **Bipartite Graph Chromatic Number**: $\\chi(G) = 2$ (if connected and has edges)\n* **Planar Graph Chromatic Number (Four Color Theorem)**: $\\chi(G) \\le 4$\n* **Connectivity Relationship**: $\\kappa(G) \\le \\kappa'(G) \\le \\delta(G)$\n* **Euler's Formula (Connected Planar Graph)**: $V - E + F = 2$\n* **Planarity Condition (Simple Connected Planar, $V \\ge 3$)**: $E \\le 3V - 6$\n* **Planarity Condition (Simple Connected Planar, no $C_3$, $V \\ge 3$)**: $E \\le 2V - 4$\n* **Kuratowski's Theorem**: Planar iff no $K_5$ or $K_{3,3}$ subdivision"
+    },
+    {
+      "chapter": "Graph Theory",
+      "content": "1. Master Definitions and Basic Properties: Many GATE questions test fundamental definitions (e.g., what is a bridge, what is a perfect matching) and direct consequences of theorems. Ensure you know what each term means precisely.\n2. Practice Drawing and Visualizing Graphs: For problems involving planarity, isomorphism, or connectivity, sketching the graph and trying different layouts can be immensely helpful. Don't rely solely on abstract representations.\n3. Understand Algorithm Mechanics and Complexity: Don't just memorize complexities; understand how BFS, DFS, Dijkstra's, Prim's, and Kruskal's work step-by-step. Be prepared to trace them on small examples and identify their time/space complexities for both adjacency list and matrix representations.\n4. Pay Attention to Graph Types and Constraints: Is the graph directed or undirected? Weighted or unweighted? Simple or multi-graph? Does it allow self-loops? These details significantly impact which formulas or algorithms apply. For example, Dijkstra's fails with negative edge weights.\n5. Use Invariants for Isomorphism: When checking for isomorphism, systematically compare invariants like number of vertices, edges, degree sequence, and cycle lengths. If any invariant differs, the graphs are not isomorphic. This is a powerful shortcut.\n6. Be Wary of Common Pitfalls: Remember that Euler's formula applies to connected planar graphs. Dijkstra's doesn't work with negative weights. A greedy coloring isn't always optimal. Keep these exceptions in mind.\n7. Time Management for Tracing Problems: For algorithm tracing questions, work carefully and systematically. Use scratch paper to keep track of visited nodes, distances, or parent pointers. Avoid rushing, as a single error can invalidate the entire trace.\n8. Review Special Graph Types: Be familiar with properties of common graphs like complete graphs ($K_n$), complete bipartite graphs ($K_{m,n}$), cycle graphs ($C_n$), path graphs ($P_n$), and trees. Their specific properties often appear in questions."
+    },
+    {
+      "chapter": "Graph Connectivity",
+      "content": "Let $G$ be a connected, undirected graph. A cut in $G$ is a set of edges whose removal results in $G$ being broken into two or more components, which are not connected with each other. The size of a cut is called its cardinality. A min-cut of $G$ is a cut in $G$ of minimum cardinality."
+    },
+    {
+      "chapter": "Discrete Mathematics: Mathematical Logic",
+      "content": "### Topic-wise Key Concepts\n\n#### 1. Logical Connectives:\n- **Negation (NOT):** $\\neg p$ (read as \"not p\")\n- **Conjunction (AND):** $p \\land q$ (read as \"p and q\")\n- **Disjunction (OR):** $p \\lor q$ (read as \"p or q\")\n- **Implication (IF...THEN):** $p \\rightarrow q$ (read as \"if p then q\" or \"p implies q\")\n- **Biconditional (IF AND ONLY IF):** $p \\leftrightarrow q$ (read as \"p if and only if q\")\n- **Exclusive OR (XOR):** $p \\oplus q$ (read as \"p xor q\")\n- **NAND:** $p \\uparrow q$\n- **NOR:** $p \\downarrow q$\n\n#### 2. Truth Tables:\n- $\\neg p$: T if p is F, F if p is T.\n- $p \\land q$: T if both p and q are T, else F.\n- $p \\lor q$: T if p is T or q is T (or both), else F.\n- $p \\rightarrow q$: F only if p is T and q is F, else T.\n- $p \\leftrightarrow q$: T if p and q have the same truth value, else F.\n- $p \\oplus q$: T if p and q have different truth values, else F.\n\n#### 3. Tautology, Contradiction, Contingency:\n- **Tautology:** A compound proposition that is always true. Example: $p \\lor \\neg p$.\n- **Contradiction (or Absurdity):** A compound proposition that is always false. Example: $p \\land \\neg p$.\n- **Contingency:** A compound proposition that is neither a tautology nor a contradiction.\n\n#### 4. Logical Equivalence:\n- Two propositions $p$ and $q$ are logically equivalent ($p \\equiv q$) if $p \\leftrightarrow q$ is a tautology. This means they always have the same truth value.\n\n#### 5. Laws of Logic:\n- **Identity Laws:** $p \\land T \\equiv p$ and $p \\lor F \\equiv p$."
+    },
+    {
+      "chapter": "Propositional Logic",
+      "content": "Domination Laws:\nIdempotent Laws:\nDouble Negation Law:\nCommutative Laws:\nAssociative Laws:\nDistributive Laws:\nDe Morgan's Laws:\nAbsorption Laws:\nInverse Laws (Complement Laws):\nImplication Equivalences:\n$p \\to q \\equiv \\neg p \\vee q$\n(Contrapositive)\n$p \\to q \\equiv \\neg q \\to \\neg p$\nBiconditional Equivalences:\n$p \\leftrightarrow q \\equiv (p \\to q) \\wedge (q \\to p)$\n6. Conjunctive Normal Form (CNF) and Disjunctive Normal Form (DNF):\nLiteral: A propositional variable or its negation (e.g., $p, \\neg p$).\nClause: A disjunction of literals (e.g., $p \\vee q \\vee \\neg r$).\nCNF: A conjunction of clauses (e.g., $(p \\vee q) \\wedge (\\neg p \\vee r)$).\nMinterm: A conjunction of literals where each variable appears exactly once (e.g., $p \\wedge q \\wedge \\neg r$).\nMaxterm: A disjunction of literals where each variable appears exactly once (e.g., $p \\vee q \\vee \\neg r$).\nDNF: A disjunction of minterms (e.g., $(p \\wedge q) \\vee (\\neg p \\wedge r)$).\nAny propositional formula can be converted into an equivalent CNF or DNF."
+    },
+    {
+      "chapter": "Logical Reasoning",
+      "content": "Order of Mixed Quantifiers: Assuming $\\forall x \\exists y P(x, y)$ is the same as $\\exists y \\forall x P(x, y)$ is incorrect.\n\nStandard Problem-Solving Techniques or Shortcuts:\n- Step-by-step Translation: Break down complex natural language sentences into smaller parts, translate each, and then combine them. Identify predicates, variables, and connectives first.\n- Applying Quantifier Equivalences: Use negation rules to simplify expressions or move negations inwards.\n- Domain Awareness: Always consider the domain of discourse when evaluating truth values or translating.\n- Counterexamples: To show a statement is false or not equivalent, try to find a specific example in a small domain that makes it false.\n\nLogical Reasoning (Inference)\nLogical Reasoning, or Inference, is the process of deriving conclusions from a set of premises using valid rules. It focuses on the structure of arguments to determine whether a conclusion necessarily follows from the premises, regardless of the actual truth of the premises.\n\nDefinition and Core Idea: An argument is a sequence of propositions, where the first propositions are premises and the final proposition is the conclusion. An argument is valid if, whenever all its premises are true, the conclusion must also be true. The goal is to determine if an argument's structure guarantees the truth of its conclusion given true premises.\n\nImportant Formulas, Theorems, and Results:\n1. Argument Validity: An argument with premises $P_1, P_2, \\dots, P_n$ and conclusion $C$ is valid if the proposition $(P_1 \\wedge P_2 \\wedge \\dots \\wedge P_n) \\rightarrow C$ is a tautology.\n2. Rules of Inference (for Propositional Logic): These are fundamental valid argument forms.\n- Modus Ponens (Law of Detachment): $((p \\rightarrow q) \\wedge p) \\rightarrow q$ is a tautology.\n- Modus Tollens: $((p \\rightarrow q) \\wedge \\neg q) \\rightarrow \\neg p$ is a tautology.\n- Hypothetical Syllogism: $((p \\rightarrow q) \\wedge (q \\rightarrow r)) \\rightarrow (p \\rightarrow r)$ is a tautology.\n- Disjunctive Syllogism: $((p \\vee q) \\wedge \\neg p) \\rightarrow q$ is a tautology.\n- Addition: $p \\rightarrow (p \\vee q)$ is a tautology.\n- Simplification: $(p \\wedge q) \\rightarrow p$ is a tautology."
     }
   ],
   "questions": [
@@ -82,6 +214,1801 @@
       "options": [],
       "difficulty_tag": "hard",
       "explanation_url": ""
+    },
+    {
+      "id": "143.2",
+      "chapter": "Unknown",
+      "subtopic": "Unknown",
+      "exam_tag": "gate-2018",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Vinay Rachapalli",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": null
+    },
+    {
+      "id": "143.3",
+      "chapter": "Unknown",
+      "subtopic": "Unknown",
+      "exam_tag": "gate-2018",
+      "type": "NAT",
+      "marks": "3",
+      "question_text": "2018; Subarna Das",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": null
+    },
+    {
+      "id": "142.3",
+      "chapter": "Unknown",
+      "subtopic": "Unknown",
+      "exam_tag": "gate-unknown",
+      "type": "NAT",
+      "marks": "3",
+      "question_text": "papesh",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": null
+    },
+    {
+      "id": "1.1.1",
+      "chapter": "Balls In Bins",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-1999",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of binary strings of zeros and ones in which no two ones are adjacent is",
+      "options": [
+        "A. $F_{n+2}$",
+        "B. $F_{n+1}$",
+        "C. $F_n$",
+        "D. None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1457"
+    },
+    {
+      "id": "1.1.2",
+      "chapter": "Balls In Bins",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2000",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "A multiset is an unordered collection of elements where elements may repeat any number of times. The size of a multiset is the number of elements in it, counting repetitions.\na. What is the number of multisets of size $k$ that can be constructed from $n$ distinct elements so that at least one element occurs exactly twice?\nb. How many multisets can be constructed from $n$ distinct elements?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371914"
+    },
+    {
+      "id": "1.1.3",
+      "chapter": "Balls In Bins",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2002",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "a. In how many ways can a given positive integer $n$ be expressed as the sum of positive integers (which are not necessarily distinct). For example, for $n=4$, the number of ways is $5$, i.e., $4, 3+1, 2+2, 2+1+1, 1+1+1+1$. Give only the answer without any explanation.\nb. In how many ways can a given positive integer $n$ be expressed as the sum of positive integers (which are not necessarily distinct). For example, for $n=3$, the number of ways is $3$, i.e., $3, 2+1$ and $1+1+1$. Give only the answer without explanation.\nc. In how many ways can a given positive integer $n$ be expressed as the sum of positive integers (which are not necessarily distinct). Give only the answer without explanation.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/924"
+    },
+    {
+      "id": "1.1.4",
+      "chapter": "Balls In Bins",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "$m$ identical balls are to be placed in $n$ distinct bags. You are given that $m \\ge n$, where $n$ is a natural number. In how many ways can the balls be placed in the bags if each bag must contain at least $1$ balls?",
+      "options": [
+        "$\\binom{m-1}{n-1}$",
+        "$\\binom{m+1}{n-1}$",
+        "$\\binom{m-1}{n+1}$",
+        "$\\binom{m+1}{n+1}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/866"
+    },
+    {
+      "id": "1.1.5",
+      "chapter": "Balls In Bins",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2022",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The number of arrangements of six identical balls in three identical bins is _____________ .",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/676"
+    },
+    {
+      "id": "1.1.6",
+      "chapter": "Balls In Bins",
+      "subtopic": "Combinatory",
+      "exam_tag": "gateit-2004",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "In how many ways can we distribute $n$ distinct balls, in $n$ distinct cells, such that Ball $i$ is not in cell $C_i$, and each cell contains exactly one ball?",
+      "options": [
+        "$n! - \\binom{n}{1}(n-1)! + \\binom{n}{2}(n-2)! - ... + (-1)^n$",
+        "$n! - \\binom{n}{1}(n-1)! + \\binom{n}{2}(n-2)! - ... + (-1)^n n!$",
+        "$\\sum_{i=0}^n (-1)^i \\frac{n!}{i!}$",
+        "$n! - 1$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3678"
+    },
+    {
+      "id": "1.2.1",
+      "chapter": "Combinatory",
+      "subtopic": "Basic Permutations",
+      "exam_tag": "gate1990",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of ways in which $n$ $A$'s and $n$ $B$'s can be arranged in a row is:",
+      "options": [
+        "$\\binom{2n}{n}$",
+        "$\\frac{(2n)!}{n!}$",
+        "$(2n)!$",
+        "None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/895"
+    },
+    {
+      "id": "1.2.2",
+      "chapter": "Combinatory",
+      "subtopic": "Binary Strings",
+      "exam_tag": "gate1991",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "Find the number of binary strings of length $2n$ with an equal number of $0$'s and $1$'s and the property that every prefix of the string has at least as many $0$'s as $1$'s.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/719"
+    },
+    {
+      "id": "1.2.3",
+      "chapter": "Combinatory",
+      "subtopic": "Strings",
+      "exam_tag": "gate1998",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "How many sub strings of different lengths (non-zero) can be formed from a character string of length $n$?",
+      "options": [
+        "$n^2$",
+        "$2^n$",
+        "$n(n+1)/2$",
+        "$n!$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1480"
+    },
+    {
+      "id": "1.2.4",
+      "chapter": "Combinatory",
+      "subtopic": "Distribution",
+      "exam_tag": "gate1999",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Two girls have picked $10$ roses, $10$ sunflowers and $10$ daffodils. What is the number of ways they can divide the flowers among themselves?",
+      "options": [
+        "11",
+        "33",
+        "66",
+        "None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1660"
+    },
+    {
+      "id": "1.2.5",
+      "chapter": "Combinatory",
+      "subtopic": "Numbers",
+      "exam_tag": "gatecse-2001",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "How many 5-digit even numbers have all digits distinct?",
+      "options": [
+        "$9 \\times 9 \\times 8 \\times 7 \\times 4$",
+        "$5 \\times 9 \\times 8 \\times 7 \\times 6$",
+        "$4 \\times 8 \\times 8 \\times 7 \\times 6$",
+        "$4 \\times 9 \\times 8 \\times 7 \\times 6$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/543"
+    },
+    {
+      "id": "1.2.6",
+      "chapter": "Combinatory",
+      "subtopic": "Sorting/Merging",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $S = \\{1, 2, \\dots, n\\}$ be a sequence of distinct integers sorted in ascending order. How many distinct pairs of sequences, $A$ and $B$ are there such that\ni. each is sorted in ascending order,\nii. $A$ has $m$ and $B$ has $n$ elements, and\niii. the result of merging $A$ and $B$ gives $S$",
+      "options": [
+        "$\\binom{m+n}{n}$",
+        "$\\binom{m+n}{m}$",
+        "$\\binom{n}{m}$",
+        "$\\binom{n+m}{m} + \\binom{n+m}{n}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/84841"
+    },
+    {
+      "id": "1.2.7",
+      "chapter": "Combinatory",
+      "subtopic": "Permutations/Combinations",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "$n$ couples are invited to a party with the condition that every husband should be accompanied by his wife. However, a wife need not be accompanied by her husband. The number of different gatherings possible at the party is",
+      "options": [
+        "$3^n$",
+        "$2^n$",
+        "$\\binom{2n}{n}$",
+        "$2^n - 1$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/896"
+    },
+    {
+      "id": "1.2.8",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Mala has the colouring book in which each English letter is drawn two times. She wants to paint each of these prints with one of $k$ colours, such that the colour pairs used to colour any two letters are different. Both prints of a letter can also be coloured with the same colour. What is the minimum value of $k$ that satisfies this requirement?",
+      "options": [
+        "A. 9",
+        "B. 8",
+        "C. 7",
+        "D. 6"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8399"
+    },
+    {
+      "id": "1.2.9",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2007",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Suppose that a robot is placed on the Cartesian plane. At each step it is allowed to move either one unit up or one unit right, i.e., if it is at $(x, y)$ then it can move to either $(x+1, y)$ or $(x, y+1)$. How many distinct paths are there for the robot to reach the point $(10, 10)$ starting from the initial position $(0, 0)$?",
+      "options": [
+        "A. $\\binom{20}{10}$",
+        "B. $2^{20}$",
+        "C. $2^{10}$",
+        "D. None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1929"
+    },
+    {
+      "id": "1.2.10",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2007",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Suppose that a robot is placed on the Cartesian plane. At each step it is allowed to move either one unit up or one unit right, i.e., if it is at $(x, y)$ then it can move to either $(x+1, y)$ or $(x, y+1)$. Suppose that the robot is not allowed to traverse the line segment from $(4, 4)$ to $(4, 5)$. With this constraint, how many distinct paths are there for the robot to reach $(10, 10)$ starting from $(0, 0)$?",
+      "options": [
+        "A. $\\binom{20}{10} - \\binom{8}{4}\\binom{11}{5}$",
+        "B. $\\binom{20}{10} - \\binom{8}{4}\\binom{12}{6}$",
+        "C. $\\binom{20}{10} - \\binom{8}{4}\\binom{11}{6}$",
+        "D. $\\binom{20}{10} - \\binom{8}{4}\\binom{12}{5}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/43509"
+    },
+    {
+      "id": "1.2.11",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2014-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "A pennant is a sequence of numbers, each number being 1 or 2. An $n$ pennant is a sequence of numbers with sum equal to $n$. For example, 1, 1, 2 is a 4-pennant. The set of all possible 1-pennants is {1}, the set of all possible 2-pennants is {1,1}, {2} and the set of all 3-pennants is {1,1,1}, {1,2}, {2,1}. Note that the 3-pennant 1, 2 is not the same as the 3-pennant 2, 1. The number of 10-pennants is________",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1275"
+    },
+    {
+      "id": "1.2.12",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2015-set3",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The number of 5-digit numbers having their digits in non-decreasing order (from left to right) constructed by using the digits belonging to the set {1, 2, 3} is ________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1069"
+    },
+    {
+      "id": "1.2.13",
+      "chapter": "Combinatory",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2019",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Let $A = \\{a, b, c\\}$. Let $U = \\mathcal{P}(A)$. Consider the following two statements on $U$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/302843"
+    },
+    {
+      "id": "1.2.14",
+      "chapter": "Combinatory",
+      "subtopic": "Permutations",
+      "exam_tag": "gatecse-2020",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "The number of permutations of the characters in LILAC so that no character appears in its original position, if the two L's are indistinguishable, is ______.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/460060"
+    },
+    {
+      "id": "1.2.15",
+      "chapter": "Combinatory",
+      "subtopic": "Strings",
+      "exam_tag": "gatecse-2025-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "Let $S$ be the set of all ternary strings defined over the alphabet $\\{0, 1, 2\\}$. Consider all strings in $S$ that contain at least one occurrence of two consecutive symbols, that is, $00, 11,$ or $22$. The number of such strings of length $n$ that are possible is __________. (Answer in integer).",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/333189"
+    },
+    {
+      "id": "1.2.16",
+      "chapter": "Combinatory",
+      "subtopic": "Matrices",
+      "exam_tag": "gatecse-2026-set1",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Consider $n \\times n$ matrices with their elements from $\\{0, 1\\}$. The number of such matrices with even number of $1$s in every row and every column is",
+      "options": [
+        "$2^{n^2}$",
+        "$2^{n^2-n}$",
+        "$2^{(n-1)^2}$",
+        "$2^{(n-1)^2}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3286"
+    },
+    {
+      "id": "1.2.17",
+      "chapter": "Combinatory",
+      "subtopic": "Fault Analysis",
+      "exam_tag": "gateit-2005",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "A line in a circuit is said to have a stuck-at-0 fault if the line permanently has a logic value 0. Similarly a line in a circuit is said to have a stuck-at-1 fault if the line permanently has a logic value 1. A circuit is said to have a multiple fault if one or more lines have stuck at faults. The total number of distinct multiple faults possible in a circuit with $k$ lines is",
+      "options": [
+        "$2^k$",
+        "$3^k - 1$",
+        "$3^k$",
+        "$2^k - 1$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3807"
+    },
+    {
+      "id": "1.2.18",
+      "chapter": "Combinatory",
+      "subtopic": "Distribution",
+      "exam_tag": "gateit-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "In how many ways can $b$ blue balls and $r$ red balls be distributed in $n$ distinct boxes?",
+      "options": [
+        "$\\binom{n+b-1}{n-1} \\times \\binom{n+r-1}{n-1}$",
+        "$\\binom{n+b-1}{b} \\times \\binom{n+r-1}{r}$",
+        "$\\binom{n+b+r-1}{n-1}$",
+        "$\\binom{n+b-1}{b} + \\binom{n+r-1}{r}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/523078"
+    },
+    {
+      "id": "1.3.1",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gate1990",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of rooted binary trees with $n$ nodes is,",
+      "options": [
+        "Equal to the number of ways of multiplying $n$ matrices.",
+        "Equal to the number of ways of arranging $n$ out of $2n$ distinct elements.",
+        "Equal to $\\frac{1}{n+1} \\binom{2n}{n}$.",
+        "Equal to $\\binom{2n}{n}$."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2458"
+    },
+    {
+      "id": "1.3.2",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gate1991",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "Match the pairs in the following questions by writing the corresponding letters only.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/514"
+    },
+    {
+      "id": "1.3.3",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gate1994",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of substrings (of all lengths inclusive) that can be formed from a character string of length $n$ is",
+      "options": [
+        "$n$",
+        "$n^2$",
+        "$\\frac{n(n-1)}{2}$",
+        "$\\frac{n(n+1)}{2}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/357432"
+    },
+    {
+      "id": "1.3.4",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2021-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "There are $n$ jobs with $n$ distinct difficulty levels, and $n$ computers with $n$ distinct processing speeds. Each job is assigned to a computer such that:\n1. The fastest computer gets the toughest job and the slowest computer gets the easiest job.\n2. Every computer gets at least one job.\nThe number of ways in which this can be done is ___________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/84060"
+    },
+    {
+      "id": "1.3.5",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2021-set2",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Let $S$ be a set consisting of $n$ elements. The number of tuples of the form $(A, B)$ such that $A$ and $B$ are subsets of $S$, and $A \\subseteq B$ is ___________",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/118392"
+    },
+    {
+      "id": "1.3.6",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2023",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $S = \\{1, 2, \\dots, n\\}$ where $n$ is a large positive integer greater than $1$. Let $k$ be a positive integer less than $n$. Let $A, B$ be subsets of $S$ with $|A| = k$ and $|B| = k$. We say that a permutation of $S$ separates $A$ from $B$ if one of the following is true.\nAll members of $A$ appear in the permutation before any of the members of $B$.\nAll members of $B$ appear in the permutation before any of the members of $A$.\nHow many permutations of $S$ separate $A$ from $B$?",
+      "options": [
+        "A. $\\frac{n!}{\\binom{2k}{k}}$",
+        "B. $\\frac{2n!}{\\binom{2k}{k}}$",
+        "C. $\\frac{2(n-k)! k!}{\\binom{2k}{k}}$",
+        "D. $\\frac{2n!}{(2k)!}$"
+      ],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/39693"
+    },
+    {
+      "id": "1.4.1",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gate1987",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "What is the generating function for the sequence of Fibonacci numbers?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1175"
+    },
+    {
+      "id": "1.4.2",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Let $a_n = a_{n-1} + a_{n-2}$, where $a_0 = 0, a_1 = 1$. What is $\\sum_{i=0}^{\\infty} a_i x^i$?",
+      "options": [
+        "A. $\\frac{x}{1-x-x^2}$",
+        "B. $\\frac{x}{1+x-x^2}$",
+        "C. $\\frac{x}{1-x+x^2}$",
+        "D. $\\frac{1}{1-x-x^2}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/82451"
+    },
+    {
+      "id": "1.4.3",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gatecse-2016-set1",
+      "type": "NAT",
+      "marks": "N/A",
+      "question_text": "The coefficient of $x^9$ in $(x^3 + x^4 + x^5 + x^6 + x^7)^2$ is ___________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/399273"
+    },
+    {
+      "id": "1.4.4",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gatecse-2017-set2",
+      "type": "NAT",
+      "marks": "N/A",
+      "question_text": "If the ordinary generating function of a sequence $a_n$ is $\\frac{1}{(1-x)^2}$, then $a_n$ is equal to ___________ .",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/357487"
+    },
+    {
+      "id": "1.4.5",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gatecse-2018",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which one of the following is a closed form expression for the generating function of the sequence $a_n$, where $a_n = 3^n, n \\ge 0$?",
+      "options": [
+        "$\\frac{1}{1-3x}$",
+        "$\\frac{1}{1+3x}$",
+        "$\\frac{3}{1-x}$",
+        "$\\frac{1}{3-x}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1170"
+    },
+    {
+      "id": "1.4.6",
+      "chapter": "Generating Functions",
+      "subtopic": "Generating Functions",
+      "exam_tag": "gatecse-2022",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Which one of the following is the closed form for the generating function of the sequence defined below? \n![diagram](/images/1.4.6_diagram.png)",
+      "options": [
+        "$\\frac{1}{(1-x)^2}$",
+        "$\\frac{x}{(1-x)^2}$",
+        "$\\frac{1-x}{(1-x)^2}$",
+        "$\\frac{x^2}{(1-x)^2}$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/302827"
+    },
+    {
+      "id": "1.5.1",
+      "chapter": "Modular Arithmetic",
+      "subtopic": "Modular Arithmetic",
+      "exam_tag": "gatecse-2016-set2",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The value of the expression $2^{100} \\pmod{10}$, is ________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/39588"
+    },
+    {
+      "id": "1.5.2",
+      "chapter": "Modular Arithmetic",
+      "subtopic": "Modular Arithmetic",
+      "exam_tag": "gatecse-2019",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The value of $3^{12} \\pmod{7}$ is _____.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371910"
+    },
+    {
+      "id": "1.6.1",
+      "chapter": "Pigeonhole Principle",
+      "subtopic": "Pigeonhole Principle",
+      "exam_tag": "gatecse-2000",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The minimum number of cards to be dealt from an arbitrarily shuffled deck of cards to guarantee that three cards are from same suit is",
+      "options": [
+        "3",
+        "5",
+        "9",
+        "12"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/204075"
+    },
+    {
+      "id": "1.6.2",
+      "chapter": "Pigeonhole Principle",
+      "subtopic": "Pigeonhole Principle",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "What is the minimum number of ordered pairs of non-negative integers $(a, b)$ that should be chosen to ensure that there are two pairs $(a_1, b_1)$ and $(a_2, b_2)$ in the chosen set such that $a_1 \\equiv a_2 \\pmod 3$ and $b_1 \\equiv b_2 \\pmod 3$?",
+      "options": [
+        "6",
+        "9",
+        "10",
+        "12"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/624"
+    },
+    {
+      "id": "1.7.1",
+      "chapter": "Recurrence Relation",
+      "subtopic": "Fibonacci sequence",
+      "exam_tag": "gate-cse-1996",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "The Fibonacci sequence is defined by the following recurrence: $f_n = f_{n-1} + f_{n-2}$ with $f_1 = 1$ and $f_2 = 1$. Prove by induction that every third element of the sequence is even.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/399307"
+    },
+    {
+      "id": "1.7.2",
+      "chapter": "Recurrence Relation",
+      "subtopic": "Binary strings",
+      "exam_tag": "gatecse-2016-set1",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Let $a_n$ be the number of $n$-bit strings that do NOT contain two consecutive 1s. Which one of the following is the recurrence relation for $a_n$?",
+      "options": [
+        "$a_n = a_{n-1} + a_{n-2}$",
+        "$a_n = a_{n-1} + 2a_{n-2}$",
+        "$a_n = 2a_{n-1} + a_{n-2}$",
+        "$a_n = 2a_{n-1} + 2a_{n-2}$"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/371895"
+    },
+    {
+      "id": "1.7.3",
+      "chapter": "Recurrence Relation",
+      "subtopic": "Recurrence relation evaluation",
+      "exam_tag": "gatecse-2016-set1",
+      "type": "NAT",
+      "marks": "N/A",
+      "question_text": "Consider the recurrence relation $f_n = f_{n-1} + f_{n-2}$. Let $f_0 = 0$ and $f_1 = 1$. The value of $f_6$ is __________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/39714"
+    },
+    {
+      "id": "1.7.4",
+      "chapter": "Recurrence Relation",
+      "subtopic": "Recurrence relation analysis",
+      "exam_tag": "gatecse-2022",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "Consider the following recurrence: $f_n = f_{n-1} + f_{n-2}$. Then, which of the following statements is/are TRUE?",
+      "options": [
+        "$f_n = O(2^n)$",
+        "$f_n = O(n^2)$",
+        "$f_n = \\Omega(n)$",
+        "$f_n = \\Omega(2^{n/2})$"
+      ],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/39636"
+    },
+    {
+      "id": "1.7.5",
+      "chapter": "Recurrence Relation",
+      "subtopic": "Lucas sequence",
+      "exam_tag": "gatecse-2023",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The Lucas sequence is defined by the recurrence relation: $L_n = L_{n-1} + L_{n-2}$ with $L_0 = 2$ and $L_1 = 1$. Which one of the options given is TRUE?",
+      "options": [
+        "$L_n = L_{n-1} + L_{n-2}$",
+        "$L_n = 2L_{n-1} - L_{n-2}$",
+        "$L_n = L_{n-1} \\times L_{n-2}$",
+        "$L_n = L_{n-1}^2 - L_{n-2}^2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2761"
+    },
+    {
+      "id": "1.8.4",
+      "chapter": "Summation",
+      "subtopic": "Combinatory",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "$$\\sum_{x=1}^{99} x(x+1) = ______.$$",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8248"
+    },
+    {
+      "id": "2.1.1",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2001",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "How many undirected graphs (not necessarily connected) can be constructed out of a given set of $n$ vertices?",
+      "options": [
+        "$2^{\\binom{n}{2}}$",
+        "$2^{n(n-1)/2}$",
+        "$2^n$",
+        "$n^2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/473"
+    },
+    {
+      "id": "2.1.2",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "How many graphs on $n$ labeled vertices exist which have at least $n^2-3n$ edges?",
+      "options": [
+        "$2^{\\binom{n}{2}}$",
+        "$2^{n^2}$",
+        "N/A",
+        "N/A"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1073"
+    },
+    {
+      "id": "2.1.3",
+      "chapter": "Counting",
+      "subtopic": "Counting",
+      "exam_tag": "gatecse-2012",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $K_n$ be a complete undirected graph on $n$ vertices. If vertices of $K_n$ are labeled, then the number of distinct cycles of length $k$ in $K_n$ is equal to",
+      "options": [
+        "$\\frac{1}{2k} \\binom{n}{k} \\frac{k!}{1}$",
+        "$\\frac{1}{2} \\binom{n}{k} (k-1)!$",
+        "$\\binom{n}{k} (k-1)!$",
+        "$\\frac{1}{2k} \\binom{n}{k} k!$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/733"
+    },
+    {
+      "id": "2.2.1",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gate1987",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Show that the number of odd-degree vertices in a finite graph is even.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/43566"
+    },
+    {
+      "id": "2.2.2",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gate1991",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Show that all vertices in an undirected finite graph cannot have distinct degrees, if the graph has at least two vertices.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1850"
+    },
+    {
+      "id": "2.2.3",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gate1995",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Prove that in finite graph, the number of vertices of odd degree is always even.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/931"
+    },
+    {
+      "id": "2.2.4",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "A graph $G$ satisfies $\\dots$. The min-degree of $G$ is defined as $\\delta(G)$. Therefore, min-degree of $G$ cannot be",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2663"
+    },
+    {
+      "id": "2.2.5",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gatecse-2006",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "The vertices of a graph $G$ corresponds to all subsets of a set of size $n$, for $n \\ge 6$. Two vertices of $G$ are adjacent if and only if the corresponding sets intersect in exactly two elements. The number of vertices of degree zero in $G$ is:",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/26647"
+    },
+    {
+      "id": "2.2.6",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gatecse-2006",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "The vertices of a graph $G$ corresponds to all subsets of a set of size $n$, for $n \\ge 6$. Two vertices of $G$ are adjacent if and only if the corresponding sets intersect in exactly two elements. The maximum degree of a vertex in $G$ is:",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/82438"
+    },
+    {
+      "id": "2.2.7",
+      "chapter": "Degree of Graph",
+      "subtopic": "Degree of Graph",
+      "exam_tag": "gatecse-2009",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Which one of the following is TRUE for any simple connected undirected graph with more than 2 vertices?",
+      "options": [
+        "A. No two vertices have the same degree.",
+        "B. At least two vertices have the same degree.",
+        "C. At least three vertices have the same degree.",
+        "D. All vertices have the same degree."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/804"
+    },
+    {
+      "id": "2.3.1",
+      "chapter": "2.3 Graph Algorithms",
+      "subtopic": "Graph Algorithms",
+      "exam_tag": "gatecse-2026-set1",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "An undirected, unweighted, simple graph $G=(V, E)$ is said to be $k$-colorable if there exists a function $c: V \\to \\{1, 2, \\dots, k\\}$ such that $c(u) \\neq c(v)$ for every $(u, v) \\in E$. Which of the following statements about $k$-colorable graphs is/are true?",
+      "options": [
+        "If $G$ is $k$-colorable, then $G$ may contain cycles of odd length",
+        "If $G$ is $k$-colorable, then $G$ may contain cycles of even length",
+        "An optimal algorithm for testing whether $G$ is $k$-colorable runs in time $O(V+E)$, if $G$ is represented as an adjacency list",
+        "An optimal algorithm for testing whether $G$ is $k$-colorable runs in time $O(V^2)$, if $G$ is represented as an adjacency list"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/808"
+    },
+    {
+      "id": "2.4.1",
+      "chapter": "2.4 Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2002",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "The minimum number of colours required to colour the vertices of a cycle with $n$ nodes in such a way that no two adjacent nodes have the same colour is",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1071"
+    },
+    {
+      "id": "2.4.2",
+      "chapter": "2.4 Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "The minimum number of colours required to colour the following graph, such that no two adjacent vertices are assigned the same color, is ![diagram](/images/3_diagram.png)",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/523035"
+    },
+    {
+      "id": "2.4.3",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2009",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the chromatic number of an $n$ vertex simple connected graph which does not contain any odd length cycle? Assume $n \\ge 2$.",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. $n-1$",
+        "D. $n$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/399266"
+    },
+    {
+      "id": "2.4.4",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2016-set2",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The minimum number of colours that is sufficient to vertex-colour any planar graph is ________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/333179"
+    },
+    {
+      "id": "2.4.5",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2018",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The chromatic number of the following graph is _____ \n![diagram](/images/2.4.5_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/39553"
+    },
+    {
+      "id": "2.4.6",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2020",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Graph $G$ is obtained by adding vertex $v$ to $K_3$ and making $v$ adjacent to every vertex of $K_3$. The minimum number of colours required to edge-colour $G$ is _______",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/796"
+    },
+    {
+      "id": "2.4.7",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2023",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "Let $G = (V, E)$ be a simple, finite, undirected graph with vertex set $V$. Let $\\Delta(G)$ denote the maximum degree of $G$ and let $C = \\{1, 2, \\dots, k\\}$ denote the set of all possible colors. Color the vertices of $G$ using the following greedy strategy: for $v_i \\in V, i = 1, \\dots, n$: no neighbour of $v_i$ is colored with the color assigned to $v_i$. \nWhich of the following statements is/are TRUE?\nA. This procedure results in a proper vertex coloring of $G$.\nB. The number of colors used is at most $\\Delta(G) + 1$.\nC. The number of colors used is at most $|V|$.\nD. The number of colors used is equal to the chromatic number of $G$.",
+      "options": [
+        "A. This procedure results in a proper vertex coloring of $G$.",
+        "B. The number of colors used is at most $\\Delta(G) + 1$.",
+        "C. The number of colors used is at most $|V|$.",
+        "D. The number of colors used is equal to the chromatic number of $G$."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422801"
+    },
+    {
+      "id": "2.4.8",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2024-set1",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "The chromatic number of a graph is the minimum number of colours used in a proper colouring of the graph. Let $G$ be any graph with $n$ vertices and chromatic number $k$. Which of the following statements is/are always TRUE?\nA. $G$ contains a complete subgraph with $k$ vertices",
+      "options": [
+        "A. $G$ contains a complete subgraph with $k$ vertices"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/204092"
+    },
+    {
+      "id": "2.4.9",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gatecse-2024-set2",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "The chromatic number of a graph is the minimum number of colours used in a proper colouring of the graph. The chromatic number of the following graph is __________.\n![diagram](/images/2.4.9_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3263"
+    },
+    {
+      "id": "2.4.10",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gateit-2006",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Consider the undirected graph $G$ defined as follows. The vertices of $G$ are bit strings of length $n$. We have an edge between vertex $u$ and vertex $v$ if and only if $u$ and $v$ differ in exactly one bit position (in other words, $v$ can be obtained from $u$ by flipping a single bit). The ratio of the chromatic number of $G$ to the diameter of $G$ is, (Note: The labels $n$ are derived from $G$, $n$, and the structure of the question text).",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3564"
+    },
+    {
+      "id": "2.4.11",
+      "chapter": "Graph Coloring",
+      "subtopic": "Graph Coloring",
+      "exam_tag": "gateit-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the chromatic number of the following graph?\n![diagram](/images/2.4.11_diagram.png)",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/82442"
+    },
+    {
+      "id": "2.5.1",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1987",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Specify an adjacency-lists representation of the undirected graph given above. ![diagram](/images/5_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/580"
+    },
+    {
+      "id": "2.5.2",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1988",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Write the adjacency matrix representation of the graph given in below figure. ![diagram](/images/5_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/510"
+    },
+    {
+      "id": "2.5.3",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1990",
+      "type": "NAT",
+      "marks": "N/A",
+      "question_text": "A graph which has the same number of edges as its complement must have number of vertices $n$ congruent to ________ or ________ modulo $k$.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/83854"
+    },
+    {
+      "id": "2.5.4",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1991",
+      "type": "NAT",
+      "marks": "N/A",
+      "question_text": "The maximum number of possible edges in an undirected graph with $n$ vertices and $k$ components is ______.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/94340"
+    },
+    {
+      "id": "2.5.5",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1992",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "How many edges can there be in a forest with $k$ components having $n$ vertices in all?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2299"
+    },
+    {
+      "id": "2.5.6",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1993",
+      "type": "MSQ",
+      "marks": "N/A",
+      "question_text": "Consider a simple connected graph $G$ with $n$ vertices and $e$ edges. Then, which of the following statements are true?",
+      "options": [
+        "A. $G$ has no cycles",
+        "B. The graph obtained by removing any edge from $G$ is not connected",
+        "C. $G$ has at least one cycle",
+        "D. The graph obtained by removing any two edges from $G$ is not connected",
+        "E. None of the above"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "N/A"
+    },
+    {
+      "id": "2.5.7",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1994",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of distinct simple graphs with up to three nodes is",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1468"
+    },
+    {
+      "id": "2.5.8",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1994",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The number of edges in a regular graph of degree $d$ and $n$ vertices is ____________",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2612"
+    },
+    {
+      "id": "2.5.9",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1994",
+      "type": "descriptive",
+      "marks": "2",
+      "question_text": "An independent set in a graph is a subset of vertices such that no two vertices in the subset are connected by an edge. An incomplete scheme for a greedy algorithm to find a maximum independent set in a tree is given below:\nV: Set of all vertices in the tree;\nI := $\\phi$\nwhile V $\\neq$ $\\phi$ do\nbegin\nselect a vertex u $\\in$ V such that ________;\nV := V - {u};\nif u is such that ________ then I := I $\\cup$ {u}\nend;\nOutput(I);\nA. Complete the algorithm by specifying the property of vertex in each case.\nB. What is the time complexity of the algorithm?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2520"
+    },
+    {
+      "id": "2.5.10",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1995",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The minimum number of edges in a connected cyclic graph on $n$ vertices is:",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D. None of the above"
+      ],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/2472"
+    },
+    {
+      "id": "2.5.11",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gate1999",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The number of articulation points of the following graph is ![diagram](/images/5_diagram.png)",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2443"
+    },
+    {
+      "id": "2.5.12",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-1999",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Consider the following graph: ![diagram](/images/2.5.12_diagram.png)\na. Which of the following sets of edges is a cut?\ni. {A, D}, {A, E}, {B, D}, {C, F}\nii. {A, B}, {B, C}, {A, D}, {D, F}\nb. What is cardinality of min-cut in this graph?\nc. Prove that if a connected undirected graph with $n$ vertices has a min-cut of cardinality $k$, then $G$ has at least $nk/2$ edges.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1075"
+    },
+    {
+      "id": "2.5.13",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2002",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "The maximum number of edges in a $n$-node undirected graph without self loops is",
+      "options": [
+        "$n^2$",
+        "$\\frac{n(n-1)}{2}$",
+        "$\\frac{n(n+1)}{2}$",
+        "$(n-1)^2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1504"
+    },
+    {
+      "id": "2.5.14",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G$ be an arbitrary graph with $n$ nodes and $k$ components. If a vertex is removed from $G$, the number of components in the resultant graph must necessarily lie down between",
+      "options": [
+        "$k-1$ and $n-1$",
+        "$k$ and $n$",
+        "$k-1$ and $n-k$",
+        "$k+1$ and $n-k$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1161"
+    },
+    {
+      "id": "2.5.15",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2004",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Let $G_1$ and $G_2$ be connected graphs on the same vertex set $V$ with more than two vertices. If $G_1 \\cup G_2$ is not a connected graph, then the graph $G_1 \\cap G_2$",
+      "options": [
+        "cannot have a cut vertex",
+        "must have a cycle",
+        "must have a cut-edge (bridge)",
+        "has chromatic number strictly greater than those of $G_1$ and $G_2$"
+      ],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/899"
+    },
+    {
+      "id": "2.5.16",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G$ be a simple graph with $n$ vertices and $m$ edges. The size of the minimum vertex cover of $G$ is $k$. Then, the size of the maximum independent set of $G$ is:",
+      "options": [
+        "$k$",
+        "$n-k$",
+        "less than $k$",
+        "more than $k$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/830"
+    },
+    {
+      "id": "2.5.28",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2022",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "Consider a simple undirected graph of $n$ vertices. If the graph is disconnected, then the maximum number of edges it can have is _______________ .",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371894"
+    },
+    {
+      "id": "2.5.29",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2022",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Consider a simple undirected unweighted graph $G$ with at least three vertices. If $A$ is the adjacency matrix of the graph, then the number of cycles of length 3 in the graph is given by the trace of",
+      "options": [
+        "$A^3$ divided by 6",
+        "$A^3$ divided by 2",
+        "$A^3$ divided by 3",
+        "$A^3$ divided by 1"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371909"
+    },
+    {
+      "id": "2.5.30",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2022",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "Which of the properties hold for the adjacency matrix $A$ of a simple undirected unweighted graph $G$ having $n$ vertices?",
+      "options": [
+        "The diagonal entries of $A^2$ are the degrees of the vertices of the graph.",
+        "If the graph is connected, then none of the entries of $A^{n-1}$ can be zero.",
+        "If the sum of all the elements of $A^2$ is at most $n-1$, then the graph must be acyclic.",
+        "If there is at least a 1 in each of $n-1$ rows and columns, then the graph must be connected."
+      ],
+      "difficulty_tag": "hard",
+      "explanation_url": "https://gateoverflow.in/371916"
+    },
+    {
+      "id": "2.5.31",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gatecse-2024",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "The number of spanning trees in a complete graph of $n$ vertices labelled $1$ and $2$ is _________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422818"
+    },
+    {
+      "id": "2.5.33",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gatecse-2024-set2",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "Every spanning tree in $G$ has even weight. Which of the following statements is/are TRUE for every such graph?",
+      "options": [
+        "All edges in $G$ have even weight",
+        "All edges in $G$ have even weight all edges in $G$ have odd weight",
+        "In each cycle in $G$, all edges in $G$ have even weight",
+        "In each cycle in $G$, either all edges in $G$ have even weight all edges in $G$ have odd weight"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3550"
+    },
+    {
+      "id": "2.5.34",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gatecse-2024-set2",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $A$ be the adjacency matrix of a simple undirected graph $G$. Suppose $A$ is its own inverse. Which one of the following statements is always TRUE?",
+      "options": [
+        "$G$ is a cycle",
+        "$G$ is a perfect matching",
+        "$G$ is a complete graph",
+        "There is no such graph"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3817"
+    },
+    {
+      "id": "2.5.35",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gateit-2004",
+      "type": "MCQ",
+      "marks": "normal",
+      "question_text": "What is the number of vertices in an undirected connected graph with $e$ edges, $n_1$ vertices of degree 1, $n_2$ vertices of degree 2 and remaining $n_3$ of degree 3?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3680"
+    },
+    {
+      "id": "2.5.36",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gateit-2004",
+      "type": "MCQ",
+      "marks": "normal",
+      "question_text": "What is the maximum number of edges in an acyclic undirected graph with $n$ vertices?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/422890"
+    },
+    {
+      "id": "2.5.37",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gateit-2005",
+      "type": "MCQ",
+      "marks": "normal",
+      "question_text": "Let $G$ be a directed graph whose vertex set is the set of numbers from 1 to $n$. There is an edge from a vertex $i$ to a vertex $j$ iff either $j = i + 1$ or $j = i + 3$. The minimum number of edges in a path in $G$ from vertex 0 to vertex $n$ is",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3646"
+    },
+    {
+      "id": "2.5.38",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Theory",
+      "exam_tag": "gateit-2006",
+      "type": "MCQ",
+      "marks": "easy",
+      "question_text": "If all the edge weights of an undirected graph are positive, then any subset of edges that connects all the vertices and has minimum total weight is a",
+      "options": [
+        "Hamiltonian cycle",
+        "grid",
+        "hypercube",
+        "tree"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "N/A"
+    },
+    {
+      "id": "2.5.38",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gateit-2007",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the largest integer $k$ such that every simple connected graph with $n$ vertices and $n+k-1$ edges contains at least $k$ different spanning trees?",
+      "options": [
+        "A. $k$",
+        "B. $k+1$",
+        "C. $k+2$",
+        "D. $k-1$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2018"
+    },
+    {
+      "id": "2.5.39",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gateit-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "$G$ is a simple undirected graph. Some vertices of $G$ are of odd degree. Add a node $v$ to $G$ and make it adjacent to each odd degree vertex of $G$. The resultant graph is sure to be",
+      "options": [
+        "A. regular",
+        "B. complete",
+        "C. Hamiltonian",
+        "D. Euler"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1611"
+    },
+    {
+      "id": "2.5.40",
+      "chapter": "Graph Connectivity",
+      "subtopic": "Graph Connectivity",
+      "exam_tag": "gateit-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "What is the size of the smallest Maximal Independent Set of a chain of nine nodes?",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3264"
+    },
+    {
+      "id": "2.6.1",
+      "chapter": "Graph Isomorphism",
+      "subtopic": "Graph Isomorphism",
+      "exam_tag": "gatecse-2012",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following graphs is isomorphic to ![diagram](/images/3_diagram.png)?\nA. ![diagram](/images/4_diagram.png)\nB. ![diagram](/images/5_diagram.png)\nC. ![diagram](/images/6_diagram.png)\nD. ![diagram](/images/10_diagram.png)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3317"
+    },
+    {
+      "id": "2.6.2",
+      "chapter": "Graph Isomorphism",
+      "subtopic": "Graph Isomorphism",
+      "exam_tag": "gatecse-2014-set2",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "A cycle on $n$ vertices is isomorphic to its complement. The value of $n$ is _____.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/3458"
+    },
+    {
+      "id": "2.6.3",
+      "chapter": "Graph Isomorphism",
+      "subtopic": "Graph Isomorphism",
+      "exam_tag": "gatecse-2015-set2",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "A graph $G$ is self-complementary if it is isomorphic to its complement. For all self-complementary graphs on $n$ vertices, $n$ is",
+      "options": [
+        "A. $4k$",
+        "B. $4k+1$",
+        "C. $4k+2$",
+        "D. $4k+3$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8134"
+    },
+    {
+      "id": "2.6.4",
+      "chapter": "Graph Theory",
+      "subtopic": "Graph Isomorphism",
+      "exam_tag": "gatecse-2022",
+      "type": "MSQ",
+      "marks": "2",
+      "question_text": "The following simple undirected graph is referred to as the Peterson graph. ![diagram](/images/2.6.4_diagram.png) Which of the following statements is/are TRUE?\nA. The chromatic number of the graph is 3.\nB. The graph has a Hamiltonian path.\nC. The following graph is isomorphic to the Peterson graph. ![diagram](/images/2.6.4_b_diagram.png)\nD. The size of the largest independent set of the given graph is 4. (A subset of vertices of a graph form an independent set if no two vertices of the subset are adjacent.)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/523033"
+    },
+    {
+      "id": "2.7.1",
+      "chapter": "Graph Theory",
+      "subtopic": "Graph Matching",
+      "exam_tag": "gatecse-2003",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "How many perfect matching are there in a complete graph of 6 vertices?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/926"
+    },
+    {
+      "id": "2.7.2",
+      "chapter": "Graph Theory",
+      "subtopic": "Graph Matching",
+      "exam_tag": "gatecse-2026-set1",
+      "type": "NAT",
+      "marks": "2",
+      "question_text": "Let $G$ be an undirected graph, which is a path on 8 vertices. The number of matchings in $G$ is ________. (answer in integer)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/371896"
+    },
+    {
+      "id": "2.8.1",
+      "chapter": "Graph Theory",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gate1987",
+      "type": "descriptive",
+      "marks": "1",
+      "question_text": "State whether the following statement is TRUE or FALSE:\nThere is a linear-time algorithm for testing the planarity of finite graphs.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/80584"
+    },
+    {
+      "id": "2.8.2",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gate-1989",
+      "type": "descriptive",
+      "marks": "N/A",
+      "question_text": "Which of the following graphs is/are planar?\n![diagram](/images/0_diagram.png)\n![diagram](/images/1_diagram.png)\n![diagram](/images/8_diagram.png)",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/563"
+    },
+    {
+      "id": "2.8.3",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gate-1990",
+      "type": "MSQ",
+      "marks": "N/A",
+      "question_text": "A graph is planar if and only if,",
+      "options": [
+        "It does not contain a subgraph homeomorphic to $K_5$ and $K_{3,3}$.",
+        "It does not contain a subgraph isomorphic to $K_5$ and $K_{3,3}$.",
+        "It does not contain a subgraph isomorphic to $K_5$ or $K_{3,3}$.",
+        "It does not contain a subgraph homeomorphic to $K_5$ or $K_{3,3}$."
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/554"
+    },
+    {
+      "id": "2.8.4",
+      "question_text": "Maximum number of edges in a planar graph with $n$ vertices is _____",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gate-1992",
+      "type": "NAT",
+      "marks": "N/A",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/85384"
+    },
+    {
+      "id": "2.8.5",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gate-1992",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "A non-planar graph with minimum number of vertices has",
+      "options": [
+        "9 edges, 5 vertices",
+        "10 edges, 5 vertices",
+        "8 edges, 5 vertices",
+        "6 edges, 5 vertices"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1172"
+    },
+    {
+      "id": "2.8.6",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Let $G$ be a simple connected planar graph with $v$ vertices and $e$ edges. Then, the number of faces in the planar embedding of the graph is:",
+      "options": [
+        "$e-v+2$",
+        "$e+v+2$",
+        "$v-e+2$",
+        "$e-v-2$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/1159"
+    },
+    {
+      "id": "2.8.7",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2005",
+      "type": "MCQ",
+      "marks": "N/A",
+      "question_text": "Which one of the following graphs is NOT planar?",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/87129"
+    },
+    {
+      "id": "2.8.8",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2008",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Which of the following statements is true for every planar graph on $n$ vertices?",
+      "options": [
+        "The graph is connected",
+        "The graph is Eulerian",
+        "The graph has a vertex-cover of size at most $n-1$",
+        "The graph has an independent set of size at least $n/3$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/49"
+    },
+    {
+      "id": "2.8.9",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2011",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "$K_4$ and $Q_3$ are graphs with the following structures. ![diagram](/images/4_diagram.png) ![diagram](/images/9_diagram.png) \nWhich one of the following statements is TRUE in relation to these graphs?",
+      "options": [
+        "$K_4$ is a planar while $Q_3$ is not",
+        "Both $K_4$ and $Q_3$ are planar",
+        "$Q_3$ is planar while $K_4$ is not",
+        "Neither $K_4$ nor $Q_3$ are planar"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2119"
+    },
+    {
+      "id": "2.8.10",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2012",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $G$ be a simple undirected planar graph on $n$ vertices with $e$ edges. If $G$ is a connected graph, then the number of bounded faces in any embedding of $G$ on the plane is equal to",
+      "options": [
+        "$e - n + 1$",
+        "$e - n + 2$",
+        "$e - n$",
+        "$e - n + 3$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/421"
+    },
+    {
+      "id": "2.8.11",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2014",
+      "type": "MCQ",
+      "marks": "1",
+      "question_text": "Let $\\delta$ denote the minimum degree of a vertex in a graph. For all planar graphs on $n$ vertices with $n \\ge 3$, which one of the following is TRUE?",
+      "options": [
+        "In any planar embedding, the number of faces is at least $\\delta$"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/2086"
+    },
+    {
+      "id": "2.8.12",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2015-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "Let $G$ be a connected planar graph with $n$ vertices. If the number of edges on each face is three, then the number of edges in $G$ is_______________.",
+      "options": [],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/523120"
+    },
+    {
+      "id": "2.8.13",
+      "chapter": "Graph Planarity",
+      "subtopic": "Graph Planarity",
+      "exam_tag": "gatecse-2021-set1",
+      "type": "NAT",
+      "marks": "1",
+      "question_text": "In an undirected connected planar graph, there are eight vertices and five faces. The number of edges in is _________.",
+      "options": [],
+      "difficulty_tag": "easy",
+      "explanation_url": "https://gateoverflow.in/357435"
+    },
+    {
+      "id": "2.9.1",
+      "chapter": "Jaccard Coefficient",
+      "subtopic": "Jaccard Coefficient",
+      "exam_tag": "gatecse-2026-set2",
+      "type": "MCQ",
+      "marks": "2",
+      "question_text": "Consider a complete graph $K_r$ with $n$ vertices. Note that multiple spanning trees can be constructed over $K_r$. Each of these spanning trees is represented as a set of edges. The Jaccard coefficient between any two sets is defined as the ratio of the size of the intersection of the two sets to the size of the union of the two sets.\n\nWhich one of the following options gives the lowest possible value for the Jaccard coefficient between any two spanning trees of $K_r$?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "difficulty_tag": "normal",
+      "explanation_url": "https://gateoverflow.in/8364"
     }
   ],
   "answer_keys": [
@@ -92,6 +2019,562 @@
     {
       "question_id": "1.1.2",
       "correct_answer": "4"
+    },
+    {
+      "question_id": "1.1.1",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.2.8",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.2.9",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.2.10",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.2.11",
+      "correct_answer": "89"
+    },
+    {
+      "question_id": "1.2.12",
+      "correct_answer": "21"
+    },
+    {
+      "question_id": "1.3.1",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "1.3.3",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "1.3.5",
+      "correct_answer": "3^n"
+    },
+    {
+      "question_id": "1.3.6",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "1.4.2",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.4.3",
+      "correct_answer": "3"
+    },
+    {
+      "question_id": "1.4.4",
+      "correct_answer": "n+1"
+    },
+    {
+      "question_id": "1.4.5",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "1.4.6",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "1.5.1",
+      "correct_answer": "6"
+    },
+    {
+      "question_id": "1.5.2",
+      "correct_answer": "1"
+    },
+    {
+      "question_id": "1.6.1",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "1.6.2",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "1.8.4",
+      "correct_answer": "0.99"
+    },
+    {
+      "question_id": "2.1.1",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.1.2",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.1.3",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.3.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.4.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.4.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.4.3",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.4.4",
+      "correct_answer": "4"
+    },
+    {
+      "question_id": "2.4.5",
+      "correct_answer": "3"
+    },
+    {
+      "question_id": "2.4.6",
+      "correct_answer": "4"
+    },
+    {
+      "question_id": "2.4.7",
+      "correct_answer": "A;B;C"
+    },
+    {
+      "question_id": "2.4.8",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.12",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.13",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.14",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.15",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.16",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.28",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.29",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.30",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.31",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.3",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.8.4",
+      "correct_answer": "3n-6"
+    },
+    {
+      "question_id": "2.8.5",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.8.6",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.8.7",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.8",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.8.9",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.8.10",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.8.11",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.1.1",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.1.2",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.1.3",
+      "correct_answer": "X"
+    },
+    {
+      "question_id": "2.2.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.2.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.2.3",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.2.4",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.2.5",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.2.6",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.2.7",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.2.8",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.2.9",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.2.10",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.2.11",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.2.12",
+      "correct_answer": "16"
+    },
+    {
+      "question_id": "2.2.13",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.3.1",
+      "correct_answer": "B;C"
+    },
+    {
+      "question_id": "2.4.1",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.4.2",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.4.3",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.4.4",
+      "correct_answer": "4"
+    },
+    {
+      "question_id": "2.4.5",
+      "correct_answer": "3"
+    },
+    {
+      "question_id": "2.4.6",
+      "correct_answer": "7"
+    },
+    {
+      "question_id": "2.4.7",
+      "correct_answer": "A;B"
+    },
+    {
+      "question_id": "2.4.8",
+      "correct_answer": "B;C"
+    },
+    {
+      "question_id": "2.4.9",
+      "correct_answer": "2"
+    },
+    {
+      "question_id": "2.4.10",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.4.11",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.3",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.4",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.5",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.6",
+      "correct_answer": "C;D"
+    },
+    {
+      "question_id": "2.5.7",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.8",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.9",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.10",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.11",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.12",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.5.13",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.14",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.15",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.16",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.17",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.18",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.19",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.20",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.21",
+      "correct_answer": "506"
+    },
+    {
+      "question_id": "2.5.22",
+      "correct_answer": "36"
+    },
+    {
+      "question_id": "2.5.23",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.24",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.25",
+      "correct_answer": "C;D"
+    },
+    {
+      "question_id": "2.5.26",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.27",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.28",
+      "correct_answer": "36"
+    },
+    {
+      "question_id": "2.5.29",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.30",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.31",
+      "correct_answer": "16"
+    },
+    {
+      "question_id": "2.5.32",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.33",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.34",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.35",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.5.36",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.5.37",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.38",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.5.39",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.5.40",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.6.1",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.6.2",
+      "correct_answer": "5"
+    },
+    {
+      "question_id": "2.6.3",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.6.4",
+      "correct_answer": "A;B;C"
+    },
+    {
+      "question_id": "2.7.1",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.7.2",
+      "correct_answer": "34 : 34"
+    },
+    {
+      "question_id": "2.8.1",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.2",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.3",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.8.4",
+      "correct_answer": "N/A"
+    },
+    {
+      "question_id": "2.8.5",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.8.6",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.8.7",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.8.8",
+      "correct_answer": "C"
+    },
+    {
+      "question_id": "2.8.9",
+      "correct_answer": "B"
+    },
+    {
+      "question_id": "2.8.10",
+      "correct_answer": "D"
+    },
+    {
+      "question_id": "2.8.11",
+      "correct_answer": "A"
+    },
+    {
+      "question_id": "2.8.12",
+      "correct_answer": "24"
+    },
+    {
+      "question_id": "2.8.13",
+      "correct_answer": "11 : 11"
+    },
+    {
+      "question_id": "2.9.1",
+      "correct_answer": "C"
     }
   ]
 }
