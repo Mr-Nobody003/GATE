@@ -4,25 +4,29 @@ import QuestionCard from "@/components/QuestionCard";
 import Latex from "react-latex-next";
 import 'katex/dist/katex.min.css';
 
+const createSlug = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
 export function generateStaticParams() {
   const chapters = Array.from(new Set(volume1.questions.map((q: any) => q.chapter)));
   return chapters.map((chapter) => ({
     volume: 'volume1',
-    chapter: chapter,
+    chapter: createSlug(chapter as string),
   }));
 }
 
-export default function PracticePage({
+export default async function PracticePage({
   params
 }: {
-  params: { volume: string; chapter: string }
+  params: Promise<{ volume: string; chapter: string }>
 }) {
-  const chapterName = decodeURIComponent(params.chapter);
+  const resolvedParams = await params;
+  const allChapters = Array.from(new Set(volume1.questions.map((q: any) => q.chapter))) as string[];
+  const chapterName = allChapters.find(c => createSlug(c) === resolvedParams.chapter);
   
   // Later we can dynamically import the correct volume based on params.volume
   // For now we just use volume1
-  const questions = volume1.questions.filter(q => q.chapter === chapterName);
-  const notes = volume1.notes.filter(n => n.chapter === chapterName);
+  const questions = chapterName ? volume1.questions.filter(q => q.chapter === chapterName) : [];
+  const notes = chapterName ? volume1.notes.filter(n => n.chapter === chapterName) : [];
   const answerKeys = volume1.answer_keys;
 
   if (questions.length === 0) {

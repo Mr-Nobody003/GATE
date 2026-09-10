@@ -38,10 +38,63 @@ def decode_qrs(pil_img):
             pass
     return urls
 
+def create_sprite_sheet_with_labels(images, max_width=1000):
+    if not images:
+        return None
+    
+    try:
+        font = ImageFont.truetype("arial.ttf", 14)
+    except:
+        font = ImageFont.load_default()
+        
+    padding = 10
+    x, y = padding, padding
+    row_height = 0
+    positions_and_labels = []
+    
+    temp_img = Image.new('RGB', (1, 1))
+    temp_draw = ImageDraw.Draw(temp_img)
+    
+    for i, img in enumerate(images):
+        label = f"[{i}]"
+        bbox = temp_draw.textbbox((0, 0), label, font=font)
+        text_w = bbox[2] - bbox[0]
+        text_h = bbox[3] - bbox[1]
+        
+        item_w = text_w + 5 + img.width
+        item_h = max(text_h, img.height)
+        
+        if x + item_w > max_width - padding and x > padding:
+            x = padding
+            y += row_height + padding
+            row_height = 0
+            
+        positions_and_labels.append({
+            'img': img,
+            'label': label,
+            'pos': (x, y),
+            'text_size': (text_w, text_h)
+        })
+        
+        x += item_w + padding
+        row_height = max(row_height, item_h)
+        
+    total_height = y + row_height + padding
+    
+    sheet = Image.new('RGB', (max_width, total_height), (255, 255, 255))
+    draw = ImageDraw.Draw(sheet)
+    
+    for item in positions_and_labels:
+        ix, iy = item['pos']
+        draw.text((ix, iy), item['label'], fill=(255, 0, 0), font=font)
+        sheet.paste(item['img'], (ix + item['text_size'][0] + 5, iy))
+        
+    return sheet
+
 def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name, model):
     prompt = f"""
     You are an expert OCR and data extraction system for engineering exam preparation (GATE).
-    I am providing you with the plain text extracted from a page of a book, along with cropped images of the math formulas, diagrams, and raster glyphs from that same page.
+    I am providing you with the plain text extracted from a page of a book, along with a single sprite-sheet image containing all cropped math formulas, diagrams, and raster glyphs from that page.
     
     Extracted Text:
     ```
@@ -56,8 +109,8 @@ def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name,
     I have also detected the following QR code URLs on this page: {qr_urls}. 
     Match these URLs to the corresponding questions (usually physically next to them).
     
-    The cropped images provided after this text are ordered sequentially (Image 0, Image 1, etc.). 
-    Use them to reconstruct the LaTeX for any math formulas missing or garbled in the text, and to identify diagrams.
+    The provided sprite-sheet image contains sequentially numbered images labeled with red text like [0], [1], [2], etc. 
+    Use these numbered images to reconstruct the LaTeX for any math formulas missing or garbled in the text, and to identify diagrams.
     
     Extract the content into a structured JSON format matching this schema EXACTLY:
     {{
@@ -97,7 +150,7 @@ def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name,
     }}
     
     Guidelines:
-    - Use KaTeX compatible LaTeX for all math. Wrap inline math in $...$ and block math in $$...$$.
+    - Use KaTeX compatible LaTeX for all math. Wrap inline math in $...$ and block math in $$...$$. IMPORTANT: Escape all LaTeX backslashes in your JSON strings (e.g. use \\frac instead of \frac, \\int instead of \int).
     - 'type' is read directly from the tag line (e.g. 'numerical-answers' -> NAT, 'multiple-selects' -> MSQ, etc).
     - If there is a diagram, provide its index from the provided images in the 'diagrams' array under 'image_index'.
     - Return ONLY valid JSON, no markdown blocks around it.
@@ -105,16 +158,16 @@ def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name,
     """
     
     content_parts = [prompt]
-    for idx, crop in enumerate(cropped_images):
-        content_parts.append(f"Image {idx}:")
-        content_parts.append(crop)
+    
+    sheet = create_sprite_sheet_with_labels(cropped_images)
+    if sheet:
+        content_parts.append(sheet)
     
     max_retries = 3
     for attempt in range(max_retries):
         try:
             response = model.generate_content(content_parts)
             text = response.text.strip()
-            # Clean up markdown if model outputs it despite instructions
             if text.startswith("```json"):
                 text = text[7:]
             if text.endswith("```"):
@@ -128,6 +181,11 @@ def process_page(extracted_text, cropped_images, page_num, qr_urls, volume_name,
                 if attempt < max_retries - 1:
                     print(f"  [Attempt {attempt+1}/{max_retries}] API busy or rate limited (429/504). Sleeping 35s...")
                     time.sleep(35)
+                    continue
+            elif isinstance(e, json.JSONDecodeError):
+                if attempt < max_retries - 1:
+                    print(f"  [Attempt {attempt+1}/{max_retries}] JSON Decode Error: {e}. Retrying...")
+                    time.sleep(2)
                     continue
             
             print(f"Error processing page {page_num} with model {model.model_name}: {e}")

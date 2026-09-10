@@ -10,7 +10,7 @@ type Question = {
   marks: string;
   question_text: string;
   options?: string[];
-  explanation_url?: string;
+  explanation_url?: string | null;
 };
 
 export default function QuestionCard({ question, answer }: { question: Question; answer?: string }) {

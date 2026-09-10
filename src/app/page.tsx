@@ -1,6 +1,8 @@
 import Link from "next/link";
 import volume1 from "@/../data/volume1.json";
 
+const createSlug = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
 export default function Dashboard() {
   // Aggregate stats from volume1 (we can expand this for other volumes later)
   const totalQuestions = volume1.questions.length;
@@ -31,7 +33,7 @@ export default function Dashboard() {
             {chapters.map((chapter) => (
               <Link 
                 key={chapter}
-                href={`/practice/volume1/${encodeURIComponent(chapter)}`}
+                href={`/practice/volume1/${createSlug(chapter)}`}
                 className="group p-6 rounded-xl border border-neutral-800 bg-neutral-900 hover:border-neutral-600 transition-all hover:bg-neutral-800/80 block"
               >
                 <h3 className="font-medium text-lg text-white group-hover:text-blue-400 transition-colors">{chapter}</h3>
