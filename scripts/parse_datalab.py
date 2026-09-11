@@ -366,6 +366,36 @@ if __name__ == "__main__":
         total_q += sum(len(ch["questions"]) for ch in chapters)
         
     os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
+    
+    # Post-process to link external images from public/images
+    img_dir = os.path.join(base_dir, "public", "images")
+    if os.path.exists(img_dir):
+        def get_qid(f):
+            m = re.match(r'^q_(\d+)_(\d+)_(\d+)_', f)
+            if m: return f"{m.group(1)}.{m.group(2)}.{m.group(3)}"
+            m = re.match(r'^(\d+\.\d+\.\d+)_', f)
+            if m: return m.group(1)
+            m = re.match(r'^(\d+)_', f)
+            if m: return m.group(1)
+            return None
+        
+        images = os.listdir(img_dir)
+        img_map = {}
+        for img in images:
+            qid = get_qid(img)
+            if qid:
+                img_map.setdefault(qid, []).append(img)
+                
+        for v_id, vol in parsed_data['volumes'].items():
+            for chapter in vol['chapters']:
+                for q in chapter['questions']:
+                    qid = q['id']
+                    if qid in img_map:
+                        for img in sorted(img_map[qid]):
+                            img_path = f"/images/{img}"
+                            if img_path not in q['question_text']:
+                                q['question_text'] += f'\n\n<img src="{img_path}" alt="diagram" />'
+
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(parsed_data, f, indent=2, ensure_ascii=False)
         
