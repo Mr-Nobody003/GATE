@@ -1,0 +1,121 @@
+--- Table 0 ---
+<table><tr><th>User</th><th>👍, Answers</th><th>User</th><th>?Added</th><th>User</th><th>📋Done</th></tr><tr><td>Arjun Suresh</td><td>6823, 127</td><td>Arjun Suresh</td><td>314</td><td>Lakshman Patel (GATE<br/>And Tech)</td><td>424</td></tr><tr><td>Sachin Mittal</td><td>2139, 18</td><td>Kathleen Bankson</td><td>223</td><td>Arjun Suresh</td><td>325</td></tr><tr><td>Digvijay</td><td>1905, 26</td><td>gatecse</td><td>165</td><td>Milicevic3306</td><td>143</td></tr><tr><td>Akash Kanase</td><td>1875, 33</td><td>GO Editor</td><td>154</td><td>Pavan Singh</td><td>140</td></tr><tr><td>Amar Vashishth</td><td>1822, 20</td><td>Akash Kanase</td><td>112</td><td>kenzou</td><td>103</td></tr><tr><td>Happy Mittal</td><td>1739, 21</td><td>admin</td><td>69</td><td>Misbah</td><td>99</td></tr><tr><td>Deepak Poonia</td><td>1503, 24</td><td>Ishrat Jahan</td><td>60</td><td>soujanyareddy13</td><td>94</td></tr><tr><td>Rajarshi Sarkar</td><td>1381, 31</td><td>Misbah</td><td>60</td><td>Naveen Kumar</td><td>72</td></tr
+--- Table 1 ---
+
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>2026 - 1</th>
+<th>2026 - 2</th>
+<th>2025 - 1</th>
+<th>2025 - 2</th>
+<th>2024 - 1</th>
+<th>2024 - 2</th>
+<th>2023</th>
+<th>2022</th>
+<th>2021 - 1</th>
+<th>2021 - 2</th>
+<th>Minimum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 Mark Count</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2 Marks Count</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Total Marks</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+--- Table 2 ---
+
+<table>
+<tr>
+<td><i>A.</i></td>
+<td>The number of distinct binary tree with n nodes.</td>
+<td><i>P.</i></td>
+<td><math>\frac{n!}{2}</math></td>
+</tr>
+<tr>
+<td><i>B.</i></td>
+<td>The number of binary strings of the length of 2n with an equal number of 0's and 1's</td>
+<td><i>Q.</i></td>
+<td><math>\binom{3n}{n}</math></td>
+</tr>
+<tr>
+<td><i>C.</i></td>
+<td>The number of even permutation of n objects.</td>
+<td><i>R.</i></td>
+<td><math>\binom{2n}{n}</math></td>
+</tr>
+<tr>
+<td><i>D.</i></td>
+<td>The number of binary strings of length 6n which are palindromes with 2n 0's.</td>
+<td><i>S.</i></td>
+<td><math>\frac{1}{1+n}\binom{2n}{n}</math></td>
+</tr>
+</table>
+
+--- Table 3 ---
+<table><tr><td>1.1.1</td><td>D</td></tr><tr><td>1.1.6</td><td>A</td></tr><tr><td>1.2.5</td><td>B</td></tr><tr><td>1.2.10</td><td>D</td></tr><tr><td>1.2.15</td><td>195:195</td></tr><tr><td>1.3.2</td><td>N/A</td></tr><tr><td>1.4.1</td><td>N/A</td></tr><tr><td>1.4.6</td><td>A</td></tr><tr><td>1.7.1</td><td>N/A</td></tr><tr><td>1.7.6</td><td>B</td></tr><tr><td>1.8.4</td><td>0.99</td></tr></table>
+--- Table 4 ---
+<table><tr><td>1.1.2</td><td>N/A</td></tr><tr><td>1.2.1</td><td>A</td></tr><tr><td>1.2.6</td><td>C</td></tr><tr><td>1.2.11</td><td>89</td></tr><tr><td>1.2.16</td><td>A</td></tr><tr><td>1.3.3</td><td>D</td></tr><tr><td>1.4.2</td><td>B</td></tr><tr><td>1.5.1</td><td>4</td></tr><tr><td>1.7.2</td><td>B</td></tr><tr><td>1.7.7</td><td>B</td></tr></table>
+--- Table 5 ---
+<table><tr><td>1.1.3</td><td>N/A</td></tr><tr><td>1.2.2</td><td>N/A</td></tr><tr><td>1.2.7</td><td>B</td></tr><tr><td>1.2.12</td><td>15</td></tr><tr><td>1.2.17</td><td>B</td></tr><tr><td>1.3.4</td><td>65 : 65</td></tr><tr><td>1.4.3</td><td>10</td></tr><tr><td>1.5.2</td><td>2</td></tr><tr><td>1.7.3</td><td>197.9 : 198.1</td></tr><tr><td>1.8.1</td><td>N/A</td></tr></table>
+--- Table 6 ---
+<table><tr><td>1.1.4</td><td>B</td></tr><tr><td>1.2.3</td><td>D</td></tr><tr><td>1.2.8</td><td>C</td></tr><tr><td>1.2.13</td><td>C</td></tr><tr><td>1.2.18</td><td>A</td></tr><tr><td>1.3.5</td><td>59049 : 59049</td></tr><tr><td>1.4.4</td><td>15</td></tr><tr><td>1.6.1</td><td>C</td></tr><tr><td>1.7.4</td><td>A;B;C</td></tr><tr><td>1.8.2</td><td>N/A</td></tr></table>
+--- Table 7 ---
+<table><tr><td>1.1.5</td><td>7</td></tr><tr><td>1.2.4</td><td>D</td></tr><tr><td>1.2.9</td><td>A</td></tr><tr><td>1.2.14</td><td>12</td></tr><tr><td>1.3.1</td><td>A;C</td></tr><tr><td>1.3.6</td><td>D</td></tr><tr><td>1.4.5</td><td>D</td></tr><tr><td>1.6.2</td><td>C</td></tr><tr><td>1.7.5</td><td>A</td></tr><tr><td>1.8.3</td><td>A</td></tr></table>
+--- Table 8 ---
+
+<table>
+<tr>
+<th>Year</th><th>2026 - 1</th><th>2026 - 2</th><th>2025 - 1</th><th>2025 - 2</th><th>2024 - 1</th><th>2024 - 2</th><th>2023</th><th>2022</th><th>2021 - 1</th><th>2021 - 2</th><th>Minimum</th></tr>
+<tr>
+<td>1 Mark Count</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr>
+<td>2 Marks Count</td><td>3</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>1</td><td>3</td><td>1</td><td>0</td><td>0</td></tr>
+<tr>
+<td>Total Marks</td><td>6</td><td>2</td><td>0</td><td>0</td><td>3</td><td>5</td><td>2</td><td>7</td><td>3</td><td>0</td><td>0</td></tr>
+</table>
+
+--- Table 9 ---
+<table><tr><td>2.1.1</td><td>D</td><td>2.1.2</td><td>D</td><td>2.1.3</td><td>X</td><td>2.2.1</td><td>N/A</td><td>2.2.2</td><td>N/A</td></tr><tr><td>2.2.3</td><td>N/A</td><td>2.2.4</td><td>D</td><td>2.2.5</td><td>C</td><td>2.2.6</td><td>C</td><td>2.2.7</td><td>B</td></tr><tr><td>2.2.8</td><td>C</td><td>2.2.9</td><td>D</td><td>2.2.10</td><td>C</td><td>2.2.11</td><td>C</td><td>2.2.12</td><td>16</td></tr><tr><td>2.2.13</td><td>A</td><td>2.3.1</td><td>B;C</td><td>2.4.1</td><td>D</td><td>2.4.2</td><td>C</td><td>2.4.3</td><td>A</td></tr><tr><td>2.4.4</td><td>4</td><td>2.4.5</td><td>3</td><td>2.4.6</td><td>7</td><td>2.4.7</td><td>A;B</td><td>2.4.8</td><td>B;C</td></tr><tr><td>2.4.9</td><td>2</td><td>2.4.10</td><td>C</td><td>2.4.11</td><td>B</td><td>2.5.1</td><td>N/A</td><td>2.5.2</td><td>N/A</td></tr><tr><td>2.5.3</td><td>N/A</td><td>2.5.4</td><td>N/A</td><td>2.5.5</td><td>N/A</td><td>2.5.6</td><td>C;D</td><td>2.5.7</td><td>C</td></tr><tr><td>2.5.8</td><td>N/A</td><td>2.5.9</td><td>N/A</td><td

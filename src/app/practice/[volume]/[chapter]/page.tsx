@@ -7,10 +7,10 @@ export function generateStaticParams() {
   const params: { volume: string; chapter: string }[] = [];
   
   for (const vol of Object.values(data.volumes)) {
-    for (const topic of vol.topics) {
+    for (const chapter of vol.chapters) {
       params.push({
         volume: vol.id,
-        chapter: topic.slug, // Use slug for the folder name
+        chapter: chapter.id,
       });
     }
   }
@@ -24,7 +24,7 @@ export default async function PracticePage({
   params: Promise<{ volume: string; chapter: string }>
 }) {
   const resolvedParams = await params;
-  const chapterSlug = decodeURIComponent(resolvedParams.chapter);
+  const chapterId = decodeURIComponent(resolvedParams.chapter);
   
   const data = getParsedData();
   const volumeData = data.volumes[resolvedParams.volume];
@@ -38,8 +38,16 @@ export default async function PracticePage({
     );
   }
 
-  const topicObj = volumeData.topics.find(t => t.slug === chapterSlug);
-  const chapterName = topicObj ? topicObj.name : chapterSlug;
+  const chapterData = volumeData.chapters.find(c => c.id === chapterId);
+  
+  if (!chapterData) {
+    return (
+      <div className="min-h-screen bg-neutral-950 text-neutral-50 p-8 flex flex-col items-center justify-center">
+        <h1 className="text-2xl font-bold">Chapter not found.</h1>
+        <Link href="/" className="text-blue-400 mt-4 hover:underline">Back to Dashboard</Link>
+      </div>
+    );
+  }
 
-  return <PracticeClient chapterName={chapterName} chapterSlug={chapterSlug} volumeData={volumeData} />;
+  return <PracticeClient chapterData={chapterData} volumeId={volumeData.id} volumeName={volumeData.name} />;
 }
