@@ -116,7 +116,10 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
           remarkPlugins={[remarkMath]} 
           rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
           components={{
-            img: ({node, ...props}) => <img style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '1.5rem auto', borderRadius: '0.5rem'}} {...props} />
+            img: ({node, src, ...props}) => {
+              const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
+              return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '1.5rem auto', borderRadius: '0.5rem'}} {...props} />;
+            }
           }}
         >
           {question.question_text}
@@ -173,6 +176,12 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
                     <ReactMarkdown 
                       remarkPlugins={[remarkMath]} 
                       rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
+                      components={{
+                        img: ({node, src, ...props}) => {
+                          const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
+                          return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'inline-block', borderRadius: '0.25rem'}} {...props} />;
+                        }
+                      }}
                     >
                       {opt}
                     </ReactMarkdown>
@@ -278,7 +287,18 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
             
             {question.solution ? (
               <div className="text-sm text-neutral-600 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800 p-4 rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}>{question.solution}</ReactMarkdown>
+                <ReactMarkdown 
+                  remarkPlugins={[remarkMath]} 
+                  rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
+                  components={{
+                    img: ({node, src, ...props}) => {
+                      const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
+                      return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '1rem auto', borderRadius: '0.5rem'}} {...props} />;
+                    }
+                  }}
+                >
+                  {question.solution}
+                </ReactMarkdown>
               </div>
             ) : (
               <a 

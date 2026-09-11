@@ -94,7 +94,10 @@ export default function PracticeClient({
                     rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
                     components={{
                       p: ({node, ...props}) => <p className="mb-4 last:mb-0" {...props} />,
-                      img: ({node, ...props}) => <img style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '2rem auto', borderRadius: '0.75rem', border: '1px solid #e5e7eb', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)'}} {...props} />,
+                      img: ({node, src, ...props}) => {
+                        const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
+                        return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '2rem auto', borderRadius: '0.75rem', border: '1px solid #e5e7eb', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)'}} {...props} />;
+                      },
                       h1: ({node, ...props}) => <h1 className="text-3xl font-black text-indigo-900 dark:text-indigo-300 mt-10 mb-6" {...props} />,
                       h2: ({node, ...props}) => <h2 className="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4 flex items-center gap-2" {...props} />,
                       h3: ({node, ...props}) => <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-200 mt-6 mb-3" {...props} />,

@@ -375,16 +375,23 @@ if __name__ == "__main__":
             if m: return f"{m.group(1)}.{m.group(2)}.{m.group(3)}"
             m = re.match(r'^(\d+\.\d+\.\d+)_', f)
             if m: return m.group(1)
-            m = re.match(r'^(\d+)_', f)
+            return None
+            
+        def get_note_ch(f):
+            m = re.match(r'^(\d+)_diagram\.png$', f)
             if m: return m.group(1)
             return None
         
         images = os.listdir(img_dir)
         img_map = {}
+        note_map = {}
         for img in images:
             qid = get_qid(img)
             if qid:
                 img_map.setdefault(qid, []).append(img)
+            ch_id = get_note_ch(img)
+            if ch_id:
+                note_map.setdefault(ch_id, []).append(img)
                 
         for v_id, vol in parsed_data['volumes'].items():
             for chapter in vol['chapters']:
@@ -395,6 +402,13 @@ if __name__ == "__main__":
                             img_path = f"/images/{img}"
                             if img_path not in q['question_text']:
                                 q['question_text'] += f'\n\n<img src="{img_path}" alt="diagram" />'
+                for note in chapter.get('notes', []):
+                    ch_id = chapter['id']
+                    if ch_id in note_map:
+                        for img in sorted(note_map[ch_id]):
+                            img_path = f"/images/{img}"
+                            if img_path not in note['content']:
+                                note['content'] += f'\n\n<img src="{img_path}" alt="diagram" />'
 
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(parsed_data, f, indent=2, ensure_ascii=False)
