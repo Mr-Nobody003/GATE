@@ -13,6 +13,17 @@ import { useMemo, useState, useEffect } from "react";
 import { ParsedChapter, ParsedQuestion } from "@/lib/data";
 import { PracticeSidebar } from "@/components/PracticeSidebar";
 
+const GlowingLoader = ({ size = "lg" }: { size?: "sm" | "lg" }) => {
+  const dim = size === "lg" ? "w-10 h-10" : "w-6 h-6";
+  return (
+    <div className={`relative flex items-center justify-center ${dim}`}>
+      <div className="absolute inset-0 rounded-full border-2 border-indigo-500/20 dark:border-indigo-400/20" />
+      <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-indigo-500 dark:border-t-indigo-400 animate-spin" style={{ animationDuration: '0.8s' }} />
+      <div className="absolute inset-1.5 rounded-full border-2 border-transparent border-b-indigo-400 dark:border-b-indigo-300 animate-spin opacity-80" style={{ animationDuration: '1.2s', animationDirection: 'reverse' }} />
+    </div>
+  );
+};
+
 function slugify(text: string): string {
   return text
     .toLowerCase()
@@ -32,14 +43,30 @@ export default function PracticeClient({
   allVolumes: any[];
 }) {
   const [activeTab, setActiveTab] = useState<"notes" | "pyq">("notes");
+  const [hasRenderedNotes, setHasRenderedNotes] = useState(true);
+  const [hasRenderedPyq, setHasRenderedPyq] = useState(false);
+  
+  const handleTabChange = (tab: "notes" | "pyq") => {
+    if (tab === 'notes') setHasRenderedNotes(true);
+    if (tab === 'pyq') setHasRenderedPyq(true);
+    setActiveTab(tab);
+  };
+
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [noteRenderLimit, setNoteRenderLimit] = useState(2);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // TRULY defer rendering by 150ms so the navigation animation plays at 60fps
-    const timer = setTimeout(() => setIsMounted(true), 150);
+    const isDesk = window.innerWidth >= 1024;
+    setIsDesktop(isDesk);
+    
+    // TRULY defer rendering by 150ms on mobile so the navigation animation plays at 60fps,
+    // but on desktop computers (which are fast), render instantly.
+    const timer = setTimeout(() => setIsMounted(true), isDesk ? 0 : 150);
+    
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 300);
     };
@@ -49,6 +76,18 @@ export default function PracticeClient({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    if (isDesktop) {
+      setNoteRenderLimit(1000); // Instantly render all on desktop
+      return;
+    }
+    if (noteRenderLimit < chapterData.notes.length) {
+      const timer = setTimeout(() => setNoteRenderLimit(prev => prev + 2), 150);
+      return () => clearTimeout(timer);
+    }
+  }, [isMounted, isDesktop, noteRenderLimit, chapterData.notes.length]);
 
   const questions = chapterData.questions;
   const notes = chapterData.notes;
@@ -88,7 +127,7 @@ export default function PracticeClient({
   }
 
   return (
-    <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
+    <main className="min-h-screen text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
       <div className="flex flex-col lg:flex-row max-w-[90rem] mx-auto gap-4 sm:gap-8 items-start relative">
         {!isFocusMode && <PracticeSidebar volumes={allVolumes} currentVolId={volumeId} currentChapId={chapterData.id} />}
         
@@ -112,7 +151,7 @@ export default function PracticeClient({
             <div className="flex gap-2 sm:gap-4">
               <button 
                 className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all active:scale-95 relative ${activeTab === 'notes' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
-                onClick={() => setActiveTab('notes')}
+                onClick={() => handleTabChange('notes')}
               >
                 Notes 
                 <span className="ml-2 bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 py-0.5 px-2 rounded-full text-xs">{notes.length}</span>
@@ -122,7 +161,7 @@ export default function PracticeClient({
               </button>
               <button 
                 className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all active:scale-95 relative ${activeTab === 'pyq' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
-                onClick={() => setActiveTab('pyq')}
+                onClick={() => handleTabChange('pyq')}
               >
                 Practice PYQs 
                 <span className="ml-2 bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 py-0.5 px-2 rounded-full text-xs">{questions.length}</span>
@@ -152,52 +191,65 @@ export default function PracticeClient({
           </div>
         </header>
 
-        {activeTab === 'notes' && (
-          <section className={`space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-            {!isMounted ? (
-              <div className="flex justify-center py-20">
-                <div className="w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-              </div>
-            ) : notes.length > 0 ? notes.map((note) => (
-              <NoteCard key={note.id} content={note.formattedContent} />
-            )) : (
-              <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
-                <div className="w-16 h-16 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        <div className={activeTab === 'notes' ? "block" : "hidden"}>
+          {hasRenderedNotes && (
+            <section className={`space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+              {!isMounted ? (
+                <div className="flex justify-center py-20">
+                  <GlowingLoader size="lg" />
                 </div>
-                <p className="font-semibold text-lg">No notes available for this chapter.</p>
-              </div>
-            )}
-          </section>
-        )}
-
-        {activeTab === 'pyq' && (
-          <section className={`space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-            {!isMounted ? (
-              <div className="flex justify-center py-20">
-                <div className="w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-              </div>
-            ) : topicGroups.length > 0 ? (
-              topicGroups.map(([topic, topicQuestions], index) => (
-                <TopicAccordion
-                  key={topic}
-                  topic={topic}
-                  topicQuestions={topicQuestions}
-                  index={index}
-                  isOpen={openTopics.has(topic)}
-                  onToggle={() => toggleTopic(topic)}
-                />
-              ))
+              ) : notes.length > 0 ? (
+              <>
+                {notes.slice(0, noteRenderLimit).map((note) => (
+                  <NoteCard key={note.id} content={note.formattedContent} />
+                ))}
+                {noteRenderLimit < notes.length && (
+                  <div className="flex justify-center py-8">
+                    <GlowingLoader size="sm" />
+                  </div>
+                )}
+              </>
             ) : (
-              <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
-                 <div className="w-16 h-16 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
+                  <div className="w-16 h-16 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                  </div>
+                  <p className="font-semibold text-lg">No notes available for this chapter.</p>
                 </div>
-                <p className="font-semibold text-lg">No practice questions available for this chapter.</p>
-              </div>
-            )}
-          </section>
-        )}
+              )}
+            </section>
+          )}
+        </div>
+
+        <div className={activeTab === 'pyq' ? "block" : "hidden"}>
+          {hasRenderedPyq && (
+            <section className={`space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+              {!isMounted ? (
+                <div className="flex justify-center py-20">
+                  <GlowingLoader size="lg" />
+                </div>
+              ) : topicGroups.length > 0 ? (
+                topicGroups.map(([topic, topicQuestions], index) => (
+                  <TopicAccordion
+                    key={topic}
+                    topic={topic}
+                    topicQuestions={topicQuestions}
+                    index={index}
+                    isOpen={openTopics.has(topic)}
+                    onToggle={() => toggleTopic(topic)}
+                  />
+                ))
+              ) : (
+                <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
+                   <div className="w-16 h-16 bg-neutral-200 dark:bg-neutral-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  </div>
+                  <p className="font-semibold text-lg">No practice questions available for this chapter.</p>
+                </div>
+              )}
+            </section>
+          )}
+        </div>
         </div>
       </div>
 
@@ -324,6 +376,19 @@ function TopicAccordion({
     return () => window.removeEventListener('q_state_changed', calculateStats);
   }, [topicQuestions]);
 
+  const [qRenderLimit, setQRenderLimit] = useState(3);
+  useEffect(() => {
+    const isDesk = window.innerWidth >= 1024;
+    if (isDesk) {
+      setQRenderLimit(1000); // Instantly render all on desktop
+      return;
+    }
+    if (isOpen && qRenderLimit < topicQuestions.length) {
+      const timer = setTimeout(() => setQRenderLimit(prev => prev + 3), 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen, qRenderLimit, topicQuestions.length]);
+
   const isFullySolved = stats.solved > 0 && stats.solved === topicQuestions.length;
 
   return (
@@ -361,9 +426,14 @@ function TopicAccordion({
       {isOpen && (
         <div className="p-6 pt-0 border-t border-neutral-100 dark:border-neutral-800/50 bg-neutral-50/50 dark:bg-neutral-900/20">
           <div className="space-y-6 mt-6">
-            {topicQuestions.map((q) => (
+            {topicQuestions.slice(0, qRenderLimit).map((q) => (
               <QuestionCard key={q.id} question={q} />
             ))}
+            {qRenderLimit < topicQuestions.length && (
+              <div className="flex justify-center py-4">
+                <GlowingLoader size="sm" />
+              </div>
+            )}
           </div>
         </div>
       )}

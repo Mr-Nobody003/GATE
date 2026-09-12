@@ -16,7 +16,7 @@ export default function Dashboard() {
   const totalChapters = volumes.reduce((acc, vol) => acc + vol.chapters.length, 0);
 
   return (
-    <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
+    <main className="min-h-screen text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
       <div className="max-w-5xl mx-auto space-y-8">
         <header className="relative overflow-hidden rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 p-6 sm:p-10">
           <div className="absolute -top-24 -right-24 w-72 h-72 bg-indigo-200/50 dark:bg-indigo-900/30 rounded-full blur-3xl" />

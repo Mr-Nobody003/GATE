@@ -84,7 +84,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `
         }} />
       </head>
-      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300">
+      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 relative">
+        <div 
+          className="fixed inset-0 z-[-1] opacity-[0.75] dark:opacity-[0.10] pointer-events-none"
+          style={{
+            backgroundImage: `url('${basePath}/bg.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+          }}
+        />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}
