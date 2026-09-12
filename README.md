@@ -28,10 +28,10 @@ flowchart TD
         G --> I[`QuestionCard.tsx`]
     end
 
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    classDef script fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
-    classDef data fill:#fff3e0,stroke:#ff9800,stroke-width:2px;
-    classDef frontend fill:#e8f5e9,stroke:#4caf50,stroke-width:2px;
+    classDef default fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#0f172a;
+    classDef script fill:#2563eb,stroke:#1e40af,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef data fill:#ea580c,stroke:#9a3412,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef frontend fill:#16a34a,stroke:#14532d,stroke-width:2px,color:#ffffff,font-weight:bold;
     
     class D script;
     class E,C,A data;
@@ -100,7 +100,17 @@ python scripts/parse_datalab.py
 
 *Note: The script will output "Total Data parsed successfully" along with the number of questions extracted.*
 
-### Step 5: Start the Frontend
+### Step 5: Run Data Sanitization (Fix KaTeX Errors)
+During the Python parsing pipeline, certain LaTeX commands in the raw data (like `\frac`, `\text`, `\forall`) or HTML entities (like `&gt;`, `&lt;`) can be misinterpreted as control characters (e.g., `\f` becoming a form-feed character) or left unescaped, causing **KaTeX Parse Errors** in the frontend. 
+
+To fix this, always run the sanitization script after generating the JSON:
+
+```bash
+python scripts/fix_json.py
+```
+This script traverses the database and repairs all corrupted math symbols and string boundaries.
+
+### Step 6: Start the Frontend
 Start the Next.js development server to verify the new content is rendering correctly.
 
 ```bash
