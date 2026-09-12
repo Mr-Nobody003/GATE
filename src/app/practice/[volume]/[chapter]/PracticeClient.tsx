@@ -38,12 +38,16 @@ export default function PracticeClient({
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    // TRULY defer rendering by 150ms so the navigation animation plays at 60fps
+    const timer = setTimeout(() => setIsMounted(true), 150);
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 300);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const questions = chapterData.questions;
