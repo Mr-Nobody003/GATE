@@ -7,9 +7,9 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
-import { Maximize2, Minimize2 } from "lucide-react";
+import { Maximize2, Minimize2, Star, CheckCircle2 } from "lucide-react";
 import 'katex/dist/katex.min.css';
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { ParsedChapter, ParsedQuestion } from "@/lib/data";
 
 function slugify(text: string): string {
@@ -85,14 +85,6 @@ export default function PracticeClient({
               <p className="text-indigo-600 dark:text-indigo-400 font-bold tracking-wide uppercase text-sm mb-1">{volumeName}</p>
               <h1 className="font-heading text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-white leading-tight tracking-tight">{chapterData.name}</h1>
             </div>
-            <button
-              onClick={() => setIsFocusMode(!isFocusMode)}
-              className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-sm font-bold text-neutral-600 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 shadow-sm hover:shadow-md transition-all shrink-0"
-              title={isFocusMode ? "Exit Focus Mode" : "Enter Focus Mode"}
-            >
-              {isFocusMode ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-              <span className="hidden sm:inline">{isFocusMode ? "Exit Focus" : "Focus Mode"}</span>
-            </button>
           </div>
           
           <div className="sticky top-16 z-40 bg-neutral-50/95 dark:bg-neutral-950/95 backdrop-blur-md pt-2 flex items-center justify-between gap-4 border-b border-neutral-200 dark:border-neutral-800 -mx-4 px-4 sm:-mx-8 sm:px-8">
@@ -118,14 +110,24 @@ export default function PracticeClient({
                 )}
               </button>
             </div>
-            {activeTab === 'pyq' && topicGroups.length > 0 && (
+            <div className="flex items-center gap-3 shrink-0 mb-2">
+              {activeTab === 'pyq' && topicGroups.length > 0 && (
+                <button
+                  onClick={toggleAll}
+                  className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-neutral-500 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 transition-colors shrink-0"
+                >
+                  {allOpen ? "Collapse all" : "Expand all"}
+                </button>
+              )}
               <button
-                onClick={toggleAll}
-                className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-neutral-500 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 transition-colors mb-3 shrink-0"
+                onClick={() => setIsFocusMode(!isFocusMode)}
+                className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-sm font-bold text-neutral-600 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 shadow-sm hover:shadow-md transition-all shrink-0"
+                title={isFocusMode ? "Exit Focus Mode" : "Enter Focus Mode"}
               >
-                {allOpen ? "Collapse all" : "Expand all"}
+                {isFocusMode ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                <span className="hidden sm:inline">{isFocusMode ? "Exit Focus" : "Focus Mode"}</span>
               </button>
-            )}
+            </div>
           </div>
         </header>
 
@@ -260,22 +262,55 @@ function TopicAccordion({
   isOpen: boolean;
   onToggle: () => void;
 }) {
+  const [stats, setStats] = useState({ solved: 0, important: 0 });
+
+  useEffect(() => {
+    const calculateStats = () => {
+      let solved = 0;
+      let important = 0;
+      topicQuestions.forEach(q => {
+        const saved = localStorage.getItem(`q_state_${q.id}`);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed.isRevealed) solved++;
+          if (parsed.isImportant) important++;
+        }
+      });
+      setStats({ solved, important });
+    };
+
+    calculateStats();
+    window.addEventListener('q_state_changed', calculateStats);
+    return () => window.removeEventListener('q_state_changed', calculateStats);
+  }, [topicQuestions]);
+
+  const isFullySolved = stats.solved > 0 && stats.solved === topicQuestions.length;
+
   return (
-    <div className="border border-neutral-200 dark:border-neutral-800 rounded-2xl bg-white dark:bg-neutral-900/50 shadow-sm overflow-hidden transition-all">
+    <div className={`border rounded-2xl shadow-sm overflow-hidden transition-all duration-300 ${isFullySolved ? 'border-emerald-200 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-900/10' : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50'}`}>
       <button 
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-6 hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors"
+        className={`w-full flex items-center justify-between p-6 transition-colors ${isFullySolved ? 'hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800/50'}`}
       >
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 font-black shadow-sm shrink-0">
-            {index + 1}
+          <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black shadow-sm shrink-0 transition-colors ${isFullySolved ? 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400' : 'bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400'}`}>
+            {isFullySolved ? <CheckCircle2 className="w-5 h-5" /> : index + 1}
           </div>
           <div className="text-left">
             <h2 className="font-heading text-xl font-bold text-neutral-900 dark:text-white">{topic}</h2>
-            <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">{topicQuestions.length} Question{topicQuestions.length !== 1 ? 's' : ''}</p>
+            <div className="flex items-center gap-3 mt-1">
+              <p className={`text-sm font-bold ${isFullySolved ? 'text-emerald-600 dark:text-emerald-400' : 'text-neutral-500 dark:text-neutral-400'}`}>
+                {stats.solved}/{topicQuestions.length} Solved
+              </p>
+              {stats.important > 0 && (
+                <span className="flex items-center gap-1 text-xs font-bold text-amber-500 bg-amber-50 dark:bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-200 dark:border-amber-500/20">
+                  <Star className="w-3 h-3 fill-current" /> {stats.important} Important
+                </span>
+              )}
+            </div>
           </div>
         </div>
-        <div className={`w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-500 dark:text-neutral-400 transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180' : ''}`}>
+        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180' : ''} ${isFullySolved ? 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400' : 'bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400'}`}>
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
         </div>
       </button>

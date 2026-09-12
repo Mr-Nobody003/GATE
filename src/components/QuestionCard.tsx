@@ -7,12 +7,14 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
 import { ParsedQuestion, AnswerNAT } from "@/lib/data";
+import { Star } from "lucide-react";
 
 export default function QuestionCard({ question }: { question: ParsedQuestion }) {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [natInput, setNatInput] = useState<string>("");
   const [descInput, setDescInput] = useState<string>("");
   const [isRevealed, setIsRevealed] = useState(false);
+  const [isImportant, setIsImportant] = useState(false);
   const [isClient, setIsClient] = useState(false);
   
   useEffect(() => {
@@ -20,10 +22,11 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
     const saved = localStorage.getItem(`q_state_${question.id}`);
     if (saved) {
       const parsed = JSON.parse(saved);
-      setIsRevealed(parsed.isRevealed);
+      setIsRevealed(parsed.isRevealed || false);
       setSelectedOptions(parsed.selectedOptions || []);
       setNatInput(parsed.natInput || "");
       setDescInput(parsed.descInput || "");
+      setIsImportant(parsed.isImportant || false);
     }
   }, [question.id]);
 
@@ -33,7 +36,9 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
       selectedOptions: newState.selectedOptions !== undefined ? newState.selectedOptions : selectedOptions,
       natInput: newState.natInput !== undefined ? newState.natInput : natInput,
       descInput: newState.descInput !== undefined ? newState.descInput : descInput,
+      isImportant: newState.isImportant !== undefined ? newState.isImportant : isImportant,
     }));
+    window.dispatchEvent(new Event('q_state_changed'));
   };
 
   const toggleOption = (optIndex: number) => {
@@ -115,9 +120,21 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
             </span>
           )}
         </div>
-        <span className="text-xs text-neutral-500 dark:text-neutral-400 font-bold tracking-wider uppercase bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 rounded-full">
-          {question.qtype}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-neutral-500 dark:text-neutral-400 font-bold tracking-wider uppercase bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 rounded-full">
+            {question.qtype}
+          </span>
+          <button
+            onClick={() => {
+              setIsImportant(!isImportant);
+              saveState({ isImportant: !isImportant });
+            }}
+            className={`p-1.5 rounded-full transition-all duration-300 ${isImportant ? 'bg-amber-100 text-amber-500 dark:bg-amber-500/20 dark:text-amber-400' : 'bg-neutral-100 text-neutral-400 hover:text-amber-500 dark:bg-neutral-800 dark:text-neutral-500 dark:hover:text-amber-400'}`}
+            title={isImportant ? "Unmark Important" : "Mark Important"}
+          >
+            <Star className={`w-4 h-4 ${isImportant ? 'fill-current' : ''}`} />
+          </button>
+        </div>
       </div>
       
       <div className="text-lg text-neutral-800 dark:text-neutral-200 leading-relaxed font-medium">

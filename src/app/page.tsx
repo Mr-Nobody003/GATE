@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getParsedData } from "@/lib/data";
+import { ChapterCard } from "@/components/ChapterCard";
+import { ResetProgressButton } from "@/components/ResetProgressButton";
 import { BookOpenCheck, Layers3, GraduationCap, Download } from "lucide-react";
 
 export default function Dashboard() {
@@ -19,8 +21,8 @@ export default function Dashboard() {
           <div className="absolute -top-24 -right-24 w-72 h-72 bg-indigo-200/50 dark:bg-indigo-900/30 rounded-full blur-3xl" />
           <div className="absolute -bottom-24 -left-16 w-64 h-64 bg-violet-200/40 dark:bg-violet-900/20 rounded-full blur-3xl" />
 
-          <div className="relative flex justify-between items-start gap-4">
-            <div className="space-y-3">
+          <div className="relative flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-6">
+            <div className="space-y-3 w-full">
               <div className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-bold text-xs tracking-widest uppercase bg-indigo-50 dark:bg-indigo-950/40 px-3 py-1.5 rounded-full border border-indigo-100 dark:border-indigo-900/50">
                 <GraduationCap className="w-3.5 h-3.5" />
                 GATE CSE Prep
@@ -101,32 +103,16 @@ export default function Dashboard() {
               {vol.name} <span className="font-medium text-neutral-500 dark:text-neutral-400">Chapters</span>
             </h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {vol.chapters.map((chapter) => {
-                const noteCount = chapter.notes.length;
-                const questionCount = chapter.questions.length;
-                
-                return (
-                  <Link 
-                    key={chapter.id}
-                    href={`/practice/${vol.id}/${chapter.id}`}
-                    className="group p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 hover:border-indigo-400 dark:hover:border-indigo-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden relative"
-                  >
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-50 dark:bg-indigo-900/20 rounded-bl-full -z-10 transition-transform duration-500 group-hover:scale-[1.5]" />
-                    <h3 className="font-heading font-bold text-lg text-neutral-800 dark:text-neutral-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2" title={chapter.name}>{chapter.name}</h3>
-                    <div className="mt-6 flex gap-3">
-                      <span className="text-xs font-bold bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 px-3 py-1.5 rounded-full transition-colors group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700">
-                        {noteCount} Note(s)
-                      </span>
-                      <span className="text-xs font-bold bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 px-3 py-1.5 rounded-full transition-colors group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50">
-                        {questionCount} PYQ(s)
-                      </span>
-                    </div>
-                  </Link>
-                );
-              })}
+              {vol.chapters.map((chapter) => (
+                <ChapterCard key={chapter.id} chapter={chapter} volId={vol.id} />
+              ))}
             </div>
           </section>
         ))}
+
+        <section className="pt-12 pb-8 border-t border-neutral-200 dark:border-neutral-800 flex justify-center">
+          <ResetProgressButton />
+        </section>
       </div>
     </main>
   );
