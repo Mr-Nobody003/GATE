@@ -70,6 +70,25 @@ type RawChapter = Omit<ParsedChapter, "notes" | "questions"> & { notes: RawNote[
 type RawVolume = Omit<ParsedVolume, "chapters"> & { chapters: RawChapter[] };
 type RawData = { volumes: { [volumeId: string]: RawVolume } };
 
+// The source PDFs were HTML-escaped during extraction, so text meant to be
+// rendered as plain JSX (not passed through the Markdown/rehypeRaw pipeline,
+// which already decodes entities on its own) still has literal "&amp;" etc.
+// Only amp/lt/gt actually occur in this dataset, but the rest are cheap
+// insurance against anything added later.
+const HTML_ENTITIES: Record<string, string> = {
+  amp: "&",
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  "#39": "'",
+  nbsp: " ",
+};
+
+function decodeEntities(text: string): string {
+  return text.replace(/&(#?\w+);/g, (match, ent) => HTML_ENTITIES[ent] ?? match);
+}
+
 /**
  * The source PDFs prefix every question with a header line of the form
  * "<Subtopic Name>: GATE <branch> <year> | Question: <ref>" followed by a
@@ -97,8 +116,8 @@ function extractQuestionMeta(rawText: string, fallbackTopic: string): {
 
     if (validLabel) {
       return {
-        displayTopic: label,
-        examMeta: meta.length > 0 ? meta : null,
+        displayTopic: decodeEntities(label),
+        examMeta: meta.length > 0 ? decodeEntities(meta) : null,
         // Only strip the header from the visible text when there's a
         // meaningful amount of question left afterwards - a couple of
         // entries in the source data have no body at all after the header.
@@ -107,7 +126,7 @@ function extractQuestionMeta(rawText: string, fallbackTopic: string): {
     }
   }
 
-  return { displayTopic: fallbackTopic, examMeta: null, cleanText: rawText };
+  return { displayTopic: decodeEntities(fallbackTopic), examMeta: null, cleanText: rawText };
 }
 
 const CONNECTOR_WORDS = new Set([
@@ -264,8 +283,10 @@ export function getParsedData(): ParsedData {
   for (const [volId, vol] of Object.entries(raw.volumes)) {
     volumes[volId] = {
       ...vol,
+      name: decodeEntities(vol.name),
       chapters: vol.chapters.map((chapter) => ({
         ...chapter,
+        name: decodeEntities(chapter.name),
         notes: chapter.notes.map(enrichNote),
         questions: chapter.questions.map(enrichQuestion),
       })),
