@@ -83,7 +83,7 @@ export default function PracticeClient({
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
-      <div className="flex max-w-[90rem] mx-auto gap-8 items-start relative">
+      <div className="flex flex-col lg:flex-row max-w-[90rem] mx-auto gap-4 sm:gap-8 items-start relative">
         {!isFocusMode && <PracticeSidebar volumes={allVolumes} currentVolId={volumeId} currentChapId={chapterData.id} />}
         
         <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "flex-1 min-w-0 max-w-4xl space-y-8 transition-all"}>

@@ -22,6 +22,7 @@ export function PracticeSidebar({
 }) {
   // Keep chapters closed by default as requested
   const [openChapters, setOpenChapters] = useState<Set<string>>(new Set());
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const toggleChapter = (uniqueId: string) => {
     const next = new Set(openChapters);
@@ -34,13 +35,25 @@ export function PracticeSidebar({
   };
 
   return (
-    <aside className="w-full lg:w-72 shrink-0 h-[calc(100vh-80px)] overflow-y-auto sticky top-20 border-r border-neutral-200 dark:border-neutral-800 pr-4 hidden lg:block custom-scrollbar">
-      <div className="mb-6 px-2">
-        <h3 className="text-xs font-bold tracking-widest text-neutral-500 uppercase flex items-center gap-2">
-          <BookOpen className="w-4 h-4" />
+    <aside className="w-full lg:w-72 shrink-0 lg:h-[calc(100vh-80px)] lg:overflow-y-auto lg:sticky top-4 lg:top-20 lg:border-r border-neutral-200 dark:border-neutral-800 pr-0 lg:pr-4 custom-scrollbar z-40 relative">
+      <button 
+        className="w-full lg:hidden flex items-center justify-between p-4 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl font-bold text-neutral-700 dark:text-neutral-200 shadow-sm"
+        onClick={() => setIsMobileOpen(!isMobileOpen)}
+      >
+        <span className="flex items-center gap-2">
+          <BookOpen className="w-4 h-4 text-indigo-500" />
           Course Navigation
-        </h3>
-      </div>
+        </span>
+        <ChevronDown className={`w-4 h-4 transition-transform ${isMobileOpen ? "rotate-180" : ""}`} />
+      </button>
+
+      <div className={`mt-2 lg:mt-0 ${isMobileOpen ? "block" : "hidden"} lg:block bg-neutral-50 dark:bg-neutral-950 lg:bg-transparent absolute lg:relative w-full left-0 border lg:border-0 border-neutral-200 dark:border-neutral-800 rounded-xl lg:rounded-none p-4 lg:p-0 shadow-lg lg:shadow-none`}>
+        <div className="mb-6 px-2 hidden lg:block">
+          <h3 className="text-xs font-bold tracking-widest text-neutral-500 uppercase flex items-center gap-2">
+            <BookOpen className="w-4 h-4" />
+            Course Navigation
+          </h3>
+        </div>
       
       <div className="space-y-6">
         {volumes.map((vol) => (

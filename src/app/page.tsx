@@ -47,32 +47,32 @@ export default function Dashboard() {
           </div>
         </header>
 
-        <section className="grid gap-4 sm:gap-6 grid-cols-2 md:grid-cols-3">
-          <div className="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex items-start gap-4">
-            <div className="w-11 h-11 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 shrink-0">
-              <BookOpenCheck className="w-5 h-5" />
+        <section className="grid gap-3 sm:gap-6 grid-cols-2 md:grid-cols-3">
+          <div className="p-4 sm:p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 shrink-0">
+              <BookOpenCheck className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Questions</h3>
-              <p className="text-3xl font-black text-neutral-900 dark:text-white mt-1">{totalQuestions}</p>
+              <h3 className="text-[10px] sm:text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Questions</h3>
+              <p className="text-2xl sm:text-3xl font-black text-neutral-900 dark:text-white mt-0.5 sm:mt-1">{totalQuestions}</p>
             </div>
           </div>
-          <div className="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex items-start gap-4">
-            <div className="w-11 h-11 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
-              <Layers3 className="w-5 h-5" />
+          <div className="p-4 sm:p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+              <Layers3 className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Chapters</h3>
-              <p className="text-3xl font-black text-neutral-900 dark:text-white mt-1">{totalChapters}</p>
+              <h3 className="text-[10px] sm:text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Chapters</h3>
+              <p className="text-2xl sm:text-3xl font-black text-neutral-900 dark:text-white mt-0.5 sm:mt-1">{totalChapters}</p>
             </div>
           </div>
-          <div className="col-span-2 md:col-span-1 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex items-start gap-4">
-            <div className="w-11 h-11 rounded-xl bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center text-violet-600 dark:text-violet-400 shrink-0">
-              <GraduationCap className="w-5 h-5" />
+          <div className="col-span-2 md:col-span-1 p-4 sm:p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center text-violet-600 dark:text-violet-400 shrink-0">
+              <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Volumes</h3>
-              <p className="text-3xl font-black text-neutral-900 dark:text-white mt-1">{volumes.length}</p>
+              <h3 className="text-[10px] sm:text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Volumes</h3>
+              <p className="text-2xl sm:text-3xl font-black text-neutral-900 dark:text-white mt-0.5 sm:mt-1">{volumes.length}</p>
             </div>
           </div>
         </section>
