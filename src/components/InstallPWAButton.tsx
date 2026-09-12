@@ -9,6 +9,12 @@ export function InstallPWAButton() {
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
+    // Explicitly register service worker to guarantee PWA recognition
+    if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+      navigator.serviceWorker.register(`${basePath}/sw.js`).catch((err) => console.error('SW registration failed:', err));
+    }
+
     // Check if already installed
     if (window.matchMedia('(display-mode: standalone)').matches || (window.navigator as any).standalone === true) {
       setIsInstalled(true);
@@ -19,10 +25,18 @@ export function InstallPWAButton() {
     const isIOSDevice = /iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream;
     setIsIOS(isIOSDevice);
 
+    // Check if the event fired before React hydrated
+    if (typeof window !== 'undefined' && (window as any).deferredPWAEvent) {
+      setDeferredPrompt((window as any).deferredPWAEvent);
+    }
+
     const handleBeforeInstallPrompt = (e: any) => {
       // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
       // Stash the event so it can be triggered later.
+      if (typeof window !== 'undefined') {
+        (window as any).deferredPWAEvent = e;
+      }
       setDeferredPrompt(e);
     };
 

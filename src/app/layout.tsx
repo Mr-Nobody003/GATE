@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   ),
   title: "GATE CSE Dashboard",
   description: "Comprehensive GATE CSE Preparation Dashboard",
-  manifest: `${basePath}/manifest.json`,
   openGraph: {
     title: "GATE CSE Dashboard",
     description: "Open-source GATE Computer Science practice and tracking dashboard.",
@@ -36,10 +35,11 @@ export const metadata: Metadata = {
     siteName: "GATE CSE Prep",
     images: [
       {
-        url: `${basePath}/og-image.png`,
+        url: `${basePath}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: "GATE CSE Dashboard Preview",
+        type: "image/jpeg",
       }
     ],
     locale: "en_IN",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GATE CSE Dashboard",
     description: "Open-source GATE Computer Science practice and tracking dashboard.",
-    images: [`${basePath}/og-image.png`],
+    images: [`${basePath}/og-image.jpg`],
   },
   appleWebApp: {
     capable: true,
@@ -73,6 +73,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.deferredPWAEvent = null;
+            window.addEventListener('beforeinstallprompt', function(e) {
+              e.preventDefault();
+              window.deferredPWAEvent = e;
+            });
+          `
+        }} />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
