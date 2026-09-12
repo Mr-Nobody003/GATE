@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
+import { Maximize2, Minimize2 } from "lucide-react";
 import 'katex/dist/katex.min.css';
 import { useMemo, useState } from "react";
 import { ParsedChapter, ParsedQuestion } from "@/lib/data";
@@ -28,6 +29,8 @@ export default function PracticeClient({
   volumeName: string;
 }) {
   const [activeTab, setActiveTab] = useState<"notes" | "pyq">("notes");
+  const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
+  const [isFocusMode, setIsFocusMode] = useState(false);
 
   const questions = chapterData.questions;
   const notes = chapterData.notes;
@@ -42,7 +45,7 @@ export default function PracticeClient({
     return Array.from(groups.entries());
   }, [questions]);
 
-  const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
+
 
   const toggleTopic = (topic: string) => {
     setOpenTopics(prev => {
@@ -68,22 +71,31 @@ export default function PracticeClient({
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-colors flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full">
+      <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "max-w-4xl mx-auto space-y-8 transition-all"}>
+        <div className={`flex items-center justify-between ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+          <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-colors flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full w-max">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-            Dashboard
+            Back to Dashboard
           </Link>
-          <ThemeToggle />
         </div>
         
-        <header className="space-y-6">
-          <div>
-            <p className="text-indigo-600 dark:text-indigo-400 font-bold tracking-wide uppercase text-sm mb-1">{volumeName}</p>
-            <h1 className="font-heading text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-white leading-tight tracking-tight">{chapterData.name}</h1>
+        <header className={`space-y-6 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="text-indigo-600 dark:text-indigo-400 font-bold tracking-wide uppercase text-sm mb-1">{volumeName}</p>
+              <h1 className="font-heading text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-white leading-tight tracking-tight">{chapterData.name}</h1>
+            </div>
+            <button
+              onClick={() => setIsFocusMode(!isFocusMode)}
+              className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-sm font-bold text-neutral-600 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 shadow-sm hover:shadow-md transition-all shrink-0"
+              title={isFocusMode ? "Exit Focus Mode" : "Enter Focus Mode"}
+            >
+              {isFocusMode ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+              <span className="hidden sm:inline">{isFocusMode ? "Exit Focus" : "Focus Mode"}</span>
+            </button>
           </div>
           
-          <div className="flex items-center justify-between gap-4 border-b border-neutral-200 dark:border-neutral-800">
+          <div className="sticky top-16 z-40 bg-neutral-50/95 dark:bg-neutral-950/95 backdrop-blur-md pt-2 flex items-center justify-between gap-4 border-b border-neutral-200 dark:border-neutral-800 -mx-4 px-4 sm:-mx-8 sm:px-8">
             <div className="flex gap-2 sm:gap-4">
               <button 
                 className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all relative ${activeTab === 'notes' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
@@ -118,7 +130,7 @@ export default function PracticeClient({
         </header>
 
         {activeTab === 'notes' && (
-          <section className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <section className={`space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
             {notes.length > 0 ? notes.map((note) => (
               <NoteCard key={note.id} content={note.formattedContent} />
             )) : (
@@ -133,7 +145,7 @@ export default function PracticeClient({
         )}
 
         {activeTab === 'pyq' && (
-          <section className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <section className={`space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
             {topicGroups.length > 0 ? (
               topicGroups.map(([topic, topicQuestions], index) => (
                 <TopicAccordion
@@ -194,7 +206,7 @@ function NoteCard({ content }: { content: string }) {
         </div>
       )}
 
-      <div className="max-w-[72ch] text-neutral-800 dark:text-neutral-200 leading-relaxed space-y-4 text-[1.05rem]">
+      <div className="prose prose-lg prose-indigo dark:prose-invert max-w-none text-neutral-800 dark:text-neutral-200 leading-relaxed text-[1.05rem]">
         <ReactMarkdown
           remarkPlugins={[remarkMath]}
           rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
