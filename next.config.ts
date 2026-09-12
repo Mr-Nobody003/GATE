@@ -7,7 +7,6 @@ const withPWA = withPWAInit({
   cacheOnFrontEndNav: true,
   aggressiveFrontEndNavCaching: true,
   reloadOnOnline: true,
-  swcMinify: true,
   workboxOptions: {
     disableDevLogs: true,
     skipWaiting: true,
@@ -29,7 +28,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  // @ts-expect-error - Turbopack top-level property type might be missing in some next.js versions
   turbopack: {},
 };
 
