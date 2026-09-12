@@ -49,5 +49,12 @@ export default async function PracticePage({
     );
   }
 
-  return <PracticeClient chapterData={chapterData} volumeId={volumeData.id} volumeName={volumeData.name} />;
+  return (
+    <PracticeClient 
+      chapterData={chapterData} 
+      volumeId={volumeData.id} 
+      volumeName={volumeData.name}
+      allVolumes={Object.values(data.volumes)} 
+    />
+  );
 }

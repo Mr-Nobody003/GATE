@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getParsedData } from "@/lib/data";
 import { ChapterCard } from "@/components/ChapterCard";
 import { ResetProgressButton } from "@/components/ResetProgressButton";
+import { Footer } from "@/components/Footer";
 import { BookOpenCheck, Layers3, GraduationCap, Download } from "lucide-react";
 
 export default function Dashboard() {
@@ -85,12 +86,13 @@ export default function Dashboard() {
             {[1, 2, 3].map((vol) => (
               <a 
                 key={vol}
-                href={`/pdfs/filter1_volume${vol}.pdf`}
-                download={`GATE_Volume_${vol}.pdf`}
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/pdfs/filter1_volume${vol}.pdf`}
+                download={`GATE_2027_Volume_${vol}.pdf`}
                 className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all text-sm font-semibold text-neutral-700 dark:text-neutral-200 shadow-sm"
               >
                 <Download className="w-4 h-4 text-indigo-500" />
-                Vol {vol}
+                <span className="hidden sm:inline">Volume {vol}</span>
+                <span className="sm:hidden">Vol {vol}</span>
               </a>
             ))}
           </div>
@@ -114,6 +116,7 @@ export default function Dashboard() {
           <ResetProgressButton />
         </section>
       </div>
+      <Footer />
     </main>
   );
 }

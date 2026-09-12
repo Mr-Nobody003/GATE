@@ -7,10 +7,11 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
-import { Maximize2, Minimize2, Star, CheckCircle2 } from "lucide-react";
+import { Maximize2, Minimize2, Star, CheckCircle2, ArrowUp } from "lucide-react";
 import 'katex/dist/katex.min.css';
 import { useMemo, useState, useEffect } from "react";
 import { ParsedChapter, ParsedQuestion } from "@/lib/data";
+import { PracticeSidebar } from "@/components/PracticeSidebar";
 
 function slugify(text: string): string {
   return text
@@ -22,15 +23,26 @@ function slugify(text: string): string {
 export default function PracticeClient({
   chapterData,
   volumeId,
-  volumeName
+  volumeName,
+  allVolumes,
 }: {
   chapterData: ParsedChapter;
   volumeId: string;
   volumeName: string;
+  allVolumes: any[];
 }) {
   const [activeTab, setActiveTab] = useState<"notes" | "pyq">("notes");
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
   const [isFocusMode, setIsFocusMode] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const questions = chapterData.questions;
   const notes = chapterData.notes;
@@ -71,7 +83,10 @@ export default function PracticeClient({
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 p-4 sm:p-8 transition-colors duration-300">
-      <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "max-w-4xl mx-auto space-y-8 transition-all"}>
+      <div className="flex max-w-[90rem] mx-auto gap-8 items-start relative">
+        {!isFocusMode && <PracticeSidebar volumes={allVolumes} currentVolId={volumeId} currentChapId={chapterData.id} />}
+        
+        <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "flex-1 min-w-0 max-w-4xl space-y-8 transition-all"}>
         <div className={`flex items-center justify-between ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
           <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-colors flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full w-max">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -169,7 +184,18 @@ export default function PracticeClient({
             )}
           </section>
         )}
+        </div>
       </div>
+
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-8 right-8 p-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all z-50 flex items-center justify-center animate-in fade-in slide-in-from-bottom-4"
+          title="Back to Top"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
+      )}
     </main>
   );
 }
@@ -242,7 +268,7 @@ function NoteCard({ content }: { content: string }) {
             blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-indigo-300 dark:border-indigo-700 bg-indigo-50/50 dark:bg-indigo-900/10 p-4 my-6 italic text-neutral-600 dark:text-neutral-400 rounded-r-lg" {...props} />
           }}
         >
-          {content}
+          {content.replace(/<type>/g, '&lt;type&gt;').replace(/<filename>/g, '&lt;filename&gt;')}
         </ReactMarkdown>
       </div>
     </div>
@@ -287,7 +313,10 @@ function TopicAccordion({
   const isFullySolved = stats.solved > 0 && stats.solved === topicQuestions.length;
 
   return (
-    <div className={`border rounded-2xl shadow-sm overflow-hidden transition-all duration-300 ${isFullySolved ? 'border-emerald-200 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-900/10' : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50'}`}>
+    <div 
+      id={`topic-${topic.replace(/[^a-z0-9]/gi, '-').toLowerCase()}`}
+      className={`border rounded-2xl shadow-sm overflow-hidden transition-all duration-300 scroll-mt-24 ${isFullySolved ? 'border-emerald-200 dark:border-emerald-900/50 bg-emerald-50/30 dark:bg-emerald-900/10' : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50'}`}
+    >
       <button 
         onClick={onToggle}
         className={`w-full flex items-center justify-between p-6 transition-colors ${isFullySolved ? 'hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800/50'}`}
