@@ -212,13 +212,45 @@ function structureNoteContent(text: string): string {
   return out.join("\n\n");
 }
 
+const SLUG_TOKEN_RE = /^[a-z][a-z0-9]*(-[a-z0-9&;]+)+\.?,?$/;
+
+function isSlugHeavyLine(line: string): boolean {
+  const words = line.split(/\s+/).filter(Boolean);
+  if (words.length < 2) return false;
+  const slugish = words.filter((w) => SLUG_TOKEN_RE.test(w)).length;
+  return slugish / words.length > 0.5 && !/[.?!]$/.test(line.trim());
+}
+
+/**
+ * Every note in the source data ends with a leftover appendix: a per-topic
+ * PYQ index ("2.1 Cartesian Coordinates (1)"), GATE Overflow tag rows
+ * ("gatecse-2015-set1 set-theory&amp;algebra ..."), and fragments of example
+ * questions whose stems got cut off during extraction (so only orphaned
+ * "- A. ... B. ..." option lists remain). This consistently starts 50-99%
+ * of the way through the note (validated across all 22 chapter notes) and
+ * is never useful study content, so it's dropped rather than rendered.
+ */
+function truncateNoteAppendix(text: string): string {
+  const blocks = text.replace(/\r\n/g, "\n").trim().split(/\n\s*\n/);
+
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i].trim();
+    if (!b) continue;
+    if (/^(✍\s*)?Practice Tests?:/.test(b)) return blocks.slice(0, i).join("\n\n");
+    if (/^\d+\.\d+(\s|$)/.test(b)) return blocks.slice(0, i).join("\n\n");
+    if (isSlugHeavyLine(b)) return blocks.slice(0, i).join("\n\n");
+  }
+  return text;
+}
+
 function enrichQuestion(q: RawQuestion): ParsedQuestion {
   const { displayTopic, examMeta, cleanText } = extractQuestionMeta(q.question_text, q.topic);
   return { ...q, displayTopic, examMeta, cleanText };
 }
 
 function enrichNote(n: RawNote): ParsedNote {
-  return { ...n, formattedContent: structureNoteContent(n.content) };
+  const trimmed = truncateNoteAppendix(n.content);
+  return { ...n, formattedContent: structureNoteContent(trimmed) };
 }
 
 let cachedData: ParsedData | null = null;
