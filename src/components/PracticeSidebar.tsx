@@ -116,6 +116,7 @@ export function PracticeSidebar({
           </div>
         ))}
       </div>
+      </div>
     </aside>
   );
 }
