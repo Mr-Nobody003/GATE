@@ -90,7 +90,8 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
   if (!isClient) return <div className="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/50 animate-pulse h-64"></div>;
 
   const isCorrect = isRevealed && checkCorrectness();
-  const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(question.question_text.substring(0, 150))}`;
+  const searchQuery = [question.examMeta, question.cleanText.substring(0, 150)].filter(Boolean).join(" ");
+  const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
 
   let borderColor = "border-neutral-200 dark:border-neutral-800";
   if (isRevealed) {
@@ -102,10 +103,18 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
 
   return (
     <div className={`p-6 sm:p-8 rounded-3xl border ${borderColor} bg-white/70 dark:bg-neutral-900/40 backdrop-blur-xl shadow-sm space-y-6 transition-all duration-300`}>
-      <div className="flex items-center justify-between">
-        <span className="bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300 text-xs px-3 py-1.5 rounded-full font-bold shadow-sm border border-indigo-200 dark:border-indigo-500/30">
-          Q. {question.id}
-        </span>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300 text-xs px-3 py-1.5 rounded-full font-bold shadow-sm border border-indigo-200 dark:border-indigo-500/30">
+            Q. {question.id}
+          </span>
+          {question.examMeta && (
+            <span className="inline-flex items-center gap-1.5 text-xs text-amber-700 dark:text-amber-300 font-semibold bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 px-3 py-1.5 rounded-full">
+              <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              {question.examMeta}
+            </span>
+          )}
+        </div>
         <span className="text-xs text-neutral-500 dark:text-neutral-400 font-bold tracking-wider uppercase bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 rounded-full">
           {question.qtype}
         </span>
@@ -122,7 +131,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
             }
           }}
         >
-          {question.question_text}
+          {question.cleanText}
         </ReactMarkdown>
       </div>
 
