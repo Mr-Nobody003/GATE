@@ -32,7 +32,7 @@ export function ChapterCard({ chapter, volId }: { chapter: ParsedChapter; volId:
   return (
     <Link 
       href={`/practice/${volId}/${chapter.id}`}
-      className={`group p-6 rounded-2xl border bg-white dark:bg-neutral-900/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden relative ${
+      className={`group p-6 rounded-2xl border bg-white dark:bg-neutral-900/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden relative active:scale-[0.98] ${
         isFullySolved 
           ? 'border-emerald-300 dark:border-emerald-700 bg-emerald-50/10 dark:bg-emerald-900/10' 
           : 'border-neutral-200 dark:border-neutral-800 hover:border-indigo-400 dark:hover:border-indigo-500'

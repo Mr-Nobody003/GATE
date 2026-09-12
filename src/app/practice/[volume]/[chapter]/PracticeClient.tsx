@@ -35,8 +35,10 @@ export default function PracticeClient({
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 300);
     };
@@ -88,7 +90,7 @@ export default function PracticeClient({
         
         <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "flex-1 min-w-0 max-w-4xl space-y-8 transition-all"}>
         <div className={`flex items-center justify-between ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-          <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-colors flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full w-max">
+          <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-all active:scale-95 flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full w-max">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
             Back to Dashboard
           </Link>
@@ -105,7 +107,7 @@ export default function PracticeClient({
           <div className="sticky top-16 z-40 bg-neutral-50/95 dark:bg-neutral-950/95 backdrop-blur-md pt-2 flex items-center justify-between gap-4 border-b border-neutral-200 dark:border-neutral-800 -mx-4 px-4 sm:-mx-8 sm:px-8">
             <div className="flex gap-2 sm:gap-4">
               <button 
-                className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all relative ${activeTab === 'notes' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
+                className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all active:scale-95 relative ${activeTab === 'notes' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
                 onClick={() => setActiveTab('notes')}
               >
                 Notes 
@@ -115,7 +117,7 @@ export default function PracticeClient({
                 )}
               </button>
               <button 
-                className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all relative ${activeTab === 'pyq' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
+                className={`px-4 sm:px-6 py-3 font-bold text-sm sm:text-base transition-all active:scale-95 relative ${activeTab === 'pyq' ? 'text-indigo-600 dark:text-indigo-400' : 'text-neutral-500 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300'}`}
                 onClick={() => setActiveTab('pyq')}
               >
                 Practice PYQs 
@@ -129,14 +131,14 @@ export default function PracticeClient({
               {activeTab === 'pyq' && topicGroups.length > 0 && (
                 <button
                   onClick={toggleAll}
-                  className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-neutral-500 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 transition-colors shrink-0"
+                  className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-neutral-500 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 transition-all active:scale-95 shrink-0"
                 >
                   {allOpen ? "Collapse all" : "Expand all"}
                 </button>
               )}
               <button
                 onClick={() => setIsFocusMode(!isFocusMode)}
-                className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-sm font-bold text-neutral-600 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 shadow-sm hover:shadow-md transition-all shrink-0"
+                className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-sm font-bold text-neutral-600 hover:text-indigo-600 dark:text-neutral-400 dark:hover:text-indigo-400 shadow-sm hover:shadow-md transition-all active:scale-95 shrink-0"
                 title={isFocusMode ? "Exit Focus Mode" : "Enter Focus Mode"}
               >
                 {isFocusMode ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
@@ -148,7 +150,11 @@ export default function PracticeClient({
 
         {activeTab === 'notes' && (
           <section className={`space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-            {notes.length > 0 ? notes.map((note) => (
+            {!isMounted ? (
+              <div className="flex justify-center py-20">
+                <div className="w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+              </div>
+            ) : notes.length > 0 ? notes.map((note) => (
               <NoteCard key={note.id} content={note.formattedContent} />
             )) : (
               <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
@@ -163,7 +169,11 @@ export default function PracticeClient({
 
         {activeTab === 'pyq' && (
           <section className={`space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-            {topicGroups.length > 0 ? (
+            {!isMounted ? (
+              <div className="flex justify-center py-20">
+                <div className="w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+              </div>
+            ) : topicGroups.length > 0 ? (
               topicGroups.map(([topic, topicQuestions], index) => (
                 <TopicAccordion
                   key={topic}
@@ -190,7 +200,7 @@ export default function PracticeClient({
       {showBackToTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 p-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all z-50 flex items-center justify-center animate-in fade-in slide-in-from-bottom-4"
+          className="fixed bottom-8 right-8 p-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all active:scale-90 z-50 flex items-center justify-center animate-in fade-in slide-in-from-bottom-4"
           title="Back to Top"
         >
           <ArrowUp className="w-6 h-6" />
@@ -319,7 +329,7 @@ function TopicAccordion({
     >
       <button 
         onClick={onToggle}
-        className={`w-full flex items-center justify-between p-6 transition-colors ${isFullySolved ? 'hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800/50'}`}
+        className={`w-full flex items-center justify-between p-6 transition-all active:scale-[0.98] ${isFullySolved ? 'hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800/50'}`}
       >
         <div className="flex items-center gap-4">
           <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black shadow-sm shrink-0 transition-colors ${isFullySolved ? 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400' : 'bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400'}`}>

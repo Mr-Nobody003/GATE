@@ -129,7 +129,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
               setIsImportant(!isImportant);
               saveState({ isImportant: !isImportant });
             }}
-            className={`p-1.5 rounded-full transition-all duration-300 ${isImportant ? 'bg-amber-100 text-amber-500 dark:bg-amber-500/20 dark:text-amber-400' : 'bg-neutral-100 text-neutral-400 hover:text-amber-500 dark:bg-neutral-800 dark:text-neutral-500 dark:hover:text-amber-400'}`}
+            className={`p-1.5 rounded-full transition-all active:scale-90 duration-300 ${isImportant ? 'bg-amber-100 text-amber-500 dark:bg-amber-500/20 dark:text-amber-400' : 'bg-neutral-100 text-neutral-400 hover:text-amber-500 dark:bg-neutral-800 dark:text-neutral-500 dark:hover:text-amber-400'}`}
             title={isImportant ? "Unmark Important" : "Mark Important"}
           >
             <Star className={`w-4 h-4 ${isImportant ? 'fill-current' : ''}`} />
@@ -158,7 +158,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
             const letter = String.fromCharCode(65 + i);
             const isSelected = selectedOptions.includes(letter);
             
-            let btnClass = "text-left p-4 border rounded-2xl transition-all duration-200 group relative overflow-hidden ";
+            let btnClass = "text-left p-4 border rounded-2xl transition-all active:scale-[0.98] duration-200 group relative overflow-hidden ";
             
             if (!isRevealed) {
               btnClass += isSelected 
@@ -331,7 +331,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
                 href={searchUrl} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="px-4 py-2 text-sm font-semibold bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white rounded-lg transition-colors flex items-center gap-2 border border-neutral-200 dark:border-neutral-700"
+                className="px-4 py-2 text-sm font-semibold bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white rounded-lg transition-all active:scale-95 flex items-center gap-2 border border-neutral-200 dark:border-neutral-700"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032 s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2 C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/></svg>
                 Search Web
