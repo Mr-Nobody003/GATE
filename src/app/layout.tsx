@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -88,15 +88,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 relative">
-        <div 
-          className="fixed inset-0 z-[-1] opacity-[0.75] dark:opacity-[0.10] pointer-events-none"
-          style={{
-            backgroundImage: `url('${basePath}/bg.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-          }}
-        />
+        <div className="fixed inset-0 z-[-1] opacity-[0.75] dark:opacity-[0.10] pointer-events-none">
+          <Image
+            src={`${basePath}/bg.png`}
+            alt="Background pattern"
+            fill
+            quality={75}
+            priority
+            className="object-cover object-center"
+          />
+        </div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}

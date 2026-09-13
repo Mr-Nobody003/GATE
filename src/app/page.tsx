@@ -106,7 +106,16 @@ export default function Dashboard() {
             </h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {vol.chapters.map((chapter) => (
-                <ChapterCard key={chapter.id} chapter={chapter} volId={vol.id} />
+                <ChapterCard 
+                  key={chapter.id} 
+                  chapter={{
+                    id: chapter.id,
+                    name: chapter.name,
+                    noteCount: chapter.notes.length,
+                    questionIds: chapter.questions.map(q => q.id)
+                  }} 
+                  volId={vol.id} 
+                />
               ))}
             </div>
           </section>

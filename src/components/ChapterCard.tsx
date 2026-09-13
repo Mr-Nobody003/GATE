@@ -2,10 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ParsedChapter } from "@/lib/data";
 import { Star, CheckCircle2 } from "lucide-react";
 
-export function ChapterCard({ chapter, volId }: { chapter: ParsedChapter; volId: string }) {
+export type ChapterSummary = {
+  id: string;
+  name: string;
+  noteCount: number;
+  questionIds: string[];
+};
+
+export function ChapterCard({ chapter, volId }: { chapter: ChapterSummary; volId: string }) {
   const [stats, setStats] = useState({ solved: 0, important: 0 });
   const [isClient, setIsClient] = useState(false);
 
@@ -13,8 +19,8 @@ export function ChapterCard({ chapter, volId }: { chapter: ParsedChapter; volId:
     setIsClient(true);
     let solved = 0;
     let important = 0;
-    chapter.questions.forEach((q) => {
-      const saved = localStorage.getItem(`q_state_${q.id}`);
+    chapter.questionIds.forEach((qId) => {
+      const saved = localStorage.getItem(`q_state_${qId}`);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed.isRevealed) solved++;
@@ -22,10 +28,10 @@ export function ChapterCard({ chapter, volId }: { chapter: ParsedChapter; volId:
       }
     });
     setStats({ solved, important });
-  }, [chapter.questions]);
+  }, [chapter.questionIds]);
 
-  const noteCount = chapter.notes.length;
-  const questionCount = chapter.questions.length;
+  const noteCount = chapter.noteCount;
+  const questionCount = chapter.questionIds.length;
   const progress = questionCount > 0 ? (stats.solved / questionCount) * 100 : 0;
   const isFullySolved = questionCount > 0 && stats.solved === questionCount;
 

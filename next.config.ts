@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_PATH: basePath, // Expose to client side code if needed
   },
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: !isVercel, // True for github pages, false for Vercel
   },
   turbopack: {},
 };
