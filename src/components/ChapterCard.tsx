@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { Star, CheckCircle2 } from "lucide-react";
 
 export type ChapterSummary = {

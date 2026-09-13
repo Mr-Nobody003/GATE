@@ -163,3 +163,29 @@
 .dark ::-webkit-scrollbar-thumb:hover {
   background: var(--color-indigo-500, #6366f1);
 }
+
+::view-transition-old(main-content) {
+  animation: slideOutLeft 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  object-fit: none;
+  object-position: top left;
+}
+
+::view-transition-new(main-content) {
+  animation: slideInRight 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  object-fit: none;
+  object-position: top left;
+}
+
+::view-transition-group(main-content) {
+  animation: none;
+}
+
+@keyframes slideOutLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-50vw); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50vw); }
+  to { opacity: 1; transform: translateX(0); }
+}

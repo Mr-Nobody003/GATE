@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { ChevronDown, ChevronRight, BookOpen } from "lucide-react";
 import { ParsedChapter } from "@/lib/data";
 

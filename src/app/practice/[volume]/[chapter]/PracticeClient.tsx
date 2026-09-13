@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import QuestionCard from "@/components/QuestionCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import ReactMarkdown from "react-markdown";
@@ -43,51 +43,24 @@ export default function PracticeClient({
   allVolumes: SidebarVolumeData[];
 }) {
   const [activeTab, setActiveTab] = useState<"notes" | "pyq">("notes");
-  const [hasRenderedNotes, setHasRenderedNotes] = useState(true);
-  const [hasRenderedPyq, setHasRenderedPyq] = useState(false);
   
   const handleTabChange = (tab: "notes" | "pyq") => {
-    if (tab === 'notes') setHasRenderedNotes(true);
-    if (tab === 'pyq') setHasRenderedPyq(true);
     setActiveTab(tab);
   };
 
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-  const [noteRenderLimit, setNoteRenderLimit] = useState(2);
-  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    const isDesk = window.innerWidth >= 1024;
-    setIsDesktop(isDesk);
-    
-    // TRULY defer rendering by 150ms on mobile so the navigation animation plays at 60fps,
-    // but on desktop computers (which are fast), render instantly.
-    const timer = setTimeout(() => setIsMounted(true), isDesk ? 0 : 150);
-    
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 300);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
-      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    if (!isMounted) return;
-    if (isDesktop) {
-      setNoteRenderLimit(1000); // Instantly render all on desktop
-      return;
-    }
-    if (noteRenderLimit < chapterData.notes.length) {
-      const timer = setTimeout(() => setNoteRenderLimit(prev => prev + 2), 150);
-      return () => clearTimeout(timer);
-    }
-  }, [isMounted, isDesktop, noteRenderLimit, chapterData.notes.length]);
 
   const questions = chapterData.questions;
   const notes = chapterData.notes;
@@ -131,7 +104,10 @@ export default function PracticeClient({
       <div className="flex flex-col lg:flex-row max-w-[90rem] mx-auto gap-4 sm:gap-8 items-start relative">
         {!isFocusMode && <PracticeSidebar volumes={allVolumes} currentVolId={volumeId} currentChapId={chapterData.id} />}
         
-        <div className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "flex-1 min-w-0 max-w-4xl space-y-8 transition-all"}>
+        <div 
+          className={isFocusMode ? "fixed inset-0 z-50 overflow-y-auto bg-neutral-50 dark:bg-neutral-950 p-4 sm:p-8 space-y-8 transition-all" : "flex-1 min-w-0 max-w-4xl space-y-8 transition-all"}
+          style={{ viewTransitionName: 'main-content' }}
+        >
         <div className={`flex items-center justify-between ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
           <Link href="/" className="text-sm font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-white transition-all active:scale-95 flex items-center gap-2 bg-neutral-200/50 dark:bg-neutral-800/50 px-4 py-2 rounded-full w-max">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -192,22 +168,12 @@ export default function PracticeClient({
         </header>
 
         <div className={activeTab === 'notes' ? "block" : "hidden"}>
-          {hasRenderedNotes && (
-            <section className={`space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-              {!isMounted ? (
-                <div className="flex justify-center py-20">
-                  <GlowingLoader size="lg" />
-                </div>
-              ) : notes.length > 0 ? (
+          <section className={`space-y-8 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+            {notes.length > 0 ? (
               <>
-                {notes.slice(0, noteRenderLimit).map((note) => (
+                {notes.map((note) => (
                   <NoteCard key={note.id} content={note.formattedContent} />
                 ))}
-                {noteRenderLimit < notes.length && (
-                  <div className="flex justify-center py-8">
-                    <GlowingLoader size="sm" />
-                  </div>
-                )}
               </>
             ) : (
                 <div className="text-center p-12 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-3xl text-neutral-500 dark:text-neutral-500 bg-neutral-100/50 dark:bg-neutral-900/20">
@@ -218,18 +184,12 @@ export default function PracticeClient({
                 </div>
               )}
             </section>
-          )}
         </div>
 
         <div className={activeTab === 'pyq' ? "block" : "hidden"}>
-          {hasRenderedPyq && (
-            <section className={`space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
-              {!isMounted ? (
-                <div className="flex justify-center py-20">
-                  <GlowingLoader size="lg" />
-                </div>
-              ) : topicGroups.length > 0 ? (
-                topicGroups.map(([topic, topicQuestions], index) => (
+          <section className={`space-y-6 ${isFocusMode ? 'max-w-5xl mx-auto' : ''}`}>
+            {topicGroups.length > 0 ? (
+              topicGroups.map(([topic, topicQuestions], index) => (
                   <TopicAccordion
                     key={topic}
                     topic={topic}
@@ -248,9 +208,8 @@ export default function PracticeClient({
                 </div>
               )}
             </section>
-          )}
         </div>
-        </div>
+      </div>
       </div>
 
       {showBackToTop && (
@@ -288,9 +247,9 @@ function NoteCard({ content }: { content: string }) {
 
       {outline.length > 1 && (
         <div className="flex flex-wrap gap-2 mb-8 pb-6 border-b border-dashed border-neutral-200 dark:border-neutral-800">
-          {outline.map((h) => (
+          {outline.map((h, index) => (
             <a
-              key={h}
+              key={`${h}-${index}`}
               href={`#${slugify(h)}`}
               className="text-xs font-semibold px-3 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/40 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
             >

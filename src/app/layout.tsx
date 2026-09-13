@@ -68,42 +68,52 @@ export const viewport = {
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { TopProgressBar } from "@/components/ProgressBar";
+import { ViewTransitions } from "next-view-transitions";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} h-full antialiased`}
-      suppressHydrationWarning
-    >
-      <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.deferredPWAEvent = null;
-            window.addEventListener('beforeinstallprompt', function(e) {
-              e.preventDefault();
-              window.deferredPWAEvent = e;
-            });
-          `
-        }} />
-      </head>
-      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 relative">
-        <div className="fixed inset-0 z-[-1] opacity-[0.75] dark:opacity-[0.10] pointer-events-none">
-          <Image
-            src={`${basePath}/bg.png`}
-            alt="Background pattern"
-            fill
-            quality={75}
-            priority
-            className="object-cover object-center"
-          />
-        </div>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar />
-          {children}
-          <Analytics />
-        </ThemeProvider>
-      </body>
-    </html>
+    <ViewTransitions>
+      <html
+        lang="en"
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} h-full antialiased`}
+        suppressHydrationWarning
+      >
+        <head>
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              window.deferredPWAEvent = null;
+              window.addEventListener('beforeinstallprompt', function(e) {
+                e.preventDefault();
+                window.deferredPWAEvent = e;
+              });
+              window.addEventListener('unhandledrejection', function(e) {
+                if (e.reason && e.reason.name === 'InvalidStateError') {
+                  e.preventDefault();
+                }
+              });
+            `
+          }} />
+        </head>
+        <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 relative overflow-x-hidden">
+          <div className="fixed inset-0 z-[-1] opacity-[0.75] dark:opacity-[0.10] pointer-events-none">
+            <Image
+              src={`${basePath}/bg.png`}
+              alt="Background pattern"
+              fill
+              quality={75}
+              priority
+              className="object-cover object-center"
+            />
+          </div>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <TopProgressBar />
+            <Navbar />
+            {children}
+            <Analytics />
+          </ThemeProvider>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
