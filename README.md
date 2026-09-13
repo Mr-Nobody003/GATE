@@ -10,23 +10,23 @@ The data pipeline transitions the content from unstructured PDFs to a rich, inte
 
 ```mermaid
 flowchart TD
-    subgraph Data Collection
-        A["Raw GATE PDFs\n`public/pdfs/`"] --> B("DataLab Processing")
+    subgraph DC [Data Collection]
+        A["Raw GATE PDFs<br>public/pdfs/"] --> B("DataLab Processing")
     end
 
-    subgraph Data Processing Pipeline
-        B --> C["DataLab JSON Exports\n`datalab_json/*.json`"]
-        A --> |PyMuPDF Extraction| D["`scripts/parse_datalab.py`"]
+    subgraph DP [Data Processing Pipeline]
+        B --> C["DataLab JSON Exports<br>datalab_json/*.json"]
+        A --> |PyMuPDF Extraction| D["scripts/parse_datalab.py"]
         C --> D
-        D --> |Extracts Text, Math, Layout, Images| E["Formatted Unified JSON\n`data/formatted_all.json`"]
+        D --> |Extracts Text, Math, Layout, Images| E["Formatted Unified JSON<br>data/formatted_all.json"]
     end
 
-    subgraph Frontend Rendering
-        E --> F["`src/lib/data.ts`\nEnrichment & Formatting"]
-        F --> G["`page.tsx` (Server Component)\nReads data"]
-        G --> H["`ServerMarkdown.tsx`\nPre-renders Markdown & KaTeX"]
-        H --> I["`PracticeClient.tsx` (Client Component)\nReceives Static HTML"]
-        I --> J["`QuestionCard.tsx`\nInteractive UI"]
+    subgraph FR [Frontend Rendering]
+        E --> F["src/lib/data.ts<br>Enrichment & Formatting"]
+        F --> G["page.tsx (Server Component)<br>Reads data"]
+        G --> H["ServerMarkdown.tsx<br>Pre-renders Markdown & KaTeX"]
+        H --> I["PracticeClient.tsx (Client Component)<br>Receives Static HTML"]
+        I --> J["QuestionCard.tsx<br>Interactive UI"]
     end
 
     classDef default fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#0f172a;
@@ -40,7 +40,7 @@ flowchart TD
 ```
 
 ### 1. Data Collection
-- The original source material consists of GATE CS textbooks in PDF format (Volumes 1, 2, and 3) stored in `public/pdfs/` they are collected from Go-Pdfs Gateoverflow repo release.
+- The original source material consists of GATE CS textbooks in PDF format (Volumes 1, 2, and 3) stored in `public/pdfs/`. They are collected from the Go-Pdfs Gateoverflow repo releases.
 - These PDFs are initially processed by **DataLab**, which performs OCR and structural analysis, converting the PDF pages into rich JSON documents containing bounding boxes, HTML fragments, math blocks (LaTeX), and base64-encoded images.
 - These exported JSON files are placed in the `datalab_json/` directory.
 
