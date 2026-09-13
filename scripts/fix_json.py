@@ -30,7 +30,6 @@ def reconstruct(question):
 
 def reparse(full_text):
     seq = ['A', 'B', 'C', 'D']
-    
     pattern = re.compile(r'(?:(?<=\s)|(?<=^))(?:-?\s*\b([ABCD])\.\s+|\(([ABCD])\))')
     valid_splits = []
     for match in pattern.finditer(full_text):
@@ -79,8 +78,38 @@ def reparse(full_text):
 
     return None, None
 
+def fix_control_chars(s):
+    # This function fixes improperly escaped LaTeX commands that were parsed as control characters.
+    # In Python, '\n' is a newline. But in the original LaTeX, it was '\neq' which got parsed as '\n' + 'eq'.
+    # We want to restore it to '\\neq'.
+    
+    replacements = {
+        '\neq': '\\neq',
+        '\neg': '\\neg',
+        '\notin': '\\notin',
+        '\nabla': '\\nabla',
+        '\nu': '\\nu',
+        '\rightarrow': '\\rightarrow',
+        '\text': '\\text',
+        '\tau': '\\tau',
+        '\theta': '\\theta',
+        '\times': '\\times',
+        '\forall': '\\forall',
+        '\frac': '\\frac',
+        '\beta': '\\beta',
+        '\alpha': '\\alpha',
+        '\vee': '\\vee'
+    }
+    
+    for k, v in replacements.items():
+        if k in s:
+            s = s.replace(k, v)
+    return s
+
 def replace_typos(s):
     if not isinstance(s, str): return s
+    s = fix_control_chars(s)
+    
     s = s.replace('Expr\\$ ', 'Expr\\$$ ')
     s = s.replace('Expr\\$', 'Expr\\$$')
     s = s.replace('\\_Expr\\\\$', '\\_Expr\\$')
@@ -120,9 +149,11 @@ def fix_dollar(node):
                 node['question_text'] = replace_typos(node['question_text'])
             if 'options' in node and node['options']:
                 node['options'] = [replace_typos(opt) for opt in node['options']]
+            if 'solution' in node and node['solution']:
+                node['solution'] = replace_typos(node['solution'])
         
         for k, v in node.items():
-            if k not in ['question_text', 'options']:
+            if k not in ['question_text', 'options', 'solution']:
                 node[k] = fix_dollar(v)
         return node
     elif isinstance(node, list):
