@@ -21,7 +21,7 @@ flowchart TD
         D --> |Extracts Text, Math, Layout, Images| E[Formatted Unified JSON\n`data/formatted_all.json`]
     end
 
-    subgraph Frontend Rendering (Next.js App Router)
+    subgraph Frontend Rendering
         E --> F[`src/lib/data.ts`\nEnrichment & Formatting]
         F --> G[`page.tsx` (Server Component)\nReads data]
         G --> H[`ServerMarkdown.tsx`\nPre-renders Markdown & KaTeX]
