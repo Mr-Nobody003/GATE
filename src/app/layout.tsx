@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "GATE Prep",
   },
+  verification: {
+    google: "-9_kUpNBrwt9wmjzfq5t3td0CWmigTg3yRuO_KFhi6M",
+  },
 };
 
 export const viewport = {
