@@ -11,7 +11,7 @@ import { Maximize2, Minimize2, Star, CheckCircle2, ArrowUp } from "lucide-react"
 import 'katex/dist/katex.min.css';
 import { useMemo, useState, useEffect } from "react";
 import { ParsedChapter, ParsedQuestion } from "@/lib/data";
-import { PracticeSidebar } from "@/components/PracticeSidebar";
+import { PracticeSidebar, SidebarVolumeData } from "@/components/PracticeSidebar";
 
 const GlowingLoader = ({ size = "lg" }: { size?: "sm" | "lg" }) => {
   const dim = size === "lg" ? "w-10 h-10" : "w-6 h-6";
@@ -40,7 +40,7 @@ export default function PracticeClient({
   chapterData: ParsedChapter;
   volumeId: string;
   volumeName: string;
-  allVolumes: any[];
+  allVolumes: SidebarVolumeData[];
 }) {
   const [activeTab, setActiveTab] = useState<"notes" | "pyq">("notes");
   const [hasRenderedNotes, setHasRenderedNotes] = useState(true);

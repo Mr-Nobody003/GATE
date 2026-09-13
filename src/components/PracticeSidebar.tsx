@@ -5,10 +5,14 @@ import Link from "next/link";
 import { ChevronDown, ChevronRight, BookOpen } from "lucide-react";
 import { ParsedChapter } from "@/lib/data";
 
-type VolumeData = {
+export type SidebarVolumeData = {
   id: string;
   name: string;
-  chapters: ParsedChapter[];
+  chapters: {
+    id: string;
+    name: string;
+    topics: string[];
+  }[];
 };
 
 export function PracticeSidebar({
@@ -16,7 +20,7 @@ export function PracticeSidebar({
   currentVolId,
   currentChapId,
 }: {
-  volumes: VolumeData[];
+  volumes: SidebarVolumeData[];
   currentVolId: string;
   currentChapId: string;
 }) {
@@ -65,12 +69,7 @@ export function PracticeSidebar({
                 const isOpen = openChapters.has(uniqueId);
                 const isCurrent = currentChapId === chapter.id && currentVolId === vol.id;
                 
-                // Derive subtopics
-                const topicsSet = new Set<string>();
-                chapter.questions.forEach(q => {
-                  if (q.topic) topicsSet.add(q.topic);
-                });
-                const topics = Array.from(topicsSet);
+                const topics = chapter.topics || [];
 
                 return (
                   <div key={uniqueId} className="flex flex-col">

@@ -49,12 +49,28 @@ export default async function PracticePage({
     );
   }
 
+  const sidebarVolumes = Object.values(data.volumes).map(vol => ({
+    id: vol.id,
+    name: vol.name,
+    chapters: vol.chapters.map(chap => {
+      const topicsSet = new Set<string>();
+      chap.questions.forEach(q => {
+        if (q.topic) topicsSet.add(q.topic);
+      });
+      return {
+        id: chap.id,
+        name: chap.name,
+        topics: Array.from(topicsSet)
+      };
+    })
+  }));
+
   return (
     <PracticeClient 
       chapterData={chapterData} 
       volumeId={volumeData.id} 
       volumeName={volumeData.name}
-      allVolumes={Object.values(data.volumes)} 
+      allVolumes={sidebarVolumes} 
     />
   );
 }
