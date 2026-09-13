@@ -21,11 +21,12 @@ flowchart TD
         D --> |Extracts Text, Math, Layout, Images| E[Formatted Unified JSON\n`data/formatted_all.json`]
     end
 
-    subgraph Frontend Rendering
+    subgraph Frontend Rendering (Next.js App Router)
         E --> F[`src/lib/data.ts`\nEnrichment & Formatting]
-        F --> G[Next.js App Router]
-        G --> H[`PracticeClient.tsx`\nReact Markdown + KaTeX]
-        G --> I[`QuestionCard.tsx`]
+        F --> G[`page.tsx` (Server Component)\nReads data]
+        G --> H[`ServerMarkdown.tsx`\nPre-renders Markdown & KaTeX]
+        H --> I[`PracticeClient.tsx` (Client Component)\nReceives Static HTML]
+        I --> J[`QuestionCard.tsx`\nInteractive UI]
     end
 
     classDef default fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#0f172a;
@@ -35,7 +36,7 @@ flowchart TD
     
     class D script;
     class E,C,A data;
-    class G,H,I,F frontend;
+    class G,H,I,J,F frontend;
 ```
 
 ### 1. Data Collection
@@ -52,7 +53,9 @@ flowchart TD
 ### 3. Frontend Rendering
 - The Next.js frontend imports `data/formatted_all.json` through `src/lib/data.ts`.
 - `data.ts` performs on-the-fly enrichment: it extracts clean subtopic headers from question text, structures plaintext study notes into proper Markdown hierarchies, and prepares the data for rendering.
-- The UI components (`PracticeClient.tsx` and `QuestionCard.tsx`) use `react-markdown` configured with `remark-math` and `rehype-katex` to seamlessly render complex mathematical formulas and tables directly in the browser.
+- During build time (Static Site Generation), the Server Component `page.tsx` reads this data and passes it to `ServerMarkdown.tsx`.
+- `ServerMarkdown.tsx` uses `react-markdown`, `remark-math`, and `rehype-katex` on the **server side** to compile all complex mathematical formulas and tables into pure, static HTML.
+- The interactive UI components (`PracticeClient.tsx` and `QuestionCard.tsx`) simply receive and display this pre-rendered HTML. This offloads heavy computation from the client's browser, resulting in lightning-fast mobile performance and lightweight JavaScript bundles for offline PWA viewing.
 
 ---
 

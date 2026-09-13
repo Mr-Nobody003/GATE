@@ -1,15 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import 'katex/dist/katex.min.css';
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
-import rehypeRaw from "rehype-raw";
 import { ParsedQuestion, AnswerNAT } from "@/lib/data";
 import { Star } from "lucide-react";
 
-export default function QuestionCard({ question }: { question: ParsedQuestion }) {
+export default function QuestionCard({ question }: { question: any }) {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [natInput, setNatInput] = useState<string>("");
   const [descInput, setDescInput] = useState<string>("");
@@ -88,7 +83,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
     
     // MCQ
     const ansStr = typeof question.answer === 'string' ? question.answer : String(question.answer);
-    const correctOpts = ansStr.split(";").map(s => s.trim());
+    const correctOpts = ansStr.split(";").map((s: string) => s.trim());
     return selectedOptions.length > 0 && selectedOptions.every(opt => correctOpts.includes(opt));
   };
 
@@ -138,23 +133,12 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
       </div>
       
       <div className="text-lg text-neutral-800 dark:text-neutral-200 leading-relaxed font-medium">
-        <ReactMarkdown 
-          remarkPlugins={[remarkMath]} 
-          rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
-          components={{
-            img: ({node, src, ...props}) => {
-              const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
-              return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '1.5rem auto', borderRadius: '0.5rem'}} {...props} />;
-            }
-          }}
-        >
-          {question.cleanText}
-        </ReactMarkdown>
+        {question.questionHtml}
       </div>
 
       {!isNAT && question.options && question.options.length > 0 && (
         <div className="grid gap-3 sm:grid-cols-2">
-          {question.options.map((opt, i) => {
+          {question.options.map((opt: string, i: number) => {
             const letter = String.fromCharCode(65 + i);
             const isSelected = selectedOptions.includes(letter);
             
@@ -170,7 +154,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
                 isCorrectOpt = Array.isArray(question.answer) && question.answer.includes(letter);
               } else {
                 const ansStr = typeof question.answer === 'string' ? question.answer : String(question.answer);
-                isCorrectOpt = ansStr.split(";").map(s => s.trim()).includes(letter);
+                isCorrectOpt = ansStr.split(";").map((s: string) => s.trim()).includes(letter);
               }
 
               if (isCorrectOpt) {
@@ -192,25 +176,14 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
                 <div className="flex items-start">
                   <div className={`flex items-center justify-center w-6 h-6 mr-3 mt-0.5 rounded-md border text-xs font-bold transition-colors ${
                     isSelected && !isRevealed ? "bg-indigo-500 border-indigo-500 text-white" : 
-                    isRevealed && (Array.isArray(question.answer) ? question.answer.includes(letter) : String(question.answer).split(";").map(s => s.trim()).includes(letter)) ? "bg-emerald-500 border-emerald-500 text-white" :
+                    isRevealed && (Array.isArray(question.answer) ? question.answer.includes(letter) : String(question.answer).split(";").map((s: string) => s.trim()).includes(letter)) ? "bg-emerald-500 border-emerald-500 text-white" :
                     isRevealed && isSelected ? "bg-rose-500 border-rose-500 text-white" :
                     "border-neutral-300 dark:border-neutral-600 text-neutral-500 dark:text-neutral-400 group-hover:border-indigo-400"
                   } ${isMSQ ? "rounded-md" : "rounded-full"}`}>
                     {letter}
                   </div>
                   <div className="flex-1 text-[0.95rem]">
-                    <ReactMarkdown 
-                      remarkPlugins={[remarkMath]} 
-                      rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
-                      components={{
-                        img: ({node, src, ...props}) => {
-                          const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
-                          return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'inline-block', borderRadius: '0.25rem'}} {...props} />;
-                        }
-                      }}
-                    >
-                      {opt}
-                    </ReactMarkdown>
+                    {question.optionsHtml[i]}
                   </div>
                 </div>
               </button>
@@ -313,18 +286,7 @@ export default function QuestionCard({ question }: { question: ParsedQuestion })
             
             {question.solution ? (
               <div className="text-sm text-neutral-600 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800 p-4 rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <ReactMarkdown 
-                  remarkPlugins={[remarkMath]} 
-                  rehypePlugins={[[rehypeKatex, { strict: false }], rehypeRaw]}
-                  components={{
-                    img: ({node, src, ...props}) => {
-                      const imgUrl = typeof src === 'string' && src.startsWith('/') && !src.startsWith('/GATE') ? `/GATE${src}` : src;
-                      return <img src={imgUrl as string} style={{maxWidth: '100%', height: 'auto', display: 'block', margin: '1rem auto', borderRadius: '0.5rem'}} {...props} />;
-                    }
-                  }}
-                >
-                  {question.solution}
-                </ReactMarkdown>
+                {question.solutionHtml}
               </div>
             ) : (
               <a 

@@ -18,6 +18,8 @@ export function generateStaticParams() {
   return params;
 }
 
+import ServerMarkdown from "@/components/ServerMarkdown";
+
 export default async function PracticePage({
   params
 }: {
@@ -65,9 +67,27 @@ export default async function PracticePage({
     })
   }));
 
+  const enrichedNotes = chapterData.notes.map(note => ({
+    ...note,
+    contentHtml: <ServerMarkdown content={note.formattedContent} />
+  }));
+
+  const enrichedQuestions = chapterData.questions.map(q => ({
+    ...q,
+    questionHtml: <ServerMarkdown content={q.cleanText} />,
+    optionsHtml: q.options ? q.options.map(opt => <ServerMarkdown content={opt} />) : null,
+    solutionHtml: q.solution ? <ServerMarkdown content={q.solution} /> : null,
+  }));
+
+  const enrichedChapterData = {
+    ...chapterData,
+    notes: enrichedNotes,
+    questions: enrichedQuestions
+  };
+
   return (
     <PracticeClient 
-      chapterData={chapterData} 
+      chapterData={enrichedChapterData as any} 
       volumeId={volumeData.id} 
       volumeName={volumeData.name}
       allVolumes={sidebarVolumes} 
