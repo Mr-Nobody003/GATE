@@ -101,14 +101,14 @@ python scripts/parse_datalab.py
 *Note: The script will output "Total Data parsed successfully" along with the number of questions extracted.*
 
 ### Step 5: Run Data Sanitization (Fix KaTeX Errors)
-During the Python parsing pipeline, certain LaTeX commands in the raw data (like `\frac`, `\text`, `\forall`) or HTML entities (like `&gt;`, `&lt;`) can be misinterpreted as control characters (e.g., `\f` becoming a form-feed character) or left unescaped, causing **KaTeX Parse Errors** in the frontend. 
+During the Python parsing pipeline, certain LaTeX commands in the raw data (like `\frac`, `\text`, `\forall`) or HTML entities (like `&gt;`, `&lt;`) can be misinterpreted as control characters (e.g., `\f` becoming a form-feed character) or left unescaped. Furthermore, the parser sometimes accidentally splits options `(A)`, `(B)` from inside active math blocks, or misinterprets literal `$` signs, causing **KaTeX Parse Errors** in the frontend. 
 
 To fix this, always run the sanitization script after generating the JSON:
 
 ```bash
 python scripts/fix_json.py
 ```
-This script traverses the database and repairs all corrupted math symbols and string boundaries.
+This script traverses the database, reconstructs improperly split string boundaries, escapes raw characters, and repairs all corrupted math symbols.
 
 ### Step 6: Start the Frontend
 Start the Next.js development server to verify the new content is rendering correctly.

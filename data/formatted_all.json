@@ -2473,10 +2473,10 @@
               "topicSlug": "topic-3-1",
               "question_text": "First Order Logic: GATE CSE 2014 | Set 3 | Question: 53\n\nThe CORRECT formula for the sentence, \"not all Rainy days are Cold\" is",
               "options": [
-                "$\\forall d(\\text{Rainy}(d) \\wedge \\sim \\text{Cold}(d))$ \n\n-",
-                "$\\forall d(\\sim \\text{Rainy}(d) \\rightarrow \\text{Cold}(d))$ \n\n-",
-                "$\\exists d(\\sim \\text{Rainy}",
-                "\\rightarrow \\text{Cold}(d))$ \n\n- D. $\\exists d(\\text{Rainy}(d) \\wedge \\sim \\text{Cold}(d))$"
+                "$\\forall d(\\text{Rainy}(d) \\wedge \\sim \\text{Cold}(d))$",
+                "$\\forall d(\\sim \\text{Rainy}(d) \\rightarrow \\text{Cold}(d))$",
+                "$\\exists d(\\sim \\text{Rainy}(D)\\rightarrow \\text{Cold}(d))$",
+                "$\\exists d(\\text{Rainy}(d) \\wedge \\sim \\text{Cold}(d))$"
               ],
               "answer": "D",
               "solution": "https://gateoverflow.in/2087"
@@ -3721,8 +3721,8 @@
               "options": [
                 "$g(h(D)) \\subseteq D$",
                 "$g(h(D)) \\supseteq D$",
-                "$g(h",
-                ") \\cap D = \\phi$ D. $g(h(D)) \\cap (B - D) \\neq \\phi$\n\ngatecse-2003 set-theory&algebra functions difficult"
+                "$g(h(D)) \\cap D = \\phi$",
+                "$g(h(D)) \\cap (B - D) \\neq \\phi$\n\ngatecse-2003 set-theory&algebra functions difficult"
               ],
               "answer": "A",
               "solution": "https://gateoverflow.in/927"
@@ -3733,12 +3733,12 @@
               "qtype": "MCQ",
               "topic": "Topic 4.3",
               "topicSlug": "topic-4-3",
-              "question_text": "Functions: GATE CSE 2003 | Question: 39\n\nLet $\\Sigma = \\{a, b, c, d, e\\}$ be an alphabet. We define an encoding scheme as follows:\n\n$g",
+              "question_text": "Functions: GATE CSE 2003 | Question: 39\n\nLet $\\Sigma = \\{a, b, c, d, e\\}$ be an alphabet. We define an encoding scheme as follows:\n\n$g(A)= 3, g(B)= 5, g(C)= 7, g(D)= 9, g(e) = 11$.\n\nLet $p_i$ denote the i-th prime number ($p_1 = 2$).\n\nFor a non-empty string $s = a_1 \\dots a_n$, where each $a_i \\in \\Sigma$, define $f(s) = \\Pi_{i=1}^n P_i^{g(a_i)}$.\n\nFor a non-empty sequence$\\langle s_1, \\dots, s_n \\rangle$ of stings from $\\Sigma^+$, define $h(\\langle s_1 \\dots s_n \\rangle) = \\Pi_{i=1}^n P_i^{f(s_i)}$\n\nWhich of the following numbers is the encoding, $h$, of a non-empty sequence of strings?",
               "options": [
-                "= 3, g",
-                "= 5, g",
-                "= 7, g",
-                "= 9, g(e) = 11$.\n\nLet $p_i$ denote the i-th prime number ($p_1 = 2$).\n\nFor a non-empty string $s = a_1 \\dots a_n$, where each $a_i \\in \\Sigma$, define $f(s) = \\Pi_{i=1}^n P_i^{g(a_i)}$.\n\nFor a non-empty sequence$\\langle s_1, \\dots, s_n \\rangle$ of stings from $\\Sigma^+$, define $h(\\langle s_1 \\dots s_n \\rangle) = \\Pi_{i=1}^n P_i^{f(s_i)}$\n\nWhich of the following numbers is the encoding, $h$, of a non-empty sequence of strings?\n\n- A. $2^7 3^7 5^7$ B. $2^8 3^8 5^8$ C. $2^9 3^9 5^9$ D. $2^{10} 3^{10} 5^{10}$\n\ngatecse-2003 set-theory&algebra functions difficult"
+                "$2^7 3^7 5^7$",
+                "$2^8 3^8 5^8$",
+                "$2^9 3^9 5^9$",
+                "$2^{10} 3^{10} 5^{10}$\n\ngatecse-2003 set-theory&algebra functions difficult"
               ],
               "answer": "B",
               "solution": "https://gateoverflow.in/930"
@@ -3845,9 +3845,9 @@
               "topicSlug": "topic-4-3",
               "question_text": "Functions: GATE CSE 2014 | Set 3 | Question: 2\n\nLet $X$ and $Y$ be finite sets and $f : X \\rightarrow Y$ be a function. Which one of the following statements is TRUE?",
               "options": [
-                "For any subsets $A$ and $B$ of $X, |f(A \\cup B)| = |f(A)| + |f",
-                "|$ \n- B. For any subsets $A$ and $B$ of $X, f(A \\cap B) = f(A) \\cap f(B)$ \n-",
-                "For any subsets $A$ and $B$ of $X, |f(A \\cap B)| = \\min\\{|f(A)|, |f(B)|\\}$ \n-",
+                "For any subsets $A$ and $B$ of $X, |f(A \\cup B)| = |f(A)| + |f(B)|$",
+                "For any subsets $A$ and $B$ of $X, f(A \\cap B) = f(A) \\cap f(B)$",
+                "For any subsets $A$ and $B$ of $X, |f(A \\cap B)| = \\min\\{|f(A)|, |f(B)|\\}$",
                 "For any subsets $S$ and $T$ of $Y, f^{-1}(S \\cap T) = f^{-1}(S) \\cap f^{-1}(T)$\n\ngatecse-2014-set3 set-theory&algebra functions normal"
               ],
               "answer": "D",
@@ -4000,9 +4000,9 @@
               "qtype": "MCQ",
               "topic": "Topic 4.3",
               "topicSlug": "topic-4-3",
-              "question_text": "Functions: GATE IT 2005 | Question: 31\n\nLet $f$ be a function from a set $A$ to a set $B$, $g$ a function from $B$ to $C$, and $h$ a function from $A$ to $C$, such that $h",
+              "question_text": "Functions: GATE IT 2005 | Question: 31\n\nLet $f$ be a function from a set $A$ to a set $B$, $g$ a function from $B$ to $C$, and $h$ a function from $A$ to $C$, such that $h(A)= g(f(a))$ for all $a \\in A$. Which of the following statements is always true for all such functions $f$ and $g$?",
               "options": [
-                "= g(f(a))$ for all $a \\in A$. Which of the following statements is always true for all such functions $f$ and $g$?\n\n- A. $g\\text{ is onto} \\implies h\\text{ is onto}$",
+                "$g\\text{ is onto} \\implies h\\text{ is onto}$",
                 "$h\\text{ is onto} \\implies f\\text{ is onto}$",
                 "$h\\text{ is onto} \\implies g\\text{ is onto}$",
                 "$h\\text{ is onto} \\implies f\\text{ and }g\\text{ are onto}$\n\ngateit-2005 set-theory&algebra functions normal"
@@ -5279,11 +5279,11 @@
               "qtype": "MCQ",
               "topic": "Topic 4.12",
               "topicSlug": "topic-4-12",
-              "question_text": "Relations: GATE CSE 2001 | Question: 1.2\n\nConsider the following relations:\n\n- • $R_1\\ (a, b)$ iff $(a + b)$ is even over the set of integers \n- • $R_2\\ (a, b)$ iff $(a + b)$ is odd over the set of integers \n- • $R_3\\ (a, b)$ iff $",
+              "question_text": "Relations: GATE CSE 2001 | Question: 1.2\n\nConsider the following relations:\n\n- • $R_1\\ (a, b)$ iff $(a + b)$ is even over the set of integers \n- • $R_2\\ (a, b)$ iff $(a + b)$ is odd over the set of integers \n- • $R_3\\ (a, b)$ iff $(A)b > 0$ over the set of non-zero rational numbers \n- • $R_4\\ (a, b)$ iff $|a - b| \\leq 2$ over the set of natural numbers\n\nWhich of the following statements is correct?",
               "options": [
-                "b > 0$ over the set of non-zero rational numbers \n- • $R_4\\ (a, b)$ iff $|a - b| \\leq 2$ over the set of natural numbers\n\nWhich of the following statements is correct?\n\n- A. $R_1$ and $R_2$ are equivalence relations, $R_3$ and $R_4$ are not \n-",
-                "$R_1$ and $R_3$ are equivalence relations, $R_2$ and $R_4$ are not \n-",
-                "$R_1$ and $R_4$ are equivalence relations, $R_2$ and $R_3$ are not \n-",
+                "$R_1$ and $R_2$ are equivalence relations, $R_3$ and $R_4$ are not",
+                "$R_1$ and $R_3$ are equivalence relations, $R_2$ and $R_4$ are not",
+                "$R_1$ and $R_4$ are equivalence relations, $R_2$ and $R_3$ are not",
                 "$R_1, R_2, R_3$ and $R_4$ all are equivalence relations\n\ngatecse-2001 set-theory&algebra normal relations"
               ],
               "answer": "B",
@@ -5764,10 +5764,10 @@
               "qtype": "MCQ",
               "topic": "Topic 4.13",
               "topicSlug": "topic-4-13",
-              "question_text": "Set Theory: GATE CSE 2006 | Question: 24\n\nGiven a set of elements $N = 1, 2, \\dots, n$ and two arbitrary subsets $A \\subseteq N$ and $B \\subseteq N$, how many of the $n!$ permutations $\\pi$ from $N$ to $N$ satisfy $\\min(\\pi",
+              "question_text": "Set Theory: GATE CSE 2006 | Question: 24\n\nGiven a set of elements $N = 1, 2, \\dots, n$ and two arbitrary subsets $A \\subseteq N$ and $B \\subseteq N$, how many of the $n!$ permutations $\\pi$ from $N$ to $N$ satisfy $\\min(\\pi(A)) = \\min(\\pi(B))$, where $\\min(S)$ is the smallest integer in the set of integers $S$, and $\\pi(S)$ is the set of integers obtained by applying permutation $\\pi$ to each element of $S$?",
               "options": [
-                ") = \\min(\\pi",
-                ")$, where $\\min(S)$ is the smallest integer in the set of integers $S$, and $\\pi(S)$ is the set of integers obtained by applying permutation $\\pi$ to each element of $S$?\n\n- A. $(n - |A \\cup B|)|A||B|$ B. $(|A|^2 + |B|^2)n^2$",
+                "$(n - |A \\cup B|)|A||B|$",
+                "$(|A|^2 + |B|^2)n^2$",
                 "$n! \\frac{|A \\cap B|}{|A \\cup B|}$",
                 "$\\frac{|A \\cap B|^2}{{}^n\\text{C}_{|A \\cup B|}}$\n\ngatecse-2006 set-theory&algebra normal set-theory"
               ],
@@ -6212,9 +6212,9 @@
               "qtype": "MSQ",
               "topic": "Topic 5.2",
               "topicSlug": "topic-5-2",
-              "question_text": "Definite Integral: GATE CSE 2026 | Set 2 | Question: 17\n\nFor a real number $a$, let $I",
+              "question_text": "Definite Integral: GATE CSE 2026 | Set 2 | Question: 17\n\nFor a real number $a$, let $I(A)= \\int_{-1}^1 (3x^2 - ax + 1) \\, dx$. Which of the following statements is/are true?",
               "options": [
-                "= \\int_{-1}^1 (3x^2 - ax + 1) \\, dx$. Which of the following statements is/are true?\n\n- A. The value of $I(a)$ is independent of the value of $a$",
+                "The value of $I(a)$ is independent of the value of $a$",
                 "The value of $I(a)$ can vary with the value of $a$",
                 "There exists $a \\in (-\\infty, +\\infty)$ such that $I(a)$ is a positive real number",
                 "There exists $a \\in (-\\infty, +\\infty)$ such that $I(a)$ is a negative real number\n\n5.3\n\nDifferentiation (11)\n\nPractice Tests: Test 1 (15Q) Test 2 (10Q)"
@@ -6377,11 +6377,11 @@
               "qtype": "MCQ",
               "topic": "Topic 5.3",
               "topicSlug": "topic-5-3",
-              "question_text": "Differentiation: GATE DA 2025 | Question: 4\n\nLet $f(x) = \\frac{e^x - e^{-x}}{2}, x \\in \\mathbb{R}$. Let $f^{(k)}",
+              "question_text": "Differentiation: GATE DA 2025 | Question: 4\n\nLet $f(x) = \\frac{e^x - e^{-x}}{2}, x \\in \\mathbb{R}$. Let $f^{(k)}(A)$ denote the $k^{th}$ derivative of $f$ evaluated at $a$. What is the value of $f^{(10)}(0)$? (Note: ! denotes factorial)",
               "options": [
-                "$ denote the $k^{th}$ derivative of $f$ evaluated at $a$. What is the value of $f^{(10)}(0)$? (Note: ! denotes factorial)\n\n- A. 0 \n\n-",
-                "1 \n\n-",
-                "$\\frac{1}{10!}$ \n\n-",
+                "0",
+                "1",
+                "$\\frac{1}{10!}$",
                 "$\\frac{2}{10!}$"
               ],
               "answer": "A",
@@ -7239,11 +7239,11 @@
               "qtype": "MCQ",
               "topic": "Topic 6.2",
               "topicSlug": "topic-6-2",
-              "question_text": "Determinant: GATE CSE 2023 | Question: 8\n\nLet\n\n$$A = \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 4 & 1 & 2 & 3 \\\\ 3 & 4 & 1 & 2 \\\\ 2 & 3 & 4 & 1 \\end{bmatrix}$$\n\nand\n\n$$B = \\begin{bmatrix} 3 & 4 & 1 & 2 \\\\ 4 & 1 & 2 & 3 \\\\ 1 & 2 & 3 & 4 \\\\ 2 & 3 & 4 & 1 \\end{bmatrix}$$\n\nLet $\\det",
+              "question_text": "Determinant: GATE CSE 2023 | Question: 8\n\nLet\n\n$$A = \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 4 & 1 & 2 & 3 \\\\ 3 & 4 & 1 & 2 \\\\ 2 & 3 & 4 & 1 \\end{bmatrix}$$\n\nand\n\n$$B = \\begin{bmatrix} 3 & 4 & 1 & 2 \\\\ 4 & 1 & 2 & 3 \\\\ 1 & 2 & 3 & 4 \\\\ 2 & 3 & 4 & 1 \\end{bmatrix}$$\n\nLet $\\det(A)$ and $\\det(B)$ denote the determinants of the matrices $A$ and $B$, respectively.\n\nWhich one of the options given below is TRUE?",
               "options": [
-                "$ and $\\det",
-                "$ denote the determinants of the matrices $A$ and $B$, respectively.\n\nWhich one of the options given below is TRUE?\n\n- A. $\\det(A) = \\det(B)$\n\n- B. $\\det(B) = -\\det(A)$ \n-",
-                "$\\det(A) = 0$ \n-",
+                "$\\det(A) = \\det(B)$",
+                "$\\det(B) = -\\det(A)$",
+                "$\\det(A) = 0$",
                 "$\\det(AB) = \\det(A) + \\det(B)$"
               ],
               "answer": "B",
@@ -8425,11 +8425,11 @@
               "qtype": "MCQ",
               "topic": "Topic 6.9",
               "topicSlug": "topic-6-9",
-              "question_text": "Rank of Matrix: GATE CSE 2020 | Question: 27\n\nLet $A$ and $B$ be two $n \\times n$ matrices over real numbers. Let $\\text{rank}(M)$ and $\\det(M)$ denote the rank and determinant of a matrix $M$, respectively. Consider the following statements.\n\n- I. $\\text{rank}(AB) = \\text{rank}",
+              "question_text": "Rank of Matrix: GATE CSE 2020 | Question: 27\n\nLet $A$ and $B$ be two $n \\times n$ matrices over real numbers. Let $\\text{rank}(M)$ and $\\det(M)$ denote the rank and determinant of a matrix $M$, respectively. Consider the following statements.\n\n- I. $\\text{rank}(AB) = \\text{rank}(A)\\text{rank}(B)$ \n- II. $\\det(AB) = \\det(A)\\det(B)$ \n- III. $\\text{rank}(A + B) \\le \\text{rank}(A) + \\text{rank}(B)$ \n- IV. $\\det(A + B) \\le \\det(A) + \\det(B)$\n\nWhich of the above statements are TRUE?",
               "options": [
-                "\\text{rank}",
-                "$ \n- II. $\\det(AB) = \\det(A)\\det(B)$ \n- III. $\\text{rank}(A + B) \\le \\text{rank}(A) + \\text{rank}(B)$ \n- IV. $\\det(A + B) \\le \\det(A) + \\det(B)$\n\nWhich of the above statements are TRUE?\n\n- A. I and II only \n- B. I and IV only \n-",
-                "II and III only \n-",
+                "I and II only",
+                "I and IV only",
+                "II and III only",
                 "III and IV only"
               ],
               "answer": "C",
@@ -8469,9 +8469,9 @@
               "qtype": "unknown",
               "topic": "Topic 6.11",
               "topicSlug": "topic-6-11",
-              "question_text": "Statistics: GATE 2023 Stats Exam Q. 13\n\nConsider the following statements.\n\n- (I) Let $A$ and $B$ be two $n \\times n$ real matrices. If $B$ is invertible, then $\\text{rank}(BA) = \\text{rank}",
+              "question_text": "Statistics: GATE 2023 Stats Exam Q. 13\n\nConsider the following statements.\n\n- (I) Let $A$ and $B$ be two $n \\times n$ real matrices. If $B$ is invertible, then $\\text{rank}(BA) = \\text{rank}(A)$.\n\n(II) Let $A$ be an $n \\times n$ real matrix. If $A^2\\mathbf{x} = \\mathbf{b}$ has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$, then $A\\mathbf{x} = \\mathbf{b}$ also has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$.\n\nWhich of the above statements is/are true?",
               "options": [
-                "$.\n\n(II) Let $A$ be an $n \\times n$ real matrix. If $A^2\\mathbf{x} = \\mathbf{b}$ has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$, then $A\\mathbf{x} = \\mathbf{b}$ also has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$.\n\nWhich of the above statements is/are true?\n\n- A. & Only (I)",
+                "& Only (I)",
                 "& Only (II)",
                 "& Both (I) and (II)",
                 "& Neither (I) nor (II)"
@@ -9215,9 +9215,9 @@
               "topicSlug": "topic-7-6",
               "question_text": "Conditional Probability: GATE CSE 1994 | Question: 1.4, ISRO2017-2\n\nLet $A$ and $B$ be any two arbitrary events, then, which one of the following is TRUE?",
               "options": [
-                "$P(A \\cap B) = P(A)P",
-                "$ \n- B. $P(A \\cup B) = P(A) + P(B)$ \n-",
-                "$P(A \\mid B) = P(A \\cap B)P(B)$ \n-",
+                "$P(A \\cap B) = P(A)P(B)$",
+                "$P(A \\cup B) = P(A) + P(B)$",
+                "$P(A \\mid B) = P(A \\cap B)P(B)$",
                 "$P(A \\cup B) \\leq P(A) + P(B)$"
               ],
               "answer": "D",
@@ -9240,11 +9240,11 @@
               "qtype": "MCQ",
               "topic": "Topic 7.6",
               "topicSlug": "topic-7-6",
-              "question_text": "Conditional Probability: GATE CSE 2003 | Question: 3\n\nLet $P(E)$ denote the probability of the event $E$. Given $P",
+              "question_text": "Conditional Probability: GATE CSE 2003 | Question: 3\n\nLet $P(E)$ denote the probability of the event $E$. Given $P(A)= 1, P(B)= \\frac{1}{2}$, the values of $P(A \\mid B)$ and $P(B \\mid A)$ respectively are",
               "options": [
-                "= 1, P",
-                "= \\frac{1}{2}$, the values of $P(A \\mid B)$ and $P(B \\mid A)$ respectively are\n\n- A. $\\left(\\frac{1}{4}\\right), \\left(\\frac{1}{2}\\right)$ \n- B. $\\left(\\frac{1}{2}\\right), \\left(\\frac{1}{4}\\right)$ \n-",
-                "$\\left(\\frac{1}{2}\\right), 1$ \n-",
+                "$\\left(\\frac{1}{4}\\right), \\left(\\frac{1}{2}\\right)$",
+                "$\\left(\\frac{1}{2}\\right), \\left(\\frac{1}{4}\\right)$",
+                "$\\left(\\frac{1}{2}\\right), 1$",
                 "$1, \\left(\\frac{1}{2}\\right)$"
               ],
               "answer": "D",
@@ -9895,9 +9895,9 @@
               "topicSlug": "topic-7-11",
               "question_text": "Normal Distribution: GATE DA 2026 | Question: 18\n\nSuppose a random variable $Z$ follows $\\text{Normal}(\\mu = 0, \\sigma^2 = 1)$ distribution with probability density function $g(z)$ and cumulative distribution function $G(z)$. Another random variable $Y$ follows $t_1$ distribution with probability density function $h(y)$ and cumulative distribution function $H(y)$. Let $c$ be the positive real number for which $g(c) = h(c)$.\n\nWhich of the following statements is/are correct?",
               "options": [
-                "$G(0) = H(0)$ \n-",
-                "$G",
-                "< H(c)$ \n- C. $G(-c) < H(-c)$ \n-",
+                "$G(0) = H(0)$",
+                "$G(C)< H(c)$",
+                "$G(-c) < H(-c)$",
                 "$g(0) = h(0)$\n\n7.12\n\nPoisson Distribution (5)\n\nPractice Test: Test 1 (5Q)"
               ],
               "answer": [
@@ -10261,11 +10261,11 @@
               "qtype": "MSQ",
               "topic": "Topic 7.13",
               "topicSlug": "topic-7-13",
-              "question_text": "Probability: GATE CSE 2024 | Set 1 | Question: 17\n\nLet $A$ and $B$ be two events in a probability space with $P",
+              "question_text": "Probability: GATE CSE 2024 | Set 1 | Question: 17\n\nLet $A$ and $B$ be two events in a probability space with $P(A)= 0.3$, $P(B)= 0.5$, and $P(A \\cap B) = 0.1$. Which of the following statements is/are TRUE?",
               "options": [
-                "= 0.3$, $P",
-                "= 0.5$, and $P(A \\cap B) = 0.1$. Which of the following statements is/are TRUE?\n\n- A. The two events $A$ and $B$ are independent \n- B. $P(A \\cup B) = 0.7$ \n-",
-                "$P(A \\cap B^c) = 0.2$, where $B^c$ is the complement of the event $B$ \n-",
+                "The two events $A$ and $B$ are independent",
+                "$P(A \\cup B) = 0.7$",
+                "$P(A \\cap B^c) = 0.2$, where $B^c$ is the complement of the event $B$",
                 "$P(A^c \\cap B^c) = 0.4$, where $A^c$ and $B^c$ are the complements of the events $A$ and $B$, respectively"
               ],
               "answer": [
@@ -10326,11 +10326,11 @@
               "qtype": "MCQ",
               "topic": "Topic 7.13",
               "topicSlug": "topic-7-13",
-              "question_text": "Probability: GATE DA 2025 | Question: 35\n\nA random experiment consists of throwing $100$ fair dice, each die having six faces numbered $1$ to $6$. An event $A$ represents the set of all outcomes where at least one of the dice shows a $1$. Then, $P",
+              "question_text": "Probability: GATE DA 2025 | Question: 35\n\nA random experiment consists of throwing $100$ fair dice, each die having six faces numbered $1$ to $6$. An event $A$ represents the set of all outcomes where at least one of the dice shows a $1$. Then, $P(A)=$",
               "options": [
-                "=$\n\n- A. $0$ \n-",
-                "$1$ \n-",
-                "$1 - \\left(\\frac{5}{6}\\right)^{100}$ \n-",
+                "$0$",
+                "$1$",
+                "$1 - \\left(\\frac{5}{6}\\right)^{100}$",
                 "$\\left(\\frac{5}{6}\\right)^{100}$"
               ],
               "answer": "C",
@@ -24284,7 +24284,7 @@
               "qtype": "MCQ",
               "topic": "Topic 2.11",
               "topicSlug": "topic-2-11",
-              "question_text": "First and Follow: GATE CSE 2012 | Question: 52\n\nFor the grammar below, a partial $LL(1)$ parsing table is also presented along with the grammar. Entries that\n\nneed to be filled are indicated as $E1, E2$, and $E3$. $\\epsilon$ is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.\n\n- • $S \\rightarrow aAbB \\mid bAaB \\mid \\epsilon$ \n\n- • $A \\rightarrow S$ \n\n- • $B \\rightarrow S$",
+              "question_text": "First and Follow: GATE CSE 2012 | Question: 52\n\nFor the grammar below, a partial $LL(1)$ parsing table is also presented along with the grammar. Entries that\n\nneed to be filled are indicated as $E1, E2$, and $E3$. $\\epsilon$ is the empty string, \\$ indicates end of input, and, | separates alternate right hand sides of productions.\n\n- • $S \\rightarrow aAbB \\mid bAaB \\mid \\epsilon$ \n\n- • $A \\rightarrow S$ \n\n- • $B \\rightarrow S$",
               "options": null,
               "answer": "A",
               "solution": "https://gateoverflow.in/2181"
@@ -24311,7 +24311,7 @@
               "qtype": "NAT",
               "topic": "Topic 2.11",
               "topicSlug": "topic-2-11",
-              "question_text": "First and Follow: GATE CSE 2019 | Question: 19\n\nConsider the grammar given below:\n\n- • $S \\rightarrow Aa$ \n\n- • $A \\rightarrow BD$ \n\n- • $B \\rightarrow b \\mid \\epsilon$ \n\n- • $D \\rightarrow d \\mid \\epsilon$\n\nLet $a, b, d$ and $\\$ be indexed as follows:",
+              "question_text": "First and Follow: GATE CSE 2019 | Question: 19\n\nConsider the grammar given below:\n\n- • $S \\rightarrow Aa$ \n\n- • $A \\rightarrow BD$ \n\n- • $B \\rightarrow b \\mid \\epsilon$ \n\n- • $D \\rightarrow d \\mid \\epsilon$\n\nLet $a, b, d$ and $\\\\$$ be indexed as follows:",
               "options": null,
               "answer": {
                 "low": 31.0,
@@ -24674,9 +24674,9 @@
               "qtype": "MCQ",
               "topic": "Topic 2.12",
               "topicSlug": "topic-2-12",
-              "question_text": "Grammar: GATE CSE 2005 | Question: 14\n\nThe grammar $A \\rightarrow AA \\mid",
+              "question_text": "Grammar: GATE CSE 2005 | Question: 14\n\nThe grammar $A \\rightarrow AA \\mid(A)\\mid \\epsilon$ is not suitable for predictive-parsing because the grammar is:",
               "options": [
-                "\\mid \\epsilon$ is not suitable for predictive-parsing because the grammar is:\n\n- A. ambiguous",
+                "ambiguous",
                 "left-recursive",
                 "right-recursive",
                 "an operator-grammar"
@@ -25004,10 +25004,10 @@
               "topicSlug": "topic-2-12",
               "question_text": "Grammar: GATE IT 2007 | Question: 9\n\nConsider an ambiguous grammar $G$ and its disambiguated version $D$. Let the language recognized by the two grammars be denoted by $L(G)$ and $L(D)$ respectively. Which one of the following is true?",
               "options": [
-                "$L(D) \\subset L(G)$ \n\n-",
-                "$L(D) \\supset L(G)$ \n\n-",
-                "$L",
-                "= L(G)$ \n\n- D. $L(D)$ is empty"
+                "$L(D) \\subset L(G)$",
+                "$L(D) \\supset L(G)$",
+                "$L(D)= L(G)$",
+                "$L(D)$ is empty"
               ],
               "answer": "C",
               "solution": "https://gateoverflow.in/3442"
@@ -25808,10 +25808,10 @@
               "topicSlug": "topic-2-20",
               "question_text": "Operator Precedence: GATE CSE 2000 | Question: 2.21, ISRO2015-24\n\nGiven the following expression grammar:\n\n$$E \\rightarrow E * F \\mid F + E \\mid F$$\n\n$$F \\rightarrow F - F \\mid id$$\n\nWhich of the following is true?",
               "options": [
-                "$*$ has higher precedence than $+$ \n\n-",
-                "$-$ has higher precedence than $*$ \n\n-",
+                "\\$*\\$ has higher precedence than $+$ \n\n-",
+                "\\$-\\$ has higher precedence than $*$ \n\n-",
                 "$+$ and $-$ have same precedence \n\n-",
-                "$+$ has higher precedence than $*$"
+                "\\$+\\$ has higher precedence than $*$"
               ],
               "answer": "B",
               "solution": "https://gateoverflow.in/668"
@@ -25879,12 +25879,12 @@
               "qtype": "MCQ",
               "topic": "Topic 2.20",
               "topicSlug": "topic-2-20",
-              "question_text": "Operator Precedence: GATE CSE 2018 | Question: 38\n\nConsider the following parse tree for the expression $a\\#b\\$c\\$d\\#e\\#f$, involving two binary operators $\\$ and $\\#$.\n\nParse tree for the expression a # $ d b c # e f. The root is '#', with left child 'a' and right child '#'. This second '#' has left child '$' and right child '#'. '$' has left child '$' and right child 'd'. The '$' under '$' has left child 'b' and right child 'c'. The '#' under the second '#' has left child 'e' and right child 'f'.\n\nWhich one of the following is correct for the given parse tree?",
+              "question_text": "Operator Precedence: GATE CSE 2018 | Question: 38\n\nConsider the following parse tree for the expression $a\\#b\\$c\\$d\\#e\\#f$, involving two binary operators \\$ and $\\\\$#$.\n\nParse tree for the expression a # $ d b c # e f. The root is '#', with left child 'a' and right child '#'. This second '#' has left child '$' and right child '#'. '$' has left child '$' and right child 'd'. The '$' under '$' has left child 'b' and right child 'c'. The '#' under the second '#' has left child 'e' and right child 'f'.\n\nWhich one of the following is correct for the given parse tree?",
               "options": [
-                "$ has higher precedence and is left associative; # is right associative \n-",
-                "# has higher precedence and is left associative; $ is right associative \n-",
-                "$ has higher precedence and is left associative; # is left associative \n-",
-                "$ has higher precedence and is right associative; # is left associative"
+                "\\$ has higher precedence and is left associative; # is right associative \n-",
+                "# has higher precedence and is left associative; \\$ is right associative \n-",
+                "\\$ has higher precedence and is left associative; # is left associative \n-",
+                "\\$ has higher precedence and is right associative; # is left associative"
               ],
               "answer": "A",
               "solution": "https://gateoverflow.in/204112"
@@ -26150,7 +26150,7 @@
               "qtype": "descriptive",
               "topic": "Topic 2.22",
               "topicSlug": "topic-2-22",
-              "question_text": "Parsing: GATE CSE 1995 | Question: 8\n\nConstruct the LL(1) table for the following grammar.\n\n- $Expr \\rightarrow \\_Expr$ \n\n- $Expr \\rightarrow (Expr)$ \n\n- $Expr \\rightarrow Var ExprTail$ \n\n- $ExprTail \\rightarrow \\_Expr$ \n\n- $Expr \\rightarrow \\lambda$ \n\n- $Var \\rightarrow Id VarTail$ \n\n- $VarTail \\rightarrow (Expr)$ \n\n- $VarTail \\rightarrow \\lambda$ \n\n- $Goal \\rightarrow Expr\\$",
+              "question_text": "Parsing: GATE CSE 1995 | Question: 8\n\nConstruct the LL(1) table for the following grammar.\n\n- $Expr \\rightarrow \\_Expr\\$$$ \n\n- $Expr \\rightarrow (Expr)$ \n\n- $Expr \\rightarrow Var ExprTail$ \n\n- $ExprTail \\rightarrow \\_Expr\\$$$ \n\n- $Expr \\rightarrow \\lambda$ \n\n- $Var \\rightarrow Id VarTail$ \n\n- $VarTail \\rightarrow (Expr)$ \n\n- $VarTail \\rightarrow \\lambda$ \n\n- $Goal \\rightarrow Expr\\$$",
               "options": null,
               "answer": null,
               "solution": "https://gateoverflow.in/2643"
@@ -26343,7 +26343,7 @@
               "qtype": "MCQ",
               "topic": "Topic 2.22",
               "topicSlug": "topic-2-22",
-              "question_text": "Parsing: GATE CSE 2012 | Question: 53\n\nFor the grammar below, a partial $LL(1)$ parsing table is also presented along with the grammar. Entries that\n\nneed to be filled are indicated as $E1$, $E2$, and $E3$. $\\varepsilon$ is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.\n\n- • $S \\rightarrow aAbB \\mid bAaB \\mid \\varepsilon$ \n\n- • $A \\rightarrow S$ \n\n- • $B \\rightarrow S$",
+              "question_text": "Parsing: GATE CSE 2012 | Question: 53\n\nFor the grammar below, a partial $LL(1)$ parsing table is also presented along with the grammar. Entries that\n\nneed to be filled are indicated as $E1$, $E2$, and $E3$. $\\varepsilon$ is the empty string, \\$ indicates end of input, and, | separates alternate right hand sides of productions.\n\n- • $S \\rightarrow aAbB \\mid bAaB \\mid \\varepsilon$ \n\n- • $A \\rightarrow S$ \n\n- • $B \\rightarrow S$",
               "options": null,
               "answer": "C",
               "solution": "https://gateoverflow.in/43312"
@@ -27047,9 +27047,9 @@
               "qtype": "MCQ",
               "topic": "Topic 2.27",
               "topicSlug": "topic-2-27",
-              "question_text": "Syntax Directed Translation: GATE CSE 2020 | Question: 33\n\nConsider the productions $A \\rightarrow PQ$ and $A \\rightarrow XY$. Each of the five non-terminals $A, P, Q, X$, and $Y$ has two attributes: $s$ is a synthesized attribute, and $i$ is an inherited attribute. Consider the following rules.\n\n- • Rule 1 : $P.i =",
+              "question_text": "Syntax Directed Translation: GATE CSE 2020 | Question: 33\n\nConsider the productions $A \\rightarrow PQ$ and $A \\rightarrow XY$. Each of the five non-terminals $A, P, Q, X$, and $Y$ has two attributes: $s$ is a synthesized attribute, and $i$ is an inherited attribute. Consider the following rules.\n\n- • Rule 1 : $P.i =(A)i + 2, Q.i = P.i + A.i$, and $A.s = P.s + Q.s$ \n\n- • Rule 2 : $X.i = A.i + Y.s$ and $Y.i = X.s + A.i$\n\nWhich one of the following is TRUE?",
               "options": [
-                "i + 2, Q.i = P.i + A.i$, and $A.s = P.s + Q.s$ \n\n- • Rule 2 : $X.i = A.i + Y.s$ and $Y.i = X.s + A.i$\n\nWhich one of the following is TRUE?\n\n- A. Both Rule 1 and Rule 2 are $L$-attributed.",
+                "Both Rule 1 and Rule 2 are $L$-attributed.",
                 "Only Rule 1 is $L$-attributed.",
                 "Only Rule 2 is $L$-attribute",
                 "D. Neither Rule 1 nor Rule 2 is $L$-attributed."
@@ -27137,12 +27137,12 @@
               "qtype": "MCQ",
               "topic": "Topic 2.27",
               "topicSlug": "topic-2-27",
-              "question_text": "Syntax Directed Translation: GATE CSE 2025 | Set 2 | Question: 12\n\nGiven the following syntax directed translation rules:\n\n- • Rule 1: $R \\rightarrow AB\\{B.i = R.i - 1;",
+              "question_text": "Syntax Directed Translation: GATE CSE 2025 | Set 2 | Question: 12\n\nGiven the following syntax directed translation rules:\n\n- • Rule 1: $R \\rightarrow AB\\{B.i = R.i - 1;(A)i =(B)i; R.i = A.i + 1;\\}$ \n- • Rule 2: $P \\rightarrow CD\\{P.i =(C)i +(D)i; D.i = C.i + 2;\\}$ \n- • Rule 3: $Q \\rightarrow EF\\{Q.i = E.i + F.i;\\}$\n\nWhich ONE is the CORRECT option among the following?",
               "options": [
-                "i =",
-                "i; R.i = A.i + 1;\\}$ \n- • Rule 2: $P \\rightarrow CD\\{P.i =",
-                "i +",
-                "i; D.i = C.i + 2;\\}$ \n- • Rule 3: $Q \\rightarrow EF\\{Q.i = E.i + F.i;\\}$\n\nWhich ONE is the CORRECT option among the following?\n\n- A. Rule 1 is S -attributed and L -attributed; Rule 2 is S -attributed and not L -attributed; Rule 3 is neither S -attributed nor L -attributed. \n- B. Rule 1 is neither S -attributed not L -attributed; Rule 2 is S -attributed and L -attributed; Rule 3 is S -attributed and L -attributed. \n- C. Rule 1 is neither S -attributed nor L -attributed; Rule 2 is not S -attributed and is L -attributed; Rule 3 is S -attributed and L -attributed. \n- D. Rule 1 is S -attributed and not L -attributed; Rule 2 is not S -attributed and is L -attributed; Rule 3 is S -attributed and L -attributed."
+                "Rule 1 is S -attributed and L -attributed; Rule 2 is S -attributed and not L -attributed; Rule 3 is neither S -attributed nor L -attributed.",
+                "Rule 1 is neither S -attributed not L -attributed; Rule 2 is S -attributed and L -attributed; Rule 3 is S -attributed and L -attributed.",
+                "Rule 1 is neither S -attributed nor L -attributed; Rule 2 is not S -attributed and is L -attributed; Rule 3 is S -attributed and L -attributed.",
+                "Rule 1 is S -attributed and not L -attributed; Rule 2 is not S -attributed and is L -attributed; Rule 3 is S -attributed and L -attributed."
               ],
               "answer": "C",
               "solution": "https://gateoverflow.in/460823"
@@ -30070,11 +30070,11 @@
               "qtype": "MCQ",
               "topic": "Topic 3.11",
               "topicSlug": "topic-3-11",
-              "question_text": "Priority Queue: GATE CSE 2023 | Question: 36\n\nLet $A$ be a priority queue for maintaining a set of elements. Suppose $A$ is implemented using a max-heap data structure. The operation $\\text{EXTRACT-MAX}",
+              "question_text": "Priority Queue: GATE CSE 2023 | Question: 36\n\nLet $A$ be a priority queue for maintaining a set of elements. Suppose $A$ is implemented using a max-heap data structure. The operation $\\text{EXTRACT-MAX}(A)$ extracts and deletes the maximum element from $A$. The operation $\\text{INSERT}(A, key)$ inserts a new element $key$ in $A$. The properties of a max-heap are preserved at the end of each of these operations.\n\nWhen $A$ contains $n$ elements, which one of the following statements about the worst case running time of these two operations is TRUE ?",
               "options": [
-                "$ extracts and deletes the maximum element from $A$. The operation $\\text{INSERT}(A, key)$ inserts a new element $key$ in $A$. The properties of a max-heap are preserved at the end of each of these operations.\n\nWhen $A$ contains $n$ elements, which one of the following statements about the worst case running time of these two operations is TRUE ?\n\n- A. Both $\\text{EXTRACT-MAX}(A)$ and $\\text{INSERT}(A, key)$ run in $O(1)$. \n-",
-                "Both $\\text{EXTRACT-MAX}(A)$ and $\\text{INSERT}(A, key)$ run in $O(\\log(n))$. \n-",
-                "$\\text{EXTRACT-MAX}(A)$ runs in $O(1)$ whereas $\\text{INSERT}(A, key)$ runs in $O(n)$. \n-",
+                "Both $\\text{EXTRACT-MAX}(A)$ and $\\text{INSERT}(A, key)$ run in $O(1)$.",
+                "Both $\\text{EXTRACT-MAX}(A)$ and $\\text{INSERT}(A, key)$ run in $O(\\log(n))$.",
+                "$\\text{EXTRACT-MAX}(A)$ runs in $O(1)$ whereas $\\text{INSERT}(A, key)$ runs in $O(n)$.",
                 "$\\text{EXTRACT-MAX}(A)$ runs in $O(1)$ whereas $\\text{INSERT}(A, key)$ runs in $O(\\log(n))$.\n\n3.12\n\nQueue (15)\n\nImage: pencil icon Practice Tests: Test 1 (15Q) Test 2 (6Q)"
               ],
               "answer": "B",
@@ -32071,9 +32071,9 @@
               "topicSlug": "topic-5-11",
               "question_text": "Programming In C: GATE CSE 2008 | Question: 61\n\nChoose the correct option to fill ?1 and ?2 so that the program below prints an input string in reverse order. Assume that the input string is terminated by a new line character.\n\nvoid reverse(void)\n{\n int c;\n if(?1) reverse();\n ?2\n}\nmain()\n{\n printf(\"Enter text\");\n printf(\"\\n\");\n reverse();\n printf(\"\\n\");\n}",
               "options": [
-                "?1 is $(getchar() \ne ext{'\\n'})$\n?2 is $getchar(c);$ \n-",
-                "?1 is $((c = getchar()) \ne ext{'\\n'})$\n?2 is $getchar",
-                ";$ \n- C. ?1 is $(c \ne ext{'\\n'})$\n?2 is $putchar(c);$ \n-",
+                "?1 is $(getchar() \ne ext{'\\n'})$\n?2 is $getchar(c);$",
+                "?1 is $((c = getchar()) \ne ext{'\\n'})$\n?2 is $getchar(C);$",
+                "?1 is $(c \ne ext{'\\n'})$\n?2 is $putchar(c);$",
                 "?1 is $((c = getchar()) \ne ext{'\\n'})$\n?2 is $putchar(c);$"
               ],
               "answer": "D",
@@ -32372,9 +32372,9 @@
               "topicSlug": "topic-5-11",
               "question_text": "Programming In C: GATE IT 2004 | Question: 60\n\nChoose the correct option to fill the ?1 and ?2 so that the program prints an input string in reverse order. Assume that the input string is terminated by a new line character.\n\n#include <stdio.h>\nvoid wrt_it (void);\nint main (void)\n{\n printf(\"Enter Text\");\n}\n\nprintf (\"\\n\");\n wrt_it();\n printf (\"\\n\");\n return 0;\n}\nvoid wrt_it (void)\n{\n int c;\n if (?1)\n wrt_it();\n ?2\n}",
               "options": [
-                "$?1 \\text{ is } getchar() != \\text{'\\n'}$\n$?2 \\text{ is } getchar(c);$ \n\n-",
-                "$?1 \\text{ is } (c = getchar()); != \\text{'\\n'}$\n$?2 \\text{ is } getchar",
-                ";$ \n\n- C. $?1 \\text{ is } c != \\text{'\\n'}$\n$?2 \\text{ is } putchar(c);$ \n\n-",
+                "$?1 \\text{ is } getchar() != \\text{'\\n'}$\n$?2 \\text{ is } getchar(c);$",
+                "$?1 \\text{ is } (c = getchar()); != \\text{'\\n'}$\n$?2 \\text{ is } getchar(C);$",
+                "$?1 \\text{ is } c != \\text{'\\n'}$\n$?2 \\text{ is } putchar(c);$",
                 "$?1 \\text{ is } (c = getchar()) != \\text{'\\n'}$\n$?2 \\text{ is } putchar(c);$"
               ],
               "answer": "D",
@@ -34573,9 +34573,9 @@
               "qtype": "MCQ",
               "topic": "Topic 6.7",
               "topicSlug": "topic-6-7",
-              "question_text": "Finite Automata: GATE CSE 2013 | Question: 33\n\nConsider the DFA $A$ given below.\n\nA Deterministic Finite Automata (DFA) diagram with three states.\n\nWhich of the following are FALSE ?\n\n- 1. Complement of $L",
+              "question_text": "Finite Automata: GATE CSE 2013 | Question: 33\n\nConsider the DFA $A$ given below.\n\nA Deterministic Finite Automata (DFA) diagram with three states.\n\nWhich of the following are FALSE ?\n\n- 1. Complement of $L(A)$ is context-free. \n\n- 2. $L(A) = L((11^*0 + 0)(0 + 1)^*0^*1^*)$ \n\n- 3. For the language accepted by $A$, $A$ is the minimal DFA. \n\n- 4. $A$ accepts all strings over $\\{0, 1\\}$ of length at least 2.",
               "options": [
-                "$ is context-free. \n\n- 2. $L(A) = L((11^*0 + 0)(0 + 1)^*0^*1^*)$ \n\n- 3. For the language accepted by $A$, $A$ is the minimal DFA. \n\n- 4. $A$ accepts all strings over $\\{0, 1\\}$ of length at least 2.\n\nA. 1 and 3 only",
+                "1 and 3 only",
                 "2 and 4 only",
                 "2 and 3 only",
                 "3 and 4 only"
@@ -36015,7 +36015,7 @@
               "qtype": "descriptive",
               "topic": "Topic 6.15",
               "topicSlug": "topic-6-15",
-              "question_text": "Pushdown Automata: GATE CSE 2000 | Question: 8\n\nA push down automation (pda) is given in the following extended notation of finite state diagram:\n\ngraph LR\n start(( )) --> q0((q0))\n q0 -- \"1.s/1.s\" --> q0\n q0 -- \"2.s/s\" --> q1((q1))\n q1 -- \"1,1.s/s\" --> q1\n style start fill:none,stroke:none\n \nFinite state diagram for a PDA with two states q0 and q1. q0 is the start state. Transitions: q0 to q0 on 1.s/1.s; q0 to q1 on 2.s/s; q1 to q1 on 1,1.s/s.\n\nThe nodes denote the states while the edges denote the moves of the pda. The edge labels are of the form $d, s/s'$ where $d$ is the input symbol read and $s, s'$ are the stack contents before and after the move. For example the edge labeled $1, s/1.s$ denotes the move from state $q_0$ to $q_0$ in which the input symbol 1 is read and pushed to the stack.\n\n- Introduce two edges with appropriate labels in the above diagram so that the resulting pda accepts the language $\\{x2x^R \\mid x \\in \\{0, 1\\}^*, x^R \\text{ denotes reverse of x}\\$, by empty stack. \n\n- Describe a non-deterministic pda with three states in the above notation that accept the language $\\{0^n 1^m \\mid n \\leq m \\leq 2n\\}$ by empty stack",
+              "question_text": "Pushdown Automata: GATE CSE 2000 | Question: 8\n\nA push down automation (pda) is given in the following extended notation of finite state diagram:\n\ngraph LR\n start(( )) --> q0((q0))\n q0 -- \"1.s/1.s\" --> q0\n q0 -- \"2.s/s\" --> q1((q1))\n q1 -- \"1,1.s/s\" --> q1\n style start fill:none,stroke:none\n \nFinite state diagram for a PDA with two states q0 and q1. q0 is the start state. Transitions: q0 to q0 on 1.s/1.s; q0 to q1 on 2.s/s; q1 to q1 on 1,1.s/s.\n\nThe nodes denote the states while the edges denote the moves of the pda. The edge labels are of the form $d, s/s'$ where $d$ is the input symbol read and $s, s'$ are the stack contents before and after the move. For example the edge labeled $1, s/1.s$ denotes the move from state $q_0$ to $q_0$ in which the input symbol 1 is read and pushed to the stack.\n\n- Introduce two edges with appropriate labels in the above diagram so that the resulting pda accepts the language $\\{x2x^R \\mid x \\in \\{0, 1\\}^*, x^R \\text{ denotes reverse of x}\\}$, by empty stack. \n\n- Describe a non-deterministic pda with three states in the above notation that accept the language $\\{0^n 1^m \\mid n \\leq m \\leq 2n\\}$ by empty stack",
               "options": null,
               "answer": null,
               "solution": "https://gateoverflow.in/679"
@@ -37248,7 +37248,7 @@
               "qtype": "MCQ",
               "topic": "Topic 6.20",
               "topicSlug": "topic-6-20",
-              "question_text": "Regular Language: GATE CSE 2014 | Set 2 | Question: 36\n\nLet $L_1 = \\{w \\in \\{0, 1\\}^* \\mid w\\$ has at least as many occurrences of $(110)\\text{'s as } (011)\\text{'s}\\}$. Let $L_2 = \\{w \\in \\{0, 1\\}^* \\mid w$ has at least as many occurrences of $(000)\\text{'s as } (111)\\text{'s}\\}$. Which one of the following is TRUE?",
+              "question_text": "Regular Language: GATE CSE 2014 | Set 2 | Question: 36\n\nLet $L_1 = \\{w \\in \\{0, 1\\}^* \\mid w has at least as many occurrences of $(110)\\text{'s as } (011)\\text{'s}\\}$. Let $L_2 = \\{w \\in \\{0, 1\\}^* \\mid w has at least as many occurrences of $(000)\\text{'s as } (111)\\text{'s}\\}$. Which one of the following is TRUE?",
               "options": [
                 "$L_1$ is regular but not $L_2$",
                 "$L_2$ is regular but not $L_1$",
@@ -49334,11 +49334,11 @@
               "qtype": "MCQ",
               "topic": "Topic 3.25",
               "topicSlug": "topic-3-25",
-              "question_text": "Transaction and Concurrency: GATE CSE 2025 | Set 1 | Question: 5\n\nA schedule of three database transactions $T_1, T_2$, and $T_3$ is shown. $R_i",
+              "question_text": "Transaction and Concurrency: GATE CSE 2025 | Set 1 | Question: 5\n\nA schedule of three database transactions $T_1, T_2$, and $T_3$ is shown. $R_i(A)$ and $W_i(A)$ denote read and write of data item $A$ by transaction $T_i, i = 1, 2, 3$. The transaction $T_1$ aborts at the end. Which other transaction(s) will be required to be rolled back?\n\n$$R_1(X)W_1(Y)R_2(X)R_2(Y)R_3(Y)\\text{ ABORT}(T_1)$$",
               "options": [
-                "$ and $W_i(A)$ denote read and write of data item $A$ by transaction $T_i, i = 1, 2, 3$. The transaction $T_1$ aborts at the end. Which other transaction(s) will be required to be rolled back?\n\n$$R_1(X)W_1(Y)R_2(X)R_2(Y)R_3(Y)\\text{ ABORT}(T_1)$$\n\n- A. Only $T_2$ \n-",
-                "Only $T_3$ \n-",
-                "Both $T_2$ and $T_3$ \n-",
+                "Only $T_2$",
+                "Only $T_3$",
+                "Both $T_2$ and $T_3$",
                 "Neither $T_2$ nor $T_3$"
               ],
               "answer": "C",
@@ -58201,10 +58201,10 @@
               "topicSlug": "topic-5-25",
               "question_text": "Resource Allocation: GATE CSE 2013 | Question: 16\n\nThree concurrent processes $X, Y$, and $Z$ execute three different code segments that access and update certain shared variables. Process $X$ executes the $P$ operation (i.e., wait ) on semaphores $a, b$, and $c$; process $Y$ executes the $P$ operation on semaphores $b, c$, and $d$; process $Z$ executes the $P$ operation on semaphores $c, d$, and $a$ before entering the respective code segments. After completing the execution of its code segment, each process invokes the $V$ operation (i.e., signal ) on its three semaphores. All semaphores are binary semaphores initialized to one. Which one of the following represents a deadlock-free order of invoking the $P$ operations by the processes?",
               "options": [
-                "$X : P(a)P",
-                "P",
-                "\\ Y : P(b)P(c)P",
-                "\\ Z : P(c)P(d)P(a)$ \n\n- B. $X : P(b)P(a)P(c)\\ Y : P(b)P(c)P(d)\\ Z : P(a)P(c)P(d)$ \n\n- C. $X : P(b)P(a)P(c)\\ Y : P(c)P(b)P(d)\\ Z : P(a)P(c)P(d)$ \n\n- D. $X : P(a)P(b)P(c)\\ Y : P(c)P(b)P(d)\\ Z : P(c)P(d)P(a)$"
+                "$X : P(a)P(B)P(C)\\ Y : P(b)P(c)P(D)\\ Z : P(c)P(d)P(a)$",
+                "$X : P(b)P(a)P(c)\\ Y : P(b)P(c)P(d)\\ Z : P(a)P(c)P(d)$",
+                "$X : P(b)P(a)P(c)\\ Y : P(c)P(b)P(d)\\ Z : P(a)P(c)P(d)$",
+                "$X : P(a)P(b)P(c)\\ Y : P(c)P(b)P(d)\\ Z : P(c)P(d)P(a)$"
               ],
               "answer": "B",
               "solution": "https://gateoverflow.in/1438"
@@ -58523,7 +58523,7 @@
               "topicSlug": "topic-5-28",
               "question_text": "Semaphore: GATE CSE 2026 | Set 2 | Question: 41\n\nConsider three processes P1 , P2 , and P3 running identical code, as shown in the pseudocode below. A and B are two binary semaphores initialized to 1 and 0, respectively. X is a shared variable initialized to 0. Each line in the pseudocode is executed atomically.\n\nPseudocode of P1, P2, and P3\nWait",
               "options": [
-                ";\nPrint(*);\nX = X+1;\nIf (X == 2)\n{\n Print($);\n Signal",
+                ";\nPrint(*);\nX = X+1;\nIf (X == 2)\n{\n Print(\\$);\n Signal",
                 ";\n}\nSignal(A);\nWait(B);\nPrint(#);\nSignal(B);\n\nAssume that any of the three processes can start to execute first and context switching can happen between these processes at any arbitrary time and in any arbitrary order.\n\nWhich of the following patterns is/are possible to be generated as an outcome of the execution of these three processes?\n\nA.\n\nB.",
                 "",
                 "**$###\n\n**$#*##\n\n**$##*#\n\n***$###"
