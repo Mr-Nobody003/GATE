@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   // Avoid trailing slash in base URL to prevent double slashes when constructing routes
   const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL 
