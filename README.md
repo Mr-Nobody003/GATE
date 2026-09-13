@@ -11,22 +11,22 @@ The data pipeline transitions the content from unstructured PDFs to a rich, inte
 ```mermaid
 flowchart TD
     subgraph Data Collection
-        A[Raw GATE PDFs\n`public/pdfs/`] --> B(DataLab Processing)
+        A["Raw GATE PDFs\n`public/pdfs/`"] --> B("DataLab Processing")
     end
 
     subgraph Data Processing Pipeline
-        B --> C[DataLab JSON Exports\n`datalab_json/*.json`]
-        A --> |PyMuPDF Extraction| D[`scripts/parse_datalab.py`]
+        B --> C["DataLab JSON Exports\n`datalab_json/*.json`"]
+        A --> |PyMuPDF Extraction| D["`scripts/parse_datalab.py`"]
         C --> D
-        D --> |Extracts Text, Math, Layout, Images| E[Formatted Unified JSON\n`data/formatted_all.json`]
+        D --> |Extracts Text, Math, Layout, Images| E["Formatted Unified JSON\n`data/formatted_all.json`"]
     end
 
     subgraph Frontend Rendering
-        E --> F[`src/lib/data.ts`\nEnrichment & Formatting]
-        F --> G[`page.tsx` (Server Component)\nReads data]
-        G --> H[`ServerMarkdown.tsx`\nPre-renders Markdown & KaTeX]
-        H --> I[`PracticeClient.tsx` (Client Component)\nReceives Static HTML]
-        I --> J[`QuestionCard.tsx`\nInteractive UI]
+        E --> F["`src/lib/data.ts`\nEnrichment & Formatting"]
+        F --> G["`page.tsx` (Server Component)\nReads data"]
+        G --> H["`ServerMarkdown.tsx`\nPre-renders Markdown & KaTeX"]
+        H --> I["`PracticeClient.tsx` (Client Component)\nReceives Static HTML"]
+        I --> J["`QuestionCard.tsx`\nInteractive UI"]
     end
 
     classDef default fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#0f172a;
